@@ -13,11 +13,9 @@
     }
   ],
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.js"
   },
   "dependencies": {
     "node-static": "0.7.6"
-  },
-  "devDependencies": {
   }
 }
