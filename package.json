@@ -1,0 +1,23 @@
+{
+  "name": "devfest2015",
+  "version": "0.0.1",
+  "description": "DevFest Nantes 2015 website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GDG-Nantes/devFestSite-2015.git"
+  },
+  "contributors": [
+    {
+      "name": "Julien Landuré",
+      "email": "jujujuz@gmail.com"
+    }
+  ],
+  "scripts": {
+    "start": "node server.js",
+  },
+  "dependencies": {
+    "node-static": "0.7.6"
+  },
+  "devDependencies": {
+  }
+}
