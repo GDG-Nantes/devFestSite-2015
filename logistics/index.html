@@ -1,37 +1,7 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta name="author" content="Team @ GDG Nantes">
-    <meta name="description" content="Le DevFest Nantes 2015 est une journée de conférence accueillant 600 développeurs à la cité des congrès de nantes">
-    <meta name="keywords" content="event, gdg, devfest, google, programming, android, chrome, developers, nantes">
-    <meta name="google-site-verification" content="" />
-    <link rel="canonical" href="https://devfest.gdgnantes.com">
-    <!-- Social: Twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@gdgnantes">
-    <meta name="twitter:title" content="DevFest Nantes 2015">
-    <meta name="twitter:description" content="Le DevFest Nantes 2015 est une journée de conférence accueillant 600 développeurs à la cité des congrès de nantes">
-    <meta name="twitter:image:src" content="http://devfest.gdgnantes.com/img/seo/sharing-twitter.png">
-    <!-- Social: Facebook / Open Graph -->
-    <meta property="og:title" content="DevFest Nantes 2015" />
-    <meta property="og:site_name" content="DevFest Nantes 2015" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://devfest.gdgnantes.com" />
-    <meta property="og:image" content="http://devfest.gdgnantes.com/img/seo/sharing-facebook.png" />
-    <meta property="og:description" content="Le DevFest Nantes 2015 est une journée de conférence accueillant 600 développeurs à la cité des congrès de nantes" />
-    <title>Pratique &bull; DevFest Nantes 2015</title>
-    <link rel="shortcut icon" href="/img/favicons/favicon.ico">
-    <meta name="theme-color" content="#2b5797">
-    <link href="/css/main.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
-</head>
-
+<head ng-include="'/partials/header.html'"></head>
 <body>
     <div id="preloader" class="preloader">
         <div class="loader-gplus"></div>
@@ -42,26 +12,7 @@
                 <!-- Begin Top Section -->
                 <section id="top-section" class="top-section image-section " style="">
                     <div class="overlay gradient-overlay"></div>
-                    <header id="top-header" class="top-header">
-                        <div class="overlay white-solid"></div>
-                        <svg id="menu-trigger" class="menu-trigger icon icon-menu visible-xs" viewBox="0 0 32 32">
-                            <use xlink:href="/img/sprites/sprites.svg#icon-menu"></use>
-                        </svg>
-                        <a href="/" id="logo-header" class="logo-header">
-                            <div class="logo logo-light"></div>
-                        </a>
-                        <nav class="st-menu st-effect" id="menu">
-                            <div class="logo-navbar logo logo-dark visible-xs"></div>
-                            <ul>
-                                <li> <a class="" href=" / ">Home</a> </li>
-                                <li> <a class="" href=" /schedule/ ">Agenda</a> </li>
-                                <li> <a class="" href=" /speakers/ ">Speakers</a> </li>
-                                <li> <a class="" href=" /team/ ">L'équipe</a> </li>
-                                <li> <a class="current" href=" /logistics/ ">En Pratique</a> </li>
-                            </ul>
-                            <ul id="bottom-navlinks" class="bottom-navlinks visible-xs">
-                                <li> <a href=" https://bit.ly/dfua-c4p " target="_blank">Devenez un speaker</a> </li>
-                            </ul> <a href=" https://bit.ly/dfua-c4p " class="right-nav-button right-nav-button-hidden btn btn-primary waves-effect waves-button waves-light waves-float pull-right hidden-xs hidden-sm" target="_blank"> Devenez un speaker </a> </nav>
+                    <header id="top-header" class="top-header" ng-include="'/partials/top-header.html'">
                     </header>
                     <div class="content-wrapper">
                         <div class="jumbotron text-left">
@@ -143,7 +94,7 @@
                                         <h4>En voiture</h4>
                                         <p>La Cité des Congrès étant en plein centre ville, nous préconisons aux automobilistes de se garer sur un parking relais tram ou un parking payant.
                                             <br> La Cité des Congrès propose un <a href='http://www.parkings-nantes.fr/fr/stationner' target='_blank'>parking payant</a> de 450 places.
-                                            <br> Pour voir les disponibilités des parkings en temps réel : <a href='http://parking-nantes.com/' traget='_blank'>http://parking-nantes.com/</a>
+                                            <br> Pour voir les disponibilités des parkings en temps réel : <a href='http://parking-nantes.com/' target='_blank'>http://parking-nantes.com/</a>
                                             <br> Liste des parkings relais : <a href='https://www.tan.fr/adminsite/objetspartages/liste_fichiergw.jsp?OBJET=DOCUMENT&CODE=1232704326125&LANGUE=0' target='_blank'>carte.pdf</a> ou directement sur le site de la <a href='https://www.tan.fr/jsp/fiche_pagelibre.jsp?CODE=07774142&LANGUE=0' target='_blank'>Tan</a></p>
                                     </div>
                                 </div>
@@ -182,74 +133,7 @@
                 </section>
                 <!-- End Direction Details -->
                 <!-- Begin Footer -->
-                <footer id="footer" class="footer">
-                    <div class="row">
-                        <div class="pull-left col-md-6 col-xs-6">
-                            <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300" data-href="http://devfest.gdgnantes.com"></div>
-                        </div>
-                        <div class="logo logo-footer logo-gray pull-right"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-xs-6">
-                            <h5>Liens</h5>
-                            <ul>
-                                <li><a href=" http://gdgnantes.com " target="_blank">GDG Nantes</a></li>
-                                <li><a href=" https://developers.google.com " target="_blank">Google Developers</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4 col-xs-6">
-                            <h5>Contacts</h5>
-                            <ul>
-                                <li><a href=" mailto:bureau@gdgnantes.com " target="_blank">bureau@gdgnantes.com</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4 col-xs-6">
-                            <h5>FAQ</h5>
-                            <ul>
-                                <li><a href=" /cod/ ">Code of Conduct</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-xs-12">
-                            <ul class="social-links">
-                                <li>
-                                    <a href=" https://plus.google.com/b/+GdgNantes " target="_blank">
-                                        <svg class="icon icon-google-plus" viewBox="0 0 30 32">
-                                            <use xlink:href="/img/sprites/sprites.svg#icon-google-plus"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href=" https://twitter.com/gdgnantes " target="_blank">
-                                        <svg class="icon icon-twitter" viewBox="0 0 30 32">
-                                            <use xlink:href="/img/sprites/sprites.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href=" https://facebook.com/GDGNantes " target="_blank">
-                                        <svg class="icon icon-facebook" viewBox="0 0 30 32">
-                                            <use xlink:href="/img/sprites/sprites.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href=" /feed.xml " target="_blank">
-                                        <svg class="icon icon-rss" viewBox="0 0 30 32">
-                                            <use xlink:href="/img/sprites/sprites.svg#icon-rss"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- Please don't delete this line-->
-                        <div class="col-md-6">
-                            <p class="copyright"> &copy; 2014 Based on <a href="https://github.com/gdg-x/zeppelin" target="_blank">Project Zeppelin</a>. Designed and created by <a href="https://plus.google.com/+OlehZasadnyy/about" target="_blank">Oleh Zasadnyy</a> &middot; <a href="http://lviv.gdg.org.ua" target="_blank">GDG Lviv</a> </p>
-                        </div>
-                    </div>
+                <footer id="footer" class="footer" ng-include="'/partials/footer.html'">
                 </footer>
                 <!-- End Footer -->
             </div>
@@ -266,21 +150,14 @@
         a.src = g;
         m.parentNode.insertBefore(a, m)
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-35116426-1', 'gdgnantes.com');
+    ga('create', 'UA-XXXXXXX-X', 'http://devfest.gdgnantes.com');
     ga('send', 'pageview');
     </script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>
-    window.jQuery || document.write('<script src="/js/jquery-2.1.1.min.js><\/script>')
-    </script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script>
-    if (typeof($.fn.modal) === 'undefined') {
-        document.write('<script src="/js/bootstrap.min.js><\/script>')
-    }
-    </script>
+    <script src="/tmp/jquery.min.js"></script>
+    <script src="/tmp/bootstrap.min.js"></script>
+    <script src="/tmp/angular.min.js"></script>
     <script src="/js/default.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places,geometry"></script>
+    <script src="//maps.googleapis.com/maps/api/js?v=3.exp&libraries=places,geometry"></script>
     <script type="text/javascript">
     var autoDirectionEnabled = false;
     </script>
@@ -293,9 +170,6 @@
         icon = '/img/other/map-marker.svg';
     </script>
     <script src="/js/scripts.min.js"></script>
-    <script type="application/ld+json"> [{ "@context" : "http://schema.org", "@type" : "Event", "name" : "DevFest Nantes 2015", "description": "DevFest Nantes est une journée de conférences sur les technologies innovantes du moment", "image" : "https://devfest.gdgnantes.com/img/seo/sharing-google-plus.png", "url" : "https://devfest.gdgnantes.com", "startDate" : "2015-11-06T09:00", "doorTime" : "08:00", "endDate" : "2015-11-06T22:00", "location" : { "@type" : "Place", "name" : "Cité des Congrès de Nantes", "sameAs" : "http://www.lacite-nantes.fr/", "address" : { "@type" : "PostalAddress", "streetAddress" : "Quai Ferdinand Favre", "addressLocality" : "Nantes", "addressRegion" : "Nantes", "postalCode" : "44000", "addressCountry" : "France" }, "geo" : { "@type" : "GeoCoordinates", "latitude" : "47.212966", "longitude" : " -1.542565" } }, // Not supported yet // "organizer" : { // "@type" : "Organization", // "name" : "GDG Nantes", // "alternateName" : "Google Developer Group Nantes", // "description" : "Open and volunteer geek communities who create exciting projects and share experience about Google technology with passion.", // "logo" : "https://devfest.gdgnantes.com/img/seo/organizer-logo.png", // "email" : "bureau@gdgnantes.com", // "sameAs" : "http://gdgnantes.com/" // }, "subEvent" : { "@type" : "Event", "name" : "Hackathon", "description": "The front doors will be locked because this is after hours, please park behind the building and come to the door nearest the parking lot.
-        <br>
-        <br>Our last meeting showed that there was a lot of interest in Android Wear so we decided to put on an Android Wear Hackathon to see what you could come up with! We realize that this is pretty short notice so we hope you can help us spread the word! There will be pizza, prizes and a great group of geeks to spend the evening coding with! Even if you don't have an app idea come on in and lend a hand to someone else or maybe find inspiration once you're here!", "image" : "https://devfest.gdgnantes.com/img/seo/sharing-google-plus.png", "url" : "https://devfest.gdgnantes.com/hackathon/", "startDate" : "2014-10-24T10:00", "doorTime" : "09:00", "endDate" : "2014-10-25T00:00", "location" : { "@type" : "Place", "name" : "Communa", "sameAs" : "http://communa.net.ua/", "address" : { "@type" : "PostalAddress", "streetAddress" : "1 Halytska St", "addressLocality" : "Lviv", "addressRegion" : "Lvivska", "postalCode" : "79000", "addressCountry" : "Ukraine" }, "geo" : { "@type" : "GeoCoordinates", "latitude" : "49.840999", "longitude" : " 24.031144" } } }, "offers" : [ { "@type" : "Offer", "name" : "Pass Académique", "url" : "http://dfua.ticketforevent.com/", "price" : "10", "priceCurrency" : "€", "validFrom" : "2015-06-15T10:00", "validThrough" : "2015-11-06T23:59" }, { "@type" : "Offer", "name" : "Pass Standard", "url" : "http://dfua.ticketforevent.com/", "price" : "30", "priceCurrency" : "€", "validFrom" : "2015-06-15T00:00", "validThrough" : "2015-11-06T23:59" } ], "performer" : [ { "@type" : "Person", "name" : "Cyril Mottier", "image" : "https://devfest.gdgnantes.com/img/people/cmottier.jpg", "jobTitle" : "Developer Expert Android", "worksFor" : { "@type" : "Organization", "name" : "Captain Train" }, "sameAs" : "https://plus.google.com/+CyrilMottier/" }, { "@type" : "Person", "name" : "Martin Görner", "image" : "https://devfest.gdgnantes.com/img/people/mgorner.jpg", "jobTitle" : "Developer Relation Web & Cloud", "worksFor" : { "@type" : "Organization", "name" : "Google" }, "sameAs" : "https://plus.google.com/+MartinGorner" }, { "@type" : "Person", "name" : "Ludovic Champenois", "image" : "https://devfest.gdgnantes.com/img/people/lchampenois.jpg", "jobTitle" : "Tech Lead Manager Cloud", "worksFor" : { "@type" : "Organization", "name" : "Google" }, "sameAs" : "https://plus.google.com/+LudovicChampenois" } ], "eventStatus" : "EventScheduled", "typicalAgeRange" : "16+" }] </script>
 </body>
 
 </html>

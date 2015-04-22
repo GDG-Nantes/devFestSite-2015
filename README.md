@@ -21,6 +21,13 @@ integration avec slack [done]
 * ajouter le code de vérif pour google webmaster
 * ajouter fichier yaml pour déploiement appengine
 * faire config codeship pour déployer automatiquement
+* changer l'image "team" en haut dans le header (pas très jolie!)
+* Ajouter un écran de stats (comme le truc de l'année dernière) dans le partie "a propos" de la page "l'équipe"
+
 
 # TODO V2
-* voir plus tard pour ajouter les boutons "devenez speaker" avec le lien vers le CFP
+
+* Voir plus tard pour ajouter les boutons "devenez speaker" avec le lien vers le CFP
+* Ajouter plus de détails pour les hotels
+* Afficher les premiers speakers
+* Ajouter la fonctionnalité d'enregistrement à la newsletter
