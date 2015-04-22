@@ -17,6 +17,10 @@ integration avec slack [done]
 * prévoir espace pour la vidéo
 * mettre notre logo gdg nantes en orga
 * préparer un gulp pour utiliser les fichiers CDN et non "tmp". mais j'en avais besoin dans le train :)
+* tester le partage du site web avec twitter et facebook et gplus pour vérifier la card créé correspond à nos metadonnées
+* ajouter le code de vérif pour google webmaster
+* ajouter fichier yaml pour déploiement appengine
+* faire config codeship pour déployer automatiquement
 
 # TODO V2
 * voir plus tard pour ajouter les boutons "devenez speaker" avec le lien vers le CFP
