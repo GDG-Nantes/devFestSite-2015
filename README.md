@@ -31,3 +31,4 @@ integration avec slack [done]
 * Ajouter plus de détails pour les hotels
 * Afficher les premiers speakers
 * Ajouter la fonctionnalité d'enregistrement à la newsletter
+* Remettre en place le flux twitter issu de #devfest #nantes
