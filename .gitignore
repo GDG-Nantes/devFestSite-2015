@@ -6,9 +6,11 @@ logs
 *.iml
 *.zip
 
+**ngTemplates.js
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/
+dist/
 
 # Dependency directory
 # Commenting this out is preferred by some people, see

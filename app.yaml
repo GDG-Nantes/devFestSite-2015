@@ -12,7 +12,32 @@ handlers:
   static_files: index.html
   upload: index.html
   expiration: "0d 5m"
-  
+
+- url: /logistics
+  static_files: logistics/index.html
+  upload: logistics/index.html
+  expiration: "0d 5m"
+
+- url: /schedule
+  static_files: schedule/index.html
+  upload: schedule/index.html
+  expiration: "0d 5m"
+
+- url: /speakers
+  static_files: speakers/index.html
+  upload: speakers/index.html
+  expiration: "0d 5m"
+
+- url: /cod
+  static_files: cod/index.html
+  upload: cod/index.html
+  expiration: "0d 5m"
+
+- url: /team
+  static_files: team/index.html
+  upload: team/index.html
+  expiration: "0d 5m"
+
 # re-direct to index.html
 - url: /index.html(.*)
   static_files: index.html
