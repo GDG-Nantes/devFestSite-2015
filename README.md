@@ -21,3 +21,4 @@ Example: `feat(#5): add more speakers`
 * chore: Changes to the build process or auxiliary tools and libraries such as documentation generation
 
 Use Slack for further information : #devfest
+Application available on : https://devfestnantes2015.appspot.com
