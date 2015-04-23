@@ -15,7 +15,14 @@
   "scripts": {
     "start": "node server.js"
   },
-  "dependencies": {
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-angular-templatecache": "^1.6.0",
+    "gulp-inject": "^1.2.0",
+    "gulp-minify-html": "^1.0.2",
+    "gulp-rev": "^3.0.1",
+    "gulp-usemin": "^0.3.11",
     "node-static": "0.7.6"
   }
 }

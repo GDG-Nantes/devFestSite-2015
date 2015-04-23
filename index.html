@@ -243,9 +243,11 @@
                     <div class="content-wrapper">
                         <div class="col-lg-10 col-lg-offset-1">
                             <h3>Organisateurs</h3>
-                            <ul class="list-inline">
+                            <ul class="media-list">
                                 <li>
-                                    <a href="http://gdgnantes.com" target="_blank"> <img src="/img/organizers/gdg-lviv.svg" title="GDG Nantes - Communauté geek spécialisée dans les technos Google" alt="GDG Nantes"> </a>
+                                    <a href="http://gdgnantes.com" target="_blank">
+                                        <img style="width: initial;" src="/img/logo_xs.png" title="GDG Nantes - Communauté geek spécialisée dans les technos Google" alt="GDG Nantes">
+                                    </a>
                                 </li>
                             </ul>
                             <h3>Sponsors</h3>
@@ -282,7 +284,8 @@
                                 </li>
                                 -->
                             </ul>
-                            <a href="" class="btn btn-primary waves-effect waves-button waves-light waves-float">Devenir un sponsor</a> </div>
+                            <a href="http://goo.gl/wvpHjL" class="btn btn-primary waves-effect waves-button waves-light waves-float">Télécharger le dossier de sponsoring</a>
+                        </div>
                     </div>
                 </section>
                 <!-- End Partners Section -->
@@ -293,7 +296,7 @@
                         <div class="col-lg-8 col-lg-offset-2 animated hiding" data-animation="fadeInUp" data-delay="0">
                             <h3>Inscrivez-vous à la newsLetter</h3>
                             <div id="mc_embed_signup" class="col-lg-8 col-sm-8 col-lg-offset-2 col-sm-offset-2">
-                                <form action="https://gdg.us5.list-manage1.com/subscribe/post?u=9fc8aa205b0521b5f05fc8e1e&amp;id=ae0fb459fc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <form action="{{URL_NEWSLETTER}}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                     <div class="mc-field-group col-lg-9 col-sm-9 col-xs-12"> <i class="email bordered required waves-effect waves-light waves-input-wrapper"> <input type="email" value="" name="EMAIL" class="waves-button-input" id="mce-EMAIL" placeholder="your@email.com" autocomplete="off"> </i> </div>
                                     <div id="mce-responses" class="clear">
                                         <div class="response" id="mce-error-response" style="display:none"></div>
@@ -363,9 +366,9 @@
       ga('create', 'UA-35116426-1', 'http://devfest.gdgnantes.com');
       ga('send', 'pageview');
     </script>
-    <script src="/tmp/jquery.min.js"></script>
-    <script src="/tmp/bootstrap.min.js"></script>
-    <script src="/tmp/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     <script src="/js/typed.min.js"></script>
 	<script src="/js/default.js"></script>
     <script>
@@ -433,6 +436,7 @@
 
     </script>
     <script src="/js/scripts.min.js"></script>
-
+    <!-- inject:js -->
+    <!-- endinject -->
   </body>
 </html>
