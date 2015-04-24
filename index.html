@@ -168,7 +168,7 @@
                     <div class="overlay solid-overlay"></div>
                     <div class="content-wrapper">
                         <div class="col-lg-10 col-lg-offset-1 rockstar-speakers-list">
-                            <h3 id="rockstar-speaker-title">Rockstar speakers</h3>
+                            <h3 id="rockstar-speaker-title">Highscore speakers</h3>
                             <div class="clearfix"></div> <span class="bordered"> <a href="/speakers/" class="bottom-section-link waves-effect waves-button waves-light">Voir tous les speakers</a> </span> </div>
                     </div>
                 </section>
@@ -428,6 +428,8 @@
                   animationDelay -= 500;
               }
           }
+
+          
       });
       angular.module('devfest2015', []);
     </script>
@@ -437,21 +439,21 @@
     <!-- inject:js -->
     <!-- endinject -->
     <script>
-    Waves.displayEffect();
-    if ($(window).width() > 767) {
-        var googleMaps = 'index',
-            eventPlace = new google.maps.LatLng(47.212966, -1.542565),
-            centerMap = new google.maps.LatLng(47.212966, -1.542565),
-            mobileCenterMap = new google.maps.LatLng(47.212966, -1.542565),
-            icon = '/img/other/map-marker.svg';
-    } else {
-        var staticGoogleMaps = true,
-            eventPlaceCoordinates = '47.212966,-1.542565',
-            centerMapCoordinates = '47.212966,-1.542565',
-            mobileCenterMapCoordinates = '47.212966,-1.542565',
-            icon = 'https://devfest.gdgnantes.com/img/other/map-marker.png';
-    }
-    var twitterFeedUrl = '';
+      Waves.displayEffect();
+      if ($(window).width() > 767) {
+          var googleMaps = 'index',
+              eventPlace = new google.maps.LatLng(47.212966, -1.542565),
+              centerMap = new google.maps.LatLng(47.212966, -1.542565),
+              mobileCenterMap = new google.maps.LatLng(47.212966, -1.542565),
+              icon = '/img/other/map-marker.svg';
+      } else {
+          var staticGoogleMaps = true,
+              eventPlaceCoordinates = '47.212966,-1.542565',
+              centerMapCoordinates = '47.212966,-1.542565',
+              mobileCenterMapCoordinates = '47.212966,-1.542565',
+              icon = 'https://devfest.gdgnantes.com/img/other/map-marker.png';
+      }
+      var twitterFeedUrl = '';
     </script>
      <script src="/custo/konami.js"></script>
      <script type="text/javascript">
