@@ -25,22 +25,6 @@
     <meta property="og:description" content="DevFest Nantes est une journée de conférences sur les technologies innovantes du moment" />
     <title>Don't be a jerk policy &bull; DevFest Nantes 2015</title>
     <link rel="shortcut icon" href="/img/favicons/favicon.ico">
-    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
-    <link rel="icon" type="image/png" href="/img/favicons/favicon-196x196.png">
-    <link rel="icon" type="image/png" href="/img/favicons/favicon-160x160.png">
-    <link rel="icon" type="image/png" href="/img/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
-    <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#2b5797">
     <link href="/css/main.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -61,33 +45,7 @@
                 <!-- Begin Top Section -->
                 <section id="top-section" class="top-section image-section " style="">
                     <div class="overlay gradient-overlay"></div>
-                    <header id="top-header" class="top-header">
-                        <div class="overlay white-solid"></div>
-                        <svg id="menu-trigger" class="menu-trigger icon icon-menu visible-xs" viewBox="0 0 32 32">
-                            <use xlink:href="/img/sprites/sprites.svg#icon-menu"></use>
-                        </svg>
-                        <a href="/" id="logo-header" class="logo-header">
-                            <div class="logo logo-light"></div>
-                        </a>
-                        <nav class="st-menu st-effect" id="menu">
-                            <div class="logo-navbar logo logo-dark visible-xs"></div>
-                            <ul>
-                                <li>
-                                    <a class="" href=" / ">Acceuil</a>
-                                </li>
-                                <li>
-                                    <a class="" href=" /team/ ">L'équipe</a>
-                                </li>
-                                <li>
-                                    <a class="" href=" /logistics/ ">En Pratique</a>
-                                </li>
-                            </ul>
-                            <ul id="bottom-navlinks" class="bottom-navlinks visible-xs">
-                                <li>
-                                    <a href=" https://bit.ly/dfua-c4p " target="_blank">Devenez un speaker</a>
-                                </li>
-                            </ul>
-                        </nav>
+                    <header id="top-header" class="top-header" ng-include="'/partials/top-header.html'">
                     </header>
                     <div class="content-wrapper">
                         <div class="jumbotron text-left">
@@ -105,9 +63,9 @@
                             <div class="col-lg-8 col-md-10 col-xs-12">
                                 <article class="row post">
                                     <div class="post-body">
-                                        <p><strong>Ce “code de bonne conduite" est une version courte, plus lisible d'un "Code of Conduct policy". <a href="http://meta.wikimedia.org/wiki/Don%27t_be_a_dick">Version complète</a>.</strong></p>
-                                        <p>Le GDG Nantes est fier d'être une communauté ouverte, respectant les différences et la diversité. Ceci implique que tout comportements ou propos déplacés ne sont pas accepté à nos réunions. Par ce que ce n'est pas encore évident pour tout le monde, voici un rappel de ce que nous n'accepterons pas : blagues où offenses à propos des sujets sexe/sexualité/race/religion/nationalité/poids, montrer du porno en publique, toucher une personne sans son consentement, ou continuer d'interagir avec des personnes vous ayant explicitement demander d'arrêter. Ce genre de comportements pourront nous amener à vous exclure de nos réunions et du DevFest.</p>
-                                        <p>Si quelqu'un vous indispose de cette façon, merci de contacter immédiatement les organisateurs qui s'occuperont de prendre les mesures nécessaires. Nous voulons garder le DevFest respectueux d'autrui et génial.</p>
+                                        <p><strong>Ce “code de bonne conduite" est une version courte, plus lisible qu'un "Code of Conduct policy". <a href="http://meta.wikimedia.org/wiki/Don%27t_be_a_dick">Version complète</a>.</strong></p>
+                                        <p>Le GDG Nantes est fier d'être une communauté ouverte, respectant les différences et la diversité. Ceci implique que tout comportement ou propos déplacé ne sont pas accepté à nos réunions. Pour être clair et que tout le monde comprenne, voici un rappel de ce que nous n'accepterons pas : blagues ou offenses à propos des sujets sexe / sexualité / race / religion / nationalité / morphologie, montrer du porno en publique, toucher une personne sans son consentement, ou continuer d'interagir avec des personnes vous ayant explicitement demander d'arrêter. Ce genre de comportements pourront nous amener à vous faire exclure de nos réunions et du DevFest.</p>
+                                        <p>Si quelqu'un vous indispose de cette façon, merci de contacter immédiatement les organisateurs qui s'occuperont de prendre les mesures nécessaires. Nous voulons garder le DevFest respectueux d'autrui et en faire un événement convivial.</p>
                                         <h6 id="contacts">Contacts:</h6>
                                         <ul>
                                             <li>Jean-François Garreau, +336 48 28 15 28, <a href="jef@gdgnantes.com">jef@gdgnantes.com</a></li>
