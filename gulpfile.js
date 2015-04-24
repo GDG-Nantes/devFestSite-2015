@@ -1,6 +1,7 @@
 "use strict";
 // Include gulp
 var gulp = require("gulp");
+var path = require("path");
 
 var rev = require("gulp-rev");
 var inject = require("gulp-inject");
@@ -10,27 +11,29 @@ var minifyHtml = require("gulp-minify-html");
 var del = require("del");
 
 gulp.task("ngTemplates", ["clean"], function () {
-  gulp.src("partials/*.html")
-    .pipe(templateCache("ngTemplates.js", {module: "devfest2015"}))
-    .pipe(gulp.dest("js"));
+  return gulp.src("./partials*/**.html")
+    .pipe(templateCache("ngTemplates.js", {module: "devfest2015", root: "/"}))
+    .pipe(rev())
+    .pipe(gulp.dest("dist/js"));
 });
 
 gulp.task("clean", function () {
-  del([
+  return del.sync([
     ".tmp",
-    "dist"
+    "dist/**"
   ]);
 });
 
 gulp.task("copy", ["clean", "ngTemplates"], function () {
-  gulp.src(["index.html", "app.yaml", "partials/**", "team/**", "speakers/**", "schedule/**", "cod/**", "logistics/**", "js/**", "img/**", "css/**"], { "base" : "." })
+  return gulp.src(["index.html", "app.yaml", "robots.txt", "sitemap.xml", "team/**", "speakers/**", "schedule/**", "cod/**", "logistics/**", "js/**", "img/**", "css/**"], { "base" : "." })
     .pipe(gulp.dest("dist"));
 });
 
-gulp.task("usemin", ["clean", "copy", "ngTemplates"], function () {
-  return gulp.src("dist/index.html")
-    .pipe(inject(gulp.src(["js/ngTemplates.js"], {cwd: "dist", read: false, relative: true})))// add templates.js in index.html
-    .pipe(usemin({
+gulp.task("rev", ["clean", "copy", "ngTemplates"], function () {
+  process.chdir(path.join(__dirname, "dist"));
+  return gulp.src("./**/index.html")
+    .pipe(inject(gulp.src(["./js/ngTemplates-*.js"], {read: false, relative: true})))// add ngTemplates.js in index.html
+    /*.pipe(usemin({
       css: [
         rev()
       ],
@@ -40,9 +43,19 @@ gulp.task("usemin", ["clean", "copy", "ngTemplates"], function () {
       js: [
         rev()
       ]
-    }))
-    .pipe(gulp.dest("dist"));
+    }))*/
+    .pipe(gulp.dest("."));
+});
+
+gulp.task("cleanAfter", ["rev"], function () {
+  /*return del.sync([
+    "js/default.js",
+    "js/scripts.min.js",
+    "js/typed.min.js",
+    "js/ngTemplates**.js",
+    "css/main.css"
+  ]);*/
 });
 
 /* Default task */
-gulp.task("default", ["usemin"]);
+gulp.task("default", ["cleanAfter"]);
