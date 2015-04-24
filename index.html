@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="en" ng-app>
+<!DOCTYPE html>
+<html lang="en" ng-app="devfest2015">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <meta name="author" content="Team @ GDG Nantes">
     <meta name="description" content="Le DevFest Nantes 2015 est une journée de conférence accueillant 600 développeurs à la cité des congrès de nantes">
     <meta name="keywords" content="event, gdg, devfest, google, programming, android, chrome, developers, nantes">
-    <meta name="google-site-verification" content="" />
+    <meta name="google-site-verification" content="4EEgOZ6RmVM4YVw1QNw-f8JuKIaHaDJ4HKLNRtfdntM" />
     <link rel="canonical" href="http://devfest.gdgnantes.com">
     <!-- Social: Twitter -->
     <meta name="twitter:card" content="summary">
@@ -47,7 +47,7 @@
 				  </h1>
                   <p>6 Novembre 2015</p>
                    <!--
-				   <a href=" https://bit.ly/dfua-c4p " class="btn btn-primary waves-effect waves-button waves-light waves-float" target="_blank">Devenez un speaker</a>
+				   <a href="  " class="btn btn-primary waves-effect waves-button waves-light waves-float" target="_blank">Devenez un speaker</a>
                    <a href=" /#tickets " class="btn btn-primary waves-effect waves-button waves-light waves-float">Acheter mon billet</a>
 					-->
 				</div>
@@ -373,8 +373,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-    <script src="/js/typed.min.js"></script>
-	<script src="/js/default.js"></script>
     <script>
       if ($(window).width() > 767) {
           document.write('<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"><\/script>')
@@ -421,7 +419,14 @@
               }
           }
       });
-    </script> <script>
+      angular.module('devfest2015', []);
+    </script>
+    <script src="/js/typed.min.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/scripts.min.js"></script>
+    <!-- inject:js -->
+    <!-- endinject -->
+    <script>
     Waves.displayEffect();
     if ($(window).width() > 767) {
         var googleMaps = 'index',
@@ -436,11 +441,7 @@
             mobileCenterMapCoordinates = '47.212966,-1.542565',
             icon = 'https://devfest.gdgnantes.com/img/other/map-marker.png';
     }
-    var twitterFeedUrl = 'http://lviv.gdg.org.ua/tweetledee/favoritesjson.php?c=10&cache_interval=8000';
-
+    var twitterFeedUrl = '';
     </script>
-    <script src="/js/scripts.min.js"></script>
-    <!-- inject:js -->
-    <!-- endinject -->
   </body>
 </html>
