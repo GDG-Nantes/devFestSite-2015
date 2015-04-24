@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Visitor';
+    src: url('../custo/fonts/visitor1.ttf');
+}
+
+
+body{
+	font-family:"Visitor" !important
+}

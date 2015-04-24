@@ -25,8 +25,10 @@
     <title>DevFest Nantes 2015</title>
     <link rel="shortcut icon" href="/img/favicons/favicon.ico">
     <link href="/css/main.css" rel="stylesheet">
+    <link href="/custo/custo.css" rel="stylesheet">
     <meta name="theme-color" content="#2b5797">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+    
 </head>
   <body>
     <div id="preloader" class="preloader">
@@ -37,21 +39,27 @@
         <div class="st-content">
           <!-- Begin Hero Section -->
           <section id="top-section-hero" class="top-section-hero top-section image-section" style="background-image: url('/img/sections-background/hero.jpg');">
+
             <header id="top-header" class="top-header" ng-include="'/partials/top-header.html'">
             </header>
-            <div class="content-wrapper">
+            <div class="content-wrapper" style="padding-bottom:200px">
               <div class="jumbotron">
+                
                 <div class="animated hiding" data-animation="fadeInDown" data-delay="500">
                   <h1>DevFest <span id="typeout-text" class="hidden-xs"></span>
-					  <span class="typeout-fallback">Nantes 2015</span>
+					  <span class="typeout-fallback">Nantes 2015</span>     
+             <p>6 Novembre 2015</p>       
 				  </h1>
-                  <p>6 Novembre 2015</p>
+                 
                    <!--
 				   <a href="  " class="btn btn-primary waves-effect waves-button waves-light waves-float" target="_blank">Devenez un speaker</a>
                    <a href=" /#tickets " class="btn btn-primary waves-effect waves-button waves-light waves-float">Acheter mon billet</a>
-					-->
+					
+          -->
 				</div>
+           
               </div>
+           
               <a href="#about" class="explore">
                 <svg class="icon icon-arrow-down" viewBox="0 0 32 32">
                   <use xlink:href="/img/sprites/sprites.svg#icon-arrow-down"></use>
@@ -133,8 +141,10 @@
               </div>
             </div>
           </section>
-          <!-- End Statistic Section --> <!-- Begin Latest News Section -->
-          <!--<section id="latest-news" class="latest-news">
+          <!-- End Statistic Section --> 
+
+          <!-- Begin Latest News Section -->
+          <section id="latest-news" class="latest-news"> 
             <div class="content-wrapper">
               <div class="col-lg-10 col-lg-offset-1">
                 <h3>Dernières news</h3>
@@ -151,9 +161,9 @@
               </div>
             </div>
           </section>
-		  -->
           <!-- End Latest News Section -->
-          <!-- Begin Rockstar Speakers Section
+          
+          <!-- Begin Rockstar Speakers Section -->
                 <section id="rockstar-speakers" class="rockstar-speakers image-section parallax" style="background-image: url(/img/sections-background/rockstar-speakers.jpg);">
                     <div class="overlay solid-overlay"></div>
                     <div class="content-wrapper">
@@ -162,7 +172,7 @@
                             <div class="clearfix"></div> <span class="bordered"> <a href="/speakers/" class="bottom-section-link waves-effect waves-button waves-light">Voir tous les speakers</a> </span> </div>
                     </div>
                 </section>
-				-->
+				
                 <!-- End Rockstar Speakers Section -->
                 <!-- Begin Location Section -->
                 <section id="location-map" class="location-map">
@@ -443,5 +453,34 @@
     }
     var twitterFeedUrl = '';
     </script>
+     <script src="/custo/konami.js"></script>
+     <script type="text/javascript">
+        var easter_egg = new Konami(function() { 
+          $('#myModal').on('shown.bs.modal', function () {
+            $('#game').focus()
+          }).modal({
+            keyboard: true,
+            show: true
+          });
+
+        });
+     </script>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div   class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Soyez prêt pour le Devfest...</h4>
+            </div>
+            <div class="modal-body" style="background-color:black;text-align:center">
+                <iframe id="game" class="right" width="400px" height="400px" style="border:0px"src="./custo/pacman/index.htm">
+                </iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
   </body>
 </html>

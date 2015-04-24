@@ -25,6 +25,8 @@
     <title>En Pratique - DevFest Nantes 2015</title>
     <link rel="shortcut icon" href="/img/favicons/favicon.ico">
     <link href="/css/main.css" rel="stylesheet">
+    <link href="../custo/custo.css" rel="stylesheet">
+
     <meta name="theme-color" content="#2b5797">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 </head><body>
@@ -35,8 +37,8 @@
         <div class="st-pusher">
             <div class="st-content">
                 <!-- Begin Top Section -->
-                <section id="top-section" class="top-section image-section " style="">
-                    <div class="overlay gradient-overlay"></div>
+                <section id="top-section" class="top-section image-section "  style="background-image: url('../img/sections-background/logistics.jpg');">
+                    <div class="overlay solid-overlay"></div>
                     <header id="top-header" class="top-header" ng-include="'/partials/top-header.html'">
                     </header>
                     <div class="content-wrapper">
@@ -185,6 +187,36 @@
     <script src="/js/scripts.min.js"></script>
     <!-- inject:js -->
     <!-- endinject -->
+
+    <script src="../custo/konami.js"></script>
+     <script type="text/javascript">
+        var easter_egg = new Konami(function() { 
+          $('#myModal').on('shown.bs.modal', function () {
+            $('#game').focus()
+          }).modal({
+            keyboard: true,
+            show: true
+          });
+
+        });
+     </script>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div   class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Soyez prêt pour le Devfest...</h4>
+            </div>
+            <div class="modal-body" style="background-color:black;text-align:center">
+                <iframe id="game" class="right" width="400px" height="400px" style="border:0px"src="../custo/invaders/index.html">
+                </iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
 </body>
 
 </html>
