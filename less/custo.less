@@ -1,5 +1,38 @@
 @test : red;
 
-body{
-	color: @test;
+#team{
+
+	.zoe-effect figcaption h2 {
+		color: #3c4a50;
+		font-size: 15px;
+
+		span:before{
+			content: '\A';
+			white-space: pre;
+		}
+	}
+
+	.zoe-effect:hover figcaption h2 span:before{
+		content:'';
+	}
+
+	.organizer-gdg{
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+
+
+@media screen and (max-width:767px){
+	#team{
+
+		.zoe-effect figcaption h2 {			
+
+			span:before{
+				content: '';
+			}
+		}
+
+	}	
 }
