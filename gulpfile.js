@@ -65,7 +65,7 @@ gulp.task('serve',  ['less'], function(){
     server:'./'
   });
   gulp.watch("less/**/*.less", ['less']);
-  gulp.watch("**.html").on('change', reload);
+  gulp.watch("./**/*.html").on('change', reload);
 });
 
 gulp.task('less',function(){
