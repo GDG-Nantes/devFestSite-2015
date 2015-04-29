@@ -26,6 +26,8 @@
     "node-static": "0.7.6"
   },
   "dependencies": {
+    "browser-sync": "^2.6.9",
+    "gulp-less": "^3.0.3",
     "less": "^2.5.0"
   }
 }

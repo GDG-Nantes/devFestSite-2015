@@ -2,6 +2,9 @@
 // Include gulp
 var gulp = require("gulp");
 var path = require("path");
+var browserSync = require("browser-sync").create();
+var less = require("gulp-less");
+var reload = browserSync.reload;
 
 var rev = require("gulp-rev");
 var inject = require("gulp-inject");
@@ -55,6 +58,23 @@ gulp.task("cleanAfter", ["rev"], function () {
     "js/ngTemplates**.js",
     "css/main.css"
   ]);*/
+});
+
+gulp.task('serve',  ['less'], function(){
+  browserSync.init({
+    server:'./'
+  });
+  gulp.watch("less/**/*.less", ['less']);
+  gulp.watch("**.html").on('change', reload);
+});
+
+gulp.task('less',function(){
+  return gulp.src('less/**/*.less')
+    .pipe(less({
+      paths: [path.join(__dirname, 'less', 'includes')]
+    }))
+    .pipe(gulp.dest('./custo'))
+    .pipe(reload({stream:true}));
 });
 
 /* Default task */
