@@ -28,6 +28,7 @@
   "dependencies": {
     "browser-sync": "^2.6.9",
     "gulp-less": "^3.0.3",
+    "gulp-sourcemaps": "^1.5.2",
     "less": "^2.5.0"
   }
 }

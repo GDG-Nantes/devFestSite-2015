@@ -1,6 +1,7 @@
 "use strict";
 // Include gulp
 var gulp = require("gulp");
+var sourcemaps = require("gulp-sourcemaps")
 var path = require("path");
 var browserSync = require("browser-sync").create();
 var less = require("gulp-less");
@@ -71,9 +72,11 @@ gulp.task('serve',  ['less'], function(){
 
 gulp.task('less',function(){
   return gulp.src('less/**/*.less')
+    .pipe(sourcemaps.init())
     .pipe(less({
       paths: [path.join(__dirname, 'less', 'includes')]
     }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./custo'))
     .pipe(reload({stream:true}));
 });
