@@ -28,7 +28,7 @@ gulp.task("clean", function () {
 });
 
 gulp.task("copy", ["clean", "ngTemplates"], function () {
-  return gulp.src(["index.html", "app.yaml", "robots.txt", "sitemap.xml", "team/**", "speakers/**", "schedule/**", "cod/**", "logistics/**", "js/**", "img/**", "css/**"], { "base" : "." })
+  return gulp.src(["index.html", "app.yaml", "robots.txt", "sitemap.xml", "team/**", "speakers/**", "schedule/**", "cod/**", "logistics/**", "js/**", "img/**", "css/**", "custo/**"], { "base" : "." })
     .pipe(gulp.dest("dist"));
 });
 
@@ -66,6 +66,7 @@ gulp.task('serve',  ['less'], function(){
   });
   gulp.watch("less/**/*.less", ['less']);
   gulp.watch("./**/*.html").on('change', reload);
+  gulp.watch("./js/*.js").on('change', reload);
 });
 
 gulp.task('less',function(){
