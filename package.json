@@ -24,5 +24,11 @@
     "gulp-rev": "^3.0.1",
     "gulp-usemin": "^0.3.11",
     "node-static": "0.7.6"
+  },
+  "dependencies": {
+    "browser-sync": "^2.6.9",
+    "gulp-less": "^3.0.3",
+    "gulp-sourcemaps": "^1.5.2",
+    "less": "^2.5.0"
   }
 }

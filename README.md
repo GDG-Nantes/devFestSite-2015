@@ -1,4 +1,4 @@
-# DevFest site 2015
+# DevFest site 2015 [ ![Codeship Status for GDG-Nantes/devFestSite-2015](https://codeship.com/projects/3af878d0-d194-0132-1723-16c1124d299d/status?branch=master)](https://codeship.com/projects/77346)
 
 Based on https://github.com/gdg-x/zeppelin
 
@@ -6,6 +6,7 @@ Based on https://github.com/gdg-x/zeppelin
 
 * use `npm install` to install node-static
 * launch with `npm start` to run on localhost:8080
+* Or `gulp serve` with watch files
 
 #Commit message convention
 

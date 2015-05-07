@@ -1,7 +1,11 @@
 "use strict";
 // Include gulp
 var gulp = require("gulp");
+var sourcemaps = require("gulp-sourcemaps")
 var path = require("path");
+var browserSync = require("browser-sync").create();
+var less = require("gulp-less");
+var reload = browserSync.reload;
 
 var rev = require("gulp-rev");
 var inject = require("gulp-inject");
@@ -25,7 +29,7 @@ gulp.task("clean", function () {
 });
 
 gulp.task("copy", ["clean", "ngTemplates"], function () {
-  return gulp.src(["index.html", "app.yaml", "robots.txt", "sitemap.xml", "team/**", "speakers/**", "schedule/**", "cod/**", "logistics/**", "js/**", "img/**", "css/**"], { "base" : "." })
+  return gulp.src(["index.html", "app.yaml", "robots.txt", "sitemap.xml", "team/**", "speakers/**", "schedule/**", "cod/**", "logistics/**", "js/**", "img/**", "css/**", "custo/**"], { "base" : "." })
     .pipe(gulp.dest("dist"));
 });
 
@@ -55,6 +59,26 @@ gulp.task("cleanAfter", ["rev"], function () {
     "js/ngTemplates**.js",
     "css/main.css"
   ]);*/
+});
+
+gulp.task('serve',  ['less'], function(){
+  browserSync.init({
+    server:'./'
+  });
+  gulp.watch("less/**/*.less", ['less']);
+  gulp.watch("./**/*.html").on('change', reload);
+  gulp.watch("./js/*.js").on('change', reload);
+});
+
+gulp.task('less',function(){
+  return gulp.src('less/**/*.less')
+    .pipe(sourcemaps.init())
+    .pipe(less({
+      paths: [path.join(__dirname, 'less', 'includes')]
+    }))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./custo'))
+    .pipe(reload({stream:true}));
 });
 
 /* Default task */
