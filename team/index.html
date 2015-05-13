@@ -30,9 +30,7 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 </head>
 <body>
-    <div id="preloader" class="preloader">
-      <div class="loader-gplus"></div>
-    </div>
+    <div id="loader" ng-include="'/partials/loader.html'"></div>
     <div id="st-container" class="st-container disable-scrolling">
       <div class="st-pusher">
         <div class="st-content">
@@ -306,7 +304,7 @@
       angular.module('devfest2015', []);
     </script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s); js.id=id;js.async=true;js.src="https://a248.e.akamai.net/secure.meetupstatic.com/s/script/541522619002077648/api/mu.btns.js?id=6unnv7qhbl42432jp2ejv38klu";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","mu-bootjs");</script>
-    <script src="/js/scripts.min.js"></script>
+    <script src="/js/scripts.js"></script>
     <!-- inject:js -->
     <!-- endinject -->
 
