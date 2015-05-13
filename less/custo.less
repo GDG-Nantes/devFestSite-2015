@@ -92,3 +92,51 @@ h1, h2, h3, h4, h5, h6, .retro{
 
 	}	
 }
+
+/*
+ Youtube Player
+*/
+
+
+.embed-container { 
+	  position: absolute;
+  /* padding-bottom: 32.25%; */
+  /* margin: auto; */
+  /* height: 0; */
+  bottom: 30px;
+  margin-left: -22%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  max-height: 40%;
+  max-width: 45%;
+} 
+.embed-container iframe, .embed-container object, .embed-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%;
+}
+
+.btn-youtube-teaser{
+	display: none;
+}
+
+@media screen and (orientation:portrait){
+	.embed-container { 
+	  max-height: 35%;
+	  max-height: 35vw;
+	} 
+}
+
+@media screen and (max-width:767px){
+	.embed-container { 
+		display: none;
+	}
+
+	.btn-youtube-teaser{
+		display: block;
+	}
+}
