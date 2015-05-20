@@ -2,8 +2,9 @@
     $(document).ready(function() {
         $(window).load(function() {
             $('#st-container').removeClass('disable-scrolling');
+            $('#st-container')[0].style.display = '';
             $('#loading-animation').fadeOut();
-            $('#parent-loader').delay(350).fadeOut(800);
+            $('#loader').delay(350).fadeOut(800);
             initGooglePlus();
             equalheight('.same-height');
         });
