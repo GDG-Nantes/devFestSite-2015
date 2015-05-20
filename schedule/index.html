@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" ng-app="devfest2015">
 
 <head>
@@ -23,17 +23,17 @@
     <meta property="og:url" content="http://devfest.gdgnantes.com" />
     <meta property="og:image" content="http://devfest.gdgnantes.com/img/seo/sharing-facebook.png" />
     <meta property="og:description" content="Le DevFest Nantes 2015 est une journée de conférence accueillant 600 développeurs à la cité des congrès de nantes" />
+    <!--Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,100,300' rel='stylesheet' type='text/css'>
     <title>Agenda - DevFest Nantes 2015</title>
     <link rel="shortcut icon" href="/img/favicons/favicon.ico">
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="/custo/main.css" rel="stylesheet">
     <link href="/custo/custo.css" rel="stylesheet">
     <meta name="theme-color" content="#2b5797">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 </head><body>
-    <div id="preloader" class="preloader">
-        <div class="loader-gplus"></div>
-    </div>
-    <div id="st-container" class="st-container disable-scrolling">
+    <div id="loader" ng-include="'/partials/loader.html'"></div>
+    <div id="st-container" class="st-container disable-scrolling"  style="display:none;">
         <div class="st-pusher">
             <div class="st-content">
                 <!-- Begin Top Section -->
@@ -428,7 +428,7 @@
     Waves.displayEffect();
     angular.module('devfest2015', []);
     </script>
-    <script src="/js/scripts.min.js"></script>
+    <script src="/js/scripts.js"></script>
     <!-- inject:js -->
     <!-- endinject -->
     <script type="text/javascript">

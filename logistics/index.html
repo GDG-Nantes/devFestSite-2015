@@ -22,22 +22,22 @@
     <meta property="og:url" content="http://devfest.gdgnantes.com" />
     <meta property="og:image" content="http://devfest.gdgnantes.com/img/seo/sharing-facebook.png" />
     <meta property="og:description" content="Le DevFest Nantes 2015 est une journée de conférence accueillant 600 développeurs à la cité des congrès de nantes" />
+    <!--Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,100,300' rel='stylesheet' type='text/css'>
     <title>En Pratique - DevFest Nantes 2015</title>
     <link rel="shortcut icon" href="/img/favicons/favicon.ico">
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="/custo/main.css" rel="stylesheet">
     <link href="/custo/custo.css" rel="stylesheet">
     <meta name="theme-color" content="#2b5797">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 </head><body>
-    <div id="preloader" class="preloader">
-        <div class="loader-gplus"></div>
-    </div>
-    <div id="st-container" class="st-container disable-scrolling">
+    <div id="loader" ng-include="'/partials/loader.html'"></div>
+    <div id="st-container" class="st-container disable-scrolling"  style="display:none;">
         <div class="st-pusher">
             <div class="st-content">
                 <!-- Begin Top Section -->
-                <section id="top-section" class="top-section image-section " style="">
-                    <div class="overlay gradient-overlay"></div>
+                <section id="top-section" class="top-section image-section "  style="background-image: url('../img/sections-background/logistics.jpg');">
+                    <div class="overlay solid-overlay"></div>
                     <header id="top-header" class="top-header" ng-include="'/partials/top-header.html'">
                     </header>
                     <div class="content-wrapper">
@@ -91,8 +91,8 @@
                 <!-- Begin Direction Details-->
                 <section id="direction-details" class="direction-details">
                     <div class="content-wrapper">
-                        <section class="image-section standart-height" style="background-image: url('/img/sections-background/direction-details.jpg');">
-                            <h3 style="margin-top: 150px;">Venir à Nantes</h3>
+                        <section class="image-section standart-height" style="background-image: url('/img/sections-background/logistics.old.jpg');">
+                            <h3 style="margin-top: 150px; color:black;">Venir à Nantes</h3>
                         </section>
                         <div class="row">
                             <div class="col-lg-10 col-lg-offset-1 text-left">
@@ -121,8 +121,7 @@
                                         <h4>En voiture</h4>
                                         <p>La Cité des Congrès étant en plein centre ville, nous préconisons aux automobilistes de se garer sur un parking relais tram ou un parking payant.
                                         <br> La Cité des Congrès propose un <a href='http://www.parkings-nantes.fr/fr/stationner' target='_blank'>parking payant</a> de 450 places.
-                                        <br> Pour voir les disponibilités des parkings en temps réel : <a href='http://parking-nantes.com/' target='_blank'>http://parking-nantes.com/</a>
-                                        <br> Liste des parkings relais : <a href='https://www.tan.fr/adminsite/objetspartages/liste_fichiergw.jsp?OBJET=DOCUMENT&CODE=1232704326125&LANGUE=0' target='_blank'>carte.pdf</a> ou directement sur le site de la <a href='https://www.tan.fr/jsp/fiche_pagelibre.jsp?CODE=07774142&LANGUE=0' target='_blank'>Tan</a>.</p>
+                                        <br> Liste des parkings relais : <a href='https://www.tan.fr/adminsite/objetspartages/liste_fichiergw.jsp?OBJET=DOCUMENT&CODE=1232704326125&LANGUE=0' target='_blank'>carte.pdf</a> ou sur le site de la <a href='https://www.tan.fr/jsp/fiche_pagelibre.jsp?CODE=07774142&LANGUE=0' target='_blank'>Tan</a>.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-xs-12 animated hiding" data-animation="fadeInDown" data-delay="0">
@@ -131,14 +130,14 @@
                                         <div class="col-md-6 col-xs-12">
                                             <h5>Hotels</h5>
                                             <ul>
-                                                <li><a href="http://www.residhome.com/" target="_blank">Résid Home <br/>(code de réduction DevFest2015)</a></li>
+                                                <li data-toggle="modal" data-target="#infosHotel"><a href="" target="_blank">Résid Home <br/>(code de réduction DevFest2015)</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-md-6 col-xs-12">
                                             <h5>Inscriptions</h5>
-                                            <ul>
+                                            <!--<ul>
                                                 <li data-toggle="modal" data-target="#infosCPF"><a href="" target="_blank">Informations CPF</a></li>
-                                            </ul>
+                                            </ul>-->
                                         </div>
                                     </div>
                                 </div>
@@ -154,7 +153,10 @@
             </div>
         </div>
     </div>
+    <!--Begin Modals -->
     <div class="modals" class="modals">
+        <!--Begin CPF Modal -->
+        <!--
         <div class="modal fade text-justify" id="infosCPF" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog" style="margin-top: 40px;">
                 <div class="modal-content">
@@ -168,11 +170,12 @@
                         <div class="row">
                             <div class="col-md-12 col-sm-12 details">
                                 <h5 class="text-center">Informations CPF</h5><br>
-                                <strong>Le DevFest est-il éligible au CPF ?</strong>
+
+                                <h6>Le DevFest est-il éligible au CPF ?</h6>
                                 <p class="about" style="font-size: 13px;">Le DevFest est éligible au CPF : vous pouvez faire prendre en charge votre crédit temps "formation continue". Les frais sont à payer directement par l'entreprise participante, pas de subrogation OPCA acceptée. OPCA quoi ? En clair, cela signifie que le prix d'entrée du DevFest ne pourra pas être remboursé dans le cadre du CPF. Votre société (ou vous-même) devra prendre ces frais à sa charge. Seul le crédit temps peut être utilisé.</p>
-                                <strong>Que dois-je faire ?</strong>
+                                <h6>Que dois-je faire ?</h6>
                                 <p class="about" style="font-size: 13px;">Lors de l'inscription, le participant souhaitant utiliser son CPF devra cocher la case "CPF" et donner l'email du responsable des formations dans sa société. Cette personne recevra les justificatifs de présence.</p>
-                                <strong>Besoin d'une convention ?</strong>
+                                <h6>Besoin d'une convention ?</h6>
                                 <p class="about" style="font-size: 13px;">Une convention peut être établie entre la société du participant et SQLI. Il faudra fournir les informations suivantes lors de l'établissement de la convention :
                                 </p>
                                 <ul>
@@ -198,7 +201,38 @@
                 </div>
             </div>
         </div>
+        -->
+        <!--End CPF Modal -->
+        <!--Begin Hotel Modal -->
+        <div class="modal fade text-justify" id="infosHotel" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" style="margin-top: 40px;">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="close">
+                            <svg class="icon icon-cross" viewBox="0 0 32 32">
+                                <use xlink:href="/img/sprites/sprites.svg#icon-cross"></use>
+                            </svg>
+                            <div class="close-mask" data-dismiss="modal"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 details">
+                                <h5 class="text-center">Informations Hôtel</h5><br>
+                                <h6>Hôtel Résid'Home</h6>
+                                <p class="about" style="font-size: 13px;"> 
+                                    3 allée Jacques Berque<br>
+                                    44000 Nantes<br>
+                                    Situé juste en face de la Cité des Congrès, le Residhome <em>les Berges de la Loire</em> vous propose des tarifs négociés avec le code <b>« DevFest2015 »</b>.<ul><li><b>82€</b> la nuit du 5 au 6 novembre 2015</li><li><b>66€</b> la nuit du 6 au 7 novembre 2016</li></ul>
+                                    Réservation : <a href="mailto:morgane.baudry@reside-etudes.fr">morgane.baudry@reside-etudes.fr</a> ou (+33)2 40 99 07 20
+                                </p>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End CPF Modal -->
     </div>
+    <!--End Modals -->
     <script>
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -228,9 +262,39 @@
         icon = '/img/other/map-marker.svg';
     angular.module('devfest2015', []);
     </script>
-    <script src="/js/scripts.min.js"></script>
+    <script src="/js/scripts.js"></script>
     <!-- inject:js -->
     <!-- endinject -->
+
+    <script src="../custo/konami.js"></script>
+     <script type="text/javascript">
+        var easter_egg = new Konami(function() { 
+          $('#myModal').on('shown.bs.modal', function () {
+            $('#game').focus()
+          }).modal({
+            keyboard: true,
+            show: true
+          });
+
+        });
+     </script>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div   class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Soyez prêt pour le Devfest...</h4>
+            </div>
+            <div class="modal-body" style="background-color:black;text-align:center">
+                <iframe id="game" class="right" width="400px" height="400px" style="border:0px"src="../custo/invaders/index.html">
+                </iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
 </body>
 
 </html>

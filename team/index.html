@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html> 
+<!DOCTYPE html> 
 <html lang="en" ng-app="devfest2015">
 <head>
     <meta charset="utf-8">
@@ -22,18 +22,18 @@
     <meta property="og:url" content="http://devfest.gdgnantes.com" />
     <meta property="og:image" content="http://devfest.gdgnantes.com/img/seo/sharing-facebook.png" />
     <meta property="og:description" content="Le DevFest Nantes 2015 est une journée de conférence accueillant 600 développeurs à la cité des congrès de nantes" />
+    <!--Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,100,300' rel='stylesheet' type='text/css'>
     <title>L'équipe - DevFest Nantes 2015</title>
     <link rel="shortcut icon" href="/img/favicons/favicon.ico">
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="/custo/main.css" rel="stylesheet">
     <link href="/custo/custo.css" rel="stylesheet"> 
     <meta name="theme-color" content="#2b5797">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 </head>
 <body>
-    <div id="preloader" class="preloader">
-      <div class="loader-gplus"></div>
-    </div>
-    <div id="st-container" class="st-container disable-scrolling">
+    <div id="loader" ng-include="'/partials/loader.html'"></div>
+    <div id="st-container" class="st-container disable-scrolling" style="display:none;">
       <div class="st-pusher">
         <div class="st-content">
           <!-- Begin Top Section --> 
@@ -55,53 +55,56 @@
               <div class="content-wrapper">
                   <div class="col-lg-10 col-lg-offset-1">
                       <h3>A propos</h3>
-                      <p class="animated hiding" data-animation="fadeInUp" data-delay="0">
-                        Les Google Developer Groups (GDGs) sont des groupes de développeurs intéressés par les technologies Google : GWT, Android, App Engine, les APIs Google, mais également les technologies du Web comme HTML5, CSS3... Nous nous intéressons à tout type de technologie que ce soit dans le domaine de la mobilité, du cloud ou du web.
-                      </p>
-                      <h4>Le GDG Nantes</h4>
-                      <div class="animated hiding" data-animation="fadeInUp" data-delay="0">
-                        <p>
-                        L’objectif du GDG Nantes est d’organiser des évènements une fois par mois :
-                        </p>
-                        <ul class="media-list">
-                            <li>Des conférences sur les technologies Google, Web...</li>
-                            <li>Des apéros ;) autour de sujets centraux afin de se rencontrer et boire un verre ensemble,</li>
-                            <li>Des codelabs pour apprendre concrètement et techniquement sur les technologies,</li>
-                            <li>Des concours (Hackathon, concours de code ou d'algorithmie...)</li>
-                            <li>Des retransmissions vidéo d'évènements majeurs : conférence US, Keynote</li>
-                        </ul>
-                        <p>
-                          Le GDG Nantes est également partenaire d’évènements nationaux ou d'autres communautés tels que les JUGs.
-                        </p>
-                        <p>
-                          Pour nous suivre, inscrivez-vous sur notre meetup :
-                          <a href="http://www.meetup.com/GDG-Nantes/events/222042237/" data-event="222042237" class="mu-rsvp-btn">RSVP</a>
-                        </p>
-                      </div>
-                      <h4>NantesTech</h4>
-                      <p class="animated hiding" data-animation="fadeInUp" data-delay="0">
-                        L’ensemble du milieu nantais des nouvelles technologies se voit désormais proposer des
-                        <!--<br>-->
-                        événements réguliers, conviviaux, fait de conférences, d’échanges et d’essais, autour d’un
-                        <!--<br>-->
-                        leader incontournable des nouvelles technologies : <strong>Google</strong>.
-                        <br>
-                        Ces événements, réalisés par des passionnés de nouvelles technologies du Web, du Cloud et des Objets Connectés, à
-                        <!--<br>-->
-                        destination de passionnés, ont pour objectifs de renforcer l’essor technologique de l'Ouest, de
-                        <!--<br>-->
-                        participer au dynamisme professionnel local, et de faire de Nantes un pôle de compétences
-                        <!--<br>-->
-                        nationalement reconnu dans le domaine des nouvelles technologies.
-                        <br>
-                        Labellisée parmi les premières villes du dispositif Frenchtech,
-                        la ville de Nantes est un des écosystèmes les plus
-                        dynamiques de France en matière d’innovation web
-                        et numérique.
+                      <p class="text-justify animated hiding" data-animation="fadeInUp" data-delay="0" >Les Google Developer Groups (GDGs) sont des groupes de développeurs intéressés par les technologies Google : GWT, Android, App Engine, les APIs Google, mais également les technologies du Web comme HTML5, CSS3... Nous nous intéressons à tout type de technologie que ce soit dans le domaine de la mobilité, du cloud ou du web.
                       </p>
 
+                      <h4>Le GDG Nantes</h4>
+                         
+                      <div class="text-justify animated hiding" data-animation="fadeInUp" data-delay="0">
+                        <div class="card questions">
+                          
+                           L’objectif du GDG Nantes est d’organiser des évènements une fois par mois :
+                            <ul>
+                                <li>Des conférences sur les technologies Google, Web...</li>
+                                <li>Des apéros ;) autour de sujets centraux afin de se rencontrer et boire un verre ensemble,</li>
+                                <li>Des codelabs pour apprendre concrètement et techniquement sur les technologies,</li>
+                                <li>Des concours (Hackathon, concours de code ou d'algorithmie...)</li>
+                                <li>Des retransmissions vidéo d'évènements majeurs : conférence US, Keynote</li>
+                            </ul>
+                            <br>Le GDG Nantes est également partenaire d’évènements nationaux ou d'autres communautés tels que les JUGs.
+                            <br><br>
+                            <p>Pour nous suivre, inscrivez-vous sur notre meetup :
+                            <a href="http://www.meetup.com/GDG-Nantes/events/222042237/" data-event="222042237" class="mu-rsvp-btn">RSVP</a>
+                            </p>
+                        </div>
+                      </div>
+                      
+                      <h4>NantesTech</h4>
+                          
+                      <div class="card text-justify animated hiding" data-animation="fadeInUp" data-delay="0">
+                        <p>
+                              L’ensemble du milieu nantais des nouvelles technologies se voit désormais proposer des
+                              <!--<br>-->
+                              événements réguliers, conviviaux, fait de conférences, d’échanges et d’essais, autour d’un
+                              <!--<br>-->
+                              leader incontournable des nouvelles technologies : <strong>Google</strong>.
+                              <br>
+                              Ces événements, réalisés par des passionnés de nouvelles technologies du Web, du Cloud et des Objets Connectés, à
+                              <!--<br>-->
+                              destination de passionnés, ont pour objectifs de renforcer l’essor technologique de l'Ouest, de
+                              <!--<br>-->
+                              participer au dynamisme professionnel local, et de faire de Nantes un pôle de compétences
+                              <!--<br>-->
+                              nationalement reconnu dans le domaine des nouvelles technologies.
+                              <br>
+                              Labellisée parmi les premières villes du dispositif Frenchtech,
+                              la ville de Nantes est un des écosystèmes les plus
+                              dynamiques de France en matière d’innovation web
+                              et numérique.
+                        </p>
+                      </div>
                   </div>
-                  <div class="col-lg-10 col-lg-offset-1 text-center">
+                  <div class="col-lg-10 col-lg-offset-1 text-center retro">
                       <h4 class="text-left animated hiding appear-animation-trigger" data-animation="fadeInUp" data-delay="0">Organisateurs</h4>
                       <div class="effect-wrapper col-md-4 col-sm-6 col-xs-12 cols-centered appear-animation">
                           <div class="zoe-effect" data-toggle="modal" data-target="#speakerDetail-0">
@@ -303,8 +306,10 @@
       angular.module('devfest2015', []);
     </script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s); js.id=id;js.async=true;js.src="https://a248.e.akamai.net/secure.meetupstatic.com/s/script/541522619002077648/api/mu.btns.js?id=6unnv7qhbl42432jp2ejv38klu";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","mu-bootjs");</script>
-    <script src="/js/scripts.min.js"></script>
+    <script src="/js/scripts.js"></script>
     <!-- inject:js -->
     <!-- endinject -->
+
+    
   </body>
 </html>
