@@ -6,6 +6,8 @@ logs
 *.iml
 *.zip
 
+*.css
+
 **ngTemplates.js
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
