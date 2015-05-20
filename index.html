@@ -82,14 +82,14 @@
                   <div class="col-md-4 col-xs-12">
                     <div class="animated hiding" data-animation="fadeInDown" data-delay="0">
                       <h5>Conférence</h5>
-                      <img class="pixelImg" src="/img/about-section/conference.jpg" height="128" width="128" alt="Conference">
+                      <img class="img-circle" src="/img/about-section/conference.jpg" height="128" width="128" alt="Conference">
                       <p>Plus de 28 conférences filmées (1h) autour de 4 thèmes : Web, Cloud, Objets Connectés, Découverte.</p>
                     </div>
                   </div>
                   <div class="col-md-4 col-xs-12">
                     <div class="animated hiding" data-animation="fadeInDown" data-delay="500">
                       <h5>Codelab</h5>
-                      <img class="pixelImg" src="/img/about-section/codelab.jpg" height="128" width="128" alt="Workshops">
+                      <img class="img-circle" src="/img/about-section/codelab.jpg" height="128" width="128" alt="Workshops">
                       <p>Des codelabs, une occasion concrète de s'essayer à une technologie en compagnie d'un expert.</p>
                     </div>
                   </div>
@@ -97,7 +97,7 @@
                   <div class="col-md-4 col-xs-12">
                     <div class="animated hiding" data-animation="fadeInDown" data-delay="1000">
                       <h5>Démo</h5>
-                      <img class="pixelImg" src="/img/about-section/demo.jpg" height="128" width="128" alt="Networking">
+                      <img class="img-circle" src="/img/about-section/demo.jpg" height="128" width="128" alt="Networking">
                       <p>Des stands de démonstrations technologiques et innovations (Google Glass, Oculus Rift, Objets connectés).</p>
                     </div>
                   </div>
@@ -428,7 +428,7 @@
                   if ((i) % 2 != 0) {
                       clearfix = ""
                   }
-                  $('#rockstar-speaker-title').after('<div class="col-md-' + colWidth + ' col-xs-6 rockstar-speakers-item animated hiding" data-animation="fadeInUp" data-delay="' + animationDelay + '"><div class="rockstar-speaker"><div class="flow-img pixelImg rockstar-speaker-img" style="background-image: url(' + rockstarSpeakers[i].image + ')"></div><div class="name">' + rockstarSpeakers[i].name + '</div><div class="sub">' + rockstarSpeakers[i].company + '</div></div></div>' + clearfix);
+                  $('#rockstar-speaker-title').after('<div class="col-md-' + colWidth + ' col-xs-6 rockstar-speakers-item animated hiding" data-animation="fadeInUp" data-delay="' + animationDelay + '"><div class="rockstar-speaker"><div class="flow-img img-circle rockstar-speaker-img" style="background-image: url(' + rockstarSpeakers[i].image + ')"></div><div class="name">' + rockstarSpeakers[i].name + '</div><div class="sub">' + rockstarSpeakers[i].company + '</div></div></div>' + clearfix);
                   animationDelay -= 500;
               }
           }
