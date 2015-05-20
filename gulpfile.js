@@ -51,7 +51,7 @@ gulp.task("rev", ["clean", "copy", "ngTemplates"], function () {
     .pipe(gulp.dest("."));
 });
 
-gulp.task("cleanAfter", ["rev"], function () {
+gulp.task("cleanAfter", ["less", "rev"], function () {
   /*return del.sync([
     "js/default.js",
     "js/scripts.min.js",
