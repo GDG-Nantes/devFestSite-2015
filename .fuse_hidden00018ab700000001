@@ -8,22 +8,22 @@
     <meta name="description" content="Le DevFest Nantes 2015 est une journée de conférence accueillant 600 développeurs à la cité des congrès de nantes">
     <meta name="keywords" content="event, gdg, devfest, google, programming, android, chrome, developers, nantes">
     <meta name="google-site-verification" content="4EEgOZ6RmVM4YVw1QNw-f8JuKIaHaDJ4HKLNRtfdntM" />
-    <link rel="canonical" href="https://devfest.gdgnantes.com">
+    <link rel="canonical" href="http://devfest.gdgnantes.com">
     <!-- Social: Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@gdgnantes">
     <meta name="twitter:title" content="DevFest Nantes 2015">
     <meta name="twitter:description" content="Le DevFest Nantes 2015 est une journée de conférence accueillant 600 développeurs à la cité des congrès de nantes">
-    <meta name="twitter:image:src" content="https://devfest.gdgnantes.com/img/seo/sharing.png">
+    <meta name="twitter:image:src" content="http://devfest.gdgnantes.com/img/seo/sharing.png">
     <!-- Social: Facebook / Open Graph -->
     <meta property="og:title" content="DevFest Nantes 2015" />
     <meta property="og:site_name" content="DevFest Nantes 2015" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://devfest.gdgnantes.com" />
-    <meta property="og:image" content="https://devfest.gdgnantes.com/img/seo/sharing.png" />
+    <meta property="og:url" content="http://devfest.gdgnantes.com" />
+    <meta property="og:image" content="http://devfest.gdgnantes.com/img/seo/sharing.png" />
     <meta property="og:description" content="Le DevFest Nantes 2015 est une journée de conférence accueillant 600 développeurs à la cité des congrès de nantes" />
     <!--Fonts-->
-    <link href='//fonts.googleapis.com/css?family=Roboto:500,100,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,100,300' rel='stylesheet' type='text/css'>
     <title>DevFest Nantes 2015</title>
     <link rel="shortcut icon" href="/img/favicons/favicon.ico">
     <link href="/custo/main.css" rel="stylesheet">
@@ -39,7 +39,7 @@
       <div class="st-pusher">
         <div class="st-content">
           <!-- Begin Hero Section -->
-          <section id="top-section-hero" class="top-section-hero top-section image-section" style="background-image: url('/img/sections-background/hero.3.jpg');">
+          <section id="top-section-hero" class="top-section-hero top-section image-section" style="background-image: url('/img/sections-background/hero.jpg');">
 
             <header id="top-header" class="top-header" ng-include="'/partials/top-header.html'">
             </header>
@@ -57,7 +57,13 @@
                    <a href=" /#tickets " class="btn btn-primary waves-effect waves-button waves-light waves-float">Acheter mon billet</a>
 					
           -->
+                  <a href="//www.youtube-nocookie.com/embed/videoseries?list=PLuZ_sYdawLiVbxgDCmrckrzJBcMfW_ycO" class="btn btn-primary waves-effect waves-button waves-light waves-float btn-youtube-teaser" target="_blank">Voir le teaser</a>
                 </div>           
+                  <!--
+                  -->
+              </div>
+              <div class="embed-container">
+                <iframe  src="//www.youtube-nocookie.com/embed/videoseries?list=PLuZ_sYdawLiVbxgDCmrckrzJBcMfW_ycO" frameborder="0" allowfullscreen></iframe>
               </div>
            
               <a href="#about" class="explore">
@@ -72,9 +78,6 @@
             <div class="content-wrapper">
               <div class="col-lg-10 col-lg-offset-1">
                 <h3>A propos du DevFest Nantes</h3>
-
-
-
                 <div class="row about-details">
                   <div class="col-md-4 col-xs-12">
                     <div class="animated hiding" data-animation="fadeInDown" data-delay="0">
@@ -97,18 +100,6 @@
                       <img class="img-circle" src="/img/about-section/demo.jpg" height="128" width="128" alt="Networking">
                       <p>Des stands de démonstrations technologiques et innovations (Google Glass, Oculus Rift, Objets connectés).</p>
                     </div>
-                  </div>
-                </div>
-
-                 <div class="row" >
-                  <div class="col-md-offset-3 col-md-6 col-xs-12">     
-                    <div class="js-video">
-                      <iframe 
-                              src="https://www.youtube.com/embed/-3TrNRHOpJQ?list=PLuZ_sYdawLiXf6PNaXtEIPOTVIKLF2L5x" 
-                              frameborder="0" 
-                              allowfullscreen>
-                      </iframe>
-                    </div>  
                   </div>
                 </div>
               </div>
@@ -320,7 +311,7 @@
                             <h3>Inscrivez-vous à la newsLetter</h3>
                             <div id="mc_embed_signup" class="col-lg-8 col-sm-8 col-lg-offset-2 col-sm-offset-2">
                                 <form action="https://gdgnantes.us9.list-manage.com/subscribe/post?u=b44affc3cdfd00b20bcae502c&amp;id=e0e7ceee5d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                    <div class="mc-field-group col-lg-9 col-sm-9 col-xs-12"> <i class="email bordered required waves-effect waves-light waves-input-wrapper"> <input type="email" value="" name="EMAIL" class="waves-button-input" id="mce-EMAIL" placeholder="player@devfestnantes2015.com" autocomplete="off"> </i> </div>
+                                    <div class="mc-field-group col-lg-9 col-sm-9 col-xs-12"> <i class="email bordered required waves-effect waves-light waves-input-wrapper"> <input type="email" value="" name="EMAIL" class="waves-button-input" id="mce-EMAIL" placeholder="your@email.com" autocomplete="off"> </i> </div>
                                     <div id="mce-responses" class="clear">
                                         <div class="response" id="mce-error-response" style="display:none"></div>
                                         <div class="response" id="mce-success-response" style="display:none"></div>
@@ -328,7 +319,7 @@
                                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                     <div style="position: absolute; left: -5000px;">
                                         <input type="text" name="b_b44affc3cdfd00b20bcae502c_e0e7ceee5d" tabindex="-1" value=""> </div>
-                                    <div class="mc-submit-group clear col-lg-3 col-sm-3 col-xs-12"> <i class="button bordered required waves-effect waves-light waves-input-wrapper"> <input type="submit" class="waves-button-input" value="S'inscrire" name="subscribe" id="mc-embedded-subscribe"> </i> </div>
+                                    <div class="mc-submit-group clear col-lg-3 col-sm-3 col-xs-12"> <i class="button bordered required waves-effect waves-light waves-input-wrapper"> <input type="submit" class="waves-button-input" value="Submit" name="subscribe" id="mc-embedded-subscribe"> </i> </div>
                                 </form> <span class="subscribe-info">Les inscriptions seront ouvertes début juin. Le nombre de places est limité. Restez connecté ! </span> </div>
                         </div>
                     </div>
@@ -390,7 +381,7 @@
           m.parentNode.insertBefore(a, m)
       }
       )(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-      ga('create', 'UA-35116426-1', 'https://devfest.gdgnantes.com');
+      ga('create', 'UA-35116426-1', 'http://devfest.gdgnantes.com');
       ga('send', 'pageview');
     </script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
