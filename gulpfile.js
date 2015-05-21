@@ -37,7 +37,7 @@ gulp.task("rev", ["clean", "copy", "ngTemplates"], function () {
   process.chdir(path.join(__dirname, "dist"));
   return gulp.src("./**/index.html")
     .pipe(inject(gulp.src(["./js/ngTemplates-*.js"], {read: false, relative: true})))// add ngTemplates.js in index.html
-    /*.pipe(usemin({
+    .pipe(usemin({
       css: [
         rev()
       ],
@@ -47,7 +47,7 @@ gulp.task("rev", ["clean", "copy", "ngTemplates"], function () {
       js: [
         rev()
       ]
-    }))*/
+    }))
     .pipe(gulp.dest("."));
 });
 

@@ -6,7 +6,7 @@ logs
 *.iml
 *.zip
 
-*.css
+custo/*.css
 
 **ngTemplates.js
 
