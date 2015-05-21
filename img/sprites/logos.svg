@@ -13,16 +13,16 @@
    id="Layer_1"
    x="0px"
    y="0px"
-   width="185px"
-   height="188px"
-   viewBox="0 0 185 188"
+   width="200"
+   height="188"
+   viewBox="0 0 200 188"
    enable-background="new 0 0 185 188"
    xml:space="preserve"
    inkscape:version="0.91 r13725"
    sodipodi:docname="logos.svg"><metadata
    id="metadata3443"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
    id="defs3441" /><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
@@ -32,15 +32,15 @@
    guidetolerance="10"
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
-   inkscape:window-width="1366"
-   inkscape:window-height="706"
+   inkscape:window-width="1280"
+   inkscape:window-height="1002"
    id="namedview3439"
    showgrid="false"
    inkscape:zoom="2.8244681"
-   inkscape:cx="41.516949"
-   inkscape:cy="108.16196"
-   inkscape:window-x="-8"
-   inkscape:window-y="248"
+   inkscape:cx="88.019102"
+   inkscape:cy="96.148838"
+   inkscape:window-x="1358"
+   inkscape:window-y="-8"
    inkscape:window-maximized="1"
    inkscape:current-layer="Layer_1" />
 <g
@@ -48,10 +48,10 @@
 	
 		<radialGradient
    id="SVGID_1_"
-   cx="-83.4971"
+   cx="-83.497101"
    cy="1382.8887"
    r="20.1129"
-   gradientTransform="matrix(0.498 0 0 0.498 59.2053 -638.8463)"
+   gradientTransform="matrix(0.498,0,0,0.498,59.2053,-638.8463)"
    gradientUnits="userSpaceOnUse">
 		<stop
    offset="0"
@@ -63,16 +63,17 @@
    id="stop3342" />
 	</radialGradient>
 	<path
-   fill="url(#SVGID_1_)"
-   d="M8.91,61h6.791c1.607,0,3.604-1.128,4.432-2.511l5.72-9.52c0.677-1.396,0.653-3.426-0.119-4.713   l-3.378-5.592L8.91,61z"
-   id="path3344" />
+   d="m 8.91,61 6.791,0 c 1.607,0 3.604,-1.128 4.432,-2.511 l 5.72,-9.52 c 0.677,-1.396 0.653,-3.426 -0.119,-4.713 L 22.356,38.664 8.91,61 Z"
+   id="path3344"
+   inkscape:connector-curvature="0"
+   style="fill:url(#SVGID_1_)" />
 	
 		<radialGradient
    id="SVGID_2_"
-   cx="-95.5488"
+   cx="-95.548798"
    cy="1372.6758"
    r="27.6567"
-   gradientTransform="matrix(0.498 0 0 0.498 59.2053 -638.8463)"
+   gradientTransform="matrix(0.498,0,0,0.498,59.2053,-638.8463)"
    gradientUnits="userSpaceOnUse">
 		<stop
    offset="0"
@@ -84,16 +85,17 @@
    id="stop3349" />
 	</radialGradient>
 	<path
-   fill="url(#SVGID_2_)"
-   d="M16.209,33.514L1.108,58.763C0.524,60.011,1.131,61,2.629,61H8.91l13.446-22.335L16.21,28.492   C17.039,29.87,17.039,32.13,16.209,33.514"
-   id="path3351" />
+   d="M 16.209,33.514 1.108,58.763 C 0.524,60.011 1.131,61 2.629,61 L 8.91,61 22.356,38.665 16.21,28.492 c 0.829,1.378 0.829,3.638 -0.001,5.022"
+   id="path3351"
+   inkscape:connector-curvature="0"
+   style="fill:url(#SVGID_2_)" />
 	
 		<radialGradient
    id="SVGID_3_"
-   cx="-86.0981"
+   cx="-86.098099"
    cy="1332.9941"
-   r="40.5379"
-   gradientTransform="matrix(0.498 0 0 0.498 59.2053 -638.8463)"
+   r="40.537899"
+   gradientTransform="matrix(0.498,0,0,0.498,59.2053,-638.8463)"
    gradientUnits="userSpaceOnUse">
 		<stop
    offset="0"
@@ -105,16 +107,17 @@
    id="stop3356" />
 	</radialGradient>
 	<path
-   fill="url(#SVGID_3_)"
-   d="M2.629,1C1.015,1,0.375,2.133,1.205,3.511l24.529,40.745c0.772,1.288,0.795,3.317,0.119,4.713   l5.963-9.925L8.914,1H2.629z"
-   id="path3358" />
+   d="M 2.629,1 C 1.015,1 0.375,2.133 1.205,3.511 l 24.529,40.745 c 0.772,1.288 0.795,3.317 0.119,4.713 L 31.816,39.044 8.914,1 2.629,1 Z"
+   id="path3358"
+   inkscape:connector-curvature="0"
+   style="fill:url(#SVGID_3_)" />
 	
 		<radialGradient
    id="SVGID_4_"
-   cx="-74.0332"
+   cx="-74.033203"
    cy="1323.0293"
-   r="33.0579"
-   gradientTransform="matrix(0.498 0 0 0.498 59.2053 -638.8463)"
+   r="33.057899"
+   gradientTransform="matrix(0.498,0,0,0.498,59.2053,-638.8463)"
    gradientUnits="userSpaceOnUse">
 		<stop
    offset="0"
@@ -126,19 +129,20 @@
    id="stop3363" />
 	</radialGradient>
 	<path
-   fill="url(#SVGID_4_)"
-   d="M8.914,1l22.903,38.045l3.321-5.53c0.83-1.385,0.83-3.645,0-5.023L20.133,3.511   C19.305,2.133,17.308,1,15.701,1H8.914z"
-   id="path3365" />
+   d="m 8.914,1 22.903,38.045 3.321,-5.53 c 0.83,-1.385 0.83,-3.645 0,-5.023 L 20.133,3.511 C 19.305,2.133 17.308,1 15.701,1 L 8.914,1 Z"
+   id="path3365"
+   inkscape:connector-curvature="0"
+   style="fill:url(#SVGID_4_)" />
 </g>
 <g
    id="g3367">
 	
 		<radialGradient
    id="SVGID_5_"
-   cx="-83.4971"
+   cx="-83.497101"
    cy="1509.3945"
    r="20.1129"
-   gradientTransform="matrix(0.498 0 0 0.498 59.2053 -638.8463)"
+   gradientTransform="matrix(0.498,0,0,0.498,59.2053,-638.8463)"
    gradientUnits="userSpaceOnUse">
 		<stop
    offset="0"
@@ -150,16 +154,17 @@
    id="stop3372" />
 	</radialGradient>
 	<path
-   fill="url(#SVGID_5_)"
-   d="M8.91,124h6.791c1.607,0,3.604-1.128,4.432-2.511l5.72-9.52c0.677-1.396,0.653-3.426-0.119-4.713   l-3.378-5.592L8.91,124z"
-   id="path3374" />
+   d="m 8.91,124 6.791,0 c 1.607,0 3.604,-1.128 4.432,-2.511 l 5.72,-9.52 c 0.677,-1.396 0.653,-3.426 -0.119,-4.713 L 22.356,101.664 8.91,124 Z"
+   id="path3374"
+   inkscape:connector-curvature="0"
+   style="fill:url(#SVGID_5_)" />
 	
 		<radialGradient
    id="SVGID_6_"
-   cx="-95.5488"
+   cx="-95.548798"
    cy="1499.1816"
    r="27.6567"
-   gradientTransform="matrix(0.498 0 0 0.498 59.2053 -638.8463)"
+   gradientTransform="matrix(0.498,0,0,0.498,59.2053,-638.8463)"
    gradientUnits="userSpaceOnUse">
 		<stop
    offset="0"
@@ -171,16 +176,17 @@
    id="stop3379" />
 	</radialGradient>
 	<path
-   fill="url(#SVGID_6_)"
-   d="M16.209,96.514l-15.101,25.25C0.524,123.011,1.131,124,2.629,124H8.91l13.446-22.335L16.21,91.492   C17.039,92.87,17.039,95.13,16.209,96.514"
-   id="path3381" />
+   d="M 16.209,96.514 1.108,121.764 C 0.524,123.011 1.131,124 2.629,124 L 8.91,124 22.356,101.665 16.21,91.492 c 0.829,1.378 0.829,3.638 -0.001,5.022"
+   id="path3381"
+   inkscape:connector-curvature="0"
+   style="fill:url(#SVGID_6_)" />
 	
 		<radialGradient
    id="SVGID_7_"
-   cx="-86.0977"
+   cx="-86.097702"
    cy="1459.5"
    r="40.5378"
-   gradientTransform="matrix(0.498 0 0 0.498 59.2053 -638.8463)"
+   gradientTransform="matrix(0.498,0,0,0.498,59.2053,-638.8463)"
    gradientUnits="userSpaceOnUse">
 		<stop
    offset="0"
@@ -192,16 +198,17 @@
    id="stop3386" />
 	</radialGradient>
 	<path
-   fill="url(#SVGID_7_)"
-   d="M2.629,64c-1.613,0-2.254,1.133-1.424,2.511l24.529,40.745c0.772,1.288,0.795,3.317,0.119,4.713   l5.963-9.925L8.914,64H2.629z"
-   id="path3388" />
+   d="m 2.629,64 c -1.613,0 -2.254,1.133 -1.424,2.511 l 24.529,40.745 c 0.772,1.288 0.795,3.317 0.119,4.713 L 31.816,102.044 8.914,64 2.629,64 Z"
+   id="path3388"
+   inkscape:connector-curvature="0"
+   style="fill:url(#SVGID_7_)" />
 	
 		<radialGradient
    id="SVGID_8_"
-   cx="-74.0332"
+   cx="-74.033203"
    cy="1449.5361"
    r="33.0574"
-   gradientTransform="matrix(0.498 0 0 0.498 59.2053 -638.8463)"
+   gradientTransform="matrix(0.498,0,0,0.498,59.2053,-638.8463)"
    gradientUnits="userSpaceOnUse">
 		<stop
    offset="0"
@@ -213,19 +220,20 @@
    id="stop3393" />
 	</radialGradient>
 	<path
-   fill="url(#SVGID_8_)"
-   d="M8.914,64l22.903,38.045l3.321-5.529c0.83-1.386,0.83-3.646,0-5.023l-15.004-24.98   C19.305,65.133,17.308,64,15.701,64H8.914z"
-   id="path3395" />
+   d="m 8.914,64 22.903,38.045 3.321,-5.529 c 0.83,-1.386 0.83,-3.646 0,-5.023 L 20.134,66.513 C 19.305,65.133 17.308,64 15.701,64 l -6.787,0 z"
+   id="path3395"
+   inkscape:connector-curvature="0"
+   style="fill:url(#SVGID_8_)" />
 </g>
 <g
    id="g3397">
 	
 		<radialGradient
    id="SVGID_9_"
-   cx="-83.1797"
+   cx="-83.179703"
    cy="1635.9014"
-   r="20.1125"
-   gradientTransform="matrix(0.498 0 0 0.498 59.2053 -638.8463)"
+   r="20.112499"
+   gradientTransform="matrix(0.498,0,0,0.498,59.2053,-638.8463)"
    gradientUnits="userSpaceOnUse">
 		<stop
    offset="0"
@@ -237,16 +245,17 @@
    id="stop3402" />
 	</radialGradient>
 	<path
-   fill="url(#SVGID_9_)"
-   d="M9.068,187h6.791c1.607,0,3.604-1.128,4.432-2.511l5.72-9.52c0.677-1.396,0.653-3.426-0.119-4.713   l-3.378-5.592L9.068,187z"
-   id="path3404" />
+   d="m 9.068,187 6.791,0 c 1.607,0 3.604,-1.128 4.432,-2.511 l 5.72,-9.52 c 0.677,-1.396 0.653,-3.426 -0.119,-4.713 L 22.514,164.664 9.068,187 Z"
+   id="path3404"
+   inkscape:connector-curvature="0"
+   style="fill:url(#SVGID_9_)" />
 	
 		<radialGradient
    id="SVGID_10_"
-   cx="-95.2305"
+   cx="-95.230499"
    cy="1625.6875"
    r="27.6563"
-   gradientTransform="matrix(0.498 0 0 0.498 59.2053 -638.8463)"
+   gradientTransform="matrix(0.498,0,0,0.498,59.2053,-638.8463)"
    gradientUnits="userSpaceOnUse">
 		<stop
    offset="0"
@@ -258,16 +267,17 @@
    id="stop3409" />
 	</radialGradient>
 	<path
-   fill="url(#SVGID_10_)"
-   d="M16.368,159.514l-15.102,25.25C0.683,186.011,1.289,187,2.787,187h6.281l13.446-22.335   l-6.146-10.173C17.197,155.87,17.197,158.13,16.368,159.514"
-   id="path3411" />
+   d="M 16.368,159.514 1.266,184.764 C 0.683,186.011 1.289,187 2.787,187 l 6.281,0 13.446,-22.335 -6.146,-10.173 c 0.829,1.378 0.829,3.638 0,5.022"
+   id="path3411"
+   inkscape:connector-curvature="0"
+   style="fill:url(#SVGID_10_)" />
 	
 		<radialGradient
    id="SVGID_11_"
-   cx="-85.7803"
+   cx="-85.780296"
    cy="1586.0059"
    r="40.5378"
-   gradientTransform="matrix(0.498 0 0 0.498 59.2053 -638.8463)"
+   gradientTransform="matrix(0.498,0,0,0.498,59.2053,-638.8463)"
    gradientUnits="userSpaceOnUse">
 		<stop
    offset="0"
@@ -279,16 +289,17 @@
    id="stop3416" />
 	</radialGradient>
 	<path
-   fill="url(#SVGID_11_)"
-   d="M2.787,127c-1.613,0-2.254,1.133-1.424,2.511l24.529,40.745c0.772,1.288,0.795,3.317,0.119,4.713   l5.963-9.925L9.072,127H2.787z"
-   id="path3418" />
+   d="m 2.787,127 c -1.613,0 -2.254,1.133 -1.424,2.511 l 24.529,40.745 c 0.772,1.288 0.795,3.317 0.119,4.713 L 31.974,165.044 9.072,127 2.787,127 Z"
+   id="path3418"
+   inkscape:connector-curvature="0"
+   style="fill:url(#SVGID_11_)" />
 	
 		<radialGradient
    id="SVGID_12_"
-   cx="-73.7158"
+   cx="-73.715797"
    cy="1576.042"
-   r="33.0572"
-   gradientTransform="matrix(0.498 0 0 0.498 59.2053 -638.8463)"
+   r="33.057201"
+   gradientTransform="matrix(0.498,0,0,0.498,59.2053,-638.8463)"
    gradientUnits="userSpaceOnUse">
 		<stop
    offset="0"
@@ -300,50 +311,57 @@
    id="stop3423" />
 	</radialGradient>
 	<path
-   fill="url(#SVGID_12_)"
-   d="M9.072,127l22.903,38.045l3.321-5.529c0.83-1.386,0.83-3.646,0-5.023l-15.004-24.981   C19.463,128.133,17.467,127,15.86,127H9.072z"
-   id="path3425" />
+   d="m 9.072,127 22.903,38.045 3.321,-5.529 c 0.83,-1.386 0.83,-3.646 0,-5.023 L 20.292,129.512 C 19.463,128.133 17.467,127 15.86,127 l -6.788,0 z"
+   id="path3425"
+   inkscape:connector-curvature="0"
+   style="fill:url(#SVGID_12_)" />
 </g>
 
 <text
-   y="53.326569"
+   y="27.326569"
    x="43.433605"
    style="font-size:22px;font-family:Roboto-Black;fill:#4e4e4e"
    font-size="22"
-   id="text3427-4">GDG Nantes</text>
-<text
-   font-size="17"
-   id="text3429"
-   x="43.0005"
-   y="27.8325"
-   style="font-size:17px;font-family:Roboto-Light;fill:#4e4e4e">DevFest 2015</text>
+   id="text3427-4">DevFest 2015</text>
 
 
-<text
-   font-size="17"
-   id="text3433"
-   x="43.0005"
-   y="89.968803"
-   style="font-size:17px;font-family:Roboto-Light;fill:#4e4e4e">DevFest 2015</text>
+
+
+
+
+
 
 
 <text
-   font-size="17"
-   id="text3437"
-   x="46.000999"
-   y="154.9688"
-   style="font-size:17px;font-family:Roboto-Light;fill:#e6e6e5">DevFest 2015</text>
-
-<text
-   y="115.67974"
+   y="89.679741"
    x="43.433605"
    style="font-size:22px;font-family:Roboto-Black;fill:#4e4e4e"
    font-size="22"
-   id="text3431-6">GDG Nantes</text>
+   id="text3431-6">DevFest 2015</text>
+
 <text
-   y="178.67973"
+   y="154.67973"
    x="46.434105"
    style="font-size:22px;font-family:Roboto-Black;fill:#e6e6e5"
    font-size="22"
-   id="text3435-5">GDG Nantes</text>
+   id="text3435-5">DevFest 2015</text>
+
+<text
+   font-size="17"
+   id="text3429-1"
+   x="43.0005"
+   y="49.615631"
+   style="font-size:17px;font-family:Roboto-Light;fill:#4e4e4e">GDG Nantes</text>
+<text
+   font-size="17"
+   id="text3433-9"
+   x="43.0005"
+   y="111.9688"
+   style="font-size:17px;font-family:Roboto-Light;fill:#4e4e4e">GDG Nantes</text>
+<text
+   font-size="17"
+   id="text3437-7"
+   x="46.000999"
+   y="174.9688"
+   style="font-size:17px;font-family:Roboto-Light;fill:#e6e6e5">GDG Nantes</text>
 </svg>
