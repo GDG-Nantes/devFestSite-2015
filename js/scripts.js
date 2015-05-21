@@ -385,7 +385,7 @@
                 minZoom: 2,
                 scrollwheel: false,
                 panControl: false,
-                draggable: true,
+                draggable: false,
                 zoomControl: false,
                 zoomControlOptions: {
                     position: google.maps.ControlPosition.RIGHT_TOP
