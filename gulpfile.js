@@ -9,7 +9,9 @@ var reload = browserSync.reload;
 
 var rev = require("gulp-rev");
 var inject = require("gulp-inject");
+var uglify = require("gulp-uglify");
 var usemin = require("gulp-usemin");
+var minifyCss = require('gulp-minify-css');
 var templateCache = require("gulp-angular-templatecache");
 var minifyHtml = require("gulp-minify-html");
 var del = require("del");
@@ -28,37 +30,162 @@ gulp.task("clean", function () {
   ]);
 });
 
-gulp.task("copy", ["clean", "ngTemplates", "less"], function () {
+gulp.task("copy", ["clean", "ngTemplates", "less-prod"], function () {
   return gulp.src(["index.html", "app.yaml", "robots.txt", "sitemap.xml", "team/**", "speakers/**", "schedule/**", "cod/**", "logistics/**", "js/**", "img/**", "css/**", "custo/**"], { "base" : "." })
     .pipe(gulp.dest("dist"));
 });
 
-gulp.task("rev", ["clean", "copy", "ngTemplates"], function () {
+gulp.task("inject", ["clean", "copy", "ngTemplates"], function () {
   process.chdir(path.join(__dirname, "dist"));
-  return gulp.src("./**/index.html")
+  //return gulp.src("./**/index.html")
+  //  .pipe(gulp.dest("."));
+});
+
+gulp.task("rev_index", ["inject"], function () {
+  process.chdir(path.join(__dirname, "dist"));
+  return gulp.src("./index.html")
     .pipe(inject(gulp.src(["./js/ngTemplates-*.js"], {read: false, relative: true})))// add ngTemplates.js in index.html
-    /*.pipe(usemin({
+    .pipe(usemin({
       css: [
+        minifyCss(),
         rev()
       ],
       html: [
         minifyHtml({empty: true})
       ],
-      js: [
+      jsdefault: [
+        uglify(),
+        rev()
+      ],
+      jsscripts: [
+        uglify(),
         rev()
       ]
-    }))*/
+    }))
     .pipe(gulp.dest("."));
 });
 
-gulp.task("cleanAfter", ["rev"], function () {
-  /*return del.sync([
+gulp.task("rev_team", ["rev_index"], function () {
+  return gulp.src("./team/index.html")
+    .pipe(inject(gulp.src(["./js/ngTemplates-*.js"], {read: false, relative: true})))// add ngTemplates.js in index.html
+    .pipe(usemin({
+      css: [
+        minifyCss(),
+        rev()
+      ],
+      html: [
+        minifyHtml({empty: true})
+      ],
+      jsdefault: [
+        uglify(),
+        rev()
+      ],
+      jsscripts: [
+        uglify(),
+        rev()
+      ]
+    }))
+    .pipe(gulp.dest("./team"))
+});
+
+gulp.task("rev_speakers", ["rev_team"], function () {
+  return gulp.src("./speakers/index.html")
+    .pipe(inject(gulp.src(["./js/ngTemplates-*.js"], {read: false, relative: true})))// add ngTemplates.js in index.html
+    .pipe(usemin({
+      css: [
+        minifyCss(),
+        rev()
+      ],
+      html: [
+        minifyHtml({empty: true})
+      ],
+      jsdefault: [
+        uglify(),
+        rev()
+      ],
+      jsscripts: [
+        uglify(),
+        rev()
+      ]
+    }))
+    .pipe(gulp.dest("./speakers"))
+});
+
+gulp.task("rev_schedule", ["rev_speakers"], function () {
+  return gulp.src("./schedule/index.html")
+    .pipe(inject(gulp.src(["./js/ngTemplates-*.js"], {read: false, relative: true})))// add ngTemplates.js in index.html
+    .pipe(usemin({
+      css: [
+        minifyCss(),
+        rev()
+      ],
+      html: [
+        minifyHtml({empty: true})
+      ],
+      jsdefault: [
+        uglify(),
+        rev()
+      ],
+      jsscripts: [
+        uglify(),
+        rev()
+      ]
+    }))
+    .pipe(gulp.dest("./schedule"))
+});
+
+gulp.task("rev_logistics", ["rev_schedule"], function () {
+  return gulp.src("./logistics/index.html")
+    .pipe(inject(gulp.src(["./js/ngTemplates-*.js"], {read: false, relative: true})))// add ngTemplates.js in index.html
+    .pipe(usemin({
+      css: [
+        minifyCss(),
+        rev()
+      ],
+      html: [
+        minifyHtml({empty: true})
+      ],
+      jsdefault: [
+        uglify(),
+        rev()
+      ],
+      jsscripts: [
+        uglify(),
+        rev()
+      ]
+    }))
+    .pipe(gulp.dest("./logistics"))
+});
+
+gulp.task("rev_cod", ["rev_logistics"], function () {
+  return gulp.src("./cod/index.html")
+    .pipe(inject(gulp.src(["./js/ngTemplates-*.js"], {read: false, relative: true})))// add ngTemplates.js in index.html
+    .pipe(usemin({
+      css: [
+        minifyCss(),
+        rev()
+      ],
+      html: [
+        minifyHtml({empty: true})
+      ],
+      jsdefault: [
+        uglify(),
+        rev()
+      ],
+      jsscripts: [
+        uglify(),
+        rev()
+      ]
+    }))
+    .pipe(gulp.dest("./cod"))
+});
+
+gulp.task("cleanAfter", ["rev_cod"], function () {
+  return del.sync([
+    "custo/custo.css", "custo/main.css", "custo/loader.css",
     "js/default.js",
-    "js/scripts.min.js",
-    "js/typed.min.js",
-    "js/ngTemplates**.js",
-    "css/main.css"
-  ]);*/
+    "js/scripts.js"
+  ]);
 });
 
 gulp.task('serve',  ['less'], function(){
@@ -77,6 +204,15 @@ gulp.task('less',function(){
       paths: [path.join(__dirname, 'less', 'includes')]
     }))
     .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./custo'))
+    .pipe(reload({stream:true}));
+});
+
+gulp.task('less-prod',function(){
+  return gulp.src('less/**/*.less')
+    .pipe(less({
+      paths: [path.join(__dirname, 'less', 'includes')]
+    }))
     .pipe(gulp.dest('./custo'))
     .pipe(reload({stream:true}));
 });

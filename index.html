@@ -26,8 +26,10 @@
     <link href='//fonts.googleapis.com/css?family=Roboto:500,100,300' rel='stylesheet' type='text/css'>
     <title>DevFest Nantes 2015</title>
     <link rel="shortcut icon" href="/img/favicons/favicon.ico">
-    <link href="/custo/main.css" rel="stylesheet">
-    <link href="/custo/custo.css" rel="stylesheet">
+    <!-- build:css custo/all.css -->
+    <link href="custo/main.css" rel="stylesheet">
+    <link href="custo/custo.css" rel="stylesheet">
+    <!-- endbuild -->
     <meta name="theme-color" content="#2b5797">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
     
@@ -405,7 +407,6 @@
               if ($(window).width() > 767) {
                   $("#typeout-text").typed({
                       strings: ["Nantes", "is Retro", "is Future", "Forever"],
-                      //strings: ["Cloud", "Objets connectés", "Web", "Découverte", "Networking", "Démos", "Conférences"],
                       typeSpeed: 150,
                       backDelay: 900,
                       loop: true
@@ -429,7 +430,7 @@
               return 0.5 - Math.random()
           });
           if (rockstarSpeakers.length > 0) {
-              var animationDelay = 1500,
+              var animationDelay = 1000,
                       count = Math.min(3, rockstarSpeakers.length),
                       colWidth = 12 / count;
               for (i = 0; i < count; i++) {
@@ -447,7 +448,9 @@
       angular.module('devfest2015', []);
     </script>
     <script src="/js/typed.min.js"></script>
+    <!-- build:jsdefault js/default.js -->
     <script src="/js/default.js"></script>
+    <!-- endbuild -->
     <!-- inject:js -->
     <!-- endinject -->
     <script>
@@ -467,7 +470,9 @@
       }
       var twitterFeedUrl = '';
     </script>
+    <!-- build:jsscripts js/scripts.js -->
     <script src="/js/scripts.js"></script>
+    <!-- endbuild -->
      <script src="/custo/konami.js"></script>
      <script type="text/javascript">
         var easter_egg = new Konami(function() { 
