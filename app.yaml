@@ -1,5 +1,5 @@
 application: devfestnantes2015
-version: v6
+version: v7
 runtime: python27
 api_version: 1
 threadsafe: true
