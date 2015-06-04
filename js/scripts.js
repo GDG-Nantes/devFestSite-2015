@@ -4,9 +4,35 @@
             $('#st-container').removeClass('disable-scrolling');
             $('#st-container')[0].style.display = '';
             $('#loading-animation').fadeOut();
-            $('#loader').delay(350).fadeOut(800);
+            if (!$('#loader')[0]){
+                // Hack lié à l'injection (pas sur de l'avoir en prod ... ?)
+                setTimeout(function() {
+                    $('#loader').delay(350).fadeOut(800);
+                }, 500);
+            }else{
+                $('#loader').delay(350).fadeOut(800);
+            }
             initGooglePlus();
             equalheight('.same-height');
+
+            $.getScript((location.pathname != '/' ? '../' : './')+"custo/konami.js", function(){
+                var easter_egg = new Konami(function() { 
+                    var iframe = $('#game');
+                    if (!iframe[0])
+                        return;
+
+                    if (!iframe.attr('src')){
+                        iframe.attr('src', iframe.attr('data-src'));
+                    }
+                    $('#myModal').on('shown.bs.modal', function () {
+                        $('#game').focus()
+                    }).modal({
+                        keyboard: true,
+                        show: true
+                    });
+
+                });
+            });
         });
 
         if ($(window).width() > 1500) {

@@ -224,18 +224,6 @@
     <!-- endbuild -->
     <!-- inject:js -->
     <!-- endinject -->
-    <script src="../custo/konami.js"></script>
-     <script type="text/javascript">
-        var easter_egg = new Konami(function() { 
-          $('#myModal').on('shown.bs.modal', function () {
-            $('#game').focus()
-          }).modal({
-            keyboard: true,
-            show: true
-          });
-
-        });
-     </script>
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div   class="modal-dialog">
           <div class="modal-content">
@@ -244,7 +232,7 @@
               <h4 class="modal-title">Soyez prêt pour le Devfest...</h4>
             </div>
             <div class="modal-body" style="background-color:black;text-align:center">
-                <iframe id="game" class="right" width="400px" height="400px" style="border:0px"src="../custo/invaders/index.html">
+                <iframe id="game" class="right" width="400px" height="400px" style="border:0px" data-src="../custo/invaders/index.html">
                 </iframe>
             </div>
             <div class="modal-footer">
