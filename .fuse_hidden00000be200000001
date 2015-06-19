@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="devfest2015">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="author" content="Team @ GDG Nantes">
+    <meta name="description" content="Le DevFest Nantes 2015 est une journée de conférence accueillant 600 développeurs à la cité des congrès de nantes">
+    <meta name="keywords" content="event, gdg, devfest, google, programming, android, chrome, developers, nantes">
+    <meta name="google-site-verification" content="4EEgOZ6RmVM4YVw1QNw-f8JuKIaHaDJ4HKLNRtfdntM" />
+    <link rel="canonical" href="https://devfest.gdgnantes.com">
+    <!-- Social: Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@gdgnantes">
+    <meta name="twitter:title" content="DevFest Nantes 2015">
+    <meta name="twitter:description" content="Le DevFest Nantes 2015 est une journée de conférence accueillant 600 développeurs à la cité des congrès de nantes">
+    <meta name="twitter:image:src" content="https://devfest.gdgnantes.com/img/seo/sharing.png">
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:title" content="DevFest Nantes 2015" />
+    <meta property="og:site_name" content="DevFest Nantes 2015" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://devfest.gdgnantes.com" />
+    <meta property="og:image" content="https://devfest.gdgnantes.com/img/seo/sharing.png" />
+    <meta property="og:description" content="Le DevFest Nantes 2015 est une journée de conférence accueillant 600 développeurs à la cité des congrès de nantes" />
+    <!--Fonts-->
+    <link href='//fonts.googleapis.com/css?family=Roboto:500,100,300' rel='stylesheet' type='text/css'>
+    <title>DevFest Nantes 2015</title>
+    <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+    <!-- build:css custo/all.css -->
+    <link href="custo/main.css" rel="stylesheet">
+    <link href="custo/custo.css" rel="stylesheet">
+    <!-- endbuild -->
+    <meta name="theme-color" content="#2b5797">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+    
+</head>
+  <body>
+    
+    <div id="loader" ng-include="'/partials/loader.html'"></div>
+    <div id="st-container" class="st-container disable-scrolling" class="ng-hide" style="display:none;">
+      <div class="st-pusher">
+        <div class="st-content">
+          <!-- Begin Hero Section -->
+          <section id="top-section-hero" class="top-section-hero top-section image-section" style="background-image: url('/img/sections-background/hero.3.jpg');">
+
+            <header id="top-header" class="top-header" ng-include="'/partials/top-header.html'">
+            </header>
+            <div class="content-wrapper" style="padding-bottom:200px">
+              <div class="jumbotron">
+                
+                <div class="animated hiding" data-animation="fadeInDown" data-delay="500">
+                  <h1>DevFest <span id="typeout-text" class="hidden-xs"></span>
+        					  <span class="typeout-fallback">Nantes 2015</span>     
+                     <p>6 Novembre 2015</p>       
+        				  </h1>
+                 
+                   
+			            <a href="http://cfp2015.gdgnantes.com/" class="btn btn-primary waves-effect waves-button waves-light waves-float" target="_blank">Devenez un speaker</a>           
+                   <a href="/#tickets " class="btn btn-primary waves-effect waves-button waves-light waves-float">Acheter mon billet</a>
+					
+          
+                </div>           
+              </div>
+           
+              <a href="#about" class="explore">
+                <svg class="icon icon-arrow-down" viewBox="0 0 32 32">
+                  <use xlink:href="/img/sprites/sprites.svg#icon-arrow-down"></use>
+                </svg>
+              </a>
+            </div>
+          </section>
+          <!-- End Hero Section --> <!-- About Section -->
+          <section id="about" class="about">
+            <div class="content-wrapper">
+              <div class="col-lg-10 col-lg-offset-1">
+                <h3>A propos du DevFest Nantes</h3>
+
+
+
+                <div class="row about-details">
+                  <div class="col-md-4 col-xs-12">
+                    <div class="animated hiding" data-animation="fadeInDown" data-delay="0">
+                      <h5>Conférence</h5>
+                      <img class="img-circle" src="/img/about-section/conference.jpg" height="128" width="128" alt="Conference">
+                      <p>Plus de 28 conférences filmées (1h) autour de 4 thèmes : Web, Cloud, Objets Connectés, Découverte.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-xs-12">
+                    <div class="animated hiding" data-animation="fadeInDown" data-delay="500">
+                      <h5>Codelab</h5>
+                      <img class="img-circle" src="/img/about-section/codelab.jpg" height="128" width="128" alt="Workshops">
+                      <p>Des codelabs, une occasion concrète de s'essayer à une technologie en compagnie d'un expert.</p>
+                    </div>
+                  </div>
+                  <div class="clearfix visible-xs"></div>
+                  <div class="col-md-4 col-xs-12">
+                    <div class="animated hiding" data-animation="fadeInDown" data-delay="1000">
+                      <h5>Démo</h5>
+                      <img class="img-circle" src="/img/about-section/demo.jpg" height="128" width="128" alt="Networking">
+                      <p>Des stands de démonstrations technologiques et innovations (Google Glass, Oculus Rift, Objets connectés).</p>
+                    </div>
+                  </div>
+                </div>
+
+                 <div class="row" >
+                  <div class="col-md-offset-3 col-md-6 col-xs-12">     
+                    <div class="js-video">
+                      <iframe 
+                              src="https://www.youtube.com/embed/-3TrNRHOpJQ?list=PLuZ_sYdawLiXf6PNaXtEIPOTVIKLF2L5x" 
+                              frameborder="0" 
+                              allowfullscreen>
+                      </iframe>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End About Section --> <!-- Begin Statistic Section -->
+          <section id="statistic" class="statistic image-section parallax retro" style="background-image: url(/img/sections-background/statistic.jpg);">
+            <div class="overlay solid-overlay"></div>
+            <div class="content-wrapper">
+              <div class="col-lg-10 col-lg-offset-1">
+                <div class="col-md-3 col-xs-6">
+                  <div class="counter animated hiding" data-animation="fadeInDown" data-delay="0">
+                    <div class="stat"><span class="timer" data-from="0" data-to="600">600</span>+</div>
+                    <div class="stat-info">participants</div>
+                    <hr>
+                    <p class="small">de tous horizons</p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="counter animated hiding" data-animation="fadeInDown" data-delay="500">
+                    <div class="stat"><span class="timer" data-from="0" data-to="28">28</span>+</div>
+                    <div class="stat-info">conférences</div>
+                    <hr>
+                    <p class="small">de pure technologie</p>
+                  </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="counter animated hiding" data-animation="fadeInDown" data-delay="1000">
+                    <div class="stat"><span class="timer" data-from="0" data-to="30">30</span>+</div>
+                    <div class="stat-info">speakers</div>
+                    <hr>
+                    <p class="small">de France et d'ailleurs</p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <div class="counter animated hiding" data-animation="fadeInDown" data-delay="1500">
+                    <div class="stat"><span class="timer" data-from="0" data-to="5">5</span></div>
+                    <div class="stat-info">thèmes</div>
+                    <hr>
+                    <p class="small">et aussi des stands de démos</p>
+                  </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+              </div>
+            </div>
+          </section>
+          <!-- End Statistic Section --> <!-- Begin Latest News Section -->
+          <!--<section id="latest-news" class="latest-news">
+            <div class="content-wrapper">
+              <div class="col-lg-10 col-lg-offset-1">
+                <h3>Dernières news</h3>
+                <article class="row">
+                  <div class="post col-md-6 col-sm-6 text-left animated hiding" data-animation="fadeInDown" data-delay="500">
+                    <h6>Presentation slides and videos</h6>
+                    <p class="post-body"></p>
+                  </div>
+                  <div class="post col-md-6 col-sm-6 text-left animated hiding" data-animation="fadeInDown" data-delay="500">
+                    <h6>DevFest Filmé !</h6>
+                    <p class="post-body"></p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+		  -->
+          <!-- End Latest News Section -->
+          <!-- Begin Location Section -->
+          <section id="location-map" class="location-map">
+              <div id="canvas-map" class="canvas-map"></div>
+              <div class="content-wrapper">
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-md-offset-1 animated hiding location-description text-left" data-animation="fadeInLeft" data-delay="0">
+                      <div class="row">
+                          <div class="pull-left">
+                              <h4>Localisation</h4>
+                              <ul>
+                                  <li>Cité des Congrès de Nantes</li>
+                                  <li>Quai Ferdinand Favre, Nantes</li>
+                                  <li><a href="mailto:bureau@gdgnantes.com" target="_blank">bureau@gdgnantes.com</a></li>
+                                  <li>
+                                      <time>08:30</time> -
+                                      <time>21:30</time>
+                                  </li>
+                              </ul>
+                          </div>
+                          <a href="/logistics/#find-way" class="pull-right">
+                              <svg class="icon icon-direction" viewBox="0 0 32 32">
+                                  <use xlink:href="/img/sprites/sprites.svg#icon-direction"></use>
+                              </svg>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <!-- End Location Section -->
+          <!-- Begin Rockstar Speakers Section -->
+          <section id="rockstar-speakers" class="rockstar-speakers image-section parallax" style="background-image: url(/img/sections-background/rockstar-speakers.jpg);">
+              <div class="overlay solid-overlay"></div>
+              <div class="content-wrapper">
+                  <div class="col-lg-10 col-lg-offset-1 rockstar-speakers-list">
+                      <h3 id="rockstar-speaker-title">Highscore speakers</h3>
+                      <!--<div class="clearfix"></div> <span class="bordered"> <a href="/speakers/" class="bottom-section-link waves-effect waves-button waves-light">Voir tous les speakers</a> </span> </div>-->
+              </div>
+          </section>
+          <!-- End Rockstar Speakers Section -->
+                <!-- Venue Section -->
+                <section id="venue">
+                    <div class="content-wrapper">
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <h3>L'espace</h3>
+                            <div class="row venue-row">
+                                <div class="col-md-8 col-sm-8 venue-col">
+                                    <div class="venue-elem-wrapper">
+                                        <div class="venue-elem image-section venue-big-elem venue-img animated hiding" data-animation="fadeIn" data-delay="0" style="background-image: url(/img/venue/venue_0.jpg)"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 venue-col venue-small-col">
+                                    <div class="venue-elem-wrapper col-md-12 col-sm-12 col-xs-12">
+                                        <div class="venue-elem image-section venue-small-elem venue-img animated hiding" data-animation="fadeIn" data-delay="150" style="background-image: url(/img/venue/venue_1.jpg)"></div>
+                                    </div>
+                                    <div class="venue-elem-wrapper col-md-12 col-sm-12 col-xs-6">
+                                        <div class="venue-elem venue-small-elem venue-text animated hiding" data-animation="fadeIn" data-delay="0">
+                                            <h5>Cité des congrès</h5>
+                                            <p>4 grandes salles de conférences</p>
+                                            <p>Un espace dédié aux sponsors</p>
+											<p>Un déjeuner de qualité</p>
+                                        </div>
+                                    </div>
+                                    <div class="venue-elem-wrapper col-md-12 col-sm-12 col-xs-6">
+                                        <div class="venue-elem image-section venue-small-elem venue-img animated hiding" data-animation="fadeIn" data-delay="0" style="background-image: url(/img/venue/venue_2.jpg)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Venue Section -->
+                <!-- Begin Twitter Feed Section -->
+                <section id="twitter-feed" class="twitter-feed image-section parallax" style="background-image: url(/img/sections-background/twitter-feed.jpg);">
+                    <div class="overlay solid-overlay"></div>
+                    <div class="content-wrapper">
+                        <div class="col-md-8 col-md-offset-2">
+                            <svg class="icon" viewBox="0 0 30 32">
+                                <use xlink:href="/img/sprites/sprites.svg#icon-twitter"></use>
+                            </svg>
+                            <h3>What's Up? <a href="https://twitter.com/search?q=%23devfest%20%23nantes" target="_blank">#devfest #nantes</a> </h3>
+                            <!-- <div id="tweets" class="tweets"></div> -->
+                        </div>
+                    </div>
+                </section>
+                <!-- End Twitter Feed Section -->
+                <!-- Begin Partners Section -->
+                <section id="partners" class="partners">
+                    <div class="content-wrapper">
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <h3>Organisateurs</h3>
+                            <ul class="media-list">
+                                <li>
+                                    <a href="http://gdgnantes.com" target="_blank">
+                                        <img style="width: initial;" src="/img/organizers/logo_xs.png" height="57" width="364" title="GDG Nantes - Communauté geek spécialisée dans les technos Google" alt="GDG Nantes">
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3>Sponsors</h3>
+                            <h5>Sponsor Platinium</h5>
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="https://developers.google.com/" target="_blank"> <img src="/img/partners/google.svg" height="57" width="150" title="Google" alt="Google"> </a>
+                                </li>
+                            </ul>
+                            <h5>Sponsor Gold</h5>
+                            <ul class="list-inline">
+                                <li>Contactez-nous !</li>
+                                <!--
+                                <li>
+                                    <a href="" target="_blank"> <img src="/img/partners/google.svg" title="Google" alt="Google"> </a>
+                                </li>
+                                -->
+                            </ul>
+                            <h5>Sponsor Silver</h5>
+                            <ul class="list-inline">
+                                <li>Contactez-nous !</li>
+                                <!--
+                                <li>
+                                    <a href="" target="_blank"> <img src="/img/partners/google.svg" title="Google" alt="Google"> </a>
+                                </li>
+                                -->
+                            </ul>
+                            <h5>Partenaires</h5>
+                            <ul class="list-inline">
+                                <li>Contactez-nous !</li>
+                                <!--
+                                <li>
+                                    <a href="" target="_blank"> <img src="/img/partners/google.svg" title="Google" alt="Google"> </a>
+                                </li>
+                                -->
+                            </ul>
+                            <a href="https://goo.gl/wvpHjL" class="btn btn-primary waves-effect waves-button waves-light waves-float btn-margin">Télécharger le dossier de sponsoring</a>
+                            <a href="https://goo.gl/mVQDBi" class="btn btn-primary waves-effect waves-button waves-light waves-float btn-margin">Download the sponsorship information</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Partners Section -->
+                <!-- Begin Subscribe Section -->
+                <section id="subscribe" class="subscribe image-section parallax" style="background-image: url(/img/sections-background/subscribe.jpg);">
+                    <div class="overlay solid-overlay"></div>
+                    <div class="content-wrapper">
+                        <div class="col-lg-8 col-lg-offset-2 animated hiding" data-animation="fadeInUp" data-delay="0">
+                            <h3>Inscrivez-vous à la newsLetter</h3>
+                            <div id="mc_embed_signup" class="col-lg-8 col-sm-8 col-lg-offset-2 col-sm-offset-2">
+                                <form action="https://gdgnantes.us9.list-manage.com/subscribe/post?u=b44affc3cdfd00b20bcae502c&amp;id=e0e7ceee5d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                    <div class="mc-field-group col-lg-9 col-sm-9 col-xs-12"> <i class="email bordered required waves-effect waves-light waves-input-wrapper"> <input type="email" value="" name="EMAIL" class="waves-button-input" id="mce-EMAIL" placeholder="player@devfestnantes2015.com" autocomplete="off"> </i> </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;">
+                                        <input type="text" name="b_b44affc3cdfd00b20bcae502c_e0e7ceee5d" tabindex="-1" value=""> </div>
+                                    <div class="mc-submit-group clear col-lg-3 col-sm-3 col-xs-12"> <i class="button bordered required waves-effect waves-light waves-input-wrapper"> <input type="submit" class="waves-button-input" value="S'inscrire" name="subscribe" id="mc-embedded-subscribe"> </i> </div>
+                                </form> <span class="subscribe-info">Les inscriptions seront ouvertes début juin. Le nombre de places est limité. Restez connecté ! </span> </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Subscribe Section -->
+                <!-- Begin Tickets Section -->
+                <section id="tickets" class="tickets">
+                    <div class="content-wrapper">
+                        <div class="col-lg-8 col-md-10 col-lg-offset-2 col-md-offset-1">
+                            <h3>Tarifs</h3>
+                            <div class="col-md-6 col-sm-6 pricing-col animated hiding retro" data-animation="fadeInLeft" data-delay="500">
+                                <div class="pricing-header">
+                                    <p class="title">Pass Académique</p>
+                                    <p class="price">10 <span class="currency">€</span></p>
+                                </div>
+                                <div class="pricing-content">
+                                    <ul>
+                                        <li>Etudiants / Enseignants</li>
+                                    </ul>
+                                    <a class="button" href="http://yurplan.com/event/Dev-Fest-Nantes-2015/4843" target="_blank">Acheter mon billet !</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pricing-col last-pricing-col animated hiding retro" data-animation="fadeInRight" data-delay="0">
+                                <div class="pricing-header">
+                                    <p class="title">Pass Standard</p>
+                                    <p class="price">30 <span class="currency">€</span></p>
+                                </div>
+                                <div class="pricing-content">
+                                    <ul>
+                                        <li>Pass standard</li>
+                                    </ul>
+                                    <a class="button" href="http://yurplan.com/event/Dev-Fest-Nantes-2015/4843" target="_blank">Acheter mon billet !</a>
+                                </div>
+                            </div>
+							<span class="tickets-info">Les billets vous donnent un accès complet aux conférences, au petit déjeuner, au déjeuner ainsi qu'à l'afterparty.</span>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Tickets Section -->
+                <!-- Begin Footer -->
+            <footer id="footer" class="footer" ng-include="'/partials/footer.html'">
+            </footer>
+            <!-- End Footer -->
+        </div>
+      </div>
+    </div>
+    <script>
+      (function(i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] || function() {
+              (i[r].q = i[r].q || []).push(arguments)
+          }
+          , i[r].l = 1 * new Date();
+          a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m)
+      }
+      )(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-35116426-1', 'https://devfest.gdgnantes.com');
+      ga('send', 'pageview');
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script>
+      if ($(window).width() > 767) {
+          document.write('<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"><\/script>')
+      }
+      $(document).ready(function() {
+          $(function() {
+              if ($(window).width() > 767) {
+                  $("#typeout-text").typed({
+                      strings: ["Nantes", "is Retro", "is Future", "Forever"],
+                      typeSpeed: 150,
+                      backDelay: 900,
+                      loop: true
+                  });
+              }
+          });
+          var rockstarSpeakers = [{
+              name: "Cyril Mottier",
+              company: "Captain Train",
+              image: "/img/people/cmottier.jpg"
+          }, {
+              name: "Raphaël Goetter",
+              company: "Alsacréations",
+              image: "/img/people/rgoetter.jpg"
+          }/*, {
+              name: "Ludovic Champenois",
+              company: "Google",
+              image: "/img/people/lchampenois.jpg"
+          }*/];
+          rockstarSpeakers.sort(function() {
+              return 0.5 - Math.random()
+          });
+          if (rockstarSpeakers.length > 0) {
+              var animationDelay = 1000,
+                      count = Math.min(3, rockstarSpeakers.length),
+                      colWidth = 12 / count;
+              for (i = 0; i < count; i++) {
+                  var clearfix = '<div class="clearfix visible-xs"></div>';
+                  if ((i) % 2 != 0) {
+                      clearfix = ""
+                  }
+                  $('#rockstar-speaker-title').after('<div class="col-md-' + colWidth + ' col-xs-6 rockstar-speakers-item animated hiding" data-animation="fadeInUp" data-delay="' + animationDelay + '"><div class="rockstar-speaker"><div class="flow-img img-circle rockstar-speaker-img" style="background-image: url(' + rockstarSpeakers[i].image + ')"></div><div class="name">' + rockstarSpeakers[i].name + '</div><div class="sub">' + rockstarSpeakers[i].company + '</div></div></div>' + clearfix);
+                  animationDelay -= 500;
+              }
+          }
+
+          
+      });
+      angular.module('devfest2015', []);
+    </script>
+    <script src="/js/typed.min.js"></script>
+    <!-- build:jsdefault js/default.js -->
+    <script src="/js/default.js"></script>
+    <!-- endbuild -->
+    <!-- inject:js -->
+    <!-- endinject -->
+    <script>
+      Waves.displayEffect();
+      if ($(window).width() > 767) {
+          var googleMaps = 'index',
+              eventPlace = new google.maps.LatLng(47.212966, -1.542565),
+              centerMap = new google.maps.LatLng(47.212966, -1.542565),
+              mobileCenterMap = new google.maps.LatLng(47.212966, -1.542565),
+              icon = '/img/other/map-marker.svg';
+      } else {
+          var staticGoogleMaps = true,
+              eventPlaceCoordinates = '47.212966,-1.542565',
+              centerMapCoordinates = '47.212966,-1.542565',
+              mobileCenterMapCoordinates = '47.212966,-1.542565',
+              icon = 'https://devfest.gdgnantes.com/img/other/map-marker.png';
+      }
+      var twitterFeedUrl = '';
+    </script>
+    <!-- build:jsscripts js/scripts.js -->
+    <script src="/js/scripts.js"></script>
+    <!-- endbuild -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div   class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Soyez prêt pour le Devfest...</h4>
+            </div>
+            <div class="modal-body" style="background-color:black;text-align:center">
+                <iframe id="game" class="right" width="400px" height="400px" style="border:0px" data-src="./custo/pacman/index.htm">
+                </iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+  </body>
+</html>
