@@ -10,6 +10,9 @@ custo/*.css
 
 **ngTemplates.js
 
+# Fuze browserSync
+**/.fuze_hidden*
+
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/
 dist/
