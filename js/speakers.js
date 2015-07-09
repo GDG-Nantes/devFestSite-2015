@@ -14,7 +14,7 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope, $http, $locat
 				link : "https://developers.google.com/experts/",
 				tile_long : "Google Developer Expert"
 			},
-			company : "Captain Train", 
+			company : "Capitaine Train", 
 			about : "Passionné de technologies et de design, Cyril est un amoureux d'android et un développeur aux multiples talents. Il est aussi très actif dans la communauté android où il anime régulièrement des sessions et publie des articles sur son blog.",
 			socials : [{				
 				class : "google-plus",
@@ -75,6 +75,14 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope, $http, $locat
 			lastname : "Girard",
 			image : "dgirard_360x360.jpg",
 			company : "Sfeir", 
+			about : "bla bla bla",
+			socials : []
+		},
+		{
+			firstname : "Francesc",
+			lastname : "Campoy Flores",
+			image : "fcampoy_360x360.png",
+			company : "Google", 
 			about : "bla bla bla",
 			socials : []
 		}
