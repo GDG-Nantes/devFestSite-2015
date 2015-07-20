@@ -87,4 +87,14 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope, $http, $locat
 			socials : []
 		}
 	];
+    
+    for (var speakerIndex = 0; speakerIndex < $scope.speakers.length; speakerIndex++){
+        var speaker = $scope.speakers[speakerIndex];
+        if (speaker.socials.length > 0){
+            for (var socialIndex = 0; socialIndex < speaker.socials.length; socialIndex++){
+                var social = speaker.socials[socialIndex];
+                social.svg = "/img/sprites/sprites.svg#icon-"+social.class;
+            }
+        }
+    }
 }]);
