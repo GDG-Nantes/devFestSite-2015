@@ -8,6 +8,10 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope, $http, $locat
 			firstname : "Cyril",
 			lastname : "Mottier",
 			image : "cmottier_360x360.jpeg",
+            category: {
+                class : "mobile",
+                title : "Mobile"
+            },
 			ribon : {
 				class : "gde",
 				title : "GDE",
@@ -32,6 +36,10 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope, $http, $locat
 			firstname : "CommitStrip",
 			lastname : "",
 			image : "commitstrip_360x360.jpeg",
+            category: {
+                class : "discovery",
+                title : "Keynote"
+            },
 			ribon : {
 				class : "gdg",
 				title : "Googler",
@@ -44,6 +52,10 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope, $http, $locat
 		{
 			firstname : "François",
 			lastname : "Beaufort",
+            category: {
+                class : "web",
+                title : "Web"
+            },
 			image : "fbeaufort_360x360.jpg",
 			ribon : {
 				class : "gdgw",
@@ -57,6 +69,10 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope, $http, $locat
 		{
 			firstname : "Geoffrey",
 			lastname : "Dorne",
+            category: {
+                class : "discovery",
+                title : "UX"
+            },
 			image : "gdorne_360x360.jpeg",
 			company : "Human & Design", 
 			about : "bla bla bla",
@@ -65,6 +81,10 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope, $http, $locat
 		{
 			firstname : "Raphaël",
 			lastname : "Goetter",
+            category: {
+                class : "web",
+                title : "CSS"
+            },
 			image : "rgoetter_360x360.jpeg",
 			company : "Alsacréations", 
 			about : "bla bla bla",
@@ -73,6 +93,10 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope, $http, $locat
 		{
 			firstname : "Didier",
 			lastname : "Girard",
+            category: {
+                class : "cloud",
+                title : "BigQuery"
+            },
 			image : "dgirard_360x360.jpg",
 			company : "Sfeir", 
 			about : "bla bla bla",
@@ -81,6 +105,10 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope, $http, $locat
 		{
 			firstname : "Francesc",
 			lastname : "Campoy Flores",
+            category: {
+                class : "cloud",
+                title : "Go"
+            },
 			image : "fcampoy_360x360.png",
 			company : "Google", 
 			about : "bla bla bla",
