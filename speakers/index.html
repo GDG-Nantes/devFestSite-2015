@@ -149,7 +149,20 @@
                             </svg>
                             <div class="close-mask" data-dismiss="modal"></div>
                         </div>
-                        <hr>
+                        <h4 ng-if="speaker.talk">{{speaker.talk.title}}</h4> 
+                        <span class="theme-metadata" ng-if="speaker.talk">
+                            <span class="caption">Language: </span>{{speaker.talk.lang}}
+                        </span> 
+                        <span class="theme-metadata" ng-if="speaker.talk">
+                            <span class="caption">Complexity: </span>{{speaker.talk.difficulty}}
+                        </span> 
+                        <!--
+                        <div class="theme-video embed-responsive embed-responsive-16by9" ng-if="speaker.talk"> 
+                            <iframe class="embed-responsive-item" src="{{speaker.talk.video}}"></iframe> 
+                        </div> -->
+                        <p class="theme-description" ng-if="speaker.talk" ng-bind-html="speaker.talk.desc">
+                        </p> 
+                        <hr ng-if="speaker.talk">
                         <div class="people-details">
                             <div class="row">
                                 <div class="col-md-2 col-sm-2">
@@ -158,7 +171,7 @@
                                 <div class="col-md-10 col-sm-10 details">
                                     <p class="name">{{speaker.firstname+" "+speaker.lastname}} <span class="position">{{speaker.company}}</span> </p>
                                     <div ng-if="speaker.ribon" class="modal-ribbon-wrapper"> <a class="modal-ribbon" href="{{speaker.ribon.link}}" target="_blank">{{speaker.ribon.title}}</a> </div>
-                                    <p class="about">{{speaker.about}}</p>
+                                    <p class="about" ng-bind-html="speaker.about"></p>
                                     <ul class="social">
                                         <li ng-repeat="social in speaker.socials">
                                             <a href="{{social.link}}" target="_blank">
