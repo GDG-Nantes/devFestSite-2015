@@ -32,21 +32,37 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope) {
         },
         {
             topspeaker: false,
-            firstname: "CommitStrip",
-            lastname: "",
+            firstname: "Etienne",
+            lastname: "Issartial",
             image: "commitstrip_360x360.jpeg",
             category: {
                 class: "discovery",
                 title: "Keynote"
             },
-            ribon: {
-                class: "gdg",
-                title: "Googler",
-                tile_long: "Googler"
+            company: "CommitStrip",
+            about: "bla bla bla",
+            socials: [
+                {class: "google-plus", link: "https://plus.google.com/+Commitstrip"},
+                {class: "twitter", link: "https://twitter.com/CommitStrip_fr"},
+                {class: "site", link: "http://www.commitstrip.com/"}
+            ]
+        },
+        {
+            topspeaker: false,
+            firstname: "Thomas",
+            lastname: "Guenoux",
+            image: "commitstrip_360x360.jpeg",
+            category: {
+                class: "discovery",
+                title: "Keynote"
             },
             company: "CommitStrip",
             about: "bla bla bla",
-            socials: []
+            socials: [
+                {class: "google-plus", link: "https://plus.google.com/+Commitstrip"},
+                {class: "twitter", link: "https://twitter.com/CommitStrip_fr"},
+                {class: "site", link: "http://www.commitstrip.com/"}
+            ]
         },
         {
             topspeaker: false,
@@ -64,7 +80,10 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope) {
             },
             company: "Google",
             about: "bla bla bla",
-            socials: []
+            socials: [
+                {class: "google-plus", link: "https://plus.google.com/+FrancoisBeaufort"},
+                {class: "github", link: "https://github.com/beaufortfrancois"}
+            ]
         },
         {
             topspeaker: true,
@@ -78,6 +97,7 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope) {
             company: "Human & Design",
             about: "Je m’appelle Geoffrey Dorne, je suis designer indépendant et fondateur de Design & Human, atelier de design éthique, social et radical.",
             socials: [
+                {class: "google-plus", link: "https://plus.google.com/116718314329691158716"},
                 {class: "linkedin", link: "https://fr.linkedin.com/in/geoffreydorne"},
                 {class: "twitter", link: "http://twitter.com/geoffreydorne"},
                 {class: "site", link: "http://graphism.fr"},
