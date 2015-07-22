@@ -33,7 +33,7 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope) {
                 }, {
                     class: "github",
                     link: "https://github.com/cyrilmottier"
-                }
+                } 
             ]
         },
         {
@@ -82,8 +82,19 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope) {
             },
             image: "gdorne_360x360.jpeg",
             company: "Human & Design",
-            about: "bla bla bla",
-            socials: []
+            about: "Je m’appelle Geoffrey Dorne, je suis designer indépendant et fondateur de Design & Human, atelier de design éthique, social et radical.",
+            socials: [
+                {
+                    class: "linkedin",
+                    link: "https://fr.linkedin.com/in/geoffreydorne"
+                }, {
+                    class: "twitter",
+                    link: "http://twitter.com/geoffreydorne"
+                }, {
+                    class: "site",
+                    link: "http://graphism.fr"
+                }
+            ]
         },
         {
             topspeaker: true,
@@ -95,8 +106,13 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope) {
             },
             image: "rgoetter_360x360.jpeg",
             company: "Alsacréations",
-            about: "bla bla bla",
-            socials: []
+            about: "Créateur du site Alsacreations.com, communauté libre d'apprentissage web spécialisée dans les standards. Co-fondateur de l'agence web Alsacreations.fr. Expert et Formateur en langages HTML et CSS et auteur de divers livres techniques chez Eyrolles.",
+            socials: [ 
+                {
+                    class: "twitter",
+                    link: "https://twitter.com/goetter"
+                }
+            ]
         },
         {
             topspeaker: false,
@@ -115,14 +131,38 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope) {
             topspeaker: true,
             firstname: "Francesc",
             lastname: "Campoy Flores",
+            ribon: {
+                class: "google",
+                title: "Google Developer Advocate",
+                link: "https://www.google.com/about/careers/teams/client-facing/dev-rel/",
+                tile_long: "Google Developer Advocate"
+            },
             category: {
                 class: "cloud",
                 title: "Go"
             },
             image: "fcampoy_360x360.png",
             company: "Google",
-            about: "bla bla bla",
-            socials: []
+            about: "Francesc Campoy Flores joined the Go team in 2012 as Developer Programs Engineer.<br>Since then, he has written some considerable didactic resources and traveled the world attending conferences and organizing live courses. He joined Google in 2011 as a backend software engineer working mostly in C++ and Python, but it was with Go that he rediscovered how fun programming can be.",
+            socials: [
+                {
+                    class: "linkedin",
+                    link: "http://www.linkedin.com/in/campoy"
+                },
+                {
+                    class: "google-plus",
+                    link: "http://plus.google.com/+FrancescCampoyFlores"
+                }, {
+                    class: "twitter",
+                    link: "http://twitter.com/francesc"
+                }, {
+                    class: "site",
+                    link: "http://blog.campoy.cat/"
+                }, {
+                    class: "github",
+                    link: "http://github.com/campoy"
+                }
+            ]
         }
     ];
     var isTopSpeaker = function (speaker) {
