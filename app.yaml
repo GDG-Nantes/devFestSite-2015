@@ -1,5 +1,5 @@
 application: devfestnantes2015
-version: v14-with-speakers
+version: v14-speaker
 runtime: python27
 api_version: 1
 threadsafe: true
