@@ -38,7 +38,7 @@
     <div id="loader" ng-include="'/partials/loader.html'"></div>
     <div id="st-container" class="st-container disable-scrolling"  style="display:none;">
         <div class="st-pusher">
-            <div class="st-content">
+            <div class="st-content" ng-controller="SpeakersCtrl">
                 <!-- Begin Top Section -->
                 <section id="top-section" class="top-section image-section " style="background-image: url('../img/sections-background/speakers.jpg');">
                     <div class="overlay gradient-overlay"></div>
@@ -106,19 +106,19 @@
                             </svg>
                             <div class="close-mask" data-dismiss="modal"></div>
                         </div>
-                        <h4 ng-if="speaker.talk">{{speaker.talk.title}}</h4> 
+                        <h4 ng-if="speaker.talk">{{speaker.talk.title}}</h4>
                         <span class="theme-metadata" ng-if="speaker.talk">
                             <span class="caption">Language: </span>{{speaker.talk.lang}}
-                        </span> 
+                        </span>
                         <span class="theme-metadata" ng-if="speaker.talk">
                             <span class="caption">Complexity: </span>{{speaker.talk.difficulty}}
-                        </span> 
+                        </span>
                         <!--
-                        <div class="theme-video embed-responsive embed-responsive-16by9" ng-if="speaker.talk"> 
-                            <iframe class="embed-responsive-item" src="{{speaker.talk.video}}"></iframe> 
+                        <div class="theme-video embed-responsive embed-responsive-16by9" ng-if="speaker.talk">
+                            <iframe class="embed-responsive-item" src="{{speaker.talk.video}}"></iframe>
                         </div> -->
                         <p class="theme-description" ng-if="speaker.talk" ng-bind-html="speaker.talk.desc">
-                        </p> 
+                        </p>
                         <hr ng-if="speaker.talk">
                         <div class="people-details">
                             <div class="row">
@@ -136,7 +136,7 @@
                                                    <!-- <use xlink:href="/img/sprites/sprites.svg#icon-{{social.class}}"></use>-->
                                                 </svg>
                                             </a>
-                                        </li>                                        
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
