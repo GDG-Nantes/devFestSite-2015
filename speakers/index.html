@@ -133,7 +133,8 @@
                                         <li ng-repeat="social in speaker.socials">
                                             <a href="{{social.link}}" target="_blank">
                                                 <svg class="icon icon-{{social.class}}" viewBox="0 0 30 32">
-                                                   <!-- <use xlink:href="/img/sprites/sprites.svg#icon-{{social.class}}"></use>-->
+                                                   <!--<use xlink:href="/img/sprites/sprites.svg#icon-{{social.class}}"></use>-->
+                                                   <use xlink:href="{{social.svg}}">
                                                 </svg>
                                             </a>
                                         </li>
