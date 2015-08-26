@@ -3,6 +3,7 @@
 devfestApp.factory('SpeakersService', [function(){
 	var speakers = [
         {
+            id : "cmottier",
             topspeaker: true,
             firstname: "Cyril",
             lastname: "Mottier",
@@ -27,6 +28,7 @@ devfestApp.factory('SpeakersService', [function(){
             ]
         },
         {
+            id : "eissartial",
             topspeaker: false,
             firstname: "Etienne",
             lastname: "Issartial",
@@ -44,6 +46,7 @@ devfestApp.factory('SpeakersService', [function(){
             ]
         },
         {
+            id : "tguenoux",
             topspeaker: false,
             firstname: "Thomas",
             lastname: "Guenoux",
@@ -61,6 +64,7 @@ devfestApp.factory('SpeakersService', [function(){
             ]
         },
         {
+            id : "fbeaufort",
             topspeaker: false,
             firstname: "François",
             lastname: "Beaufort",
@@ -82,6 +86,7 @@ devfestApp.factory('SpeakersService', [function(){
             ]
         },
         {
+            id : "gdorne",
             topspeaker: true,
             firstname: "Geoffrey",
             lastname: "Dorne",
@@ -101,6 +106,7 @@ devfestApp.factory('SpeakersService', [function(){
             ]
         },
         {
+            id : "rgoetter",
             topspeaker: true,
             firstname: "Raphaël",
             lastname: "Goetter",
@@ -120,6 +126,7 @@ devfestApp.factory('SpeakersService', [function(){
             ]
         },
         {
+            id : "dgirard",
             topspeaker: false,
             firstname: "Didier",
             lastname: "Girard",
@@ -136,6 +143,7 @@ devfestApp.factory('SpeakersService', [function(){
             ]
         },
         {
+            id : "fcampoy",
             topspeaker: true,
             firstname: "Francesc",
             lastname: "Campoy Flores",

@@ -9,64 +9,64 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			, decouverte : "Découverte"
 		},
 		hours : {  
-		  "h1":{
-		    "id":"h1",
+		  "h01":{
+		    "id":"h01",
 		    "hourStart":"07",
 		    "minStart":"30",
 		    "hourEnd":"08",
 		    "minEnd":"30"
 		  },
-		  "h2":{
-		    "id":"h2",
+		  "h02":{
+		    "id":"h02",
 		    "hourStart":"08",
 		    "minStart":"30",
 		    "hourEnd":"09",
 		    "minEnd":"30"
 		  },
-		  "h3":{
-		    "id":"h3",
+		  "h03":{
+		    "id":"h03",
 		    "hourStart":"09",
 		    "minStart":"40",
 		    "hourEnd":"10",
 		    "minEnd":"30"
 		  },
-		  "h4":{
-		    "id":"h4",
+		  "h04":{
+		    "id":"h04",
 		    "hourStart":"10",
 		    "minStart":"40",
 		    "hourEnd":"11",
 		    "minEnd":"30"
 		  },
-		  "h5":{
-		    "id":"h5",
+		  "h05":{
+		    "id":"h05",
 		    "hourStart":"11",
 		    "minStart":"40",
 		    "hourEnd":"12",
 		    "minEnd":"30"
 		  },
-		  "h6":{
-		    "id":"h6",
+		  "h06":{
+		    "id":"h06",
 		    "hourStart":"12",
 		    "minStart":"30",
 		    "hourEnd":"14",
 		    "minEnd":"00"
 		  },
-		  "h7":{
-		    "id":"h7",
+		  "h07":{
+		    "id":"h07",
 		    "hourStart":"14",
 		    "minStart":"00",
 		    "hourEnd":"14",
 		    "minEnd":"50"
 		  },
-		  "h8":{
-		    "id":"h8",
+		  "h08":{
+		    "id":"h08",
 		    "hourStart":"15",
 		    "minStart":"00",
 		    "hourEnd":"15",
 		    "minEnd":"50"
 		  },
-		  "h9":{
-		    "id":"h9",
+		  "h09":{
+		    "id":"h09",
 		    "hourStart":"15",
 		    "minStart":"50",
 		    "hourEnd":"16",
@@ -102,7 +102,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "desc":"Profitez de cet instant pour déguster une collation et un café avant d'enchaîner sur une journée bien remplie ! ;)",
 			    "type":"white",
 			    "all" : true,
-			    "hour":"h1"
+			    "hour":"h01"
 			  },
 			  {
 			    "id":"s2",
@@ -112,7 +112,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "type":"white",
 			    "all" : true,
 			    "video" : "https://www.youtube.com/watch?v=NZ9DwaAbMcg",
-			    "hour":"h2"
+			    "hour":"h02"
 			  },{
 			    "id":"s3",
 			    "title":"HTML pour le web mobile: Firefox OS",
@@ -122,10 +122,10 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":101,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h3",
+			    "hour":"h03",
 			    "video":"https://www.youtube.com/watch?v=8tbU8mL09WI",
 			    "slides":"http://www.slideshare.net/fredericharper/html-pour-le-web-mobile-firefox-os-devfest-nantes-20141107",
-			    "speakers":["fharper"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s4",
 			    "title":"Introduction aux Web Components avec Polymer",
@@ -138,7 +138,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "hour":"h11",
 			    "video":"https://www.youtube.com/watch?v=76McFL7EHn4",
 			    "slides":"https://speakerdeck.com/lostinbrittany/devfest-nantes-2014-introduction-aux-web-components-and-polymer",
-			    "speakers":["hgonzalez"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s5",
 			    "title":"Scaling clusters declaratively with Kubernetes and Docker",
@@ -148,9 +148,9 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":202,
 			    "all" : false,
 			    "lang":"en",
-			    "hour":"h5",
+			    "hour":"h05",
 			    "video":"https://www.youtube.com/watch?v=IR9UhW8k6Ag",
-			    "speakers":["bdorsey"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s6",
 			    "title":"Et la diversité dans tout ça ?",
@@ -160,10 +160,10 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":101,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h7",
+			    "hour":"h07",
 			    "video":"https://www.youtube.com/watch?v=-A5wDLPus5g",
 			    "slides":"http://nanteswit.github.io/talkDiversite/#/",
-			    "speakers":["jpalies","cbossard"]
+			    "speakers":["cmottier","fcampoy"]
 			  },{
 			    "id":"s7",
 			    "title":"Always fresh data with continuous queries",
@@ -176,7 +176,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "hour":"h10",
 			    "video":"https://www.youtube.com/watch?v=btiPlInpHnM",
 			    "slides":"https://speakerdeck.com/romemore/always-fresh-data-in-your-mobile-application",
-			    "speakers":["rmenetrier"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s8",
 			    "title":"Modulariser son application AngularJS avec Browserify",
@@ -186,10 +186,10 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":202,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h4",
+			    "hour":"h04",
 			    "video":"https://www.youtube.com/watch?v=9xooG5KZluk",
 			    "slides":"https://speakerdeck.com/antoinerichard/browserify-et-angularjs",
-			    "speakers":["arichard"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s9",
 			    "title":"Google Cloud Platform: Managed VMs unification",
@@ -199,9 +199,9 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":202,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h7",
+			    "hour":"h07",
 			    "video":"https://www.youtube.com/watch?v=RAkJTw2WOW4",
-			    "speakers":["lchampenois"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s10",
 			    "title":"Guerrilla design en milieu hostile : responsive et mobilité",
@@ -214,7 +214,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "hour":"h10",
 			    "video":"https://www.youtube.com/watch?v=ubDAng9cJmU",
 			    "slides":"https://speakerdeck.com/inpixelitrust/guerrilla-design-en-milieu-hostile-responsive-et-mobilite",
-			    "speakers":["swalter"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s11",
 			    "confRoom" : "Espace Tour Lu",
@@ -222,7 +222,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "type":"white",
 			    "desc":"Repas gratuit pour tous les participants.<br>Profitez-en pour faire un tour des différents stands et démos.<br><br><b>Table Ronde : Mon nouveau job en IT</b> - Espace Bellem - 13h00 : <br> Aujourd'hui, quels choix avons-nous et comment s'y retrouver ? <br> Des professionnels du recrutement seront là pour échanger et partager sur les nouvelles pratiques, les conseils pour trouver le job de ses rêves, les attentes des sociétés, ….",
 			    "all" : true,
-			    "hour":"h6"
+			    "hour":"h06"
 			  },{
 			    "id":"s12",
 			    "title":"Introduction to Android Wear – A Glimpse Into the Future",
@@ -232,7 +232,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":101,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h7",
+			    "hour":"h07",
 			    "video":"https://www.youtube.com/watch?v=bdFr4AkZ4E0",
 			    "slides":"https://speakerdeck.com/cyrilmottier/introduction-to-android-wear-a-glimpse-into-the-future",
 			    "speakers":["cmottier"]
@@ -247,7 +247,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "lang":"fr",
 			    "hour":"h10",
 			    "video":"https://www.youtube.com/watch?v=cWMJqc_qfHI",
-			    "speakers":["jdubois"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s14",
 			    "title":"'No one at Google uses MapReduce anymore' - Cloud Dataflow explained for dummies",
@@ -257,10 +257,10 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":202,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h8",
+			    "hour":"h08",
 			    "video":"https://www.youtube.com/watch?v=v_wdCc07M48",
 			    "slides":"https://docs.google.com/presentation/d/1jrIY93r9HpB98tV4gUMybEPFd5x_R1vCNcVNQKtNl6g/edit#slide=id.p",
-			    "speakers":["mgorner"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s15",
 			    "title":"Google Tag Manager",
@@ -272,7 +272,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "lang":"fr",
 			    "hour":"h11",
 			    "video":"https://www.youtube.com/watch?v=FvTgS4-V8Oc",
-			    "speakers":["rchardonneau"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s16",
 			    "title":"Tests étendus pour construire des applications Android robustes, avec Genymotion",
@@ -282,10 +282,10 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":202,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h8",
+			    "hour":"h08",
 			    "video":"https://www.youtube.com/watch?v=fK0cU7M0WzA",
-			    "slides":"https://docs.google.com/presentation/d/10vZSlFHMS32qRUdvYIu2FH2EgEMK3zPenPbrb11nC7g/edit#slide=id.g11bf35b0a_2157",
-			    "speakers":["elezmy","fnoel"]
+			    "slides":"https://docs.google.com/presentation/d/10vZSlFHMS32qRUdvYIu2FH02EgEMK3zPenPbrb11nC7g/edit#slide=id.g11bf35b0a_2157",
+			    "speakers":["cmottier","fcampoy"]
 			  },{
 			    "id":"s17",
 			    "title":"Dans un monde où tout est composant",
@@ -295,10 +295,10 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":303,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h7",
+			    "hour":"h07",
 			    "video":"https://www.youtube.com/watch?v=rG0OgU848IE",
 			    "slides":"./assets/slides/devfest_medy.pdf",
-			    "speakers":["mbelmokhtar"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s18",
 			    "title":"Launching and growing a startup on the Google Cloud Platform",
@@ -308,9 +308,9 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":202,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h4",
+			    "hour":"h04",
 			    "video":"https://www.youtube.com/watch?v=U9oM7dEJCvk",
-			    "speakers":["jmouton"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s19",
 			    "title":"The fine art of deploying web apps online",
@@ -320,17 +320,17 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":202,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h4",
+			    "hour":"h04",
 			    "video":"https://www.youtube.com/watch?v=ysKczC2kFis",
 			    "slides":"https://speakerdeck.com/ronanguilloux/the-fine-art-of-deploying-web-apps-online",
-			    "speakers":["rguilloux"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s20",
 			    "confRoom" : "Espace Les Machines",
 			    "title":"Pause",
 			    "type":"white",
 			    "all" : true,
-			    "hour":"h9"
+			    "hour":"h09"
 			  },{
 			    "id":"s21",
 			    "title":"v.zero SDK for android",
@@ -343,7 +343,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "hour":"h11",
 			    "video": "https://www.youtube.com/watch?v=7QpU6_GkFHc",
 			    "slides":"https://www.dropbox.com/s/6q4nhz4dz33lb2y/new%20v.zero%20SDK%20Braintree%20-%20DevFest%20Nantes.pdf?dl=0",
-			    "speakers":["alopez"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s22",
 			    "title":"AngularDart 1.0 and beyond!",
@@ -353,10 +353,10 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":101,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h8",
+			    "hour":"h08",
 			    "video":"https://www.youtube.com/watch?v=waNQ0ziAZeU",
 			    "slides":"http://pierrereliquet.github.io/talks/angulardart_1.0_beyond/index.html#/",
-			    "speakers":["preliquet"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s23",
 			    "title":"Lucy in the sky with docker",
@@ -366,9 +366,9 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":202,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h3",
+			    "hour":"h03",
 			    "video":"https://www.youtube.com/watch?v=wEghVJygoOw",
-			    "speakers":["dgageot"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s24",
 			    "title":"L'expérience utilisateur est importante pour vous",
@@ -378,10 +378,10 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":101,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h3",
+			    "hour":"h03",
 			    "video":"https://www.youtube.com/watch?v=m5X3nfR5wew",
 			    "slides":"http://fr.slideshare.net/FlorenceHerrou/lexprience-utilisateur-est-importante-pour-nous",
-			    "speakers":["fherrou"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s25",
 			    "title":"Mettez un Panda roux dans votre Webview Android !",
@@ -391,10 +391,10 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":101,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h4",
+			    "hour":"h04",
 			    "video":"https://www.youtube.com/watch?v=SBzsADcBdBE",
 			    "slides":"http://blog.dlecan.com/devfestnantes2014/prez-panda-roux-webview-android/",
-			    "speakers":["dlecan"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s26",
 			    "title":"Best development practices for GWT web applications",
@@ -404,10 +404,10 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":202,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h3",
+			    "hour":"h03",
 			    "video":"https://www.youtube.com/watch?v=IId5E5kQ3iw",
-			    "slides":"https://docs.google.com/presentation/d/14ywGLNxh6Wjn7XR-kOjXybROn5kscURT8qF-UD__JS0/pub?start=false&loop=false&delayms=5000&slide=id.p",
-			    "speakers":["jdramaix"]
+			    "slides":"https://docs.google.com/presentation/d/14ywGLNxh06Wjn7XR-kOjXybROn5kscURT8qF-UD__JS0/pub?start=false&loop=false&delayms=5000&slide=id.p",
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s27",
 			    "title":"Fier d'etre polyglotte!",
@@ -417,10 +417,10 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":101,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h5",
+			    "hour":"h05",
 			    "video":"https://www.youtube.com/watch?v=Epy4GdWX2x4",
 			    "slides":"http://www.slideshare.net/tgrall/proud-to-be-polyglot",
-			    "speakers":["tgrall"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s28",
 			    "title":"Transformez vos Google Spread Sheets en API Web",
@@ -432,7 +432,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "lang":"fr",
 			    "hour":"h10",
 			    "video":"https://www.youtube.com/watch?v=wBZmY5cQNyQ",
-			    "speakers":["mboillod"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s29",
 			    "title":"This session might interest you: an introduction to recommendation engines",
@@ -442,10 +442,10 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":202,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h8",
+			    "hour":"h08",
 			    "video":"https://www.youtube.com/watch?v=0zkSSJGcueQ",
 			    "slides":"https://github.com/JeffAbrahamson/talks/tree/master/devfest-2014-recommendation",
-			    "speakers":["jabrahamson"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s30",
 			    "title":"The Dart side of the moon, la face cachée du cloud",
@@ -458,7 +458,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "hour":"h11",
 			    "video":"https://www.youtube.com/watch?v=gWeWpfC6XzU",
 			    "slides":"http://dartlangfr.net/conferences/2014-11-07/",
-			    "speakers":["ggirou","nfrancois"]
+			    "speakers":["cmottier","fcampoy"]
 			  },{
 			    "id":"s31",
 			    "title":"Développer pour Android TV",
@@ -468,10 +468,10 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":202,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h5",
+			    "hour":"h05",
 			    "video":"https://www.youtube.com/watch?v=2dm_dRrnZE0",
 			    "slides":"http://www.slideshare.net/ph0b/developing-for-android-tv-and-the-nexus-player",
-			    "speakers":["xhallade"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s32",
 			    "title":"Build et déploiement sur les stores avec Intel XDK",
@@ -481,9 +481,9 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "difficulty":101,
 			    "all" : false,
 			    "lang":"fr",
-			    "hour":"h5",
+			    "hour":"h05",
 			    "video":"https://www.youtube.com/watch?v=oGxAFHM1O68",
-			    "speakers":["nlebot"]
+			    "speakers":["cmottier"]
 			  },{
 			    "id":"s33",
 			    "confRoom":"Espace Tour Lu",
@@ -495,12 +495,42 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			  }
 			   ]
 	}
+	// On map les speakers
+	_(agenda.sessions).map(function(session){
+		if (!session.speakers)
+			return session;
+		session.speakers = _(session.speakers).map(function(speaker){
+			return speakerService[_.findIndex(speakerService,function(speakerTmp){
+				return speakerTmp.id === speaker;
+			})];
+		}).value();
+		return session;
+	}).value();
 
+	// On prépare les données pour mieux les afficher
 	agenda.sessionsTransform = _.chain(agenda.sessions).forEach(function(session){
 		session.hourContent = agenda.hours[session.hour]
 	}).groupBy(function(session){
 		return session.hour;
-	}).value();
+	}).mapValues(function(sessionValues){
+		return _(sessionValues).forEach(function(session){
+			session.classCol = 	sessionValues.length === 1 ? 'col-md-12' : 'col-md-3';
+		}).sortBy(function(session){
+			switch (session.type){
+				case 'mobile':
+					return 0;
+				case 'web' : 
+					return 1;
+				case 'cloud' : 
+					return 2;
+				case 'discovery' :
+					return 3;
+				default : 
+					return 4;
+			}
+		}).value();		
+	}).values().sortBy(function(sessionValues){return sessionValues[0].hour;})
+	.value();
 
 	return agenda;
 }]);
