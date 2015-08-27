@@ -178,9 +178,55 @@ Partners
 }
 
 #partners.partners .list-inline li {
-  width: 20%;
+  width: 25%;
   max-width: 240px;
   margin: 13px 7px
+}
+
+@media (max-width: 360px) {
+	#partners.partners .list-inline li {
+	  width: 100%;
+  	}
+}
+
+@media (min-width: 361px ) and (max-width:767px){
+	#partners.partners .list-inline li {
+	  width: 45%;
+	  max-width: 220px;
+	  margin: 13px 7px
+	}	
+
+	.partners ul.platinium li{
+		height: 120px;
+
+		.img-sponsor{
+			max-width: 220px;
+			max-height: 110px;
+		}
+	}
+
+	.partners ul.gold li{
+		height: 90px;
+
+		.img-sponsor{
+			max-width: 160px;
+			max-height: 80px;
+		}
+	}
+
+	.partners ul.silver li, .partners ul.partner li{
+		height: 60px;
+		
+		.img-sponsor{
+			max-width: 100px;
+			max-height: 50px;
+		}
+	}
+
+	// Cas particulier Google
+	.partners img[alt=Google]{
+		width:220px;
+	}
 }
 
 
