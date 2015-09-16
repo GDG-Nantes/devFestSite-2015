@@ -1,12 +1,9 @@
 'use strict';
 
-/**
- * Sessions controller
- */
-devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope) {
-
-    var speakers = [
+devfestApp.factory('SpeakersService', [function(){
+	var speakers = [
         {
+            id : "cmottier",
             topspeaker: true,
             firstname: "Cyril",
             lastname: "Mottier",
@@ -31,6 +28,7 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope) {
             ]
         },
         {
+            id : "eissartial",
             topspeaker: false,
             firstname: "Etienne",
             lastname: "Issartial",
@@ -48,6 +46,7 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope) {
             ]
         },
         {
+            id : "tguenoux",
             topspeaker: false,
             firstname: "Thomas",
             lastname: "Guenoux",
@@ -65,6 +64,7 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope) {
             ]
         },
         {
+            id : "fbeaufort",
             topspeaker: false,
             firstname: "François",
             lastname: "Beaufort",
@@ -86,6 +86,7 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope) {
             ]
         },
         {
+            id : "gdorne",
             topspeaker: true,
             firstname: "Geoffrey",
             lastname: "Dorne",
@@ -105,6 +106,7 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope) {
             ]
         },
         {
+            id : "rgoetter",
             topspeaker: true,
             firstname: "Raphaël",
             lastname: "Goetter",
@@ -124,6 +126,7 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope) {
             ]
         },
         {
+            id : "dgirard",
             topspeaker: false,
             firstname: "Didier",
             lastname: "Girard",
@@ -140,6 +143,7 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope) {
             ]
         },
         {
+            id : "fcampoy",
             topspeaker: true,
             firstname: "Francesc",
             lastname: "Campoy Flores",
@@ -165,13 +169,10 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope) {
             ]
         }
     ];
-    var isTopSpeaker = function (speaker) {
-        return speaker.topspeaker;
-    };
-    $scope.speakers = speakers.filter(isTopSpeaker);
+    
 
-    for (var speakerIndex = 0; speakerIndex < $scope.speakers.length; speakerIndex++) {
-        var speaker = $scope.speakers[speakerIndex];
+    for (var speakerIndex = 0; speakerIndex < speakers.length; speakerIndex++) {
+        var speaker = speakers[speakerIndex];
         if (speaker.socials.length > 0) {
             for (var socialIndex = 0; socialIndex < speaker.socials.length; socialIndex++) {
                 var social = speaker.socials[socialIndex];
@@ -179,4 +180,19 @@ devfestApp.controller('SpeakersCtrl', ['$scope', function ($scope) {
             }
         }
     }
+
+    return speakers;
+}]);
+
+/**
+ * Sessions controller
+ */ 
+devfestApp.controller('SpeakersCtrl', ['$scope', 'SpeakersService', function ($scope, speakerService) {
+
+    
+    var isTopSpeaker = function (speaker) {
+        return speaker.topspeaker;
+    };
+    $scope.speakers = speakerService.filter(isTopSpeaker);
+
 }]);
