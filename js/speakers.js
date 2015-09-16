@@ -126,23 +126,6 @@ devfestApp.factory('SpeakersService', [function () {
             ]
         },
         {
-            "id": "dgirard",
-            "topspeaker": false,
-            "firstname": "Didier",
-            "lastname": "Girard",
-            "category": {
-                "class": "cloud",
-                "title": "BigQuery"
-            },
-            "image": "dgirard_360x360.jpg",
-            "company": "Sfeir",
-            "about": "Directeur des Opérations de SFEIR. Expert sur les technologies Cloud de Google. Bonne connaissance de Java. A fait une thèse sur ce que l'on appelle maintenant le machine learning.",
-            "socials": [
-                {"class": "google-plus", "link": "https://plus.google.com/+DidierGirard"},
-                {"class": "twitter", "link": "https://twitter.com/@DidierGirard"}
-            ]
-        },
-        {
             "id": "fcampoy",
             "topspeaker": true,
             "firstname": "Francesc",
@@ -546,6 +529,119 @@ devfestApp.factory('SpeakersService', [function () {
                 {"class": "google-plus", "link": "https://plus.google.com/u/0/+ThierryChatel"},
                 {"class": "twitter", "link": "https://twitter.com/ThierryChatel"},
                 {"class": "github", "link": "https://github.com/tchatel"}
+            ]
+        },
+
+        {
+            "id": "alexismp",
+            "topspeaker": false,
+            "firstname": "Alexis",
+            "lastname": "Moussine-pouchkine",
+            "image": "",
+            "category": {
+                "class": "web",
+                "title": "Web"
+            },
+            "company": "Google Inc.",
+            "about": "Google Developer Relations",
+            "socials": [
+                {"class": "google-plus", "link": "https://plus.google.com/u/0/+AlexisMP"},
+                {"class": "twitter", "link": "https://twitter.com/alexismp"},
+                {"class": "site", "link": "http://cloud.google.com"}
+            ]
+        },
+        {
+            "id": "hgonzalez",
+            "topspeaker": false,
+            "firstname": "Horacio",
+            "lastname": "Gonzalez",
+            "image": "",
+            "category": {
+                "class": "web",
+                "title": "Web"
+            },
+            "company": "Cityzen Data",
+            "about": "Spaniard lost in Brittany, unconformist coder, Java craftsman, dreamer and all-around geek.\n Works at @CityzenData. Founder & leader of @FinistJUG & @FinistGDG",
+            "socials": [
+                {"class": "google-plus", "link": "https://plus.google.com/u/0/100578619938900089909"},
+                {"class": "twitter", "link": "https://twitter.com/LostInBrittany"}
+            ]
+        },
+        {
+            "id": "wchegham",
+            "topspeaker": false,
+            "firstname": "Wassim",
+            "lastname": "Chegham",
+            "image": "",
+            "category": {
+                "class": "web",
+                "title": "Web"
+            },
+            "ribon": {
+                "class": "gde",
+                "title": "GDE",
+                "link": "https://developers.google.com/experts/",
+                "tile_long": "Google Developer Expert"
+            },
+            "company": "SII IDF",
+            "about": "Front-stack JavaScript Consultant @SII_IDF • Google Developer Expert for AngularJS • Author • Speaker • Trainer • Hacker • Photographer",
+            "socials": [
+                {"class": "google-plus", "link": "https://plus.google.com/+WassimCheghamJavaScript/"},
+                {"class": "twitter", "link": "https:/twitter.com/manekinekko"},
+                {"class": "github", "link": "https:/github.com/manekinekko"},
+                {"class": "site", "link": "http://wassimchegham.com"}
+            ]
+        },
+        {
+            "id": "jpgouigoux",
+            "topspeaker": false,
+            "firstname": "Jean-Philippe",
+            "lastname": "Gouigoux",
+            "image": "",
+            "category": {
+                "class": "cloud",
+                "title": "Cloud"
+            },
+            "company": "MVP",
+            "about": "JP Gouigoux est CTO d'un éditeur de logiciel, pour lequel il organise une équipe de 50 personnes autour d'une refonte de progiciel en architecture microservices. Auteur de quelques livres, blogueur, MVP depuis 4 ans dans la spécialité Intégration, il intervient régulièrement en universités, écoles ou conférences. Sa spécialité est l'urbanisation des systèmes logiciels, au carrefour de l'architecture et de l'agilité. Lorsqu'il n'est pas derrière un clavier, JP est le plus souvent sur un vélo, en train de bricoler ou de faire du Lego.",
+            "socials": [
+                {"class": "twitter", "link": "http://twitter.com/jpgouigoux"},
+                {"class": "github", "link": "http://github.com/jp-gouigoux"},
+                {"class": "site", "link": "http://gouigoux.com/blog-fr"}
+            ]
+        },
+        {
+            "id": "acatelandaxel",
+            "topspeaker": false,
+            "firstname": "Axel",
+            "lastname": "Cateland",
+            "image": "",
+            "category": {
+                "class": "web",
+                "title": "Web"
+            },
+            "company": "Santéclair",
+            "about": "Électrotechnicien de formation Axel s'engage à 17 ans dans la Marine Nationale, s'échappe de son sous-marin nucléaire 3 ans plus tard, redécouvre le développement à 24 ans, développeur back (JAVA, PHP) pendant quelques années il s'enfuit cette fois définitivement de l'armée en 2012 pour se lancer dans une carrière de développeur front. Sa seule constance finalement c'est de savoir apprécier une bonne bière.",
+            "socials": [
+                {"class": "google-plus", "link": "https://plus.google.com/+axelcateland"},
+                {"class": "twitter", "link": "https://twitter.com/catelandaxel"}
+            ]
+        },
+        {
+            "id": "dgirard",
+            "topspeaker": false,
+            "firstname": "Didier",
+            "lastname": "Girard",
+            "category": {
+                "class": "cloud",
+                "title": "BigQuery"
+            },
+            "image": "dgirard_360x360.jpg",
+            "company": "Sfeir",
+            "about": "Directeur des Opérations de SFEIR. Expert sur les technologies Cloud de Google. Bonne connaissance de Java. A fait une thèse sur ce que l'on appelle maintenant le machine learning.",
+            "socials": [
+                {"class": "google-plus", "link": "https://plus.google.com/+DidierGirard"},
+                {"class": "twitter", "link": "https://twitter.com/@DidierGirard"}
             ]
         }
 
