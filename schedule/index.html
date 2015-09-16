@@ -82,6 +82,7 @@
                                         <div class="color-line {{::session.type}}" ></div>
                                         <div class="slot-content {{::session.type}}">
                                             <h5 class="slot-title" itemprop="name" ng-bind="::session.title"></h5> <span class="slot-language" ng-if="session.lang" ng-bind="::session.lang"></span>
+                                            <p ng-if="::session.confRoom" >{{::session.confRoom}}</p>
                                             <ul class="slot-speakers" ng-if="session.speakers"> 
                                                 <li itemprop="performer" ng-repeat="speaker in session.speakers">
                                                     <div class="speaker-img flow-img img-circle" style="background-image: url(/img/people/{{::speaker.image}})">                                                       
@@ -117,7 +118,10 @@
                             </svg>
                             <div class="close-mask" data-dismiss="modal"></div>
                         </div>
-                        <h4 ng-bind="::session.title"></h4> <span class="theme-metadata"><span class="caption" ng-if="session.lang">Language: </span>{{::session.lang}}</span> <span class="theme-metadata" ng-if="session.difficulty"><span class="caption">Complexity: </span>{{::session.difficulty}}</span>
+                        <h4 ng-bind="::session.title"></h4> 
+                        <span class="theme-metadata"><span class="caption" ng-if="session.lang">Langue: </span>{{::session.lang}}</span> 
+                        <span class="theme-metadata" ng-if="session.difficulty"><span class="caption">Complexité: </span>{{::session.difficulty}}</span>
+                        <span class="theme-metadata" ng-if="session.confRoom"><span class="caption">Salle: </span>{{::session.confRoom}}</span>
                         <!--<div class="theme-video embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="//www.youtube.com/embed/v3SCiUqI1yQ"></iframe>
                         </div>-->

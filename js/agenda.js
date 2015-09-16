@@ -111,7 +111,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "desc":"Conférence d'ouverture du DevFest",
 			    "type":"white",
 			    "all" : true,
-			    "video" : "https://www.youtube.com/watch?v=NZ9DwaAbMcg",
+			    "video":"",
 			    "hour":"h02"
 			  },{
 			    "id":"s3",
@@ -200,7 +200,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h07",
-			    "video":"https://www.youtube.com/watch?v=RAkJTw2WOW4",
+			    "video":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s10",
@@ -212,8 +212,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h10",
-			    "video":"https://www.youtube.com/watch?v=ubDAng9cJmU",
-			    "slides":"https://speakerdeck.com/inpixelitrust/guerrilla-design-en-milieu-hostile-responsive-et-mobilite",
+			    "video":"",
+			    "slides":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s11",
@@ -233,8 +233,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h07",
-			    "video":"https://www.youtube.com/watch?v=bdFr4AkZ4E0",
-			    "slides":"https://speakerdeck.com/cyrilmottier/introduction-to-android-wear-a-glimpse-into-the-future",
+			    "video":"",
+			    "slides":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s13",
@@ -246,7 +246,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h10",
-			    "video":"https://www.youtube.com/watch?v=cWMJqc_qfHI",
+			    "video":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s14",
@@ -258,8 +258,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h08",
-			    "video":"https://www.youtube.com/watch?v=v_wdCc07M48",
-			    "slides":"https://docs.google.com/presentation/d/1jrIY93r9HpB98tV4gUMybEPFd5x_R1vCNcVNQKtNl6g/edit#slide=id.p",
+			    "video":"",
+			    "slides":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s15",
@@ -271,7 +271,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h11",
-			    "video":"https://www.youtube.com/watch?v=FvTgS4-V8Oc",
+			    "video":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s16",
@@ -283,8 +283,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h08",
-			    "video":"https://www.youtube.com/watch?v=fK0cU7M0WzA",
-			    "slides":"https://docs.google.com/presentation/d/10vZSlFHMS32qRUdvYIu2FH02EgEMK3zPenPbrb11nC7g/edit#slide=id.g11bf35b0a_2157",
+			    "video":"",
+			    "slides":"",
 			    "speakers":["cmottier","fcampoy"]
 			  },{
 			    "id":"s17",
@@ -296,8 +296,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h07",
-			    "video":"https://www.youtube.com/watch?v=rG0OgU848IE",
-			    "slides":"./assets/slides/devfest_medy.pdf",
+			    "video":"",
+			    "slides":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s18",
@@ -309,7 +309,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h04",
-			    "video":"https://www.youtube.com/watch?v=U9oM7dEJCvk",
+			    "video":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s19",
@@ -321,8 +321,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h04",
-			    "video":"https://www.youtube.com/watch?v=ysKczC2kFis",
-			    "slides":"https://speakerdeck.com/ronanguilloux/the-fine-art-of-deploying-web-apps-online",
+			    "video":"",
+			    "slides":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s20",
@@ -341,8 +341,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"en",
 			    "hour":"h11",
-			    "video": "https://www.youtube.com/watch?v=7QpU6_GkFHc",
-			    "slides":"https://www.dropbox.com/s/6q4nhz4dz33lb2y/new%20v.zero%20SDK%20Braintree%20-%20DevFest%20Nantes.pdf?dl=0",
+			    "video": "",
+			    "slides":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s22",
@@ -354,8 +354,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h08",
-			    "video":"https://www.youtube.com/watch?v=waNQ0ziAZeU",
-			    "slides":"http://pierrereliquet.github.io/talks/angulardart_1.0_beyond/index.html#/",
+			    "video":"",
+			    "slides":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s23",
@@ -367,7 +367,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h03",
-			    "video":"https://www.youtube.com/watch?v=wEghVJygoOw",
+			    "video":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s24",
@@ -379,8 +379,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h03",
-			    "video":"https://www.youtube.com/watch?v=m5X3nfR5wew",
-			    "slides":"http://fr.slideshare.net/FlorenceHerrou/lexprience-utilisateur-est-importante-pour-nous",
+			    "video":"",
+			    "slides":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s25",
@@ -392,8 +392,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h04",
-			    "video":"https://www.youtube.com/watch?v=SBzsADcBdBE",
-			    "slides":"http://blog.dlecan.com/devfestnantes2014/prez-panda-roux-webview-android/",
+			    "video":"",
+			    "slides":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s26",
@@ -405,8 +405,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h03",
-			    "video":"https://www.youtube.com/watch?v=IId5E5kQ3iw",
-			    "slides":"https://docs.google.com/presentation/d/14ywGLNxh06Wjn7XR-kOjXybROn5kscURT8qF-UD__JS0/pub?start=false&loop=false&delayms=5000&slide=id.p",
+			    "video":"",
+			    "slides":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s27",
@@ -418,8 +418,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h05",
-			    "video":"https://www.youtube.com/watch?v=Epy4GdWX2x4",
-			    "slides":"http://www.slideshare.net/tgrall/proud-to-be-polyglot",
+			    "video":"",
+			    "slides":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s28",
@@ -431,7 +431,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h10",
-			    "video":"https://www.youtube.com/watch?v=wBZmY5cQNyQ",
+			    "video":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s29",
@@ -443,8 +443,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h08",
-			    "video":"https://www.youtube.com/watch?v=0zkSSJGcueQ",
-			    "slides":"https://github.com/JeffAbrahamson/talks/tree/master/devfest-2014-recommendation",
+			    "video":"",
+			    "slides":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s30",
@@ -456,8 +456,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h11",
-			    "video":"https://www.youtube.com/watch?v=gWeWpfC6XzU",
-			    "slides":"http://dartlangfr.net/conferences/2014-11-07/",
+			    "video":"",
+			    "slides":"",
 			    "speakers":["cmottier","fcampoy"]
 			  },{
 			    "id":"s31",
@@ -469,8 +469,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h05",
-			    "video":"https://www.youtube.com/watch?v=2dm_dRrnZE0",
-			    "slides":"http://www.slideshare.net/ph0b/developing-for-android-tv-and-the-nexus-player",
+			    "video":"",
+			    "slides":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s32",
@@ -482,7 +482,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			    "all" : false,
 			    "lang":"fr",
 			    "hour":"h05",
-			    "video":"https://www.youtube.com/watch?v=oGxAFHM1O68",
+			    "video":"",
 			    "speakers":["cmottier"]
 			  },{
 			    "id":"s33",
