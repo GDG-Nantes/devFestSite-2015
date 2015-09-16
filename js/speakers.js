@@ -643,6 +643,24 @@ devfestApp.factory('SpeakersService', [function () {
                 {"class": "google-plus", "link": "https://plus.google.com/+DidierGirard"},
                 {"class": "twitter", "link": "https://twitter.com/@DidierGirard"}
             ]
+        },
+
+        {
+            "id": "cbossard",
+            "topspeaker": false,
+            "firstname": "Cécilia",
+            "lastname": "Bossard",
+            "image": "",
+            "category": {
+                "class": "discovery",
+                "title": "Discovery"
+            },
+            "company": "",
+            "about": "ai un but : aider les équipes à produire des logiciels utiles aux utilisateurs finaux. Pour cela, je les accompagne en intégrant les équipes de développement ou en les assistant dans leur transition agile. Impliquée dans la communauté agile nantaise, je participe également à l'organisation de l'Agile Tour de Nantes. Femme développeuse, je suis également co-fondatrice du groupe Women In Technology à Nantes, dont le but est de promouvoir les femmes dans la technique. Dans ce cadre, je participe également aux initiations à la programmation à destination des enfants avec des initiatives telles que les Devoxx4Kids ou les coding goûters.",
+            "socials": [
+                {"class": "twitter", "link": "https://twitter.com/ceciliaBossard"},
+                {"class": "site", "link": "https://javagile.wordpress.com/"}
+            ]
         }
 
     ];
