@@ -218,6 +218,22 @@ devfestApp.factory('SpeakersService', [function () {
                 {"class": "site", "link": "http://k33g.github.io/"}
             ]
         },
+        {
+            "id": "xhallade",
+            "topspeaker": false,
+            "firstname": "Xavier",
+            "lastname": "Hallade",
+            "category": {
+                "class": "mobile",
+                "title": "Mobile"
+            },
+            "image": "",
+            "company": "Intel Corporation",
+            "about": "Developer Evangelist à Intel et Google Developer Expert pour Android",
+            "socials": [
+                {"class": "linkedin", "link": "https://fr.linkedin.com/in/xavierhallade"}
+            ]
+        },
 
 
         {
@@ -304,6 +320,22 @@ devfestApp.factory('SpeakersService', [function () {
             "socials": [
                 {"class": "twitter", "link": "https://twitter.com/thierryleriche"},
                 {"class": "linkedin", "link": "https://fr.linkedin.com/in/thierryler"}
+            ]
+        },
+        {
+            "id": "acharbonnier",
+            "topspeaker": false,
+            "firstname": "Anthony",
+            "lastname": "Charbonnier",
+            "category": {
+                "class": "discovery",
+                "title": "Discovery"
+            },
+            "image": "",
+            "company": "Intel Corporation",
+            "about": "Key software account manager & Startup discovery",
+            "socials": [
+                {"class": "linkedin", "link": "https://fr.linkedin.com/pub/anthony-charbonnier/13/89b/b94"}
             ]
         },
 
@@ -406,6 +438,22 @@ devfestApp.factory('SpeakersService', [function () {
             "socials": [
                 {"class": "twitter", "link": "https://twitter.com/richard_antoine"},
                 {"class": "github", "link": "https://github.com/antoine-richard"}
+            ]
+        },
+        {
+            "id": "fxrousselot",
+            "topspeaker": false,
+            "firstname": "François-Xavier",
+            "lastname": "Rousselot",
+            "image": "",
+            "category": {
+                "class": "cloud",
+                "title": "Cloud"
+            },
+            "company": "",
+            "about": "François-Xavier Rousselot est Data Innovation and Machine Learning consultant.  He leverages his 4 years of experience in managing Machine Learning and Datascience projects to help executives find the right data opportunities for their international companies. Having both a strong business and technical experience, he has always been able to detect new opportunities, design and successfully implement solutions with the latest technologies.",
+            "socials": [
+                {"class": "linkedin", "link": "https://fr.linkedin.com/in/francoisxavierrousselot"}
             ]
         },
 
@@ -608,6 +656,22 @@ devfestApp.factory('SpeakersService', [function () {
                 {"class": "twitter", "link": "http://twitter.com/jpgouigoux"},
                 {"class": "github", "link": "http://github.com/jp-gouigoux"},
                 {"class": "site", "link": "http://gouigoux.com/blog-fr"}
+            ]
+        },
+        {
+            "id": "fkelly",
+            "topspeaker": false,
+            "firstname": "Frank",
+            "lastname": "Kelly",
+            "image": "",
+            "category": {
+                "class": "cloud",
+                "title": "Cloud"
+            },
+            "company": "",
+            "about": "Frank Kelly is a data scientist at Analytics SEO in London.  With a degree from the University of Cambridge, he co-founded MathSight Ltd where he was responsible for the machine learning pipelines and data science.",
+            "socials": [
+                {"class": "linkedin", "link": "https://www.linkedin.com/profile/view?id=16668039"}
             ]
         },
         {
