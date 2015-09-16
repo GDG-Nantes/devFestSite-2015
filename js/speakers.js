@@ -415,8 +415,8 @@ devfestApp.factory('SpeakersService', [function () {
             "lastname": "Richard",
             "image": "",
             "category": {
-                "class": "web",
-                "title": "Web"
+                "class": "cloud",
+                "title": "Cloud"
             },
             "company": "Restlet",
             "about": "Antoine est \"Code Rider\" chez Restlet où il implémente des trucs sympas sur APISpark, la plateforme d’API as a Service. Il développe des applications web de manière agile depuis plus de 10 ans en Java, Javascript et Ruby. Depuis quelques années il prend plaisir à partager ses expériences dans divers rassemblements de développeurs.",
@@ -424,8 +424,130 @@ devfestApp.factory('SpeakersService', [function () {
                 {"class": "twitter", "link": "https://twitter.com/richard_antoine"},
                 {"class": "github", "link": "https://github.com/antoine-richard"}
             ]
-        }
+        },
 
+        {
+            "id": "mlux",
+            "topspeaker": false,
+            "firstname": "Matthieu",
+            "lastname": "Lux",
+            "image": "",
+            "category": {
+                "class": "web",
+                "title": "Web"
+            },
+            "company": "Zenika",
+            "about": "Développeur, formateur et responsable de l'offre Web au sein de l'agence lyonnaise de Zenika.\n\nAprès une solide expérience dans le monde Java, je suis focalisé aujourd'hui sur le monde du Web et du JavaScript. Plus précisément, mes technologies de prédilection sont actuellement Angular, Gulp, Yeoman, Node et React.\n\nJ'ai également donné un certain nombre de talks sur Angular au MixIt, mais aussi au DevoxxFR et même au [ngEurope](https://www.youtube.com/watch?v=Mk2WwSxK218)\n\nJ'organise également le LyonJS, le meetup JavaScript de Lyon [http://www.meetup.com/LyonJS/](http://www.meetup.com/LyonJS/)\n\nJ'ai enfin crée un générateur Yeoman [generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular) qui propose le démarrage de projets basées sur les technologies Angular & Gulp.",
+            "socials": [
+                {"class": "twitter", "link": "https://twitter.com/swiip"},
+                {"class": "github", "link": "https://github.com/swiip"}
+            ]
+        },
+        {
+            "id": "sdutton",
+            "topspeaker": false,
+            "firstname": "Sam",
+            "lastname": "Dutton",
+            "image": "",
+            "category": {
+                "class": "web",
+                "title": "Web"
+            },
+            "ribon": {
+                "class": "google",
+                "title": "Google Developer Advocate",
+                "link": "https://www.google.com/about/careers/teams/client-facing/dev-rel/",
+                "tile_long": "Google Developer Advocate"
+            },
+            "company": "Google Inc.",
+            "about": "Sam Dutton @sw12 is a Developer Advocate for Google. He publishes the free audio/video/realtime newsletter http://www.medianews.me and maintains http://www.simpl.info, which provides simplest possible examples of HTML, CSS and JavaScript.",
+            "socials": [
+                {"class": "google-plus", "link": "https://plus.google.com/+samdutton"},
+                {"class": "twitter", "link": "https://twitter.com/sw12"},
+                {"class": "github", "link": "https://github.com/samdutton"},
+                {"class": "site", "link": "http://www.samdutton.com/"}
+            ]
+        },
+        {
+            "id": "emargraff",
+            "topspeaker": false,
+            "firstname": "Etienne",
+            "lastname": "Margraff",
+            "image": "",
+            "category": {
+                "class": "web",
+                "title": "Web"
+            },
+            "company": "Microsoft",
+            "about": "Je fais du dev depuis plusieurs années et je suis un geek passionné par la techno. ;-)\nJe m'amuse entre autres avec HTML5, JavaScript, CSS, Visual Studio, Cordova et la mobilité en général. \nJ'ai co-créé de l’outil open-source Vorlon.js (http://www.vorlonjs.io), un outil cross-plateformes pour débugger le web sur mobile.\n\nJe touche aussi un peu à la 3D avec une contribution pour BabylonJS (www.babylonjs.com). \n\nJe suis speaker dans plusieurs événéments comme les TechDays, la DroidCon, des meetups, la Kiwi Party, etc.",
+            "socials": [
+                {"class": "google-plus", "link": "https://plus.google.com/+EtienneMargraff"},
+                {"class": "twitter", "link": "https://twitter.com/meulta"},
+                {"class": "github", "link": "https://github.com/meulta"},
+                {"class": "site", "link": "http://blogs.msdn.com/emargraff"}
+            ]
+        },
+        {
+            "id": "mbynens",
+            "topspeaker": false,
+            "firstname": "Mathias",
+            "lastname": "Bynens",
+            "image": "",
+            "category": {
+                "class": "web",
+                "title": "Web"
+            },
+            "company": "VOF Qiwi.be",
+            "about": "Mathias is a Belgian web standards enthusiast. He likes HTML, CSS, JavaScript, Unicode, performance, and security. At Opera Software he’s a member of the Developer Relations team.",
+            "socials": [
+                {"class": "google-plus", "link": "https://plus.google.com/u/0/+mathiasbynens/posts"},
+                {"class": "twitter", "link": "https://twitter.com/mathias"},
+                {"class": "github", "link": "https://github.com/mathiasbynens"},
+                {"class": "site", "link": "https://mathiasbynens.be/"}
+            ]
+        },
+        {
+            "id": "mancelin",
+            "topspeaker": false,
+            "firstname": "Mathieu",
+            "lastname": "Ancelin",
+            "image": "",
+            "category": {
+                "class": "web",
+                "title": "Web"
+            },
+            "company": "SERLI",
+            "about": "Mathieu ANCELIN est développeur à SERLI, spécialisé dans la programmation web et les frameworks web modernes avec un bon background autour des technologies Java EE. Mathieu est impliqué dans plusieurs projets open-source comme GlassFish et Weld, et en lead également quelques un comme ReactiveCouchbase et Weld-OSGi; Il est membre de l'expert group de la JSR-346, de la JSR 371 et fait partie de l'équipe du Poitou-Charentes JUG.",
+            "socials": [
+                {"class": "twitter", "link": "https://twitter.com/TrevorReznik"},
+                {"class": "github", "link": "https://github.com/mathieuancelin"},
+                {"class": "site", "link": "http://reactivecouchbase.org/"}
+            ]
+        },
+        {
+            "id": "tchatel",
+            "topspeaker": false,
+            "firstname": "Thierry",
+            "lastname": "Chatel",
+            "image": "",
+            "category": {
+                "class": "web",
+                "title": "Web"
+            },
+            "ribon": {
+                "class": "gde",
+                "title": "GDE",
+                "link": "https://developers.google.com/experts/",
+                "tile_long": "Google Developer Expert"
+            },
+            "company": "",
+            "about": "Je suis consultant et formateur, passionné par l'achitecture des applications web, et spécialiste de JavaScript et du framework AngularJS.\nEt Google Developer Expert sur AngularJS depuis 2014.",
+            "socials": [
+                {"class": "google-plus", "link": "https://plus.google.com/u/0/+ThierryChatel"},
+                {"class": "twitter", "link": "https://twitter.com/ThierryChatel"},
+                {"class": "github", "link": "https://github.com/tchatel"}
+            ]
+        }
 
     ];
 
