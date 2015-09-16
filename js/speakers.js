@@ -19,7 +19,7 @@ devfestApp.factory('SpeakersService', [function(){
                 tile_long: "Google Developer Expert"
             },
             company: "Capitaine Train",
-            about: "Passionné de technologies et de design, Cyril est un amoureux d'android et un développeur aux multiples talents. Il est aussi très actif dans la communauté android où il anime régulièrement des sessions et publie des articles sur son blog.",
+            about: "Cyril Mottier is the Android Lead at Capitaine Train and Android Google Developer Expert. Passionate about technology and design, Cyril is an avid lover of Android and a multi-skilled engineer. He is actively involved in the Android community and shares his passion writing blog posts, creating open source libraries and giving talks. His motto: “Do less, but do it insanely great”",
             socials: [
                 {class: "google-plus", link: "https://plus.google.com/+CyrilMottier/"},
                 {class: "twitter", link: "https://twitter.com/cyrilmottier"},
@@ -69,8 +69,8 @@ devfestApp.factory('SpeakersService', [function(){
             firstname: "François",
             lastname: "Beaufort",
             category: {
-                class: "web",
-                title: "Web"
+                class: "mobile",
+                title: "Mobile"
             },
             image: "fbeaufort_360x360.jpg",
             ribon: {
@@ -166,6 +166,81 @@ devfestApp.factory('SpeakersService', [function(){
                 {class: "github", link: "http://github.com/campoy"},
                 {class: "site", link: "http://blog.campoy.cat/"},
                 {class: "linkedin", link: "http://www.linkedin.com/in/campoy"}
+            ]
+        },
+        {
+            id : "smoallic",
+            topspeaker: false,
+            firstname:"Stéphanie",
+            lastname:"Moallic",
+            category: {
+                class: "mobile",
+                title: "Ionic"
+            },
+            image: "",
+            company: "B.Sensory",
+            about: "Développeuse informatique depuis plus de 15 ans, avec une prédilection pour le front-end, les trucs pour faire joli et les bonnes pratiques, dans les techno autour de Java et de la JVM voir du web. Passionnée d'informatique mais pas que...",
+            socials: [
+                {class: "twitter", link: "http://twitter.com/steffy_29"},
+                {class: "github", link: "http://github.com/Steffy29"},
+            ]
+        },
+        {
+            id : "rmenetrier",
+            topspeaker: false,
+            firstname:"Romain",
+            lastname:"Menetrier",
+            category: {
+                class: "mobile",
+                title: "Mobile"
+            },
+            image: "",
+            company: "Makala",
+            about: "Orange Beacon CTO",
+            socials: [
+                {class: "twitter", link: ""},
+            ]
+        },
+        {
+            id : "cwehrung",
+            topspeaker: false,
+            firstname:"Clément",
+            lastname:"Wehrung",
+            category: {
+                class: "mobile",
+                title: "Mobile"
+            },
+            "ribon":{  
+                "class":"gde",
+                "title":"GDE",
+                "link":"https://developers.google.com/experts/",
+                "tile_long":"Google Developer Expert"
+            },
+            image: "",
+            company: "Fuze",
+            about: "Product Guy & Passionate Developer, Passionate about Tech, Product and UX. Strong Focus on Firebase, iOS, JavaScript (Angular, Backbone), Node. Member of Firebase Experts Program.",
+            socials: [
+                {class: "google-plus", link: "https://plus.google.com/+cwehrung"},
+                {class: "twitter", link: "http://twitter.com/cwehrung"},
+                {class: "github", link: "http://github.com/iclems"},
+            ]
+        },
+        {
+            id : "pcharriere",
+            topspeaker: false,
+            firstname:"Philippe",
+            lastname:"Charriere",
+            category: {
+                class: "mobile",
+                title: "Mobile"
+            },
+            image: "",
+            company: "Centre R&D Nicolas Bourbaki",
+            about: "Le jour: je suis un développeur un peu particulier, je suis Responsable de communication pour un centre de R&D qui incube des startups (et plus particulièrement dans le monde de l'IOT).\nLa nuit: je deviens \"Golo Developer Advocate\" (Golo, le petit langage dynamique pour la JVM qui se fait incuber depuis peu chez Eclipse), mon rôle, évangéliser les geeks et former à Golo :)\nJ’ai aussi le plaisir d’être co-organisateur de la conférence Lyonnaise Mix-IT.",
+            socials: [
+                {class: "twitter", link: "http://twitter.com/k33g_org"},
+                {class: "github", link: "http://github.com/k33g"},
+                {class: "site", link: "http://k33g.github.io/"},
             ]
         }
     ];
