@@ -208,12 +208,6 @@ devfestApp.factory('SpeakersService', [function () {
                 "class": "mobile",
                 "title": "Mobile"
             },
-            "ribon": {
-                "class": "gde",
-                "title": "GDE",
-                "link": "https://developers.google.com/experts/",
-                "tile_long": "Google Developer Expert"
-            },
             "image": "",
             "company": "Fuze",
             "about": "Product Guy & Passionate Developer, Passionate about Tech, Product and UX. Strong Focus on Firebase, iOS, JavaScript (Angular, Backbone), Node. Member of Firebase Experts Program.",
@@ -259,6 +253,75 @@ devfestApp.factory('SpeakersService', [function () {
                 {"class": "twitter", "link": "http://twitter.com/manongruaz"},
                 {"class": "site", "link": "http://manongruaz.com"}
             ]
+        },
+        {
+            "id": "fcalzada",
+            "topspeaker": false,
+            "firstname": "Franck",
+            "lastname": "Calzada",
+            "image": "",
+            "category": {
+                "class": "discovery",
+                "title": "Discovery"
+            },
+            "company": "INTUITIVE ROBOTS",
+            "about": "Fondateur et dirigeant d'Intuitive Robots, une jeune startup Nantaise, dont la mission est de concevoir et réaliser des applications pour robots humanoïdes, tels que les fameux robots NAO et PEPPER, le tout dernier robot d'Aldebaran Robotics. Notre but: Donner une étincelle de vie aux robots afin de les accueillir dans nos vies.",
+            "socials": [
+                {"class": "google-plus", "link": "https://plus.google.com/+Intuitive-robots"},
+                {"class": "twitter", "link": "http://twitter.com/IntuitiveRobots"},
+                {"class": "site", "link": "http://www.intuitive-robots.com"}
+            ]
+        },
+        {
+            "id": "mchartier",
+            "topspeaker": false,
+            "firstname": "Mathieu",
+            "lastname": "Chartier",
+            "image": "",
+            "category": {
+                "class": "discovery",
+                "title": "Discovery"
+            },
+            "company": "Internet-Formation",
+            "about": "Mathieu Chartier est un jeune entrepreneur et formateur web basé à Poitiers.\nPassionné par le webmarketing et le développement web (PHP et Javascript/jQuery notamment), il s'est surtout spécialisé dans le référencement web et les réseaux sociaux au travers de différents livres qu'il a rédigés ces dernières années, notamment au côté d'Alexandra Martin (Miss SEO Girl) et d'Olivier Andrieu.",
+            "socials": [
+                {"class": "google-plus", "link": "https://plus.google.com/+MathieuChartierSEO"},
+                {"class": "twitter", "link": "https://twitter.com/Formation_web"},
+                {"class": "site", "link": "http://blog.internet-formation.fr"}
+            ]
+        },
+        {
+            "id": "dcavailles",
+            "topspeaker": false,
+            "firstname": "Damien",
+            "lastname": "Cavaillès",
+            "image": "",
+            "category": {
+                "class": "discovery",
+                "title": "Discovery"
+            },
+            "company": "Tripndrive",
+            "about": "Je suis passionné par la mobilité et ses nouveaux usages et en particulier l'interaction avec les objets connectés.\nJe suis également organisateur du Startup Weekend Lille \"Maker Edition\" et Facilitateur Startup Weekend.\n=D",
+            "socials": [
+                {"class": "twitter", "link": "https://twitter.com/thedamfr"}
+            ]
+        },
+        {
+            "id": "tleriche",
+            "topspeaker": false,
+            "firstname": "Thierry",
+            "lastname": "Leriche",
+            "image": "",
+            "category": {
+                "class": "discovery",
+                "title": "Discovery"
+            },
+            "company": "ICAUDA",
+            "about": "Je suis consultant freelance avec une quinzaine d'années d'expérience. J’interviens principalement sur des projets Web JEE Agile sur de l’architecture, du développement et du team lead. \n\nJe m’investis dans la formation des plus jeunes mais aussi de mes collègues et amis. Je suis d’ailleurs professeur de Génie Logiciel à l'ESIEA et coach sur des projets de formation humaine. \n\nQuand j'ai un peu de temps, entre deux biberons, je suis aussi rédacteur (cf. mes articles, blogs, mémentos, etc.) pour la communauté Developpez.com et le magazine Programmez. Et quand j'ai vraiment du temps, vous pouvez m'entendre en tant qu'orateur (Conférences, JUG, Podcast, etc.)",
+            "socials": [
+                {"class": "twitter", "link": "https://twitter.com/thierryleriche"},
+                {"class": "linkedin", "link": "https://fr.linkedin.com/in/thierryler"}
+            ]
         }
     ];
 
@@ -281,8 +344,8 @@ devfestApp.factory('SpeakersService', [function () {
  */
 devfestApp.controller('SpeakersCtrl', ['$scope', 'SpeakersService', function ($scope, speakerService) {
 
-
     var isTopSpeaker = function (speaker) {
+        //return true;
         return speaker.topspeaker;
     };
     $scope.speakers = speakerService.filter(isTopSpeaker);
