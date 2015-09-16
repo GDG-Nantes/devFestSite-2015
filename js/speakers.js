@@ -95,7 +95,7 @@ devfestApp.factory('SpeakersService', [function(){
                 title: "UX"
             },
             image: "gdorne_360x360.jpeg",
-            company: "Human & Design",
+            company: "Design & Human",
             about: "Je m’appelle Geoffrey Dorne, je suis designer indépendant et fondateur de Design & Human, atelier de design éthique, social et radical.",
             socials: [
                 {class: "google-plus", link: "https://plus.google.com/116718314329691158716"},
@@ -116,7 +116,7 @@ devfestApp.factory('SpeakersService', [function(){
             },
             image: "rgoetter_360x360.jpeg",
             company: "Alsacréations",
-            about: "Créateur du site Alsacreations.com, communauté libre d'apprentissage web spécialisée dans les standards. Co-fondateur de l'agence web Alsacreations.fr. Expert et Formateur en langages HTML et CSS et auteur de divers livres techniques chez Eyrolles.",
+            about: "Intégrateur du Dimanche, dompteur de CSS et tripoteur de HTML, créateur de Alsacreations.com, auteur de quelques livres CSS, Alsacien",
             socials: [
                 {class: "google-plus", link: "https://plus.google.com/+RaphaelGoetter"},
                 {class: "twitter", link: "https://twitter.com/goetter"},
@@ -182,7 +182,7 @@ devfestApp.factory('SpeakersService', [function(){
             about: "Développeuse informatique depuis plus de 15 ans, avec une prédilection pour le front-end, les trucs pour faire joli et les bonnes pratiques, dans les techno autour de Java et de la JVM voir du web. Passionnée d'informatique mais pas que...",
             socials: [
                 {class: "twitter", link: "http://twitter.com/steffy_29"},
-                {class: "github", link: "http://github.com/Steffy29"},
+                {class: "github", link: "http://github.com/Steffy29"}
             ]
         },
         {
@@ -197,9 +197,7 @@ devfestApp.factory('SpeakersService', [function(){
             image: "",
             company: "Makala",
             about: "Orange Beacon CTO",
-            socials: [
-                {class: "twitter", link: ""},
-            ]
+            socials: []
         },
         {
             id : "cwehrung",
@@ -222,7 +220,7 @@ devfestApp.factory('SpeakersService', [function(){
             socials: [
                 {class: "google-plus", link: "https://plus.google.com/+cwehrung"},
                 {class: "twitter", link: "http://twitter.com/cwehrung"},
-                {class: "github", link: "http://github.com/iclems"},
+                {class: "github", link: "http://github.com/iclems"}
             ]
         },
         {
@@ -240,7 +238,7 @@ devfestApp.factory('SpeakersService', [function(){
             socials: [
                 {class: "twitter", link: "http://twitter.com/k33g_org"},
                 {class: "github", link: "http://github.com/k33g"},
-                {class: "site", link: "http://k33g.github.io/"},
+                {class: "site", link: "http://k33g.github.io/"}
             ]
         }
     ];
