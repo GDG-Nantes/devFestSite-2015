@@ -322,7 +322,111 @@ devfestApp.factory('SpeakersService', [function () {
                 {"class": "twitter", "link": "https://twitter.com/thierryleriche"},
                 {"class": "linkedin", "link": "https://fr.linkedin.com/in/thierryler"}
             ]
+        },
+
+
+        {
+            "id": "btalmard",
+            "topspeaker": false,
+            "firstname": "Benjamin",
+            "lastname": "Talmard",
+            "image": "",
+            "category": {
+                "class": "cloud",
+                "title": "Cloud"
+            },
+            "company": "Microsoft France",
+            "about": "En tant que conseiller technologique sur Microsoft Azure dans l'entité « Developers Experience & Evangelism » de Microsoft France, Benjamin est en charge de l'évangélisation de la stack Web et Cloud de Microsoft. Les architectures Web sur Microsoft Azure et le Framework ASP.NET 5 sont donc les sujets sur lequel il passe son temps en ce moment.",
+            "socials": [
+                {"class": "twitter", "link": "https://twitter.com/benjiiim"},
+                {"class": "github", "link": "https://github.com/Benjiiim"}
+            ]
+        },
+        {
+            "id": "dgageot",
+            "topspeaker": false,
+            "firstname": "David",
+            "lastname": "Gageot",
+            "image": "",
+            "category": {
+                "class": "cloud",
+                "title": "Cloud"
+            },
+            "company": "",
+            "about": "",
+            "socials": [
+                {"class": "google-plus", "link": "https://plus.google.com/+DavidGageot/"},
+                {"class": "twitter", "link": "https://twitter.com/dgageot"},
+                {"class": "github", "link": "https://github.com/dgageot"},
+                {"class": "site", "link": "http://blog.javabien.net"}
+            ]
+        },
+        {
+            "id": "lchampenois",
+            "topspeaker": false,
+            "firstname": "Ludovic",
+            "lastname": "Champenois",
+            "image": "",
+            "category": {
+                "class": "cloud",
+                "title": "Cloud"
+            },
+            "ribon": {
+                "class": "gde",
+                "title": "GDE",
+                "link": "https://developers.google.com/experts/",
+                "tile_long": "Google Developer Expert"
+            },
+            "company": "Google Inc.",
+            "about": "Tech Lead, Manager Google Cloud Platform, Java.",
+            "socials": [
+                {"class": "google-plus", "link": "https://plus.google.com/+LudovicChampenois/"},
+                {"class": "twitter", "link": "https://twitter.com/ludoch"},
+                {"class": "github", "link": "https://github.com/ludoch"}
+            ]
+        },
+        {
+            "id": "blegras",
+            "topspeaker": false,
+            "firstname": "Bastien",
+            "lastname": "Legras",
+            "image": "",
+            "category": {
+                "class": "cloud",
+                "title": "Cloud"
+            },
+            "ribon": {
+                "class": "gde",
+                "title": "GDE",
+                "link": "https://developers.google.com/experts/",
+                "tile_long": "Google Developer Expert"
+            },
+            "company": "Google Inc.",
+            "about": "",
+            "socials": [
+                {"class": "twitter", "link": "https://twitter.com/bastienlegras"},
+                {"class": "linkedin", "link": "https://fr.linkedin.com/pub/bastien-legras/a/957/a87"}
+            ]
+        },
+        {
+            "id": "rantoine",
+            "topspeaker": false,
+            "firstname": "Antoine",
+            "lastname": "Richard",
+            "image": "",
+            "category": {
+                "class": "web",
+                "title": "Web"
+            },
+            "company": "Restlet",
+            "about": "Antoine est \"Code Rider\" chez Restlet où il implémente des trucs sympas sur APISpark, la plateforme d’API as a Service. Il développe des applications web de manière agile depuis plus de 10 ans en Java, Javascript et Ruby. Depuis quelques années il prend plaisir à partager ses expériences dans divers rassemblements de développeurs.",
+            "socials": [
+                {"class": "twitter", "link": "https://twitter.com/richard_antoine"},
+                {"class": "github", "link": "https://github.com/antoine-richard"}
+            ]
         }
+
+
     ];
 
 
