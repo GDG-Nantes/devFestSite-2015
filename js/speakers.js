@@ -164,6 +164,23 @@ devfestApp.factory('SpeakersService', [function () {
             ]
         },
         {
+            "id": "aneveu",
+            "topspeaker": false,
+            "firstname": "Audrey",
+            "lastname": "Neveu",
+            "category": {
+                "class": "mobile",
+                "title": "Ionic"
+            },
+            "image": "aneveu.jpg",
+            "company": "GeoKaps",
+            "about": "Software Engineer at GeoKaps, Devoxx4Kids Hacktivist and conferences addict",
+            "socials": [
+                {"class": "twitter", "link": "http://twitter.com/Audrey_Neveu"},
+                {"class": "linkedin", "link": "https://fr.linkedin.com/in/audreyneveu"}
+            ]
+        },
+        {
             "id": "rmenetrier",
             "topspeaker": false,
             "firstname": "Romain",
@@ -442,6 +459,23 @@ devfestApp.factory('SpeakersService', [function () {
             ]
         },
         {
+            "id": "mboillod",
+            "topspeaker": false,
+            "firstname": "Manuel",
+            "lastname": "Boillod",
+            "image": "mboillod_360x360.jpg",
+            "category": {
+                "class": "cloud",
+                "title": "Cloud"
+            },
+            "company": "Restlet",
+            "about": "Manuel est Code Artist chez Restlet (restlet.com). Il aime par dessus tout le beau code et tout ce qui à attrait aux déploiement continu. pratiques qu’il applique lors du développement de la plateforme d’hébergement d’API REST et d’API management “APISpark” de Restlet. Manuel est également JUG leader à Nantes (nantesjug.org) et aime échanger avec la communauté sur les différentes solutions techniques.",
+            "socials": [
+                {"class": "twitter", "link": "https://twitter.com/mboillod"},
+                {"class": "linkedin", "link": "https://fr.linkedin.com/in/manuelboillod"}
+            ]
+        },
+        {
             "id": "fxrousselot",
             "topspeaker": false,
             "firstname": "François-Xavier",
@@ -642,24 +676,26 @@ devfestApp.factory('SpeakersService', [function () {
                 {"class": "site", "link": "http://wassimchegham.com"}
             ]
         },
-        {
-            "id": "jpgouigoux",
-            "topspeaker": false,
-            "firstname": "Jean-Philippe",
-            "lastname": "Gouigoux",
-            "image": "jpgouigoux.jpg",
-            "category": {
-                "class": "cloud",
-                "title": "Cloud"
-            },
-            "company": "MVP",
-            "about": "JP Gouigoux est CTO d'un éditeur de logiciel, pour lequel il organise une équipe de 50 personnes autour d'une refonte de progiciel en architecture microservices. Auteur de quelques livres, blogueur, MVP depuis 4 ans dans la spécialité Intégration, il intervient régulièrement en universités, écoles ou conférences. Sa spécialité est l'urbanisation des systèmes logiciels, au carrefour de l'architecture et de l'agilité. Lorsqu'il n'est pas derrière un clavier, JP est le plus souvent sur un vélo, en train de bricoler ou de faire du Lego.",
-            "socials": [
-                {"class": "twitter", "link": "http://twitter.com/jpgouigoux"},
-                {"class": "github", "link": "http://github.com/jp-gouigoux"},
-                {"class": "site", "link": "http://gouigoux.com/blog-fr"}
-            ]
-        },
+        /*
+         {
+         "id": "jpgouigoux",
+         "topspeaker": false,
+         "firstname": "Jean-Philippe",
+         "lastname": "Gouigoux",
+         "image": "jpgouigoux.jpg",
+         "category": {
+         "class": "cloud",
+         "title": "Cloud"
+         },
+         "company": "MVP",
+         "about": "JP Gouigoux est CTO d'un éditeur de logiciel, pour lequel il organise une équipe de 50 personnes autour d'une refonte de progiciel en architecture microservices. Auteur de quelques livres, blogueur, MVP depuis 4 ans dans la spécialité Intégration, il intervient régulièrement en universités, écoles ou conférences. Sa spécialité est l'urbanisation des systèmes logiciels, au carrefour de l'architecture et de l'agilité. Lorsqu'il n'est pas derrière un clavier, JP est le plus souvent sur un vélo, en train de bricoler ou de faire du Lego.",
+         "socials": [
+         {"class": "twitter", "link": "http://twitter.com/jpgouigoux"},
+         {"class": "github", "link": "http://github.com/jp-gouigoux"},
+         {"class": "site", "link": "http://gouigoux.com/blog-fr"}
+         ]
+         },
+         */
         {
             "id": "fkelly",
             "topspeaker": false,
@@ -727,8 +763,26 @@ devfestApp.factory('SpeakersService', [function () {
                 {"class": "twitter", "link": "https://twitter.com/ceciliaBossard"},
                 {"class": "site", "link": "https://javagile.wordpress.com/"}
             ]
+        },
+        {
+            "id": "jpalies",
+            "topspeaker": false,
+            "firstname": "Jean",
+            "lastname": "Paliès",
+            "image": "jpalies.jpg",
+            "category": {
+                "class": "discovery",
+                "title": "Discovery"
+            },
+            "company": "",
+            "about": "Développeur Java, Angular JS le jour, bidouilleur la nuit. Après quelques années de bricolage et découvertes, j'ai repris les bases de la programmation il y a 15 ans avec Scratch, que je réutilise avec bonheur maintenant dans les Devoxx4Kids ou les Coding Goûters à Nantes, dont je suis cofondateur. Je suis aussi membre et confondateur des WIT.",
+            "socials": [
+                {"class": "google-plus", "link": "https://plus.google.com/u/0/106552014287288043542/"},
+                {"class": "twitter", "link": "https://twitter.com/jpalies"},
+                {"class": "github", "link": "https://github.com/JeanPalies"},
+                {"class": "site", "link": "https://javagile.wordpress.com/"}
+            ]
         }
-
     ];
 
     for (var speakerIndex = 0; speakerIndex < speakers.length; speakerIndex++) {
