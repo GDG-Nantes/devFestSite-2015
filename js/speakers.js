@@ -713,11 +713,11 @@ devfestApp.factory('SpeakersService', [function () {
             ]
         },
         {
-            "id": "acatelandaxel",
+            "id": "acateland",
             "topspeaker": false,
             "firstname": "Axel",
             "lastname": "Cateland",
-            "image": "acatelandaxel.jpg",
+            "image": "acateland.jpg",
             "category": {
                 "class": "web",
                 "title": "Web"
