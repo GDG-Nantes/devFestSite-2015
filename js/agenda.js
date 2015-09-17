@@ -113,6 +113,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                     "dcavailles"
                 ]
             },
+            /*
             {
                 "id": "s4",
                 "title": "Hand's on Web Components with Polymer 1.0",
@@ -129,6 +130,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                     "hgonzalez"
                 ]
             },
+            */
             {
                 "id": "s5",
                 "title": "TBD",//real sense
@@ -161,6 +163,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                     "gdorne"
                 ]
             },
+            /*
             {
                 "id": "s7",
                 "title": "Prise en main de Kubernetes",
@@ -177,6 +180,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                     "amoussine-pouchkine"
                 ]
             },
+            */
             {
                 "id": "s8",
                 "title": "Cloud Ops",
@@ -209,6 +213,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                     "rmenetrier"
                 ]
             },
+            /*
             {
                 "id": "s10",
                 "title": "React + Redux : les mains dans le cambouis.",
@@ -225,6 +230,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                     "acateland"
                 ]
             },
+            */
             {
                 "id": "s11",
                 "title": "Management en couleur avec DISC",
@@ -305,6 +311,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                     "dgageot"
                 ]
             },
+            /*
             {
                 "id": "s16",
                 "title": "Angular 2 in action",
@@ -321,6 +328,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                     "wchegham"
                 ]
             },
+            */
             {
                 "id": "s17",
                 "title": "Flexrox",
@@ -547,7 +555,6 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
              "jgouigoux"
              ]
              },
-             */
             {
                 "id": "s30",
                 "title": "TBD",
@@ -562,6 +569,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                 "slides": "",
                 "speakers": []
             },
+            */
             {
                 "id": "s31",
                 "title": "Redefining PaaS: Managed container based microservices on Google App Engine",
@@ -642,6 +650,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                     "fcampoy"
                 ]
             },
+            /*
             {
                 "id": "s36",
                 "title": "Graph clustering in Python",
@@ -658,6 +667,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                     "fkelly"
                 ]
             },
+            */
             {
                 "id": "s1",
                 "title": "Accueil",
@@ -712,7 +722,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                 "hour": "h12"
             }
         ]
-    }
+    };
+
     // On map les speakers
     _(agenda.sessions).map(function (session) {
         if (!session.speakers)
