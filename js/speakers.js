@@ -345,7 +345,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Benjamin",
             "lastname": "Talmard",
-            "image": "",
+            "image": "btalmard_360x360.jpg",
             "category": {
                 "class": "cloud",
                 "title": "Cloud"
@@ -362,7 +362,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "David",
             "lastname": "Gageot",
-            "image": "",
+            "image": "dgageot_360x360.jpg",
             "category": {
                 "class": "cloud",
                 "title": "Cloud"
@@ -381,7 +381,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Ludovic",
             "lastname": "Champenois",
-            "image": "",
+            "image": "lchampenois_360x360.jpg",
             "category": {
                 "class": "cloud",
                 "title": "Cloud"
@@ -424,11 +424,11 @@ devfestApp.factory('SpeakersService', [function () {
             ]
         },
         {
-            "id": "rantoine",
+            "id": "arichard",
             "topspeaker": false,
             "firstname": "Antoine",
             "lastname": "Richard",
-            "image": "",
+            "image": "arichard_360x360.jpg",
             "category": {
                 "class": "cloud",
                 "title": "Cloud"
