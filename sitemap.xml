@@ -20,7 +20,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
-    <!--
+    
     <url>
       <loc>http://devfest.gdgnantes.com/speakers</loc>
       <changefreq>weekly</changefreq>
@@ -29,8 +29,8 @@
     <url>
       <loc>http://devfest.gdgnantes.com/schedule</loc>
       <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
+      <priority>1</priority>
     </url>
-    -->
+    
 
 </urlset>
