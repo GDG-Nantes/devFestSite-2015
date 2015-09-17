@@ -187,6 +187,12 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Clément",
             "lastname": "Wehrung",
+            "ribon": {
+                "class": "gde",
+                "title": "GDE",
+                "link": "https://developers.google.com/experts/",
+                "tile_long": "Google Developer Expert"
+            },
             "category": {
                 "class": "mobile",
                 "title": "Mobile"
@@ -392,7 +398,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "link": "https://developers.google.com/experts/",
                 "tile_long": "Google Developer Expert"
             },
-            "company": "Google Inc.",
+            "company": "Google",
             "about": "Tech Lead, Manager Google Cloud Platform, Java.",
             "socials": [
                 {"class": "google-plus", "link": "https://plus.google.com/+LudovicChampenois/"},
@@ -416,7 +422,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "link": "https://developers.google.com/experts/",
                 "tile_long": "Google Developer Expert"
             },
-            "company": "Google Inc.",
+            "company": "Google",
             "about": "",
             "socials": [
                 {"class": "twitter", "link": "https://twitter.com/bastienlegras"},
@@ -490,7 +496,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "link": "https://www.google.com/about/careers/teams/client-facing/dev-rel/",
                 "tile_long": "Google Developer Advocate"
             },
-            "company": "Google Inc.",
+            "company": "Google",
             "about": "Sam Dutton @sw12 is a Developer Advocate for Google. He publishes the free audio/video/realtime newsletter http://www.medianews.me and maintains http://www.simpl.info, which provides simplest possible examples of HTML, CSS and JavaScript.",
             "socials": [
                 {"class": "google-plus", "link": "https://plus.google.com/+samdutton"},
@@ -590,7 +596,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "class": "web",
                 "title": "Web"
             },
-            "company": "Google Inc.",
+            "company": "Google",
             "about": "Google Developer Relations",
             "socials": [
                 {"class": "google-plus", "link": "https://plus.google.com/u/0/+AlexisMP"},
