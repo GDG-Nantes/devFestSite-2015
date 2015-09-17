@@ -622,7 +622,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Wassim",
             "lastname": "Chegham",
-            "image": "",
+            "image": "wchegham_360x360.jpg",
             "category": {
                 "class": "web",
                 "title": "Web"
@@ -681,7 +681,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Axel",
             "lastname": "Cateland",
-            "image": "",
+            "image": "acatelandaxel.jpg",
             "category": {
                 "class": "web",
                 "title": "Web"
@@ -730,7 +730,6 @@ devfestApp.factory('SpeakersService', [function () {
         }
 
     ];
-
 
     for (var speakerIndex = 0; speakerIndex < speakers.length; speakerIndex++) {
         var speaker = speakers[speakerIndex];
