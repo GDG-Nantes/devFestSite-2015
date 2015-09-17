@@ -160,7 +160,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "class": "mobile",
                 "title": "Ionic"
             },
-            "image": "",
+            "image": "smoallic_360x360.jpg",
             "company": "B.Sensory",
             "about": "Développeuse informatique depuis plus de 15 ans, avec une prédilection pour le front-end, les trucs pour faire joli et les bonnes pratiques, dans les techno autour de Java et de la JVM voir du web. Passionnée d'informatique mais pas que...",
             "socials": [
@@ -191,7 +191,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "class": "mobile",
                 "title": "Mobile"
             },
-            "image": "",
+            "image": "cwehrung_360x360.png",
             "company": "Fuze",
             "about": "Product Guy & Passionate Developer, Passionate about Tech, Product and UX. Strong Focus on Firebase, iOS, JavaScript (Angular, Backbone), Node. Member of Firebase Experts Program.",
             "socials": [
@@ -209,7 +209,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "class": "mobile",
                 "title": "Mobile"
             },
-            "image": "",
+            "image": "pcharriere_360x360.jpg",
             "company": "Centre R&D Nicolas Bourbaki",
             "about": "Le jour: je suis un développeur un peu particulier, je suis Responsable de communication pour un centre de R&D qui incube des startups (et plus particulièrement dans le monde de l'IOT).\nLa nuit: je deviens \"Golo Developer Advocate\" (Golo, le petit langage dynamique pour la JVM qui se fait incuber depuis peu chez Eclipse), mon rôle, évangéliser les geeks et former à Golo :)\nJ’ai aussi le plaisir d’être co-organisateur de la conférence Lyonnaise Mix-IT.",
             "socials": [
