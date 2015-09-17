@@ -452,7 +452,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "title": "Cloud"
             },
             "company": "Restlet",
-            "about": "Antoine est \"Code Rider\" chez Restlet où il implémente des trucs sympas sur APISpark, la plateforme d’API as a Service. Il développe des applications web de manière agile depuis plus de 10 ans en Java, Javascript et Ruby. Depuis quelques années il prend plaisir à partager ses expériences dans divers rassemblements de développeurs.",
+            "about": "Antoine est \"Code Rider\" chez <a href='http://restlet.com/' target='_blank'>Restlet</a> où il implémente des trucs sympas sur APISpark, la plateforme d’API as a Service. Il développe des applications web de manière agile depuis plus de 10 ans en Java, Javascript et Ruby. Depuis quelques années il prend plaisir à partager ses expériences dans divers rassemblements de développeurs.",
             "socials": [
                 {"class": "twitter", "link": "https://twitter.com/richard_antoine"},
                 {"class": "github", "link": "https://github.com/antoine-richard"}
@@ -469,7 +469,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "title": "Cloud"
             },
             "company": "Restlet",
-            "about": "Manuel est Code Artist chez Restlet (restlet.com). Il aime par dessus tout le beau code et tout ce qui à attrait aux déploiement continu. pratiques qu’il applique lors du développement de la plateforme d’hébergement d’API REST et d’API management “APISpark” de Restlet. Manuel est également JUG leader à Nantes (nantesjug.org) et aime échanger avec la communauté sur les différentes solutions techniques.",
+            "about": "Manuel est Code Artist chez <a href='http://restlet.com/' target='_blank'>Restlet</a>. Il aime par dessus tout le beau code et tout ce qui à attrait aux déploiement continu. pratiques qu’il applique lors du développement de la plateforme d’hébergement d’API REST et d’API management “APISpark” de Restlet. Manuel est également JUG leader à Nantes (<a href='http://www.nantesjug.org/' target='_blank'>nantesjug.org</a>) et aime échanger avec la communauté sur les différentes solutions techniques.",
             "socials": [
                 {"class": "twitter", "link": "https://twitter.com/mboillod"},
                 {"class": "linkedin", "link": "https://fr.linkedin.com/in/manuelboillod"}
@@ -503,7 +503,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "title": "Web"
             },
             "company": "Zenika",
-            "about": "Développeur, formateur et responsable de l'offre Web au sein de l'agence lyonnaise de Zenika.\n\nAprès une solide expérience dans le monde Java, je suis focalisé aujourd'hui sur le monde du Web et du JavaScript. Plus précisément, mes technologies de prédilection sont actuellement Angular, Gulp, Yeoman, Node et React.\n\nJ'ai également donné un certain nombre de talks sur Angular au MixIt, mais aussi au DevoxxFR et même au [ngEurope](https://www.youtube.com/watch?v=Mk2WwSxK218)\n\nJ'organise également le LyonJS, le meetup JavaScript de Lyon [http://www.meetup.com/LyonJS/](http://www.meetup.com/LyonJS/)\n\nJ'ai enfin crée un générateur Yeoman [generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular) qui propose le démarrage de projets basées sur les technologies Angular & Gulp.",
+            "about": "Développeur, formateur et responsable de l'offre Web au sein de l'agence lyonnaise de Zenika.\n\nAprès une solide expérience dans le monde Java, je suis focalisé aujourd'hui sur le monde du Web et du JavaScript. Plus précisément, mes technologies de prédilection sont actuellement Angular, Gulp, Yeoman, Node et React.\n\nJ'ai également donné un certain nombre de talks sur Angular au MixIt, mais aussi au DevoxxFR et même au <a href='https://www.youtube.com/watch?v=Mk2WwSxK218' target='_blank'>[ngEurope]</a>\n\nJ'organise également le LyonJS, le meetup JavaScript de Lyon <a href='http://www.meetup.com/LyonJS/' target='_blank'>[http://www.meetup.com/LyonJS/]</a>\n\nJ'ai enfin crée un générateur Yeoman <a href='https://github.com/Swiip/generator-gulp-angular' target='_blank'>[generator-gulp-angular]</a> qui propose le démarrage de projets basées sur les technologies Angular & Gulp.",
             "socials": [
                 {"class": "twitter", "link": "https://twitter.com/swiip"},
                 {"class": "github", "link": "https://github.com/swiip"}
@@ -526,7 +526,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "tile_long": "Google Developer Advocate"
             },
             "company": "Google",
-            "about": "Sam Dutton @sw12 is a Developer Advocate for Google. He publishes the free audio/video/realtime newsletter http://www.medianews.me and maintains http://www.simpl.info, which provides simplest possible examples of HTML, CSS and JavaScript.",
+            "about": "Sam Dutton <a href='https://twitter.com/sw12' target='_blank'>@sw12</a> is a Developer Advocate for Google. He publishes the free audio/video/realtime newsletter <a href='http://www.medianews.me' target='_blank'>http://www.medianews.me</a> and maintains <a href='http://www.simpl.info' target='_blank'>http://www.simpl.info</a>, which provides simplest possible examples of HTML, CSS and JavaScript.",
             "socials": [
                 {"class": "google-plus", "link": "https://plus.google.com/+samdutton"},
                 {"class": "twitter", "link": "https://twitter.com/sw12"},
@@ -545,7 +545,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "title": "Web"
             },
             "company": "Microsoft",
-            "about": "Je fais du dev depuis plusieurs années et je suis un geek passionné par la techno. ;-)\nJe m'amuse entre autres avec HTML5, JavaScript, CSS, Visual Studio, Cordova et la mobilité en général. \nJ'ai co-créé de l’outil open-source Vorlon.js (http://www.vorlonjs.io), un outil cross-plateformes pour débugger le web sur mobile.\n\nJe touche aussi un peu à la 3D avec une contribution pour BabylonJS (www.babylonjs.com). \n\nJe suis speaker dans plusieurs événéments comme les TechDays, la DroidCon, des meetups, la Kiwi Party, etc.",
+            "about": "Je fais du dev depuis plusieurs années et je suis un geek passionné par la techno. ;-)\nJe m'amuse entre autres avec HTML5, JavaScript, CSS, Visual Studio, Cordova et la mobilité en général. \nJ'ai co-créé de l’outil open-source <a href='http://www.vorlonjs.io' target='_blank'>Vorlon.js</a>, un outil cross-plateformes pour débugger le web sur mobile.\n\nJe touche aussi un peu à la 3D avec une contribution pour <a href='http://www.babylonjs.com' target='_blank'>BabylonJS</a>. \n\nJe suis speaker dans plusieurs événéments comme les TechDays, la DroidCon, des meetups, la Kiwi Party, etc.",
             "socials": [
                 {"class": "google-plus", "link": "https://plus.google.com/+EtienneMargraff"},
                 {"class": "twitter", "link": "https://twitter.com/meulta"},
@@ -645,7 +645,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "title": "Web"
             },
             "company": "Cityzen Data",
-            "about": "Spaniard lost in Brittany, unconformist coder, Java craftsman, dreamer and all-around geek.\n Works at @CityzenData. Founder & leader of @FinistJUG & @FinistGDG",
+            "about": "Spaniard lost in Brittany, unconformist coder, Java craftsman, dreamer and all-around geek.\n Works at <a href='https://twitter.com/CityzenData' target='_blank'>@CityzenData</a>. Founder & leader of <a href='https://twitter.com/FinistJUG' target='_blank'>@FinistJUG</a> & <a href='https://twitter.com/search?q=@FinistGDG' target='_blank'>@FinistGDG</a>",
             "socials": [
                 {"class": "google-plus", "link": "https://plus.google.com/u/0/100578619938900089909"},
                 {"class": "twitter", "link": "https://twitter.com/LostInBrittany"}
@@ -668,7 +668,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "tile_long": "Google Developer Expert"
             },
             "company": "SII IDF",
-            "about": "Front-stack JavaScript Consultant @SII_IDF • Google Developer Expert for AngularJS • Author • Speaker • Trainer • Hacker • Photographer",
+            "about": "Front-stack JavaScript Consultant <a href='https://twitter.com/SII_IDF' target='_blank'>@SII_IDF</a> • Google Developer Expert for AngularJS • Author • Speaker • Trainer • Hacker • Photographer",
             "socials": [
                 {"class": "google-plus", "link": "https://plus.google.com/+WassimCheghamJavaScript/"},
                 {"class": "twitter", "link": "https:/twitter.com/manekinekko"},
@@ -753,6 +753,7 @@ devfestApp.factory('SpeakersService', [function () {
             ]
         },
 
+
         {
             "id": "cbossard",
             "topspeaker": false,
@@ -764,7 +765,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "title": "Discovery"
             },
             "company": "",
-            "about": "ai un but : aider les équipes à produire des logiciels utiles aux utilisateurs finaux. Pour cela, je les accompagne en intégrant les équipes de développement ou en les assistant dans leur transition agile. Impliquée dans la communauté agile nantaise, je participe également à l'organisation de l'Agile Tour de Nantes. Femme développeuse, je suis également co-fondatrice du groupe Women In Technology à Nantes, dont le but est de promouvoir les femmes dans la technique. Dans ce cadre, je participe également aux initiations à la programmation à destination des enfants avec des initiatives telles que les Devoxx4Kids ou les coding goûters.",
+            "about": "ai un but : aider les équipes à produire des logiciels utiles aux utilisateurs finaux. Pour cela, je les accompagne en intégrant les équipes de développement ou en les assistant dans leur transition agile. Impliquée dans la communauté agile nantaise, je participe également à l'organisation de l'Agile Tour de Nantes. Femme développeuse, je suis également co-fondatrice du groupe <a href='http://nantes-wit.fr/' target='_blank'>Women In Technology à Nantes</a>, dont le but est de promouvoir les femmes dans la technique. Dans ce cadre, je participe également aux initiations à la programmation à destination des enfants avec des initiatives telles que les <a href='http://www.devoxx4kids.org/france/evenements/devoxx4kids-nantes/' target='_blank'>Devoxx4Kids</a> ou les <a href='https://nantescodinggouters.wordpress.com/' target='_blank'>Coding Goûters à Nantes</a>.",
             "socials": [
                 {"class": "twitter", "link": "https://twitter.com/ceciliaBossard"},
                 {"class": "site", "link": "https://javagile.wordpress.com/"}
@@ -781,7 +782,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "title": "Discovery"
             },
             "company": "",
-            "about": "Développeur Java, Angular JS le jour, bidouilleur la nuit. Après quelques années de bricolage et découvertes, j'ai repris les bases de la programmation il y a 15 ans avec Scratch, que je réutilise avec bonheur maintenant dans les Devoxx4Kids ou les Coding Goûters à Nantes, dont je suis cofondateur. Je suis aussi membre et confondateur des WIT.",
+            "about": "Développeur Java, Angular JS le jour, bidouilleur la nuit. Après quelques années de bricolage et découvertes, j'ai repris les bases de la programmation il y a 15 ans avec Scratch, que je réutilise avec bonheur maintenant dans les <a href='http://www.devoxx4kids.org/france/evenements/devoxx4kids-nantes/' target='_blank'>Devoxx4Kids</a> ou les <a href='https://nantescodinggouters.wordpress.com/' target='_blank'>Coding Goûters à Nantes</a>, dont je suis cofondateur. Je suis aussi membre et confondateur des <a href='http://nantes-wit.fr/' target='_blank'>Women In Technology à Nantes</a>.",
             "socials": [
                 {"class": "google-plus", "link": "https://plus.google.com/u/0/106552014287288043542/"},
                 {"class": "twitter", "link": "https://twitter.com/jpalies"},
@@ -790,6 +791,8 @@ devfestApp.factory('SpeakersService', [function () {
             ]
         }
     ];
+
+
 
     for (var speakerIndex = 0; speakerIndex < speakers.length; speakerIndex++) {
         var speaker = speakers[speakerIndex];
