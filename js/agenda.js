@@ -7,8 +7,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             , web: "Web"
             , cloud: "Cloud et Big Data"
             , decouverte: "Découverte"
-            //, codelabweb: "CodeLab Web"
-            //, codelabcloud: "CodeLab Cloud"
+            , codelabweb: "CodeLab Web"
+            , codelabcloud: "CodeLab Cloud"
         },
         hours: {
             "h01": {
@@ -94,6 +94,27 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                 "minStart": "30",
                 "hourEnd": "22",
                 "minEnd": "30"
+            },
+            "h13": {
+                "id": "h13",
+                "hourStart": "09",
+                "minStart": "40",
+                "hourEnd": "11",
+                "minEnd": "30"
+            },
+            "h14": {
+                "id": "h14",
+                "hourStart": "14",
+                "minStart": "00",
+                "hourEnd": "15",
+                "minEnd": "50"
+            },
+            "h15": {
+                "id": "h15",
+                "hourStart": "16",
+                "minStart": "40",
+                "hourEnd": "18",
+                "minEnd": "30"
             }
         },
         sessions: [
@@ -113,7 +134,6 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                     "dcavailles"
                 ]
             },
-            /*
             {
                 "id": "s4",
                 "title": "Hand's on Web Components with Polymer 1.0",
@@ -123,14 +143,13 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                 "difficulty": 101,
                 "all": false,
                 "lang": "fr",
-                "hour": "",
+                "hour": "h13",
                 "video": "",
                 "slides": "",
                 "speakers": [
                     "hgonzalez"
                 ]
             },
-            */
             {
                 "id": "s5",
                 "title": "TBD",//real sense
@@ -161,7 +180,6 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                     "gdorne"
                 ]
             },
-            /*
             {
                 "id": "s7",
                 "title": "Prise en main de Kubernetes",
@@ -171,14 +189,13 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                 "difficulty": 202,
                 "all": false,
                 "lang": "fr",
-                "hour": "",
+                "hour": "h14",
                 "video": "",
                 "slides": "",
                 "speakers": [
                     "amoussine-pouchkine"
                 ]
             },
-            */
             {
                 "id": "s8",
                 "title": "Cloud Ops",
@@ -211,7 +228,6 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                     "rmenetrier"
                 ]
             },
-            /*
             {
                 "id": "s10",
                 "title": "React + Redux : les mains dans le cambouis.",
@@ -221,14 +237,13 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                 "difficulty": 202,
                 "all": false,
                 "lang": "fr",
-                "hour": "",
+                "hour": "h15",
                 "video": "",
                 "slides": "",
                 "speakers": [
                     "acateland"
                 ]
             },
-            */
             {
                 "id": "s11",
                 "title": "Management en couleur avec DISC",
@@ -309,7 +324,6 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                     "dgageot"
                 ]
             },
-            /*
             {
                 "id": "s16",
                 "title": "Angular 2 in action",
@@ -319,14 +333,13 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                 "difficulty": 101,
                 "all": false,
                 "lang": "fr",
-                "hour": "",
+                "hour": "h14",
                 "video": "",
                 "slides": "",
                 "speakers": [
                     "wchegham"
                 ]
             },
-            */
             {
                 "id": "s17",
                 "title": "Flexrox",
@@ -536,7 +549,6 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                     "emargraff"
                 ]
             },
-            /*
              {
              "id": "s30",
              "title": "Mon architecture microservices sur un cas d'usage urbanisé en 2 heures chrono avec Docker",
@@ -546,14 +558,13 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
              "difficulty": 101,
              "all": false,
              "lang": "fr",
-             "hour": "",
+             "hour": "h13",
              "video": "",
              "slides": "",
              "speakers": [
              "jpgouigoux"
              ]
              },
-            */
             {
                 "id": "s31",
                 "title": "Redefining PaaS: Managed container based microservices on Google App Engine",
@@ -634,28 +645,26 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                     "fcampoy"
                 ]
             },
-            /*
             {
                 "id": "s36",
                 "title": "Graph clustering in Python",
                 "confRoom": "Hangar",
                 "desc": "Clustering of data in a way that will make use of inherent structural information is an increasingly important task for many data scientists. This talk will explore the challenges associated with clustering of complex networked data for the commercial application of search keyword optimisation. We'll take a look at several techniques and demonstrate some of them with the package iGraph, available to Python users. If time permits we shall round off by examining how to visualise the results in an interactive fashion.",
-                "type": "cloud",
+                "type": "codelab-cloud",
                 "difficulty": 101,
                 "all": false,
                 "lang": "en",
-                "hour": "",
+                "hour": "h15",
                 "video": "",
                 "slides": "",
                 "speakers": [
                     "fkelly"
                 ]
             },
-            */
             {
                 "id": "s1",
                 "title": "Accueil",
-                "confRoom": "Espace Les Machines",
+                "confRoom": "Espace Chateau des ducs",
                 "desc": "Profitez de cet instant pour déguster une collation et un café avant d'enchaîner sur une journée bien remplie ! ;)",
                 "type": "white",
                 "all": true,
@@ -690,7 +699,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             },
             {
                 "id": "s98",
-                "confRoom": "Espace Les Machines",
+                "confRoom": "Espace Chateau des ducs",
                 "title": "Pause",
                 "type": "white",
                 "all": true,
@@ -721,7 +730,13 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
     }).value();
 
     // On prépare les données pour mieux les afficher
-    agenda.sessionsTransform = _.chain(agenda.sessions).forEach(function (session) {
+    agenda.sessionsTransform = _.chain(agenda.sessions).filter(function(session){
+    	return session.type === 'white'
+    		|| session.type === 'mobile'
+    		|| session.type === 'web'
+    		|| session.type === 'cloud'
+    		|| session.type === 'discovery';
+    }).forEach(function (session) {
         session.hourContent = agenda.hours[session.hour]
     }).groupBy(function (session) {
         return session.hour;
@@ -744,8 +759,33 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
         }).value();
     }).values().sortBy(function (sessionValues) {
         return sessionValues[0].hour;
+    }).value();
+
+    agenda.codelabTransform = _.chain(agenda.sessions).filter(function(session){
+    	return session.type === 'codelab-web'
+    		|| session.type === 'codelab-cloud';
+    }).forEach(function (session) {
+        session.hourContent = agenda.hours[session.hour]
+    }).groupBy(function (session) {
+        return session.hour;
+    }).mapValues(function (sessionValues) {
+        return _(sessionValues).forEach(function (session) {
+            session.classCol = sessionValues.length === 1 ? 'col-md-12' : 'col-md-3';
+        }).sortBy(function (session) {
+            switch (session.type) {
+                case 'codelab-web':
+                    return 0;
+                case 'codelab-cloud' :
+                    return 1;
+                default :
+                    return 2;
+            }
+        }).value();
+    }).values().sortBy(function (sessionValues) {
+        return sessionValues[0].hour;
     })
         .value();
+
 
     return agenda;
 }]);
