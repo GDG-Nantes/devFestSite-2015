@@ -581,7 +581,7 @@ devfestApp.factory('SpeakersService', [function () {
         },
 
         {
-            "id": "alexismp",
+            "id": "amoussine-pouchkine",
             "topspeaker": false,
             "firstname": "Alexis",
             "lastname": "Moussine-pouchkine",
@@ -749,8 +749,8 @@ devfestApp.factory('SpeakersService', [function () {
 devfestApp.controller('SpeakersCtrl', ['$scope', 'SpeakersService', function ($scope, speakerService) {
 
     var isTopSpeaker = function (speaker) {
-        //return true;
-        return speaker.topspeaker;
+        return true;
+        //return speaker.topspeaker;
     };
     $scope.speakers = speakerService.filter(isTopSpeaker);
 
