@@ -792,17 +792,15 @@ devfestApp.factory('SpeakersService', [function () {
         }
     ];
 
+    speakers = _.chain(speakers).forEach(function(speaker){
+        _.forEach(speaker.socials, function(social){
+            social.svg = "/img/sprites/sprites.svg#icon-" + social.class;
+        });
+    }).sortBy(function(speaker){
+        return speaker.lastname;
+    }).value();
 
-
-    for (var speakerIndex = 0; speakerIndex < speakers.length; speakerIndex++) {
-        var speaker = speakers[speakerIndex];
-        if (speaker.socials.length > 0) {
-            for (var socialIndex = 0; socialIndex < speaker.socials.length; socialIndex++) {
-                var social = speaker.socials[socialIndex];
-                social.svg = "/img/sprites/sprites.svg#icon-" + social.class;
-            }
-        }
-    }
+   
 
     return speakers;
 }]);
