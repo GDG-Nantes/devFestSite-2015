@@ -50,7 +50,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Thomas",
             "lastname": "Guenoux",
-            "image": "commitstrip_360x360.jpg",
+            "image": "tguenoux_360x360.jpeg",
             "category": {
                 "class": "discovery",
                 "title": "Keynote"
@@ -675,8 +675,7 @@ devfestApp.factory('SpeakersService', [function () {
                 {"class": "github", "link": "https:/github.com/manekinekko"},
                 {"class": "site", "link": "http://wassimchegham.com"}
             ]
-        },
-        /*
+        },        
          {
          "id": "jpgouigoux",
          "topspeaker": false,
@@ -695,7 +694,6 @@ devfestApp.factory('SpeakersService', [function () {
          {"class": "site", "link": "http://gouigoux.com/blog-fr"}
          ]
          },
-         */
         {
             "id": "fkelly",
             "topspeaker": false,
