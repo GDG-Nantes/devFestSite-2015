@@ -7,7 +7,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": true,
             "firstname": "Cyril",
             "lastname": "Mottier",
-            "image": "cmottier_360x360.jpeg",
+            "image": "cmottier_360x360.jpg",
             "category": {
                 "class": "mobile",
                 "title": "Mobile"
@@ -32,7 +32,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Etienne",
             "lastname": "Issartial",
-            "image": "commitstrip_360x360.jpeg",
+            "image": "commitstrip_360x360.jpg",
             "category": {
                 "class": "discovery",
                 "title": "Keynote"
@@ -50,7 +50,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Thomas",
             "lastname": "Guenoux",
-            "image": "commitstrip_360x360.jpeg",
+            "image": "commitstrip_360x360.jpg",
             "category": {
                 "class": "discovery",
                 "title": "Keynote"
@@ -89,7 +89,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "class": "discovery",
                 "title": "UX"
             },
-            "image": "gdorne_360x360.jpeg",
+            "image": "gdorne_360x360.jpg",
             "company": "Design & Human",
             "about": "Je m’appelle Geoffrey Dorne, je suis designer indépendant et fondateur de Design & Human, atelier de design éthique, social et radical.",
             "socials": [
@@ -109,7 +109,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "class": "web",
                 "title": "CSS"
             },
-            "image": "rgoetter_360x360.jpeg",
+            "image": "rgoetter_360x360.jpg",
             "company": "Alsacréations",
             "about": "Intégrateur du Dimanche, dompteur de CSS et tripoteur de HTML, créateur de Alsacreations.com, auteur de quelques livres CSS, Alsacien",
             "socials": [
