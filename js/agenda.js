@@ -3,7 +3,7 @@
 devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService){
 	var agenda = {
 		categories : {
-			android : "Android et Objets Connectés"
+			android : "Mobile et Objets Connectés"
 			, web : "Web"
 			, cloud : "Cloud et Big Data"
 			, decouverte : "Découverte"
@@ -106,7 +106,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h11",
     "video": "",
     "slides": "",
     "speakers": [
@@ -116,13 +116,13 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
   {
     "id": "s4",
     "title": "Hand's on Web Components with Polymer 1.0",
-    "confRoom": "Salle Titan",
+    "confRoom": "",
     "desc": "The W3C has been working on a Web Components standard for almost three years, but it is still a work in progress. But polyfills like allows current developers to use Web Components today, and incorporate to their apps widgets from any library of web components. \n\nThe best known of these libraries is Google's Polymer. In Google IO 2015 conference, Google has at last released the long awaited version 1.0 of Polymer, making it even faster, more stable and at least suitable for \"serious\" applications. In this lab you will use Polymer 1.0 with Material Design Polymer Elements to design and develop a web application using web components.\n\nYou will learn to use the following technologies:\n- Polymer and Web Components (for mobile and desktop)\n- The Paper Elements for Polymer (material design)\n\nMandatory Installs prior to lab:\n+ npm \n+ bower\n+ your favorite HTML/CSS/JS IDE (I suggest Sublime Text)",
     "type": "codelab-web",
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "",
     "video": "",
     "slides": "",
     "speakers": [
@@ -131,18 +131,18 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
   },
   {
     "id": "s5",
-    "title": "React + Flux le retour au sources.",
+    "title": "TBD",//real sense
     "confRoom": "Salle Titan",
-    "desc": "React et Flux est un duo gagnant pour créer de façon efficace des applications web et natives faciles à maintenir.\nLors de cette présentation nous passerons en revue le fonctionnement de ces deux outils et leurs principaux atouts.",
+    "desc": "",
     "type": "discovery",
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h03",
     "video": "",
     "slides": "",
     "speakers": [
-      "acateland"
+      ""
     ]
   },
   {
@@ -154,7 +154,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h07",
     "video": "",
     "slides": "",
     "speakers": [
@@ -164,13 +164,13 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
   {
     "id": "s7",
     "title": "Prise en main de Kubernetes",
-    "confRoom": "Salle Titan",
+    "confRoom": "",
     "desc": "Mise en oeuvre d'un cluster Kubernetes pour déployer une architecture comprenant une stack MySQL, PHP et Memcache.\nRolling updates et redimensionnement de replication controlers. Le déploiement se fera sur Google Container Engine (GKE).",
     "type": "codelab-cloud",
     "difficulty": 202,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "",
     "video": "",
     "slides": "",
     "speakers": [
@@ -186,7 +186,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 202,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h11",
     "video": "",
     "slides": "",
     "speakers": [
@@ -202,7 +202,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h10",
     "video": "",
     "slides": "",
     "speakers": [
@@ -212,13 +212,13 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
   {
     "id": "s10",
     "title": "React + Redux : les mains dans le cambouis.",
-    "confRoom": "Salle Titan",
+    "confRoom": "",
     "desc": "Ce workshop se propose de réaliser une application de chat avec React, Redux et Firebase. De la création des composants React à la consommation de webservices en passant par l'implémentation de l'architecture Flux via Redux, cet exercice sera également l'occasion de découvrir les outils de devs construits autour de Redux : rechargement de composants à chaud, outil d'enregistrement des actions utilisateurs, replay des actions utilisateur, etc...\n\nUne liste de pré-requis sera disponible sur le repos https://github.com/cateland/nantes-devfest-2015-react-redux, celui-ci seras rendu public deux semaines avant le workshop pour vous donner le temps de préparer vos machines.",
     "type": "codelab-web",
     "difficulty": 202,
     "all": false,
     "lang": "fr",
-    "hour": "h05",
+    "hour": "",
     "video": "",
     "slides": "",
     "speakers": [
@@ -234,7 +234,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h05",
+    "hour": "h10",
     "video": "",
     "slides": "",
     "speakers": [
@@ -250,7 +250,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h05",
+    "hour": "h11",
     "video": "",
     "slides": "",
     "speakers": [
@@ -282,7 +282,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h05",
+    "hour": "h03",
     "video": "",
     "slides": "",
     "speakers": [
@@ -298,7 +298,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h05",
+    "hour": "h08",
     "video": "",
     "slides": "",
     "speakers": [
@@ -308,13 +308,13 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
   {
     "id": "s16",
     "title": "Angular 2 in action",
-    "confRoom": "Salle Titan",
+    "confRoom": "",
     "desc": "Dans ce codelab, nous allons découvrir le développement d'applications Web avec Angular 2. Nous prendrons comme exemple, une application de QUIZ que nous allons développer de A à Z et qui nous permettra de manipuler les nouveaux concepts proposés par cette nouvelle version. Soyez prêt à mettre les mains dans le cambouis et à débugger du code.\nWARNING: angular 2 est en developer preview !!!",
     "type": "codelab-web",
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h06",
+    "hour": "",
     "video": "",
     "slides": "",
     "speakers": [
@@ -330,7 +330,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 202,
     "all": false,
     "lang": "fr",
-    "hour": "h06",
+    "hour": "h11",
     "video": "",
     "slides": "",
     "speakers": [
@@ -342,11 +342,11 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "title": "Harald à la dent bleue dans ton navigateur web",
     "confRoom": "Salle Titan",
     "desc": "Interagir avec des appareils en Bluetooth depuis une application Web est sur le point de devenir possible grâce à une nouvelle API Web standardisée qui se veut moderne et simple d'utilisation.",
-    "type": "web",
+    "type": "mobile",
     "difficulty": 202,
     "all": false,
     "lang": "fr",
-    "hour": "h06",
+    "hour": "h05",
     "video": "",
     "slides": "",
     "speakers": [
@@ -362,7 +362,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h06",
+    "hour": "h05",
     "video": "",
     "slides": "",
     "speakers": [
@@ -378,7 +378,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 303,
     "all": false,
     "lang": "fr",
-    "hour": "h06",
+    "hour": "h03",
     "video": "",
     "slides": "",
     "speakers": [
@@ -394,7 +394,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h06",
+    "hour": "h04",
     "video": "",
     "slides": "",
     "speakers": [
@@ -427,7 +427,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 202,
     "all": false,
     "lang": "fr",
-    "hour": "h07",
+    "hour": "h03",
     "video": "",
     "slides": "",
     "speakers": [
@@ -443,7 +443,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h07",
+    "hour": "h08",
     "video": "",
     "slides": "",
     "speakers": [
@@ -455,7 +455,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "title": "REST from zero to hero in 45 minutes",
     "confRoom": "Salle Titan",
     "desc": "Venez découvrir - ou redécouvrir ! - les différents ingrédients qui sont a l’origine d’une bonne API.\n\nNous présenterons la transformation d’une API Web fictive (d'une conception assez discutable ;-) ) en une API REST vraiment user-friendly. Chaque étape sera l’occasion d’introduire un concept ou une bonne pratique supplémentaire en partant des bases de REST jusqu’aux sujets avancés tels que le versioning ou l’hypermédia.\n\nVous sortirez de cette session avec une vision claire des concepts cachés derrière le terme \"REST\".",
-    "type": "web",
+    "type": "cloud",
     "difficulty": 101,
     "all": false,
     "lang": "fr",
@@ -476,7 +476,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h07",
+    "hour": "h04",
     "video": "",
     "slides": "",
     "speakers": [
@@ -523,7 +523,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
         "difficulty": 202,
         "all": false,
         "lang": "fr",
-        "hour": "h08",
+        "hour": "h10",
         "video": "",
         "slides": "",
         "speakers": [
@@ -533,13 +533,13 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
       {
         "id": "s30",
         "title": "Mon architecture microservices sur un cas d'usage urbanisé en 2 heures chrono avec Docker",
-        "confRoom": "Salle Titan",
+        "confRoom": "",
         "desc": "Le but de cette conférence est de faire construire une (mini) architecture microservices sur un scénario d'utilisation simple qui sera décomposé en quelques appels de services autonomes selon les méthodes de découplage de responsabilités. Afin que les participants puissent se consacrer à la compréhension de l'architecture et à l'assemblage final, des squelettes de code seront fournis ainsi que des images Docker.",
         "type": "codelab-cloud",
         "difficulty": 101,
         "all": false,
         "lang": "fr",
-        "hour": "h08",
+        "hour": "",
         "video": "",
         "slides": "",
         "speakers": [
@@ -555,7 +555,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
         "difficulty": 202,
         "all": false,
         "lang": "fr",
-        "hour": "h08",
+        "hour": "h04",
         "video": "",
         "slides": "",
         "speakers": [
@@ -571,11 +571,75 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
         "difficulty": 101,
         "all": false,
         "lang": "fr",
-        "hour": "h09",
+        "hour": "h04",
         "video": "",
         "slides": "",
         "speakers": [
           "cwehrung"
+        ]
+      },
+      {
+        "id": "s33",
+        "title": "L'impact du Machine Learning dans les entreprises et les bests practices pour maximiser les chances de réussites d'un projet data",
+        "confRoom": "Salle Titan",
+        "desc": "Une version peut etre vu ici : https://www.youtube.com/watch?v=oMwKPV9amDE",
+        "type": "cloud",
+        "difficulty": 101,
+        "all": false,
+        "lang": "fr",
+        "hour": "h05",
+        "video": "",
+        "slides": "",
+        "speakers": [
+          "fxrousselot"
+        ]
+      },
+      {
+        "id": "s34",
+        "title": "TBD",
+        "confRoom": "Salle Titan",
+        "desc": "TBD",
+        "type": "mobile",
+        "difficulty": 101,
+        "all": false,
+        "lang": "fr",
+        "hour": "h08",
+        "video": "",
+        "slides": "",
+        "speakers": [
+          "xhallade"
+        ]
+      },
+      {
+        "id": "s35",
+        "title": "Golang TBD",
+        "confRoom": "Salle Titan",
+        "desc": "TBD",
+        "type": "cloud",
+        "difficulty": 101,
+        "all": false,
+        "lang": "fr",
+        "hour": "h10",
+        "video": "",
+        "slides": "",
+        "speakers": [
+          "fcampoy"
+        ]
+      },
+      {
+        "id": "s36",
+        "title": "Graph clustering in Python",
+        "confRoom": "",
+        "desc": "Clustering of data in a way that will make use of inherent structural information is an increasingly important task for many data scientists. This talk will explore the challenges associated with clustering of complex networked data for the commercial application of search keyword optimisation. We'll take a look at several techniques and demonstrate some of them with the package iGraph, available to Python users. If time permits we shall round off by examining how to visualise the results in an interactive fashion.",
+        "type": "cloud",
+        "difficulty": 101,
+        "all": false,
+        "lang": "en",
+        "hour": "",
+        "video": "",
+        "slides": "",
+        "speakers": [
+          "fkelly"
         ]
       },
   {
@@ -595,7 +659,11 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "type": "white",
     "all": true,
     "video": "",
-    "hour": "h02"
+    "hour": "h02",
+    "speakers": [
+      "tguenoux",
+      "eissartial"
+    ]
   },
   {
     "id": "s11",
@@ -615,7 +683,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "hour": "h09"
   },
   {
-    "id": "s33",
+    "id": "s99",
     "confRoom": "Espace Tour Lu",
     "title": "Afterparty",
     "type": "white",
