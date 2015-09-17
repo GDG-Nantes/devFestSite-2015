@@ -682,16 +682,20 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                 ]
             },
             {
-                "id": "s11",
+                "id": "s97",
                 "confRoom": "Espace Tour Lu",
-                "title": "Déjeuner && Table Ronde : Mon Job en IT",
+                "title": "Déjeuner / Table Ronde “Programmer avec les enfants : pourquoi ? comment ?“",
                 "type": "white",
-                "desc": "Repas gratuit pour tous les participants.<br>Profitez-en pour faire un tour des différents stands et démos.<br><br><b>Table Ronde : Mon nouveau job en IT</b> - Espace Bellem - 13h00 : <br> Aujourd'hui, quels choix avons-nous et comment s'y retrouver ? <br> Des professionnels du recrutement seront là pour échanger et partager sur les nouvelles pratiques, les conseils pour trouver le job de ses rêves, les attentes des sociétés, ….",
+                "desc": "<strong>Repas offert pour tous les participants.</strong><br>Profitez-en pour faire un tour des différents stands et démos.<br><br><b>Table Ronde : “Programmer avec les enfants : pourquoi ? comment ?“</b> - Espace Bellem - 13h00 : <br>Beaucoup d'initiatives actuelles permettent aux enfants d'apprendre à programmer.\n\nPourquoi un tel intérêt ? Que cela peut-il apporter à nos chères têtes blondes ? Et comment s'y prendre ?\n\nCette table ronde présentera rapidement les différentes initiatives présentes et la liste des outils utilisables.",
                 "all": true,
-                "hour": "h06"
+                "hour": "h06",
+                "speakers": [
+			      "cbossard",
+			      "jpalies"
+			    ]
             },
             {
-                "id": "s20",
+                "id": "s98",
                 "confRoom": "Espace Les Machines",
                 "title": "Pause",
                 "type": "white",
