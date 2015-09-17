@@ -241,7 +241,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Manon",
             "lastname": "Gruaz",
-            "image": "",
+            "image": "mgruaz_360x360.png",
             "category": {
                 "class": "discovery",
                 "title": "Discovery"
@@ -258,7 +258,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Franck",
             "lastname": "Calzada",
-            "image": "",
+            "image": "fcalzada_360x360.png",
             "category": {
                 "class": "discovery",
                 "title": "Discovery"
@@ -276,7 +276,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Mathieu",
             "lastname": "Chartier",
-            "image": "",
+            "image": "mchartier_360x360.jpg",
             "category": {
                 "class": "discovery",
                 "title": "Discovery"
@@ -310,7 +310,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Thierry",
             "lastname": "Leriche",
-            "image": "",
+            "image": "tleriche_360x360.jpg",
             "category": {
                 "class": "discovery",
                 "title": "Discovery"
