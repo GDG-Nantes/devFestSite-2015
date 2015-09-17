@@ -100,7 +100,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s3",
                 "title": "Android Auto : Rolling Droid gather no moss",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Bretagne",
                 "desc": "Android Auto est une nouvelle extension de la plateforme Android. A l'image d'Android Wear, il s'agit d'une interface pour proposer des notifications et des interactions rapides ou faibles à l'utilisateur. La particularité est que les traditionnellement flexibles guidelines de Google sont devenues des contraintes fermes. Nous vous proposons ici une analyse complète de ce nouvel horizon pour Android.",
                 "type": "discovery",
                 "difficulty": 101,
@@ -134,7 +134,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s5",
                 "title": "TBD",//real sense
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Graslin",
                 "desc": "",
                 "type": "discovery",
                 "difficulty": 101,
@@ -165,7 +165,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s7",
                 "title": "Prise en main de Kubernetes",
-                "confRoom": "",
+                "confRoom": "Hangar",
                 "desc": "Mise en oeuvre d'un cluster Kubernetes pour déployer une architecture comprenant une stack MySQL, PHP et Memcache.\nRolling updates et redimensionnement de replication controlers. Le déploiement se fera sur Google Container Engine (GKE).",
                 "type": "codelab-cloud",
                 "difficulty": 202,
@@ -182,7 +182,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s8",
                 "title": "Cloud Ops",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Graslin",
                 "desc": "Come and see how you can improve your Devops tasks with Google Cloud",
                 "type": "cloud",
                 "difficulty": 202,
@@ -198,7 +198,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s9",
                 "title": "Eddystone, un format ouvert pour les beacons et les objets connectés",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Bellem",
                 "desc": "Eddystone, annoncé par Google le 14 juillet 2015, propose un format plus ouvert et plus riche que iBeacon, et supporté par près de 70% des téléphones portables à travers le monde. Nous allons décrypter cette technologie, et voir comment interagir depuis un téléphone Android ou iOS, avec ou sans application.",
                 "type": "mobile",
                 "difficulty": 101,
@@ -215,7 +215,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s10",
                 "title": "React + Redux : les mains dans le cambouis.",
-                "confRoom": "",
+                "confRoom": "Les machines",
                 "desc": "Ce workshop se propose de réaliser une application de chat avec React, Redux et Firebase. De la création des composants React à la consommation de webservices en passant par l'implémentation de l'architecture Flux via Redux, cet exercice sera également l'occasion de découvrir les outils de devs construits autour de Redux : rechargement de composants à chaud, outil d'enregistrement des actions utilisateurs, replay des actions utilisateur, etc...\n\nUne liste de pré-requis sera disponible sur le repos https://github.com/cateland/nantes-devfest-2015-react-redux, celui-ci seras rendu public deux semaines avant le workshop pour vous donner le temps de préparer vos machines.",
                 "type": "codelab-web",
                 "difficulty": 202,
@@ -232,7 +232,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s11",
                 "title": "Management en couleur avec DISC",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Graslin",
                 "desc": "Chaque personne est unique. Chacun de nous voit le monde à sa façon. Chacun communique et se comporte d’une manière qui lui est propre. Ce constat est unanimement admis. Pourtant, nous répétons tous la même erreur de communication : nous parlons aux autres comme on aimerait qu’ils nous parlent. Cette erreur est essentielle. Il faut parler aux autres comme ils aimeraient qu’on leur parle. Une des règles d’or est qu’il faut s’adapter à son interlocuteur. Mais, pour cela, encore faut-il connaitre son profil…\n\nDISC est un outil d'évaluation (coloré) utilisé pour améliorer la productivité, le travail d'équipe et la communication. DISC est l'acronyme de Dominant (rouge), Influent (jaune), Stable (vert) et Consciencieux (bleu). DISC mesure des styles de communication et de comportement. Ce n’est PAS un test de QI. Ça ne mesure PAS l’intelligence, les aptitudes, la santé mentale, les valeurs, etc. Les profils DISC décrivent les comportements humains dans de nombreuses situations, par exemple en réponse au stress, aux défis, aux challenges, aux crises, aux procédures, etc.\n\nEn connaissant bien son profil et celui de ses interlocuteurs, on peut communiquer de manière plus efficace, à l’écrit comme à l’oral. Cela permet de distribuer efficacement les tâches selon leurs types, les objectifs, les besoins, les contraintes, etc. Cela permet également de constituer une équipe en choisissant ses membres en fonction du contexte.",
                 "type": "discovery",
                 "difficulty": 101,
@@ -248,7 +248,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s12",
                 "title": "OMG!, Terminator sera codé en JavaScript!",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Bellem",
                 "desc": "Tout le monde est persuadé que l’ancêtre de SkyNet, est le Turk (cf. The Sarah Connor Chronicles) … Eh bien non!, C’est B.O.B.! Un robot à roulette (le T-0). Et je vais vous expliquer comment tout à commencé: en devenant un “maker du dimanche”!.\n\nLa genèse de BOB (*):\n\n*: Bot Operative Behaviour\n\n- un thermomètre à leds avec un Arduino et Johnny-Five\n- SAM (j’aime bien donner des petits noms à mes jouets), qui va rendre le Nest obsolète, avec un Raspberry et une GrovePi qui va discuter avec le monde grâce à MQTT\n- BOB, le T-0, avec un Raspberry et une GoPiGo … Et bien sûr BOB et SAM discuteront entre eux\n\nEt tout ça propulsé par du JavaScript! \nIl y aura donc de la démo live avec du hardware.\nJe vous parlerais aussi de l’écosystème “hardware + javascript\"\nIl y aura donc de la démo live avec du hardware.\nJe vous parlerais aussi de l’écosystème “hardware + javascript\"\n\nCette présentation a plusieurs objectifs:\n\n- montrer que JavaScript peut servir à autre chose que du web\n- montrer qu'il est facile de devenir un \"maker\" du dimanche même si l'on n'y connait pas grand chose\n- faire une petite introduction à l'IOT\n\nd'un point de vue démo, ce ne sera pas forcément du code mais de l'exécution de programmes avec impact sur des composants électronique (j'aurais donc une petite caméra, type webcam)",
                 "type": "mobile",
                 "difficulty": 101,
@@ -264,7 +264,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s13",
                 "title": "Usages des robots humanoïdes dans les espaces grand publics, et connectés à notre monde numérique",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Bellem",
                 "desc": "Les nouveaux robots humanoïdes ont maintenant des capacités qui permettent d'interagir naturellement et intuitivement avec leur environnement.\nAinsi, ils peuvent être utilisés en tant que nouvelles interfaces de communication avec un humain, ou avec notre monde numérique.\n\nDifférents cas d'usages sur l’intérêt de ces robots seront évoqués lors de cette conférence, tels que : Le conseil en magasin, l'orientation dans les espaces grand publics, l'accueil dans les hôtels, l'animation dans les musées, ou bien le divertissement. Les domaines d'applications sont sans limites.\nL'intégration de ces interfaces homme/machine soulève de nouveaux défis techniques, qui seront également abordés au travers de différents cas d'usages.",
                 "type": "discovery",
                 "difficulty": 101,
@@ -280,7 +280,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s14",
                 "title": "Déploiement continu, test en production, autoscaling et workflow métiers pour vos applications web dans le Cloud",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Bretagne",
                 "desc": "Déployer des applications webs dans le Cloud permet aux développeurs de tirer partie de fonctionnalités Dev Ops comme le déploiement continu, le test en production, l'autoscaling, etc sans avoir à se soucier de l'infrastructure sous jacente.\nDans cette session, nous verrons comment le service Azure App Service de Microsoft vous permet d'obtenir cette flexibilité.",
                 "type": "cloud",
                 "difficulty": 101,
@@ -296,7 +296,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s15",
                 "title": "Firebase, au-delà du Chat. Et si on développait un plugin Atom de pair-programming?",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Bellem",
                 "desc": "Firebase permet d'écrire de façon simple et robuste des applications collaboratives.\nSouvent on en fait la démonstration en développant un Chat en 10 lignes de code.\n\nNous allons voir comment aller plus loin en développant un plugin Atom\nde pair-programming permettant de binôme sur du code grâce à Firebase.\n\nGestion des sessions, synchronisation de plusieurs curseurs, modifications simultanées,\nconnections/déconnections...\n\nCe live-coding montrera comment mettre en oeuvre Firebase sur une vraie application.\nAvec des tests !",
                 "type": "cloud",
                 "difficulty": 101,
@@ -313,7 +313,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s16",
                 "title": "Angular 2 in action",
-                "confRoom": "",
+                "confRoom": "Les machines",
                 "desc": "Dans ce codelab, nous allons découvrir le développement d'applications Web avec Angular 2. Nous prendrons comme exemple, une application de QUIZ que nous allons développer de A à Z et qui nous permettra de manipuler les nouveaux concepts proposés par cette nouvelle version. Soyez prêt à mettre les mains dans le cambouis et à débugger du code.\nWARNING: angular 2 est en developer preview !!!",
                 "type": "codelab-web",
                 "difficulty": 101,
@@ -346,7 +346,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s18",
                 "title": "Harald à la dent bleue dans ton navigateur web",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Bretagne",
                 "desc": "Interagir avec des appareils en Bluetooth depuis une application Web est sur le point de devenir possible grâce à une nouvelle API Web standardisée qui se veut moderne et simple d'utilisation.",
                 "type": "mobile",
                 "difficulty": 202,
@@ -378,7 +378,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s20",
                 "title": "Advanced Scrolling Techniques on Android",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Bellem",
                 "desc": "Scrolling is one of the most important gesture on mobile platforms. Indeed, it easily allows users to access a fairly large amount of content just by swiping their fingers on screen. In order to implement such gestures, the Android SDK comes with a bunch of scrolling containers: View, ListView, RecyclerView, ScrollView, etc. While using these components independently is relatively simple, it starts getting complicated when nesting them… In this session we will go through a complete overview of how Android deals with scrolling in general and how to master the scrolling mechanism to create compelling mobile user experience.",
                 "type": "mobile",
                 "difficulty": 303,
@@ -410,7 +410,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s22",
                 "title": "Ionic : un framework fun et productif pour développer des applications mobiles hybrides",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Bellem",
                 "desc": "Après 20 ans de Java, vous pensez qu'il est temps de basculer du côté mobile de la force mais vous n'avez pas envie de passer des jours à vous former au développement natif pour toutes les plateformes existantes ? Alors Ionic est fait pour vous !\n\nIonic c'est un framework mobile hybride basé sur HTML5, qui va rapidement vous rendre accro tellement il facilite le développement d'application pour mobile. Il est open source, il embarque avec lui la simplicité et la puissance d'AngularJS et il ne vous faudra que quelques heures pour développer une application simple mais déjà fonctionnelle qui pourra être déployée sur tous les mobiles ... what else?",
                 "type": "mobile",
                 "difficulty": 101,
@@ -443,7 +443,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s24",
                 "title": "8 pratiques clés en SEO pour les développeurs",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Graslin",
                 "desc": "Le référencement web s'apparente souvent à des pratiques propres aux web-marketeurs et rédacteurs. Dans les faits, la technique web se fait de plus en plus présente et permet réellement de passer certains caps pour optimiser le positionnement des pages web. Nous allons faire le tour de plusieurs pratiques phares du référencement que les développeurs peuvent mettre en place pour réussir leur boost SEO.",
                 "type": "discovery",
                 "difficulty": 101,
@@ -459,7 +459,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s25",
                 "title": "REST from zero to hero in 45 minutes",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Bretagne",
                 "desc": "Venez découvrir - ou redécouvrir ! - les différents ingrédients qui sont a l’origine d’une bonne API.\n\nNous présenterons la transformation d’une API Web fictive (d'une conception assez discutable ;-) ) en une API REST vraiment user-friendly. Chaque étape sera l’occasion d’introduire un concept ou une bonne pratique supplémentaire en partant des bases de REST jusqu’aux sujets avancés tels que le versioning ou l’hypermédia.\n\nVous sortirez de cette session avec une vision claire des concepts cachés derrière le terme \"REST\".",
                 "type": "cloud",
                 "difficulty": 101,
@@ -476,7 +476,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s26",
                 "title": "3.14 things I didn’t know about CSS",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Bretagne",
                 "desc": "This talk will showcase a series of obscure CSS fun facts, such as CSS syntax gimmicks and quirks, weird tricks that involve CSS in one way or another, and security vulnerabilities that are enabled by (ab)using CSS in unexpected ways.",
                 "type": "web",
                 "difficulty": 101,
@@ -492,7 +492,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s27",
                 "title": "WebRTC Update",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Graslin",
                 "desc": "\"What's new and next for WebRTC for native apps and on the web.\n\nDraft topics:\n• What are the big achievements of the last 12 months?\n• What are the big goals for the next 12 months? \n• ORTC, Unified Plan, WebRTC 0.9, WebRC 1.0 — WTF?\n• Codecs\n• WebRTC for Android and iOS\n• Hardware support\n• Amazing apps\n• Predictions?\n• Developer resources\"",
                 "type": "web",
                 "difficulty": 202,
@@ -523,7 +523,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             }, {
                 "id": "s29",
                 "title": "Vorlon.js : le debug de sites web plus simple",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Bretagne",
                 "desc": "Quand on est sur son PC avec un navigateur : F12 nous rend toujours un très bon service. Cependant comment avoir la même expérience quand veut débugger le site sur un téléphone ? Des solutions existent mais rien de très simple d’utilisation ou qui fonctionne dans tous les cas.\n\nDans ce talk, je vous présenterais Vorlon.js, un nouvel outil que j'ai co-créé et qui permet d’obtenir l’expérience F12, en remote et pour tous les navigateurs",
                 "type": "web",
                 "difficulty": 202,
@@ -540,7 +540,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
              {
              "id": "s30",
              "title": "Mon architecture microservices sur un cas d'usage urbanisé en 2 heures chrono avec Docker",
-             "confRoom": "",
+             "confRoom": "Hangar",
              "desc": "Le but de cette conférence est de faire construire une (mini) architecture microservices sur un scénario d'utilisation simple qui sera décomposé en quelques appels de services autonomes selon les méthodes de découplage de responsabilités. Afin que les participants puissent se consacrer à la compréhension de l'architecture et à l'assemblage final, des squelettes de code seront fournis ainsi que des images Docker.",
              "type": "codelab-cloud",
              "difficulty": 101,
@@ -571,7 +571,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s31",
                 "title": "Redefining PaaS: Managed container based microservices on Google App Engine",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Bellem",
                 "desc": "Microservices are a great model for developing modern applications. But microservice based architectures are more complicated than traditional monolithic apps and can come with a significant management overhead particularly when you need to maintain different environments for dev, test and production. This overhead either falls on your development team or to people you hire specifically to manage it. \n\nThis talk with multiple demos, looks at how to build, test and deploy container based microservice architectures without having to worry about managing the platform on which they run, thus freeing up your developers to do what they do best, writing application code.\n\nWe'll look at new and enhanced features of Google App Engine and walk through the staged deployment of both a simple application and a more complicated microservices based architecture. We'll also look at how App Engine has evolved from it's original sandboxed runtime environment to what it is today, a next generation platform for building and deploying modern day applications.",
                 "type": "cloud",
                 "difficulty": 202,
@@ -587,7 +587,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s32",
                 "title": "Open the door to the engaging world of real-time, with Firebase",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Graslin",
                 "desc": "Real-time apps are infinitely more engaging. **Forget \"pull-to-refresh\"**, reload buttons, update timers, ... Say \"hi\" to new generation apps that mimic real world behaviors and push updates, info and notifications to your users \"as it happens.\"\n \nThough, **how to make an existing app real-time** or start from scratch a new mobile-first real-time application may seem like a major challenge. Here comes **Firebase**.\n\nIt has actually never been easier to build mobile apps which are both **real-time and offline first**. Through concrete examples and APIs walkthrough, this talk will show how it is now possibly to build new features like Instant Messaging, Chat, Notifications or Presence effortlessly, and in a scalable way.\n\nA special focus will be put on **building mobile apps** in this context and **the challenges of building a reactive User Interface** (using notably FirebaseUI or KVO on iOS).\n\nExamples will focus on iOS and JavaScript.",
                 "type": "mobile",
                 "difficulty": 101,
@@ -603,7 +603,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s33",
                 "title": "L'impact du Machine Learning dans les entreprises et les bests practices pour maximiser les chances de réussites d'un projet data",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Graslin",
                 "desc": "Une version peut etre vu ici : https://www.youtube.com/watch?v=oMwKPV9amDE",
                 "type": "cloud",
                 "difficulty": 101,
@@ -619,7 +619,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s34",
                 "title": "TBD",
-                "confRoom": "Salle Titan",
+                "confRoom": "Salle Bretagne",
                 "desc": "TBD",
                 "type": "mobile",
                 "difficulty": 101,
@@ -652,7 +652,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s36",
                 "title": "Graph clustering in Python",
-                "confRoom": "",
+                "confRoom": "Hangar",
                 "desc": "Clustering of data in a way that will make use of inherent structural information is an increasingly important task for many data scientists. This talk will explore the challenges associated with clustering of complex networked data for the commercial application of search keyword optimisation. We'll take a look at several techniques and demonstrate some of them with the package iGraph, available to Python users. If time permits we shall round off by examining how to visualise the results in an interactive fashion.",
                 "type": "cloud",
                 "difficulty": 101,
