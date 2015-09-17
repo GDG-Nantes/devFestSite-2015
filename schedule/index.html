@@ -71,17 +71,11 @@
                                     <div class="track-header-slot col-md-4 flexbox-item-height hidden-xs">
                                         <h5 class="track-header-title" ng-bind='::agenda.categories.decouverte'></h5> 
                                     </div>
-                                    <!-- <div class="track-header-slot col-md-3 flexbox-item-height hidden-xs">
-                                        <h5 class="track-header-title" ng-bind='::agenda.categories.codelabweb'></h5>
-                                    </div>
-                                    <div class="track-header-slot col-md-3 flexbox-item-height hidden-xs">
-                                        <h5 class="track-header-title" ng-bind='::agenda.categories.codelabcloud'></h5>
-                                    </div> -->
                                     <div class="track-header-slot col-xs-12 visible-xs">
                                         <h5 class="slot-detail track-header-title"></h5> </div>
                                 </div>
                             </div>
-                            <div class="timeslot" itemtype="http://schema.org/subEvent" ng-repeat="sessionRow in agenda.sessionsTransform">
+                            <div class="timeslot" itemtype="http://schema.org/subEvent" ng-repeat="sessionRow in agenda.sessionsTransform" ngc-done="repeatFinish">
                                 <div class="timeslot-label">
                                     <time class="start-time" itemprop="startDate" datetime="October 24T10:00"> {{::sessionRow[0].hourContent.hourStart}}<span>{{::sessionRow[0].hourContent.minStart}}</span> </time>
                                     <time class="end-time" itemprop="endDate" datetime="October 24T10:45">  {{::sessionRow[0].hourContent.hourEnd}}<span>{{::sessionRow[0].hourContent.minEnd}}</span> </time>
@@ -120,7 +114,7 @@
                                         <h5 class="slot-detail track-header-title"></h5> </div>
                                 </div>
                             </div>
-                            <div class="timeslot" itemtype="http://schema.org/subEvent" ng-repeat="sessionRow in agenda.codelabTransform">
+                            <div class="timeslot" itemtype="http://schema.org/subEvent" ng-repeat="sessionRow in agenda.codelabTransform" ngc-done="repeatFinish">
                                 <div class="timeslot-label">
                                     <time class="start-time" itemprop="startDate" datetime="October 24T10:00"> {{::sessionRow[0].hourContent.hourStart}}<span>{{::sessionRow[0].hourContent.minStart}}</span> </time>
                                     <time class="end-time" itemprop="endDate" datetime="October 24T10:45">  {{::sessionRow[0].hourContent.hourEnd}}<span>{{::sessionRow[0].hourContent.minEnd}}</span> </time>
@@ -239,18 +233,25 @@
     <!-- endinject -->
     <script type="text/javascript">
     $(document).ready(function() {
-        setTimeout(function() {
+        window.domReadyForSticky = true;
+        if (window.angularReadyForSticky){            
+            console.log('From Index');
+            setTimeout(function() {
 
-        var navHeight = $('#top-header').height();
-        var headerHeight = $('.track-header').first().height();
-        $('.stick-header').stick_in_parent({
-            sticky_class: 'sticky',
-            offset_top: navHeight
-        });
-        $('.stick-label').stick_in_parent({
-            offset_top: navHeight + headerHeight
-        });
-        }, 5000);
+                var navHeight = $('#top-header').height();
+                var headerHeight = $('.track-header').first().height();
+                $('.stick-header').stick_in_parent({
+                    sticky_class: 'sticky',
+                    offset_top: navHeight
+                });
+                $('.stick-label').stick_in_parent({
+                    offset_top: navHeight + headerHeight
+                });
+            }, 500);
+        }
+        /*setTimeout(function() {
+
+        }, 5000);*/
     });
     </script>
 </body>
