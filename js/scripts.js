@@ -173,7 +173,7 @@
             accY: -150
         });
 
-        equalheight = function(container) {
+        var equalheight = function(container) {
             var currentTallest = 0,
                 currentRowStart = 0,
                 rowDivs = new Array(),
