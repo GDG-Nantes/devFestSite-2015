@@ -73,11 +73,6 @@ devfestApp.factory('SpeakersService', [function () {
                 "title": "Mobile"
             },
             "image": "fbeaufort_360x360.jpg",
-            "ribon": {
-                "class": "gdgw",
-                "title": "Googler",
-                "tile_long": "Googler"
-            },
             "company": "Google",
             "about": "",
             "socials": [
@@ -391,12 +386,6 @@ devfestApp.factory('SpeakersService', [function () {
             "category": {
                 "class": "cloud",
                 "title": "Cloud"
-            },
-            "ribon": {
-                "class": "gde",
-                "title": "GDE",
-                "link": "https://developers.google.com/experts/",
-                "tile_long": "Google Developer Expert"
             },
             "company": "Google",
             "about": "Tech Lead, Manager Google Cloud Platform, Java.",
