@@ -7,6 +7,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
 			, web : "Web"
 			, cloud : "Cloud et Big Data"
 			, decouverte : "Découverte"
+            , codelabweb : "CodeLab Web"
+            , codelabcloud : "CodeLab Cloud"
 		},
 		hours : {  
 		  "h01":{
@@ -108,7 +110,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "video": "",
     "slides": "",
     "speakers": [
-      "dcavaillès"
+      "dcavailles"
     ]
   },
   {
@@ -116,7 +118,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "title": "Hand's on Web Components with Polymer 1.0",
     "confRoom": "Salle Titan",
     "desc": "The W3C has been working on a Web Components standard for almost three years, but it is still a work in progress. But polyfills like allows current developers to use Web Components today, and incorporate to their apps widgets from any library of web components. \n\nThe best known of these libraries is Google's Polymer. In Google IO 2015 conference, Google has at last released the long awaited version 1.0 of Polymer, making it even faster, more stable and at least suitable for \"serious\" applications. In this lab you will use Polymer 1.0 with Material Design Polymer Elements to design and develop a web application using web components.\n\nYou will learn to use the following technologies:\n- Polymer and Web Components (for mobile and desktop)\n- The Paper Elements for Polymer (material design)\n\nMandatory Installs prior to lab:\n+ npm \n+ bower\n+ your favorite HTML/CSS/JS IDE (I suggest Sublime Text)",
-    "type": "web",
+    "type": "codelab-web",
     "difficulty": 101,
     "all": false,
     "lang": "fr",
@@ -164,7 +166,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "title": "Prise en main de Kubernetes",
     "confRoom": "Salle Titan",
     "desc": "Mise en oeuvre d'un cluster Kubernetes pour déployer une architecture comprenant une stack MySQL, PHP et Memcache.\nRolling updates et redimensionnement de replication controlers. Le déploiement se fera sur Google Container Engine (GKE).",
-    "type": "cloud",
+    "type": "codelab-cloud",
     "difficulty": 202,
     "all": false,
     "lang": "fr",
@@ -212,11 +214,11 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "title": "React + Redux : les mains dans le cambouis.",
     "confRoom": "Salle Titan",
     "desc": "Ce workshop se propose de réaliser une application de chat avec React, Redux et Firebase. De la création des composants React à la consommation de webservices en passant par l'implémentation de l'architecture Flux via Redux, cet exercice sera également l'occasion de découvrir les outils de devs construits autour de Redux : rechargement de composants à chaud, outil d'enregistrement des actions utilisateurs, replay des actions utilisateur, etc...\n\nUne liste de pré-requis sera disponible sur le repos https://github.com/cateland/nantes-devfest-2015-react-redux, celui-ci seras rendu public deux semaines avant le workshop pour vous donner le temps de préparer vos machines.",
-    "type": "web",
+    "type": "codelab-web",
     "difficulty": 202,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h05",
     "video": "",
     "slides": "",
     "speakers": [
@@ -232,7 +234,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h05",
     "video": "",
     "slides": "",
     "speakers": [
@@ -248,7 +250,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h05",
     "video": "",
     "slides": "",
     "speakers": [
@@ -264,7 +266,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h05",
     "video": "",
     "slides": "",
     "speakers": [
@@ -280,7 +282,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h05",
     "video": "",
     "slides": "",
     "speakers": [
@@ -296,7 +298,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h05",
     "video": "",
     "slides": "",
     "speakers": [
@@ -308,11 +310,11 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "title": "Angular 2 in action",
     "confRoom": "Salle Titan",
     "desc": "Dans ce codelab, nous allons découvrir le développement d'applications Web avec Angular 2. Nous prendrons comme exemple, une application de QUIZ que nous allons développer de A à Z et qui nous permettra de manipuler les nouveaux concepts proposés par cette nouvelle version. Soyez prêt à mettre les mains dans le cambouis et à débugger du code.\nWARNING: angular 2 est en developer preview !!!",
-    "type": "web",
+    "type": "codelab-web",
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h06",
     "video": "",
     "slides": "",
     "speakers": [
@@ -328,7 +330,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 202,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h06",
     "video": "",
     "slides": "",
     "speakers": [
@@ -344,7 +346,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 202,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h06",
     "video": "",
     "slides": "",
     "speakers": [
@@ -360,7 +362,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h06",
     "video": "",
     "slides": "",
     "speakers": [
@@ -376,7 +378,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 303,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h06",
     "video": "",
     "slides": "",
     "speakers": [
@@ -392,7 +394,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h06",
     "video": "",
     "slides": "",
     "speakers": [
@@ -408,11 +410,12 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h07",
     "video": "",
     "slides": "",
     "speakers": [
-      "smoallic"
+      "smoallic",
+      "aneveu"
     ]
   },
   {
@@ -424,7 +427,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 202,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h07",
     "video": "",
     "slides": "",
     "speakers": [
@@ -440,7 +443,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h07",
     "video": "",
     "slides": "",
     "speakers": [
@@ -456,23 +459,24 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h07",
     "video": "",
     "slides": "",
     "speakers": [
-      "arichard"
+      "arichard",
+      "mboillod"
     ]
   },
   {
     "id": "s26",
-    "title": "JavaScript ? Unicode",
+    "title": "3.14 things I didn’t know about CSS",
     "confRoom": "Salle Titan",
-    "desc": "In this talk we’ll take a look at the various ways JavaScript relies on Unicode, what the consequences are for JavaScript developers wishing to support full Unicode, and how the upcoming ECMAScript 6 (or ES 2015 as it’s being called nowadays) will improve this.",
+    "desc": "This talk will showcase a series of obscure CSS fun facts, such as CSS syntax gimmicks and quirks, weird tricks that involve CSS in one way or another, and security vulnerabilities that are enabled by (ab)using CSS in unexpected ways.",
     "type": "web",
     "difficulty": 101,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h07",
     "video": "",
     "slides": "",
     "speakers": [
@@ -488,13 +492,92 @@ devfestApp.factory('AgendaService', ['SpeakersService', function(speakerService)
     "difficulty": 202,
     "all": false,
     "lang": "fr",
-    "hour": "h04",
+    "hour": "h07",
     "video": "",
     "slides": "",
     "speakers": [
       "sdutton"
     ]
   },
+    {
+        "id": "s28",
+        "title": "Découvrir ES6 par le code",
+        "confRoom": "Salle Titan",
+        "desc": "ES6 ou ES2015, la nouvelle version du JavaScript vient de sortir. Vous avez peut être déjà vu une conférence à ce sujet mais comment se faire une idée en ne faisant que parcourir une liste de nouvelles syntaxe ?\n\nIci, nous allons faire du code ! En partant de la base d’un code d’une application Angular 1 en JavaScript \"standard\", nous allons la transformer progressivement avec toutes les nouvelles notations.\n\nNous passerons ainsi en revu la plupart des nouveaux concepts. En commençant par les facilités de syntaxe mais en étudiant aussi les nouveaux paradigmes comme les classes, les promesses jusqu'au generators.\n\nLe livecoding sera réalisé avec un environnement de build avec Gulp, Webpack et Babel. Rien que vous ne puissiez reproduire chez vous le soir même !",
+        "type": "web",
+        "difficulty": 202,
+        "all": false,
+        "lang": "fr",
+        "hour": "h08",
+        "video": "",
+        "slides": "",
+        "speakers": [
+          "mlux"
+        ]
+      },{
+        "id": "s29",
+        "title": "Vorlon.js : le debug de sites web plus simple",
+        "confRoom": "Salle Titan",
+        "desc": "Quand on est sur son PC avec un navigateur : F12 nous rend toujours un très bon service. Cependant comment avoir la même expérience quand veut débugger le site sur un téléphone ? Des solutions existent mais rien de très simple d’utilisation ou qui fonctionne dans tous les cas.\n\nDans ce talk, je vous présenterais Vorlon.js, un nouvel outil que j'ai co-créé et qui permet d’obtenir l’expérience F12, en remote et pour tous les navigateurs",
+        "type": "web",
+        "difficulty": 202,
+        "all": false,
+        "lang": "fr",
+        "hour": "h08",
+        "video": "",
+        "slides": "",
+        "speakers": [
+          "emargraff"
+        ]
+      },
+      {
+        "id": "s30",
+        "title": "Mon architecture microservices sur un cas d'usage urbanisé en 2 heures chrono avec Docker",
+        "confRoom": "Salle Titan",
+        "desc": "Le but de cette conférence est de faire construire une (mini) architecture microservices sur un scénario d'utilisation simple qui sera décomposé en quelques appels de services autonomes selon les méthodes de découplage de responsabilités. Afin que les participants puissent se consacrer à la compréhension de l'architecture et à l'assemblage final, des squelettes de code seront fournis ainsi que des images Docker.",
+        "type": "codelab-cloud",
+        "difficulty": 101,
+        "all": false,
+        "lang": "fr",
+        "hour": "h08",
+        "video": "",
+        "slides": "",
+        "speakers": [
+          "jgouigoux"
+        ]
+      },
+      {
+        "id": "s31",
+        "title": "Redefining PaaS: Managed container based microservices on Google App Engine",
+        "confRoom": "Salle Titan",
+        "desc": "Microservices are a great model for developing modern applications. But microservice based architectures are more complicated than traditional monolithic apps and can come with a significant management overhead particularly when you need to maintain different environments for dev, test and production. This overhead either falls on your development team or to people you hire specifically to manage it. \n\nThis talk with multiple demos, looks at how to build, test and deploy container based microservice architectures without having to worry about managing the platform on which they run, thus freeing up your developers to do what they do best, writing application code.\n\nWe'll look at new and enhanced features of Google App Engine and walk through the staged deployment of both a simple application and a more complicated microservices based architecture. We'll also look at how App Engine has evolved from it's original sandboxed runtime environment to what it is today, a next generation platform for building and deploying modern day applications.",
+        "type": "cloud",
+        "difficulty": 202,
+        "all": false,
+        "lang": "fr",
+        "hour": "h08",
+        "video": "",
+        "slides": "",
+        "speakers": [
+          "lchampenois"
+        ]
+      },
+      {
+        "id": "s32",
+        "title": "Open the door to the engaging world of real-time, with Firebase",
+        "confRoom": "Salle Titan",
+        "desc": "Real-time apps are infinitely more engaging. **Forget \"pull-to-refresh\"**, reload buttons, update timers, ... Say \"hi\" to new generation apps that mimic real world behaviors and push updates, info and notifications to your users \"as it happens.\"\n \nThough, **how to make an existing app real-time** or start from scratch a new mobile-first real-time application may seem like a major challenge. Here comes **Firebase**.\n\nIt has actually never been easier to build mobile apps which are both **real-time and offline first**. Through concrete examples and APIs walkthrough, this talk will show how it is now possibly to build new features like Instant Messaging, Chat, Notifications or Presence effortlessly, and in a scalable way.\n\nA special focus will be put on **building mobile apps** in this context and **the challenges of building a reactive User Interface** (using notably FirebaseUI or KVO on iOS).\n\nExamples will focus on iOS and JavaScript.",
+        "type": "mobile",
+        "difficulty": 101,
+        "all": false,
+        "lang": "fr",
+        "hour": "h09",
+        "video": "",
+        "slides": "",
+        "speakers": [
+          "cwehrung"
+        ]
+      },
   {
     "id": "s1",
     "title": "Accueil",
