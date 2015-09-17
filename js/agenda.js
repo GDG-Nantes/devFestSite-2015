@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService) {
     var agenda = {
