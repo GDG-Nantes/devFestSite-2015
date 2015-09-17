@@ -7,8 +7,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             , web: "Web"
             , cloud: "Cloud et Big Data"
             , decouverte: "Découverte"
-            , codelabweb: "CodeLab Web"
-            , codelabcloud: "CodeLab Cloud"
+            //, codelabweb: "CodeLab Web"
+            //, codelabcloud: "CodeLab Cloud"
         },
         hours: {
             "h01": {
