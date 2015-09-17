@@ -550,9 +550,9 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
              */
             {
                 "id": "s30",
-                "title": "A définir",
+                "title": "TBD",
                 "confRoom": "",
-                "desc": "A définir",
+                "desc": "TBD",
                 "type": "codelab-cloud",
                 "difficulty": 101,
                 "all": false,
