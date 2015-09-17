@@ -14,7 +14,7 @@ devfestApp.factory('SpeakersService', [function () {
             },
             "ribon": {
                 "class": "gde",
-                "title": "GDE",
+                "title": "Google Developer Expert",
                 "link": "https://developers.google.com/experts/",
                 "tile_long": "Google Developer Expert"
             },
@@ -201,7 +201,7 @@ devfestApp.factory('SpeakersService', [function () {
             "lastname": "Wehrung",
             "ribon": {
                 "class": "gde",
-                "title": "GDE",
+                "title": "Google Developer Expert",
                 "link": "https://developers.google.com/experts/",
                 "tile_long": "Google Developer Expert"
             },
@@ -243,7 +243,7 @@ devfestApp.factory('SpeakersService', [function () {
             "lastname": "Hallade",
             "ribon": {
                 "class": "gde",
-                "title": "GDE",
+                "title": "Google Developer Expert",
                 "link": "https://developers.google.com/experts/",
                 "tile_long": "Google Developer Expert"
             },
@@ -388,7 +388,7 @@ devfestApp.factory('SpeakersService', [function () {
             "lastname": "Gageot",
             "ribon": {
                 "class": "gde",
-                "title": "GDE",
+                "title": "Google Developer Expert",
                 "link": "https://developers.google.com/experts/",
                 "tile_long": "Google Developer Expert"
             },
@@ -602,7 +602,7 @@ devfestApp.factory('SpeakersService', [function () {
             },
             "ribon": {
                 "class": "gde",
-                "title": "GDE",
+                "title": "Google Developer Expert",
                 "link": "https://developers.google.com/experts/",
                 "tile_long": "Google Developer Expert"
             },
@@ -623,8 +623,8 @@ devfestApp.factory('SpeakersService', [function () {
             "lastname": "Moussine-pouchkine",
             "image": "amoussine-pouchkine_360x360.jpg",
             "category": {
-                "class": "web",
-                "title": "Web"
+                "class": "cloud",
+                "title": "Cloud"
             },
             "company": "Google",
             "about": "Google Developer Relations",
@@ -663,7 +663,7 @@ devfestApp.factory('SpeakersService', [function () {
             },
             "ribon": {
                 "class": "gde",
-                "title": "GDE",
+                "title": "Google Developer Expert",
                 "link": "https://developers.google.com/experts/",
                 "tile_long": "Google Developer Expert"
             },
@@ -737,6 +737,12 @@ devfestApp.factory('SpeakersService', [function () {
             "category": {
                 "class": "cloud",
                 "title": "BigQuery"
+            },
+            "ribon": {
+                "class": "gde",
+                "title": "Google Developer Expert",
+                "link": "https://developers.google.com/experts/",
+                "tile_long": "Google Developer Expert"
             },
             "image": "dgirard_360x360.jpg",
             "company": "Sfeir",
