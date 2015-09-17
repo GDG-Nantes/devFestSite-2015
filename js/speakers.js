@@ -224,6 +224,12 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Xavier",
             "lastname": "Hallade",
+            "ribon": {
+                "class": "gde",
+                "title": "GDE",
+                "link": "https://developers.google.com/experts/",
+                "tile_long": "Google Developer Expert"
+            },
             "category": {
                 "class": "mobile",
                 "title": "Mobile"
@@ -363,6 +369,12 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "David",
             "lastname": "Gageot",
+            "ribon": {
+                "class": "gde",
+                "title": "GDE",
+                "link": "https://developers.google.com/experts/",
+                "tile_long": "Google Developer Expert"
+            },
             "image": "dgageot_360x360.jpg",
             "category": {
                 "class": "cloud",
