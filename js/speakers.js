@@ -172,7 +172,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "class": "mobile",
                 "title": "Mobile"
             },
-            "image": "",
+            "image": "rmenetrier.jpg",
             "company": "Makala",
             "about": "Orange Beacon CTO",
             "socials": []
@@ -234,7 +234,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "class": "mobile",
                 "title": "Mobile"
             },
-            "image": "",
+            "image": "xhallade_360x360.jpg",
             "company": "Intel Corporation",
             "about": "Developer Evangelist à Intel et Google Developer Expert pour Android",
             "socials": [
@@ -301,7 +301,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Damien",
             "lastname": "Cavaillès",
-            "image": "",
+            "image": "dcavailles_360x360.jpg",
             "category": {
                 "class": "discovery",
                 "title": "Discovery"
@@ -338,7 +338,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "class": "discovery",
                 "title": "Discovery"
             },
-            "image": "",
+            "image": "acharbonnier.jpg",
             "company": "Intel Corporation",
             "about": "Key software account manager & Startup discovery",
             "socials": [
@@ -412,7 +412,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Bastien",
             "lastname": "Legras",
-            "image": "",
+            "image": "blegras.jpg",
             "category": {
                 "class": "cloud",
                 "title": "Cloud"
@@ -446,7 +446,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "François-Xavier",
             "lastname": "Rousselot",
-            "image": "",
+            "image": "fxrousselot.jpg",
             "category": {
                 "class": "cloud",
                 "title": "Cloud"
@@ -480,7 +480,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Sam",
             "lastname": "Dutton",
-            "image": "",
+            "image": "sdutton_360x360.jpg",
             "category": {
                 "class": "web",
                 "title": "Web"
@@ -587,7 +587,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Alexis",
             "lastname": "Moussine-pouchkine",
-            "image": "",
+            "image": "amoussine-pouchkine_360x360.jpg",
             "category": {
                 "class": "web",
                 "title": "Web"
@@ -605,7 +605,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Horacio",
             "lastname": "Gonzalez",
-            "image": "",
+            "image": "hgonzalez_360x360.jpg",
             "category": {
                 "class": "web",
                 "title": "Web"
@@ -647,7 +647,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Jean-Philippe",
             "lastname": "Gouigoux",
-            "image": "",
+            "image": "jpgouigoux.jpg",
             "category": {
                 "class": "cloud",
                 "title": "Cloud"
@@ -665,7 +665,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Frank",
             "lastname": "Kelly",
-            "image": "",
+            "image": "fkelly.jpg",
             "category": {
                 "class": "cloud",
                 "title": "Cloud"
@@ -716,7 +716,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Cécilia",
             "lastname": "Bossard",
-            "image": "",
+            "image": "cbossard.png",
             "category": {
                 "class": "discovery",
                 "title": "Discovery"
