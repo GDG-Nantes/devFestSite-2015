@@ -405,12 +405,6 @@ devfestApp.factory('SpeakersService', [function () {
                 "class": "cloud",
                 "title": "Cloud"
             },
-            "ribon": {
-                "class": "gde",
-                "title": "GDE",
-                "link": "https://developers.google.com/experts/",
-                "tile_long": "Google Developer Expert"
-            },
             "company": "Google",
             "about": "",
             "socials": [
@@ -457,7 +451,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Matthieu",
             "lastname": "Lux",
-            "image": "",
+            "image": "mlux_360x360.jpg",
             "category": {
                 "class": "web",
                 "title": "Web"
@@ -499,7 +493,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Etienne",
             "lastname": "Margraff",
-            "image": "",
+            "image": "emargraff.jpg",
             "category": {
                 "class": "web",
                 "title": "Web"
@@ -518,7 +512,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Mathias",
             "lastname": "Bynens",
-            "image": "",
+            "image": "mbynens_360x360.jpg",
             "category": {
                 "class": "web",
                 "title": "Web"
@@ -537,7 +531,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Mathieu",
             "lastname": "Ancelin",
-            "image": "",
+            "image": "mancelin_360x360.jpg",
             "category": {
                 "class": "web",
                 "title": "Web"
@@ -555,7 +549,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Thierry",
             "lastname": "Chatel",
-            "image": "",
+            "image": "tchatel_360x360.jpg",
             "category": {
                 "class": "web",
                 "title": "Web"
@@ -574,6 +568,7 @@ devfestApp.factory('SpeakersService', [function () {
                 {"class": "github", "link": "https://github.com/tchatel"}
             ]
         },
+
 
         {
             "id": "amoussine-pouchkine",
