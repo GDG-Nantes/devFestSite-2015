@@ -74,7 +74,7 @@ devfestApp.factory('SpeakersService', [function () {
             },
             "image": "fbeaufort_360x360.jpg",
             "company": "Google",
-            "about": "",
+            "about": "François Beaufort travaille chez Google pour l'équipe Chrome Apps",
             "socials": [
                 {"class": "google-plus", "link": "https://plus.google.com/+FrancoisBeaufort"},
                 {"class": "github", "link": "https://github.com/beaufortfrancois"}
@@ -398,7 +398,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "title": "Cloud"
             },
             "company": "",
-            "about": "",
+            "about": "David Gageot est développeur indépendant.<br>Sa passion ? L'écriture de logiciels pointus mais simples.<br>Il participe à des projets Java depuis 1998, comme responsable R&D chez l'éditeur Adesoft, comme expert Java et Scrum Master.<br>Depuis 2010, il a pris le leadership sur le projet open-source Infinitest.",
             "socials": [
                 {"class": "google-plus", "link": "https://plus.google.com/+DavidGageot/"},
                 {"class": "twitter", "link": "https://twitter.com/dgageot"},
@@ -417,7 +417,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "title": "Cloud"
             },
             "company": "Google",
-            "about": "Tech Lead, Manager Google Cloud Platform, Java.",
+            "about": "Ludo is a Tech Lead and Manager in the Google Cloud platform, leading the runtimes (Java, Python, GO, PHP, Node.js) and the Developer SDK.",
             "socials": [
                 {"class": "google-plus", "link": "https://plus.google.com/+LudovicChampenois/"},
                 {"class": "twitter", "link": "https://twitter.com/ludoch"},
@@ -435,7 +435,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "title": "Cloud"
             },
             "company": "Google",
-            "about": "",
+            "about": "Bastien Legras a rejoint Google for Work en 2010 et assume aujourd'hui la responsabilité technique de l'offre Google Cloud Platform (IaaS/PaaS) en Europe du Sud.<br>Spécialiste des architectures Cloud, il accompagne les clients Google for Work de toutes tailles pour concevoir des solutions innovantes, en exploitant les nouvelles technologies et architectures Cloud comme le BigData, les Mobiles Backend, le Real Time Bidding, ...",
             "socials": [
                 {"class": "twitter", "link": "https://twitter.com/bastienlegras"},
                 {"class": "linkedin", "link": "https://fr.linkedin.com/pub/bastien-legras/a/957/a87"}
@@ -503,7 +503,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "title": "Web"
             },
             "company": "Zenika",
-            "about": "Développeur, formateur et responsable de l'offre Web au sein de l'agence lyonnaise de Zenika.\n\nAprès une solide expérience dans le monde Java, je suis focalisé aujourd'hui sur le monde du Web et du JavaScript. Plus précisément, mes technologies de prédilection sont actuellement Angular, Gulp, Yeoman, Node et React.\n\nJ'ai également donné un certain nombre de talks sur Angular au MixIt, mais aussi au DevoxxFR et même au <a href='https://www.youtube.com/watch?v=Mk2WwSxK218' target='_blank'>[ngEurope]</a>\n\nJ'organise également le LyonJS, le meetup JavaScript de Lyon <a href='http://www.meetup.com/LyonJS/' target='_blank'>[http://www.meetup.com/LyonJS/]</a>\n\nJ'ai enfin crée un générateur Yeoman <a href='https://github.com/Swiip/generator-gulp-angular' target='_blank'>[generator-gulp-angular]</a> qui propose le démarrage de projets basées sur les technologies Angular & Gulp.",
+            "about": "Développeur, formateur et responsable de l'offre Web au sein de l'agence lyonnaise de Zenika.\n\nAprès une solide expérience dans le monde Java, je suis focalisé aujourd'hui sur le monde du Web et du JavaScript. Plus précisément, mes technologies de prédilection sont actuellement Angular, Gulp, Yeoman, Node et React.\n\nJ'ai également donné un certain nombre de talks sur Angular au MixIt, mais aussi au DevoxxFR et même au <a href='https://www.youtube.com/watch?v=Mk2WwSxK218' target='_blank'>[ngEurope]</a>\n\nJ'organise également le <a href='http://www.meetup.com/LyonJS/' target='_blank'>LyonJS</a>, le meetup JavaScript de Lyon.\n\nJ'ai enfin crée un générateur Yeoman <a href='https://github.com/Swiip/generator-gulp-angular' target='_blank'>[generator-gulp-angular]</a> qui propose le démarrage de projets basées sur les technologies Angular & Gulp.",
             "socials": [
                 {"class": "twitter", "link": "https://twitter.com/swiip"},
                 {"class": "github", "link": "https://github.com/swiip"}
@@ -795,7 +795,7 @@ devfestApp.factory('SpeakersService', [function () {
             social.svg = "/img/sprites/sprites.svg#icon-" + social.class;
         });
     }).sortBy(function(speaker){
-        return speaker.lastname;
+        return speaker.firstname;
     }).value();
 
    

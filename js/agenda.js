@@ -137,7 +137,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             {
                 "id": "s4",
                 "title": "Hand's on Web Components with Polymer 1.0",
-                "confRoom": "",
+                "confRoom": "Les machines",
                 "desc": "The W3C has been working on a Web Components standard for almost three years, but it is still a work in progress. But polyfills like allows current developers to use Web Components today, and incorporate to their apps widgets from any library of web components. <br><br>The best known of these libraries is Google's Polymer. In Google IO 2015 conference, Google has at last released the long awaited version 1.0 of Polymer, making it even faster, more stable and at least suitable for \"serious\" applications. In this lab you will use Polymer 1.0 with Material Design Polymer Elements to design and develop a web application using web components.<br><br>You will learn to use the following technologies:<ul><li> Polymer and Web Components (for mobile and desktop)</li><li> The Paper Elements for Polymer (material design)</li></ul><br><br>Mandatory Installs prior to lab:<ul><li> npm </li><li> bower</li><li> your favorite HTML/CSS/JS IDE (I suggest Sublime Text)</li></ul>",
                 "type": "codelab-web",
                 "difficulty": 101,
@@ -631,9 +631,9 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             },
             {
                 "id": "s35",
-                "title": "Golang TBD",
+                "title": "Go, Polymer, et Cloud Endpoints FTW!",
                 "confRoom": "Salle Titan",
-                "desc": "TBD",
+                "desc": "Soyez prêts à lire du code !<br>Le but de ce talk est de montrer comment créer une application web à partir de zéro.<br>Tout d'abord je vais présenter mes outils par défaut en expliquant pourquoi et comment on peut les utiliser pour créer des belles applications de façon simple qui n'auront aucun soucis à gérer la charge.<br>Après ce sera que du code, des questions, et, si tout va bien, du fun!",
                 "type": "cloud",
                 "difficulty": 101,
                 "all": false,
