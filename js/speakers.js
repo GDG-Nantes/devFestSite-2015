@@ -253,9 +253,10 @@ devfestApp.factory('SpeakersService', [function () {
             },
             "image": "xhallade_360x360.jpg",
             "company": "Intel Corporation",
-            "about": "Developer Evangelist à Intel et Google Developer Expert pour Android",
+            "about": "Developer Evangelist à Intel et Google Developer Expert pour Android. Il est en charge d'aider les développeurs d'Applications et librairies Android à améliorer le support des architectures x86(_64) et autres technologies développées par Intel.",
             "socials": [
-                {"class": "linkedin", "link": "https://fr.linkedin.com/in/xavierhallade"}
+                {"class": "linkedin", "link": "https://fr.linkedin.com/in/xavierhallade"},
+                {"class": "twitter", "link": "https://twitter.com/ph0b"}
             ]
         },
 
@@ -346,6 +347,7 @@ devfestApp.factory('SpeakersService', [function () {
                 {"class": "linkedin", "link": "https://fr.linkedin.com/in/thierryler"}
             ]
         },
+        /*
         {
             "id": "acharbonnier",
             "topspeaker": false,
@@ -362,8 +364,7 @@ devfestApp.factory('SpeakersService', [function () {
                 {"class": "linkedin", "link": "https://fr.linkedin.com/pub/anthony-charbonnier/13/89b/b94"}
             ]
         },
-
-
+        */
         {
             "id": "btalmard",
             "topspeaker": false,

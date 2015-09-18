@@ -152,9 +152,9 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             },
             {
                 "id": "s5",
-                "title": "TBD",//real sense
+                "title": "Introduction à la technologie RealSense",//real sense
                 "confRoom": "Salle Graslin",
-                "desc": "",
+                "desc": "Je vous donnerai une vue d’ensemble des possibilités de la camera et du <a href=\"https://software.intel.com/fr-fr/intel-realsense-sdk\" target=\"_blank\">SDK</a>, à travers des demos et exemples de code.",
                 "type": "discovery",
                 "difficulty": 101,
                 "all": false,
@@ -162,7 +162,9 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                 "hour": "h03",
                 "video": "",
                 "slides": "",
-                "speakers": []
+                "speakers": [
+                    "xhallade"
+                ]
             },
             {
                 "id": "s6",
@@ -615,11 +617,11 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             },
             {
                 "id": "s34",
-                "title": "TBD",
+                "title": "Power optimization for Android",
                 "confRoom": "Salle Bretagne",
-                "desc": "TBD",
+                "desc": "Android devices running on battery need to be optimized for power. If just take a look on the CPU this optimization starts typically with the race to idle, meaning to go to finish the workload as fast as possible. However typical Android devices are running on a SoC with many parts included like CPU, GPU or Audio and Video decoder. All the parts need to be optimized to reduce the power consumption. The Android API provides a number of APIs to help with this and also a power profiling tool can help the developer to understand what hardware parts are active and where he needs to start optimization. <br><br>In the session we will discuss typical causes of high power consumption, how to debug them and provide possible solutions. ",
                 "type": "mobile",
-                "difficulty": 101,
+                "difficulty": 202,
                 "all": false,
                 "lang": "fr",
                 "hour": "h08",
