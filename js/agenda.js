@@ -155,7 +155,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                 "id": "s5",
                 "title": "Introduction à la technologie RealSense",//real sense
                 "confRoom": "Salle Graslin",
-                "desc": "Je vous donnerai une vue d’ensemble des possibilités de la camera et du <a href=\"https://software.intel.com/fr-fr/intel-realsense-sdk\" target=\"_blank\">SDK</a>, à travers des demos et exemples de code.",
+                "desc": "Les technologies Intel® RealSense sont basées sur des caméras 3D temps-réel. Ces caméras déjà intégrées à certain PCs et convertibles Windows et bientôt sur tablettes et phablettes Android.<br><br>Découvrez ce que l’on peut faire avec  RealSense, et comment développer de nouvelles expériences immersives, naturelles ou simplement fun à l’aide du SDK.",
                 "type": "discovery",
                 "difficulty": 101,
                 "all": false,
