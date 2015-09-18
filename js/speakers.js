@@ -38,7 +38,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "title": "Keynote"
             },
             "company": "CommitStrip",
-            "about": "",
+            "about": "Etienne est le dessinateur de la bd CommitStrip",
             "socials": [
                 {"class": "google-plus", "link": "https://plus.google.com/+Commitstrip"},
                 {"class": "twitter", "link": "https://twitter.com/CommitStrip_fr"},
@@ -49,14 +49,14 @@ devfestApp.factory('SpeakersService', [function () {
             "id": "tguenoux",
             "topspeaker": false,
             "firstname": "Thomas",
-            "lastname": "Guenoux",
+            "lastname": "Gx",
             "image": "tguenoux_360x360.jpeg",
             "category": {
                 "class": "discovery",
                 "title": "Keynote"
             },
             "company": "CommitStrip",
-            "about": "",
+            "about": "Thomas Gx est le fondateur de CommitStrip, le blog BD bien connu des codeurs : c'est lui qui écrit chaque jour depuis 2012 une strip sur la vie quotidienne des codeurs. Pionner du développement des réseaux sociaux en France dès 2006 en lançant Cancoon, Thomas co-fonde en 2007 l'agence KRDS, première agence spécialisée en social media marketing et aujourd'hui leader en Europe et en Asie. Il y occupe aujourd'hui la Direction de la Production, dirigeant un studio primé et une équipe de développeurs web ayant produit près de 2000 projets.",
             "socials": [
                 {"class": "google-plus", "link": "https://plus.google.com/+Commitstrip"},
                 {"class": "twitter", "link": "https://twitter.com/CommitStrip_fr"},
