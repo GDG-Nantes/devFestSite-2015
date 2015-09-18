@@ -147,7 +147,8 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                 "video": "",
                 "slides": "",
                 "speakers": [
-                    "hgonzalez"
+                    "hgonzalez",
+                    "aneveu"
                 ]
             },
             {
