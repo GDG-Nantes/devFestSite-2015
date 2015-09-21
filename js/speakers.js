@@ -564,7 +564,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "class": "web",
                 "title": "Web"
             },
-            "company": "VOF Qiwi.be",
+            "company": "Opera Software",
             "about": "Mathias is a Belgian web standards enthusiast. He likes HTML, CSS, JavaScript, Unicode, performance, and security. At Opera Software he’s a member of the Developer Relations team.",
             "socials": [
                 {"class": "google-plus", "link": "https://plus.google.com/u/0/+mathiasbynens/posts"},
