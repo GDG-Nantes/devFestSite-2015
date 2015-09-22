@@ -9,6 +9,7 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             , decouverte: "Découverte"
             , codelabweb: "CodeLab Web"
             , codelabcloud: "CodeLab Cloud"
+            , formation: "Formation"
         },
         hours: {
             "h01": {
@@ -115,6 +116,13 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                 "minStart": "40",
                 "hourEnd": "18",
                 "minEnd": "30"
+            },
+            "h16": {
+                "id": "h16",
+                "hourStart": "13",
+                "minStart": "30",
+                "hourEnd": "17",
+                "minEnd": "00"
             }
         },
         sessions: [
@@ -665,6 +673,22 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
                 ]
             },
             {
+                "id": "s37",
+                "title": "Formation Gratuite Google BigQuery",
+                "confRoom": "Pommeraye",
+                "desc": "Vous avez la possibilité de suivre pendant la conférence DevFest 2015 à Nantes une demi-journée de formation technique gratuite d'une valeur de $500 sur la plate-forme Google BigQuery* avec Didier Girard, Expert Google Cloud Platform. A l'issue de celle-ci une coupon d'une valeur de $100 pour obtenir une certification vous sera remis. La formation a lieu sur le site de la conférence dans la salle Pommeraye.<br><br>* Google BigQuery: kezako?<br>BigQuery (<a href='cloud.google.com/bigquery' target='_blank'>cloud.google.com/bigquery</a>) permet de requêter en SQL et en quelques secondes des quantités massives de données sans mettre en oeuvre d'infrastructure complexe et couteuse. La puissance de Google au service de votre Big Data!<br><br>Attention : le nombre de places est limité et votre participation vous sera confirmée ultérieurement.<br><br><b>IMPORTANT: Il vous est demandé de venir avec votre ordinateur portable Windows, Mac ou Linux et de créer au préalable un compte gratuit Google Cloud Platform sur cloud.google.com.</b><br><br>Agenda de la formation CP304 : <ul><li>Basics (Use Cases, Project Hierarchy, Access Control and Security, Datasets and Tables, Tools)</li><li>Developer (Query Syntax, Programmatic Access, Best Practices)</li><li>Advanced (Under the hood Dremel Architecture, Building End­To­End solutions)</li></ul>",
+                "type": "formation",
+                "difficulty": 101,
+                "all": false,
+                "lang": "fr",
+                "hour": "h16",
+                "video": "",
+                "slides": "",
+                "speakers": [
+                    "dgirard"
+                ]
+            },
+            {
                 "id": "s1",
                 "title": "Accueil",
                 "confRoom": "Espace Chateau des ducs",
@@ -788,6 +812,26 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
         return sessionValues[0].hour;
     })
         .value();
+
+    agenda.formationTransform = _.chain(agenda.sessions).filter(function(session){
+        return session.type === 'formation';
+    }).forEach(function (session) {
+        session.hourContent = agenda.hours[session.hour]
+    }).groupBy(function (session) {
+        return session.hour;
+    }).mapValues(function (sessionValues) {
+        return _(sessionValues).forEach(function (session) {
+            session.classCol = sessionValues.length === 1 ? 'col-md-12' : 'col-md-3';
+        }).sortBy(function (session) {
+            switch (session.type) {
+                case 'formation':
+                    return 0;
+            }
+        }).value();
+    }).values().sortBy(function (sessionValues) {
+        return sessionValues[0].hour;
+    })
+        .value()
 
 
     return agenda;

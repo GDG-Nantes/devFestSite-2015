@@ -55,6 +55,7 @@
                 <!-- Begin Schedule Section -->
                 <section id="schedule" class="schedule">
                     <a href="#codelabs " class="btn btn-primary waves-effect waves-button waves-light waves-float">Afficher les codelabs</a>
+                    <a href="#formation " class="btn btn-primary waves-effect waves-button waves-light waves-float">Afficher la formation</a>
                     <a href="/#/#tickets " class="btn btn-primary waves-effect waves-button waves-light waves-float">Acheter mon billet</a>
                     <div class="content-wrapper clearfix">
                         <div id="conferences" class="schedule-table col-lg-8 col-md-10 col-md-offset-1">
@@ -101,6 +102,10 @@
                                 </div>
                             </div>                            
                         </div>
+                    </div>
+                    <div class="content-wrapper clearfix">
+                        <a href="#formation " class="btn btn-primary waves-effect waves-button waves-light waves-float">Afficher la formation</a>
+                        <a href="/#/#tickets " class="btn btn-primary waves-effect waves-button waves-light waves-float">Acheter mon billet</a>
                          <div id="codelabs" class="schedule-table col-lg-8 col-md-10 col-md-offset-1">
                             <h4 class="schedule-table-heading">Codelabs</h4>
                             <div class="timeslot track-header stick-header">
@@ -142,7 +147,49 @@
                             </div>                            
                         </div>
                     </div>
+                    <div class="content-wrapper clearfix">
+                        <a href="#conferences " class="btn btn-primary waves-effect waves-button waves-light waves-float">Afficher les conférences</a>
+                        <a href="/#/#tickets " class="btn btn-primary waves-effect waves-button waves-light waves-float">Acheter mon billet</a>
+                         <div id="formation" class="schedule-table col-lg-8 col-md-10 col-md-offset-1">
+                            <h4 class="schedule-table-heading">Formation</h4>
+                            <div class="timeslot track-header stick-header">
+                                <div class="track-header-label">6 Nov</div>
+                                <div class="timeslot-elements flexbox-wrapper">
+                                    <div class="track-header-slot col-md-3 flexbox-item-height hidden-xs">
+                                        <h5 class="track-header-title" ng-bind='::agenda.categories.formation'></h5>
+                                    </div>
+                                    <div class="track-header-slot col-xs-12 visible-xs">
+                                        <h5 class="slot-detail track-header-title"></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeslot" itemtype="http://schema.org/subEvent" ng-repeat="sessionRow in agenda.formationTransform" ngc-done="repeatFinish">
+                                <div class="timeslot-label">
+                                    <time class="start-time" itemprop="startDate" datetime="October 24T10:00"> {{::sessionRow[0].hourContent.hourStart}}<span>{{::sessionRow[0].hourContent.minStart}}</span> </time>
+                                    <time class="end-time" itemprop="endDate" datetime="October 24T10:45">  {{::sessionRow[0].hourContent.hourEnd}}<span>{{::sessionRow[0].hourContent.minEnd}}</span> </time>
+                                </div>
+                                <div class="timeslot-elements flexbox-wrapper">
+                                    <div id="{{::session.id}}" class="slot {{::session.classCol}} col-xs-12 flexbox-item-height" data-slot-detail="{{::session.type}}" data-toggle="modal" data-target="#sessionDetail-{{session.id}}" ng-repeat="session in sessionRow">
+                                        <div class="color-line {{::session.type}}" ></div>
+                                        <div class="slot-content {{::session.type}}">
+                                            <h5 class="slot-title" itemprop="name" ng-bind="::session.title"></h5> <span class="slot-language" ng-if="session.lang" ng-bind="::session.lang"></span>
+                                            <p ng-if="::session.confRoom" >{{::session.confRoom}}</p>
+                                            <ul class="slot-speakers" ng-if="session.speakers"> 
+                                                <li itemprop="performer" ng-repeat="speaker in session.speakers">
+                                                    <div class="speaker-img flow-img img-circle" style="background-image: url(/img/people/{{::speaker.image}})">                                                       
+                                                    </div> 
+                                                    <p class="speaker-name">{{::speaker.firstname+" "+speaker.lastname}} <span class="speaker-position">{{::speaker.company}}</span> 
+                                                    </p> 
+                                                </li> 
+                                            </ul>
+                                        </div>
+                                    </div>                                  
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
                     <a href="#conferences " class="btn btn-primary waves-effect waves-button waves-light waves-float">Afficher les conférences</a>
+                    <a href="#formation " class="btn btn-primary waves-effect waves-button waves-light waves-float">Afficher la formation</a>
                     <a href="/#/#tickets " class="btn btn-primary waves-effect waves-button waves-light waves-float">Acheter mon billet</a>
                 </section>
                 <!-- End Schedule Section -->
