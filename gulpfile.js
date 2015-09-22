@@ -31,7 +31,7 @@ gulp.task("clean", function () {
 });
 
 gulp.task("copy", ["clean", "ngTemplates", "less-prod"], function () {
-  return gulp.src(["index.html", "app.yaml", "robots.txt", "sitemap.xml", "team/**", "speakers/**", "schedule/**", "cod/**", "logistics/**", "js/**", "img/**", "css/**", "custo/**"], { "base" : "." })
+  return gulp.src(["index.html", "app.yaml", "robots.txt", "sitemap.xml", "team/**", "speakers/**", "schedule/**", "cod/**", "logistics/**", "js/**", "img/**", "css/**", "custo/**","assets/**"], { "base" : "." })
     .pipe(gulp.dest("dist"));
 });
 
