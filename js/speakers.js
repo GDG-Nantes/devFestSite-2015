@@ -38,7 +38,7 @@ devfestApp.factory('SpeakersService', [function () {
                 "title": "Keynote"
             },
             "company": "CommitStrip",
-            "about": "Etienne est le dessinateur de la bd CommitStrip",
+            "about": "Etienne Issartial est le dessinateur de CommitStrip, chaque jour il met en scène et dessine la strip que son ami Thomas Gx écrit sur la vie des codeur. Après plus de 700 strips il est tomber dans le monde du code pour de bon (sans jamais avoir codé une ligne de sa vie). En 2004 il quitte l'Ecole des Beaux-Arts pour se concentrer sur le dessin de presse et la BD. Depuis Etienne dessine tous les jours pour CommitStrip et d'autres projets en freelance.",
             "socials": [
                 {"class": "google-plus", "link": "https://plus.google.com/+Commitstrip"},
                 {"class": "twitter", "link": "https://twitter.com/CommitStrip_fr"},
