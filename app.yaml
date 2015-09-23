@@ -55,7 +55,7 @@ handlers:
 - url: /assets/prog.json
   static_files: assets/prog.json
   http_headers:
-    Access-Control-Allow-Origin: *
+    Access-Control-Allow-Origin: "*"
 
 # access the static resources in the root director
 
