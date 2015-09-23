@@ -51,8 +51,15 @@ handlers:
   expiration: "0d 5m"
   secure: always
 
+# Cas du json de programme
+- url: /assets/prog.json
+  static_files: assets/prog.json
+  http_headers:
+    Access-Control-Allow-Origin: *
+
 # access the static resources in the root director
 
 - url: /(.*)
   static_files: \1
   upload: (.*)
+
