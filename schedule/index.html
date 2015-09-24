@@ -35,6 +35,7 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 </head>
 <body  ng-controller="AgendaCtrl">
+    <div id="svg-sprites" ng-include="'/partials/svg-sprites.html'"></div>
     <div id="loader" ng-include="'/partials/loader.html'"></div>
     <div id="st-container" class="st-container disable-scrolling"  style="display:none;">
         <div class="st-pusher">
@@ -200,7 +201,7 @@
                     <div class="modal-body">
                         <div class="close">
                             <svg class="icon icon-cross" viewBox="0 0 32 32">
-                                <use xlink:href="/img/sprites/sprites.svg#icon-cross"></use>
+                                <use xlink:href="#icon-cross"></use>
                             </svg>
                             <div class="close-mask" data-dismiss="modal"></div>
                         </div>
@@ -225,8 +226,7 @@
                                         <li ng-repeat="social in speaker.socials">
                                             <a href="{{::social.link}}" target="_blank">
                                                 <svg class="icon icon-{{::social.class}}" viewBox="0 0 30 32">
-                                                   <!--<use xlink:href="/img/sprites/sprites.svg#icon-{{social.class}}"></use>-->
-                                                   <use xlink:href="{{::social.svg}}">
+                                                   <use ng-href="{{'#icon-'+social.class}}" xlink:href="">
                                                 </svg>
                                             </a>
                                         </li>
