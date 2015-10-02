@@ -430,7 +430,7 @@ devfestApp.factory('SpeakersService', [function () {
             "topspeaker": false,
             "firstname": "Bastien",
             "lastname": "Legras",
-            "image": "blegras.jpg",
+            "image": "blegras_360x360.jpg",
             "category": {
                 "class": "cloud",
                 "title": "Cloud"

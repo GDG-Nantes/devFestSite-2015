@@ -209,9 +209,9 @@ devfestApp.factory('AgendaService', ['SpeakersService', function (speakerService
             },
             {
                 "id": "s8",
-                "title": "Cloud Ops",
+                "title": "Sleep easy knowing everything's OK with Google Cloud Operations",
                 "confRoom": "Salle Graslin",
-                "desc": "Come and see how you can improve your Devops tasks with Google Cloud",
+                "desc": "You know know your applications and infrastructure and running right? Right? Gaining insight into the health and performance of your applications should be easy, and we will show you just how easy it can be!<br>70% of the time and resources are spent today on infrastructure and application maintenance. And again, I’m sure you’ve all seen these stats before, but the astounding thing is that they’ve remained this way for a long time. So the opportunity we see in building our solution is how do we make a fundamental shift in the ratio between “maintain” and “invest”.<br>I want to show you what we are doing, and hopefully help you understand how you can make a difference with us.<br>Agility: Pivot to a different direction as needed. Scale fast and smoothly.<br>Speed: Execution. Moving fast.<br>Efficiency: Use resources and time wisely.",
                 "type": "cloud",
                 "difficulty": 202,
                 "all": false,
