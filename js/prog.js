@@ -1,6 +1,6 @@
 'use strict';
 
-devfestApp.factory('ProgrammeService', ['$http', function($http){
+devfestApp.factory('ProgrammeService', ['$http', '$q', 'FavoritesService', function($http, $q, favService){
 
     function getProgramme(callBack){
         $http({
@@ -17,7 +17,8 @@ devfestApp.factory('ProgrammeService', ['$http', function($http){
                         return programme.speakers[_.findIndex(programme.speakers, function (speakerTmp) {
                             return speakerTmp.id === speaker;
                         })];
-                    }).value();
+                    }).value();                    
+
                     return session;
                 }).value();
 
@@ -106,12 +107,39 @@ devfestApp.factory('ProgrammeService', ['$http', function($http){
                     return speaker.firstname;
                 }).value();
 
+
+
                 return programme;
             }
         }).then(function(data){
-            callBack(data.data);
-            //$scope.programme = data.data;//JSON.parse(data.data);
-            //console.log(JSON.parse(data.data));
+            var promiseFav = $q.defer();
+            // Pour l'instant rien n'est fait car on a pas le service http de requete des favoris ! 
+            var userLogged = localStorage['user']; // TODO checker avec hello pour l'instant false
+            if (userLogged){
+                // On va aller récupérer ses favoris
+                $http({
+                    url : '/api/favs',
+                    method : 'GET',
+                    params : {user_id : userLogged}
+                }).then(function (dataFav){
+                    // Voir ce qu'on fait des données 
+                    // TODO  A brancher pour de vrai
+                    // On écrase les favoris par ceux venant du serveur
+                    localStorage['favs'] = dataFav;
+                    favService.applyFav(data.sessions, dataFav);
+                    promiseFav.resolve(data);
+                });
+            }else{
+                // S'il n'est pas loggué, alors on regarde dans le localstorage
+                if (localStorage['fav']){
+                    favService.applyFav(data.data.sessions, JSON.parse(localStorage['fav']));
+                }
+                promiseFav.resolve(data.data);
+            }
+            return promiseFav.promise;
+        }).then(function(data){
+            callBack(data);
+
         });
     }
 

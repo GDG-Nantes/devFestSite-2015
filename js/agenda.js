@@ -3,12 +3,17 @@
 /**
  * Sessions controller
  */
-devfestApp.controller('AgendaCtrl', ['$scope', '$http', 'ProgrammeService', function ($scope, $http, progService) {
+devfestApp.controller('AgendaCtrl', ['$scope', '$http', 'ProgrammeService', 'FavoritesService'
+    , function ($scope, $http, progService, favService) {
 
     $scope.agenda = {};
     progService.getProgramme(function(agenda){
         $scope.agenda = agenda;
     });
+
+    $scope.toggleFav = function(session){
+        favService.toggleFav(session);
+    }
 
     
     var first = true;

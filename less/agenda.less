@@ -39,3 +39,29 @@
 .slot-content.white{
 	border-right-color: @neutre-color;
 }
+
+.slot.col-md-12 .slot-favorite{
+	display: none;
+}
+.slot-favorite{
+	position: absolute;
+    font-size: 20px;
+    right: 5px;
+    top: 40px;
+}
+
+.slot-content.white .slot-favorite{
+	color : @neutre-color;
+}
+.slot-content.web .slot-favorite, .slot-content.codelab-web .slot-favorite{
+	color : @web-color;
+}
+.slot-content.mobile .slot-favorite{
+	color : @mobile-color;
+}
+.slot-content.cloud .slot-favorite, .slot-content.codelab-cloud .slot-favorite, .slot-content.formation .slot-favorite{
+	color : @cloud-color;
+}
+.slot-content.discovery .slot-favorite{
+	color : @decouverte-color;
+}
