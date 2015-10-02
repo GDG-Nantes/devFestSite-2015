@@ -58,6 +58,10 @@ handlers:
   http_headers:
     Access-Control-Allow-Origin: "*"
 
+# Service Go de favoris
+- url: /api/.*
+  script: _go_app
+
 # access the static resources in the root director
 
 - url: /(.*)
