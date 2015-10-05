@@ -15,6 +15,8 @@ var minifyCss = require('gulp-minify-css');
 var templateCache = require("gulp-angular-templatecache");
 var minifyHtml = require("gulp-minify-html");
 var del = require("del");
+var shell = require('gulp-shell');
+var runSequence = require('run-sequence');
 
 gulp.task("ngTemplates", ["clean"], function () {
   return gulp.src("./partials*/**.html")
@@ -29,6 +31,8 @@ gulp.task("clean", function () {
     "dist/**"
   ]);
 });
+
+gulp.task('go_app', shell.task(['goapp serve']));
 
 gulp.task("copy", ["clean", "ngTemplates", "less-prod"], function () {
   return gulp.src(["index.html", "app.yaml", "robots.txt", "sitemap.xml", "team/**", "speakers/**", "schedule/**", "cod/**", "logistics/**", "js/**", "img/**", "css/**", "custo/**","assets/**"], { "base" : "." })
@@ -186,6 +190,21 @@ gulp.task("cleanAfter", ["rev_cod"], function () {
     "js/default.js",
     "js/scripts.js"
   ]);
+});
+
+gulp.task('goserve', function(){
+  runSequence(
+    ['watch', 'go_app']
+  );
+});
+
+gulp.task('watch',  ['less'], function(){
+  browserSync.init({
+    proxy:'http://localhost:8080'
+  });
+  gulp.watch("less/**/*.less", ['less']);
+  gulp.watch("./**/*.html").on('change', reload);
+  gulp.watch("./js/*.js").on('change', reload);
 });
 
 gulp.task('serve',  ['less'], function(){
