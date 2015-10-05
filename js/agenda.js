@@ -21,6 +21,7 @@ devfestApp.controller('AgendaCtrl', ['$scope', '$http', 'ProgrammeService', 'Fav
     	if (first){
     		first = false;
     	}else{
+            //window.devfestReadyFunction();
     		window.angularReadyForSticky = true;
     		if (window.domReadyForSticky){
 	    		setTimeout(function() {  			

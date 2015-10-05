@@ -21,6 +21,18 @@ devfestApp.factory('FavoritesService', ['$http', function ($http) {
     		});
     	}
     	localStorage['fav'] = JSON.stringify(favs);
+
+        // On fini par persister les données
+        var userLogged = localStorage['user']; // TODO checker avec hello pour l'instant false
+        if (userLogged){
+            // On envoyer les données
+            $http({
+                url : '/api/v1/putfavs',
+                method : 'GET',
+                params : {'login' : encodeURIComponent(userLogged),
+                        'favs' : '%5b"'+favs.join('","')+'"%5d'}
+            });
+        }
     	
 
     }

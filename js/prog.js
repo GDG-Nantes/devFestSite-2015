@@ -118,16 +118,17 @@ devfestApp.factory('ProgrammeService', ['$http', '$q', 'FavoritesService', funct
             if (userLogged){
                 // On va aller récupérer ses favoris
                 $http({
-                    url : '/api/favs',
+                    url : '/api/v1/getfavs',
                     method : 'GET',
-                    params : {user_id : userLogged}
+                    params : {login : encodeURIComponent(userLogged)}
+                    
                 }).then(function (dataFav){
                     // Voir ce qu'on fait des données 
                     // TODO  A brancher pour de vrai
                     // On écrase les favoris par ceux venant du serveur
-                    localStorage['favs'] = dataFav;
-                    favService.applyFav(data.sessions, dataFav);
-                    promiseFav.resolve(data);
+                    localStorage['favs'] = dataFav.data;
+                    favService.applyFav(data.data.sessions, dataFav.data.favs);
+                    promiseFav.resolve(data.data);
                 });
             }else{
                 // S'il n'est pas loggué, alors on regarde dans le localstorage

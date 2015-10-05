@@ -2,12 +2,9 @@ package devfest
 
 import (
     "fmt"
-    "strconv"
     "net/http"
-    "log"
+    "net/url"
     "encoding/json"
-    "io/ioutil"
-    "os"
     "appengine"
     "appengine/datastore"
     "appengine/memcache"
@@ -29,8 +26,8 @@ func getfavs(w http.ResponseWriter, r *http.Request) {
     //w.WriteHeader(http.StatusFound) 
     c := appengine.NewContext(r)
     
-    login := r.FormValue("login")
-    favs := r.FormValue("favs")
+    login,_ := url.QueryUnescape(r.FormValue("login"))
+    //favs := r.FormValue("favs")
     // Mise en cache direct du spreadsheet
     keyMemCache := "favs"+login;
     item, err := memcache.Get(c, keyMemCache);       
@@ -44,7 +41,7 @@ func getfavs(w http.ResponseWriter, r *http.Request) {
             // Si c'est pas présent en base, alors on renvoie un tableau vide
             user = User{
                 Login : login,
-                Favs : []string
+                Favs : []string{},
             }
         }
 
@@ -70,8 +67,8 @@ func getfavs(w http.ResponseWriter, r *http.Request) {
 
 
 func putfavs(w http.ResponseWriter, r *http.Request) {
-    login := r.FormValue("login")
-    favs := r.FormValue("favs")
+    login,_ := url.QueryUnescape(r.FormValue("login"))
+    favs,_ := url.QueryUnescape(r.FormValue("favs"))
     if len(login) == 0 || len(favs) == 0{
         fmt.Fprint(w, "Parametre manquant\n")    
         // TODO jetter une erreur
@@ -90,7 +87,7 @@ func putfavs(w http.ResponseWriter, r *http.Request) {
         // Si c'est pas présent en base, alors on le créé
         user = User{
             Login : login,
-            Favs : []string
+            Favs : []string{},
         }
     }
     json.Unmarshal([]byte(favs), &user.Favs)
@@ -106,7 +103,7 @@ func putfavs(w http.ResponseWriter, r *http.Request) {
         Key: keyMemCache, 
         Value: strJson,
     }
-    if err := memcache.Set(c, item); err != nil {
+    if err := memcache.Set(c, itemValue); err != nil {
         http.Error(w, err.Error(), http.StatusInternalServerError)
         return
     }

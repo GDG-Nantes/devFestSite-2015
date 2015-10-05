@@ -37,9 +37,9 @@
 <body  ng-controller="AgendaCtrl">
     <div id="svg-sprites" ng-include="'/partials/svg-sprites.html'"></div>
     <div id="loader" ng-include="'/partials/loader.html'"></div>
-    <div id="st-container" class="st-container disable-scrolling"  style="display:none;" ng-if="agenda.sessions">
-        <div class="st-pusher">
-            <div class="st-content">
+    <div id="st-container" class="st-container disable-scrolling"  style="display:none;" >
+        <div class="st-pusher" >
+            <div class="st-content" ng-if="agenda.sessions">
                 <!-- Begin Top Section -->
                 <section id="top-section" class="top-section image-section enable-overlay" style="background-image: url('/img/sections-background/schedule.jpg');">
                     <div class="overlay gradient-overlay"></div>
