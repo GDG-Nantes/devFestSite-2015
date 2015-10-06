@@ -33,7 +33,42 @@
 
                 });
             });
+
+            if (!$('.socials')[0]){
+                $('#menu-connexion')[0].style.display = 'none';
+            }else{
+
+                $('.socials button').on('click', function(event){
+                    var network = $(event.target).attr('data-social');
+                    hello(network).login(network, {}, function(auth){
+                        hello(auth.network).api('/me').then(function(r) {
+                            localStorage['user'] = network+r.id;
+                            //console.log(r);   
+                            // Une fois persité on peut chercher à récupérer les données du serveur       
+                            location.reload();          
+                        });
+                    });
+                });
+
+                $.getJSON('/credentials.json', function(data) {
+                    var creds = {
+                        google : data.GOOGLE_CLIENT,
+                        twitter : data.TWITTER_CLIENT,
+                        github : data.GITHUB_CLIENT
+                    };
+                    var config = {
+                        redirect_uri : 'redirect.html',
+                        scope:'email'
+                    } 
+
+                    hello.init(creds,config);
+                }).fail(function() {
+                    $('#menu-connexion')[0].style.display = 'none';
+                });
+
+            }
         });
+
 
         if ($(window).width() > 1500) {
             $('.effect-wrapper').addClass('col-lg-3');
@@ -172,6 +207,7 @@
         }, {
             accY: -150
         });
+
 
         var equalheight = function(container) {
             var currentTallest = 0,

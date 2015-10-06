@@ -278,6 +278,7 @@
     <script src="../js/fav.js"></script>
     <script src="../js/agenda.js"></script>
     <script src="../js/scripts.js"></script>
+    <script src="../js/hello.min.js"></script>
     <!-- endbuild -->
     <!-- inject:js -->
     <!-- endinject -->
@@ -314,6 +315,48 @@
             <div class="modal-body" style="background-color:black;text-align:center">
                 <iframe id="game" class="right" width="400px" height="400px" style="border:0px" data-src="../custo/breakout/index.html">
                 </iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      <!-- Socials Modal -->
+      <div class="modal fade" id="socialModal" tabindex="-1" role="dialog" aria-labelledby="socialModalLabel" aria-hidden="true">
+        <div   class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Connectez vous : </h4>
+            </div>
+            <div class="modal-body">
+                <ul class="list-unstyled socials text-center">
+                    <li>
+                        <button type="button" class="btn btn-default" data-dismiss="modal" data-social="twitter">
+                        <svg class="icon icon-twitter" viewBox="0 0 30 32">
+                           <use ng-href="#icon-twitter" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter">
+                        </use></svg>
+                        Twitter
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-default" data-dismiss="modal" data-social="google">
+                        <svg class="icon icon-google-plus" viewBox="0 0 30 32">
+                           <use ng-href="#icon-google-plus" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-google-plus">
+                        </use></svg>
+                        Google
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-default" data-dismiss="modal" data-social="github">
+                        <svg class="icon icon-github" viewBox="0 0 30 32">
+                           <use ng-href="#icon-github" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github">
+                        </use></svg>
+                        Github
+                        </button>
+                    </li>
+                </ul>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
