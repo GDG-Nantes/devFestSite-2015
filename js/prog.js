@@ -118,7 +118,7 @@ devfestApp.factory('ProgrammeService', ['$http', '$q', 'FavoritesService', funct
             if (userLogged){
                 // On va aller récupérer ses favoris
                 $http({
-                    url : '/api/v1/getfavs',
+                    url : '/api/v1/stars/get',
                     method : 'GET',
                     params : {login : encodeURIComponent(userLogged)}
                     

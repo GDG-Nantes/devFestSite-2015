@@ -16,12 +16,12 @@ type User struct {
 }
 
 func init() {
-    http.HandleFunc("/api/v1/getfavs", getfavs)
-    http.HandleFunc("/api/v1/putfavs", putfavs)
+    http.HandleFunc("/api/v1/stars/get", getStars)
+    http.HandleFunc("/api/v1/stars/put", putStars)
 
 }
 
-func getfavs(w http.ResponseWriter, r *http.Request) {
+func getStars(w http.ResponseWriter, r *http.Request) {
     //w.Header().Set("SUPER-HACK", "@GDGNANTES")
     //w.WriteHeader(http.StatusFound) 
     c := appengine.NewContext(r)
@@ -66,7 +66,7 @@ func getfavs(w http.ResponseWriter, r *http.Request) {
 }
 
 
-func putfavs(w http.ResponseWriter, r *http.Request) {
+func putStars(w http.ResponseWriter, r *http.Request) {
     login,_ := url.QueryUnescape(r.FormValue("login"))
     favs,_ := url.QueryUnescape(r.FormValue("favs"))
     if len(login) == 0 || len(favs) == 0{
@@ -81,15 +81,10 @@ func putfavs(w http.ResponseWriter, r *http.Request) {
     
     // Get the item from the dataStore
     keyMemCache := "favs"+login;
-    var user User
-    keyUser := datastore.NewKey(c, "User", keyMemCache, 0, nil)
-    if err := datastore.Get(c, keyUser, &user); err != nil{
-        // Si c'est pas présent en base, alors on le créé
-        user = User{
-            Login : login,
-            Favs : []string{},
-        }
+    var user = User{
+        Login : login,
     }
+    keyUser := datastore.NewKey(c, "User", keyMemCache, 0, nil)
     json.Unmarshal([]byte(favs), &user.Favs)
 
     _, err := datastore.Put(c, keyUser, &user)

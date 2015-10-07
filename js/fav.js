@@ -27,7 +27,7 @@ devfestApp.factory('FavoritesService', ['$http', function ($http) {
         if (userLogged){
             // On envoyer les données
             $http({
-                url : '/api/v1/putfavs',
+                url : '/api/v1/stars/put',
                 method : 'GET',
                 params : {'login' : encodeURIComponent(userLogged),
                         'favs' : '%5b"'+favs.join('","')+'"%5d'}
