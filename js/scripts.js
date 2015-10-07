@@ -50,21 +50,18 @@
                     });
                 });
 
-                $.getJSON('/credentials.json', function(data) {
-                    var creds = {
-                        google : data.GOOGLE_CLIENT,
-                        twitter : data.TWITTER_CLIENT,
-                        github : data.GITHUB_CLIENT
-                    };
-                    var config = {
-                        redirect_uri : 'redirect.html',
-                        scope:'email'
-                    } 
+                var creds = {
+                    google : "312903486392-eu80fphua3j2t4jfahejoq6l9u6p2399.apps.googleusercontent.com",
+                    twitter : "AeqcY7PWrepZiGZcptsJseWVX",
+                    github : "f050e9a66b1a179c2d77"
+                };
+                var config = {
+                    redirect_uri : 'redirect.html',
+                    scope:'email'
+                } 
 
-                    hello.init(creds,config);
-                }).fail(function() {
-                    $('#menu-connexion')[0].style.display = 'none';
-                });
+                hello.init(creds,config);
+                
 
             }
         });
