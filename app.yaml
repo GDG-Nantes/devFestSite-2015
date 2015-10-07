@@ -63,8 +63,11 @@ handlers:
   script: _go_app
 
 # access the static resources in the root director
-
-- url: /(.*)
+- url: /(.*\.(css|gif|png|jpg|ico|js|html|xml|txt|ttf|json|svg|woff|eot|xcf))
   static_files: \1
-  upload: (.*)
+  upload: (.*\.(css|gif|png|jpg|ico|js|html|xml|txt|ttf|json|svg|woff|eot|xcf))
 
+
+skip_files:
+- ^node_modules/*.*
+- ^\.git/*.*
