@@ -65,3 +65,28 @@
 .slot-content.discovery .slot-favorite{
 	color : @decouverte-color;
 }
+
+#schedule.showagenda .slot:not(.favorite){
+	.color-line, .slot-content{
+		opacity: 0;		
+	}
+}
+#schedule.showagenda .slot{
+	.color-line, .slot-content{
+		transition: opacity 500ms;
+	}
+}
+
+@media (max-width: 767px){
+
+
+	#schedule.showagenda {
+		.timeslot.session:not(.favorite){
+			display: none;
+		}
+
+		.slot:not(.favorite){
+			display: none;					
+		}
+	}	
+}

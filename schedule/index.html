@@ -54,9 +54,10 @@
                 </section>
                 <!-- End Top Section -->
                 <!-- Begin Schedule Section -->
-                <section id="schedule" class="schedule">
+                <section id="schedule" class="schedule" ng-class="{showagenda: showAgenda}">
                     <a href="#codelabs " class="btn btn-primary waves-effect waves-button waves-light waves-float">Afficher les codelabs</a>
                     <a href="/#/#tickets " class="btn btn-primary waves-effect waves-button waves-light waves-float">Acheter mon billet</a>
+                    <a href="#" class="btn btn-primary waves-effect waves-button waves-light waves-float" ng-click="toggleAgenda()">{{btnToggleAgenda}}</a>
                     <div class="content-wrapper clearfix">
                         <div id="conferences" class="schedule-table col-lg-8 col-md-10 col-md-offset-1">
                             <h4 class="schedule-table-heading">Conférences</h4>
@@ -78,13 +79,13 @@
                                         <h5 class="slot-detail track-header-title"></h5> </div>
                                 </div>
                             </div>
-                            <div class="timeslot" itemtype="http://schema.org/subEvent" ng-repeat="sessionRow in agenda.sessionsTransform" ngc-done="repeatFinish">
+                            <div class="timeslot session" itemtype="http://schema.org/subEvent" ng-repeat="sessionRow in agenda.sessionsTransform" ngc-done="repeatFinish" ng-class="{favorite : favInSessions(sessionRow)}">
                                 <div class="timeslot-label">
                                     <time class="start-time" itemprop="startDate" datetime="October 24T10:00"> {{::sessionRow[0].hourContent.hourStart}}<span>{{::sessionRow[0].hourContent.minStart}}</span> </time>
                                     <time class="end-time" itemprop="endDate" datetime="October 24T10:45">  {{::sessionRow[0].hourContent.hourEnd}}<span>{{::sessionRow[0].hourContent.minEnd}}</span> </time>
                                 </div>
                                 <div class="timeslot-elements flexbox-wrapper">
-                                    <div id="{{::session.id}}" class="slot {{::session.classCol}} col-xs-12 flexbox-item-height" data-slot-detail="{{::session.type}}" data-toggle="modal" data-target="#sessionDetail-{{session.id}}" ng-repeat="session in sessionRow">
+                                    <div id="{{::session.id}}" class="slot {{::session.classCol}} col-xs-12 flexbox-item-height" data-slot-detail="{{::session.type}}" data-toggle="modal" data-target="#sessionDetail-{{session.id}}" ng-repeat="session in sessionRow" ng-class="{favorite: session.fav}">
                                         <div class="color-line {{::session.type}}" ></div>
                                         <div class="slot-content {{::session.type}}">
                                             <h5 class="slot-title" itemprop="name" ng-bind="::session.title"></h5> 
@@ -120,13 +121,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="timeslot" itemtype="http://schema.org/subEvent" ng-repeat="sessionRow in agenda.codelabTransform" ngc-done="repeatFinish">
+                            <div class="timeslot session" itemtype="http://schema.org/subEvent" ng-repeat="sessionRow in agenda.codelabTransform" ngc-done="repeatFinish" ng-class="{favorite : favInSessions(sessionRow)}">
                                 <div class="timeslot-label">
                                     <time class="start-time" itemprop="startDate" datetime="October 24T10:00"> {{::sessionRow[0].hourContent.hourStart}}<span>{{::sessionRow[0].hourContent.minStart}}</span> </time>
                                     <time class="end-time" itemprop="endDate" datetime="October 24T10:45">  {{::sessionRow[0].hourContent.hourEnd}}<span>{{::sessionRow[0].hourContent.minEnd}}</span> </time>
                                 </div>
                                 <div class="timeslot-elements flexbox-wrapper">
-                                    <div id="{{::session.id}}" class="slot {{::session.classCol}} col-xs-12 flexbox-item-height" data-slot-detail="{{::session.type}}" data-toggle="modal" data-target="#sessionDetail-{{session.id}}" ng-repeat="session in sessionRow">
+                                    <div id="{{::session.id}}" class="slot {{::session.classCol}} col-xs-12 flexbox-item-height" data-slot-detail="{{::session.type}}" data-toggle="modal" data-target="#sessionDetail-{{session.id}}" ng-repeat="session in sessionRow"  ng-class="{favorite: session.fav}">
                                         <div class="color-line {{::session.type}}" ></div>
                                         <div class="slot-content {{::session.type}}">
                                             <h5 class="slot-title" itemprop="name" ng-bind="::session.title"></h5> <span class="slot-language" ng-if="session.lang" ng-bind="::session.lang"></span>
@@ -162,13 +163,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="timeslot" itemtype="http://schema.org/subEvent" ng-repeat="sessionRow in agenda.formationTransform" ngc-done="repeatFinish">
+                            <div class="timeslot session" itemtype="http://schema.org/subEvent" ng-repeat="sessionRow in agenda.formationTransform" ngc-done="repeatFinish" ng-class="{favorite : favInSessions(sessionRow)}">
                                 <div class="timeslot-label">
                                     <time class="start-time" itemprop="startDate" datetime="October 24T10:00"> {{::sessionRow[0].hourContent.hourStart}}<span>{{::sessionRow[0].hourContent.minStart}}</span> </time>
                                     <time class="end-time" itemprop="endDate" datetime="October 24T10:45">  {{::sessionRow[0].hourContent.hourEnd}}<span>{{::sessionRow[0].hourContent.minEnd}}</span> </time>
                                 </div>
                                 <div class="timeslot-elements flexbox-wrapper">
-                                    <div id="{{::session.id}}" class="slot {{::session.classCol}} col-xs-12 flexbox-item-height" data-slot-detail="{{::session.type}}" data-toggle="modal" data-target="#sessionDetail-{{session.id}}" ng-repeat="session in sessionRow">
+                                    <div id="{{::session.id}}" class="slot {{::session.classCol}} col-xs-12 flexbox-item-height" data-slot-detail="{{::session.type}}" data-toggle="modal" data-target="#sessionDetail-{{session.id}}" ng-repeat="session in sessionRow"  ng-class="{favorite: session.fav}">
                                         <div class="color-line {{::session.type}}" ></div>
                                         <div class="slot-content {{::session.type}}">
                                             <h5 class="slot-title" itemprop="name" ng-bind="::session.title"></h5> <span class="slot-language" ng-if="session.lang" ng-bind="::session.lang"></span>

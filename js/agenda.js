@@ -10,11 +10,42 @@ devfestApp.controller('AgendaCtrl', ['$scope', '$http', 'ProgrammeService', 'Fav
     progService.getProgramme(function(agenda){
         $scope.agenda = agenda;
     });
+    $scope.showAgenda = false;
+
+    $scope.toggleAgenda = function(){
+        $scope.showAgenda = !$scope.showAgenda;
+        textBtnToggleAgenda();
+    }
+
 
     $scope.toggleFav = function(session){
         favService.toggleFav(session);
     }
 
+    function textBtnToggleAgenda(){
+        $scope.btnToggleAgenda = $scope.showAgenda ? "Cacher mon Agenda" : "Afficher mon Agenda";
+    }
+
+    textBtnToggleAgenda();
+
+    $scope.favInSessions = function(arraySession){
+        console.log(arraySession);
+        console.log(!_.every(arraySession, function(session){
+            console.log(session);            
+            if (!session.type){
+                return true;
+            }else{
+                return !session.fav;
+            }
+        }));
+        return !_.every(arraySession, function(session){
+            if (!session.type){
+                return true;
+            }else{
+                return !session.fav;
+            }
+        });
+    }
     
     var first = true;
     $scope.repeatFinish = function(){
