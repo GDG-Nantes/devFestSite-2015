@@ -27,6 +27,14 @@
                 });
             });
 
+            if ($('#loader')[0]){
+                $('#loader').delay(350).fadeOut(800);
+            }
+
+            if ($('#menu-deconnexion')[0] && $('.socials')[0]){
+                showSocialsAndInit();
+            }
+
             
         });
 
