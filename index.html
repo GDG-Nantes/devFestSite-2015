@@ -35,7 +35,7 @@
     
 </head>
   <body>
-    
+    <div id="svg-sprites" ng-include="'/partials/svg-sprites.html'"></div>
     <div id="loader" ng-include="'/partials/loader.html'"></div>
     <div id="st-container" class="st-container disable-scrolling" class="ng-hide" style="display:none;">
       <div class="st-pusher">
@@ -578,6 +578,7 @@
     <script src="/js/typed.min.js"></script>
     <!-- build:jsdefault js/default.js -->
     <script src="/js/default.js"></script>
+    <script src="/js/hello.min.js"></script>
     <!-- endbuild -->
     <!-- inject:js -->
     <!-- endinject -->
@@ -618,5 +619,6 @@
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
       </div><!-- /.modal -->
+      <div id="socials" ng-include="'/partials/socials.html'"></div>
   </body>
 </html>

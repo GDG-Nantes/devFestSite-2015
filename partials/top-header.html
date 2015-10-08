@@ -14,7 +14,8 @@
             <li> <a class="" href="/team" >L'équipe</a> </li>
             <li> <a class="" href="/logistics" >En pratique</a> </li>
             <li> <a class="" href="http://devfest2014.gdgnantes.com" target="_blank">Edition 2014</a> </li>
-            <li> <a class="" href="#" id="menu-connexion"  data-toggle="modal" data-target="#socialModal">Connexion</div></a> </li>
+            <li> <a class="" href="#" id="menu-connexion"  data-toggle="modal" data-target="#socialModal">Connexion</a> </li>
+            <li> <a class="" href="#" id="menu-deconnexion">Déconnexion</a> </li>
         </ul>
         <!--
         <ul id="bottom-navlinks" class="bottom-navlinks visible-xs">
@@ -23,3 +24,8 @@
         <a href="{{URL_CFP}}" class="right-nav-button right-nav-button-hidden btn btn-primary waves-effect waves-button waves-light waves-float pull-right hidden-xs hidden-sm" target="_blank"> Devenez speaker </a>
         -->
     </nav>
+    <script type="text/javascript">
+        var event = new Event('load-header');
+        window.loadHeader = true;
+        window.dispatchEvent(event);
+    </script>

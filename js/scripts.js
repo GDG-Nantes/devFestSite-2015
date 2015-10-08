@@ -4,14 +4,7 @@
             $('#st-container').removeClass('disable-scrolling');
             $('#st-container')[0].style.display = '';
             $('#loading-animation').fadeOut();
-            if (!$('#loader')[0]){
-                // Hack lié à l'injection (pas sur de l'avoir en prod ... ?)
-                setTimeout(function() {
-                    $('#loader').delay(350).fadeOut(800);
-                }, 500);
-            }else{
-                $('#loader').delay(350).fadeOut(800);
-            }
+            
             initGooglePlus();
             equalheight('.same-height');
 
@@ -34,36 +27,68 @@
                 });
             });
 
-            if (!$('.socials')[0]){
-                $('#menu-connexion')[0].style.display = 'none';
-            }else{
+            
+        });
 
-                $('.socials button').on('click', function(event){
-                    var network = $(event.target).attr('data-social');
-                    hello(network).login(network, {}, function(auth){
-                        hello(auth.network).api('/me').then(function(r) {
-                            localStorage['user'] = network+r.id;
-                            //console.log(r);   
-                            // Une fois persité on peut chercher à récupérer les données du serveur       
-                            location.reload();          
-                        });
+        function showSocialsAndInit(){
+            
+            
+            $('.socials button').on('click', function(event){
+                var network = $(event.target).attr('data-social');
+                hello(network).login(network, {}, function(auth){
+                    hello(auth.network).api('/me').then(function(r) {
+                        localStorage['user'] = network+r.id;
+                        document.getElementById('menu-connexion').parentNode.style.display = 'none';      
+                        document.getElementById('menu-deconnexion').parentNode.style.display = '';      
+                        //console.log(r);   
+                        // Une fois persité on peut chercher à récupérer les données du serveur       
+                        location.reload();          
                     });
                 });
+            });
+            $('#menu-deconnexion').on('click', function(event){
+                localStorage.removeItem('user');
+                localStorage.removeItem('fav');
+                document.getElementById('menu-deconnexion').parentNode.style.display = 'none';      
+                document.getElementById('menu-connexion').parentNode.style.display = '';  
+            });
 
-                var creds = {
-                    google : "312903486392-eu80fphua3j2t4jfahejoq6l9u6p2399.apps.googleusercontent.com",
-                    twitter : "AeqcY7PWrepZiGZcptsJseWVX",
-                    github : "f050e9a66b1a179c2d77"
-                };
-                var config = {
-                    redirect_uri : 'redirect.html',
-                    scope:'email'
-                } 
-
-                hello.init(creds,config);
-                
-
+            if (localStorage['user']){
+                document.getElementById('menu-connexion').parentNode.style.display = 'none';
+            }else{
+                document.getElementById('menu-deconnexion').parentNode.style.display = 'none';
             }
+
+            var creds = {
+                google : "312903486392-eu80fphua3j2t4jfahejoq6l9u6p2399.apps.googleusercontent.com",
+                twitter : "AeqcY7PWrepZiGZcptsJseWVX",
+                github : "f050e9a66b1a179c2d77"
+            };
+            var config = {
+                redirect_uri : 'redirect.html',
+                scope:'email'
+            } 
+
+            hello.init(creds,config);
+                
+        }
+
+        window.addEventListener('load-socials', function(e){
+            if (window.loadHeader){
+                showSocialsAndInit();
+            }
+        });
+
+        window.addEventListener('load-header', function(e){
+            if (window.loadSocials){
+                showSocialsAndInit();
+            }
+        });
+
+
+
+        window.addEventListener('load-loader', function(e){
+            $('#loader').delay(350).fadeOut(800);
         });
 
 

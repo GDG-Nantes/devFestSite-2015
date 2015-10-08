@@ -126,7 +126,7 @@ devfestApp.factory('ProgrammeService', ['$http', '$q', 'FavoritesService', funct
                     // Voir ce qu'on fait des données 
                     // TODO  A brancher pour de vrai
                     // On écrase les favoris par ceux venant du serveur
-                    localStorage['favs'] = dataFav.data;
+                    localStorage['fav'] = JSON.stringify(dataFav.data.favs);
                     favService.applyFav(data.data.sessions, dataFav.data.favs);
                     promiseFav.resolve(data.data);
                 });
