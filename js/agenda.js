@@ -23,7 +23,7 @@ devfestApp.controller('AgendaCtrl', ['$scope', '$http', 'ProgrammeService', 'Fav
     }
 
     function textBtnToggleAgenda(){
-        $scope.btnToggleAgenda = $scope.showAgenda ? "Cacher mon Agenda" : "Afficher mon Agenda";
+        $scope.btnToggleAgenda = $scope.showAgenda ? "Cacher mes favoris" : "Afficher mes favoris";
     }
 
     textBtnToggleAgenda();

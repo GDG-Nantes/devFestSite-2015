@@ -83,13 +83,13 @@
 
         window.addEventListener('load-socials', function(e){
             if (window.loadHeader){
-                showSocialsAndInit();
+                //showSocialsAndInit();
             }
         });
 
         window.addEventListener('load-header', function(e){
             if (window.loadSocials){
-                showSocialsAndInit();
+                //showSocialsAndInit();
             }
         });
 
