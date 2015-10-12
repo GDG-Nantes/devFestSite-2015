@@ -83,7 +83,7 @@
 
         window.addEventListener('load-socials', function(e){
             if (window.loadHeader){
-                //showSocialsAndInit();
+                showSocialsAndInit();
             }
         });
 
@@ -95,7 +95,7 @@
                 });
             }
             if (window.loadSocials){
-                //showSocialsAndInit();
+                showSocialsAndInit();
             }
         });
 

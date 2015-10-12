@@ -23,3 +23,11 @@ Example: `feat(#5): add more speakers`
 
 Use Slack for further information : #devfest
 Application available on : https://devfestnantes2015.appspot.com
+
+
+#Socials
+Pour Google aller voir https://console.developers.google.com projet DevQuest pour récupérer l'identifiant client
+Pour Twitter : https://apps.twitter.com/
+Pour Github : https://github.com/settings/applications
+
+Pour Twitter & Github aller en plus sur https://auth-server.herokuapp.com/#-auth-server
