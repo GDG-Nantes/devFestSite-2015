@@ -28,16 +28,7 @@ devfestApp.controller('AgendaCtrl', ['$scope', '$http', 'ProgrammeService', 'Fav
 
     textBtnToggleAgenda();
 
-    $scope.favInSessions = function(arraySession){
-        console.log(arraySession);
-        console.log(!_.every(arraySession, function(session){
-            console.log(session);            
-            if (!session.type){
-                return true;
-            }else{
-                return !session.fav;
-            }
-        }));
+    $scope.favInSessions = function(arraySession){      
         return !_.every(arraySession, function(session){
             if (!session.type){
                 return true;

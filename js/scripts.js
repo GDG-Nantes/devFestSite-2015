@@ -88,6 +88,12 @@
         });
 
         window.addEventListener('load-header', function(e){
+            if(!window.triggerMenu){                
+                $('#menu-trigger').click(function(event) {
+                    event.stopPropagation();
+                    container.toggleClass('st-menu-open');
+                });
+            }
             if (window.loadSocials){
                 //showSocialsAndInit();
             }
@@ -270,10 +276,13 @@
 
         //Side menu
         var container = $('.st-container');
-        $('#menu-trigger').click(function(event) {
-            event.stopPropagation();
-            container.toggleClass('st-menu-open');
-        });
+        if ($('#menu-trigger')[0]){            
+            $('#menu-trigger').click(function(event) {
+                event.stopPropagation();
+                container.toggleClass('st-menu-open');
+            });
+            window.triggerMenu = true;
+        }
         $('.st-pusher').click(function() {
             if (container.hasClass('st-menu-open')) {
                 container.removeClass('st-menu-open');
