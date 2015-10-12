@@ -16,6 +16,41 @@ h1, h2, h3, h4, h5, h6, .retro{
 	font-family:"Visitor" !important
 }
 
+.img-sold-out{
+	position: absolute;
+	bottom: 135px;
+	width : 40%;
+	left: 50%;
+	margin-left: -20%;
+}
+
+@media screen and (max-width:768px){
+	.img-sold-out{
+		position: absolute;
+		bottom: 200px;
+		width : 60%;
+		left: 50%;
+		margin-left: -30%;
+	}
+}
+
+#tickets .pricing-col{
+	overflow: hidden;
+
+	.pricing-ribbon{
+		top: 80px;
+	    right: 20%;
+	    padding: 5px 115px;
+	    background-color: @decouverte-color;	    
+	}
+}
+
+@media screen and (max-width:768px){
+	#tickets .pricing-col .pricing-ribbon{
+		right: -10px;
+	}
+}
+
 #top-header .logo-header .logo{
 	width:200px;
 }
