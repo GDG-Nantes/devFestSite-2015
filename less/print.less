@@ -1,0 +1,204 @@
+@import "colors.less";
+
+@media only print{
+	.modals, #footer, #loader, #svg-sprites, #top-section, .btn 
+	, #myModal, #socials, .timeslot.track-header.stick-header
+	,.slot-speakers, .slot-language, .slot-favorite {
+		display: none !important;
+	}
+
+	#schedule{
+		padding-top: 0px !important;
+
+		.slot.favorite[data-slot-detail=mobile]{
+			background: lighten(@mobile-color,10%) !important;
+			-webkit-print-color-adjust: exact; 
+		}
+		.slot.favorite[data-slot-detail=web], .slot.favorite[data-slot-detail=codelab-web]{
+			background: lighten(@web-color,10%) !important;
+			-webkit-print-color-adjust: exact; 
+		}
+		.slot.favorite[data-slot-detail=discovery]{
+			background: lighten(@decouverte-color,10%) !important;
+			-webkit-print-color-adjust: exact; 
+		}
+		.slot.favorite[data-slot-detail=white]{
+			background: @neutre-color !important;
+			-webkit-print-color-adjust: exact; 
+		}
+		.slot.favorite[data-slot-detail=cloud],.slot.favorite[data-slot-detail=codelab-cloud],.slot.favorite[data-slot-detail=formation]{
+			background: lighten(@cloud-color,10%) !important;
+			-webkit-print-color-adjust: exact; 
+		}
+
+		.color-line.mobile{
+			background: lighten(@mobile-color,10%) !important;
+			-webkit-print-color-adjust: exact; 
+		}
+		.color-line.web, .color-line.codelab-web{
+			background: lighten(@web-color,10%) !important;
+			-webkit-print-color-adjust: exact; 
+		}
+		.color-line.discovery{
+			background: lighten(@decouverte-color,10%) !important;
+			-webkit-print-color-adjust: exact; 
+		}
+		.color-line.white{
+			background: @neutre-color !important;
+			-webkit-print-color-adjust: exact; 
+		}
+		.color-line.cloud,.color-line.codelab-cloud,.color-line.formation{
+			background: lighten(@cloud-color,10%) !important;
+			-webkit-print-color-adjust: exact; 
+		}
+
+		.slot-content.mobile{
+			border-right: none !important;
+		}
+		.slot-content.web, .slot-content.codelab-web{
+			border-right: none !important;
+		}
+		.slot-content.discovery{
+			border-right: none !important;
+		}
+		.slot-content.white{
+			border-right: none !important;
+		}
+		.slot-content.cloud,.slot-content.codelab-cloud,.slot-content.formation{
+			border-right: none !important;
+		}
+
+		#conferences{
+			page-break-after: always;
+		}
+		.col-md-3.col-xs-12{
+			width: 25% !important;
+		}
+		.col-md-6.col-xs-12, #codelabs .col-md-3.col-xs-12{
+			width: 50% !important;
+		}
+		
+		.timeslot-label{
+			font-size: 0.9em;
+		}
+
+		.slot-title, .slot-content p{
+			font-size: 0.8em;
+			line-height: 0.9em;
+		}
+		.slot-title{
+			overflow: hidden;
+			text-overflow: ellipsis;
+			//white-space: nowrap;
+			height: 3.6em;
+		}
+
+		.track-header-label, .timeslot-label {
+			width: 55px;
+		}
+		.timeslot-elements {
+			margin-left: 55px;
+		}
+
+		/*.row .col-sm-2 .title-conf-parent{
+			height: 2.7em;
+		}
+
+
+		.row .col-sm-2 .title-conf{
+			font-size: 0.8em;
+			line-height: 0.9em;
+			height: 2.7em;
+		}
+
+		.row .col-sm-2 .title-conf.to-long{
+			max-height: 1.8em;		
+		}
+		.row .col-sm-2 .title-conf.to-long:after{
+			width: 2.4em;
+			height: 0.9em;
+			bottom: -5px;
+			left: 0px;
+		}
+
+		.row .conf-room{
+			font-size: 0.8em;
+		}
+
+		.padded{
+			padding:5px;
+		}
+
+		#header-agenda-to-copy{
+			display: none;
+
+		}
+
+		.hidden-xs{
+			display: block !important;
+		}
+
+		.col-xs-2.white-gdg{
+			height: 6em;
+		}
+
+		.row.min-print .col-xs-2.white-gdg{
+			font-size: 0.8em;
+			height: 4em;
+		}
+
+		.col-xs-3, .col-xs-9:not(.grey-gdg){
+			width: 18%;
+		}
+
+		.row .white-gdg{
+			border-top-width: 0px;
+		}
+		
+		.row{
+			margin-bottom: 0px; 
+		}
+
+		.lead{
+			font-size: 10pt;
+		}
+
+		.text-hour{
+			font-size: 14pt;
+		}
+
+		@red-gdg-color : #da483c;
+		@blue-gdg-color : #6388c5;
+		@green-gdg-color : #0c9a54;
+		@yellow-gdg-color : #f7c63d;
+
+		.row  .animated-expand.favorites{
+			height: 6em;
+		}
+
+		.row  .animated-expand.green-gdg.favorites{
+			background: lighten(@green-gdg-color,20) !important;
+			 -webkit-print-color-adjust: exact; 
+		}
+		.row  .animated-expand.blue-gdg.favorites{
+			background: lighten(@blue-gdg-color,20) !important;
+			 -webkit-print-color-adjust: exact; 
+		}
+		.row  .animated-expand.red-gdg.favorites{
+			background: lighten(@red-gdg-color,20) !important;
+			 -webkit-print-color-adjust: exact;  
+		}
+		.row  .animated-expand.yellow-gdg.favorites{
+			background: lighten(@yellow-gdg-color,20) !important;
+			 -webkit-print-color-adjust: exact; 
+		}
+
+		.row .fa.fa-star, .row .fa.fa-star-o{
+			display: none;
+		}	*/
+
+		
+
+
+	}
+}
