@@ -184,7 +184,30 @@ gulp.task("rev_cod", ["rev_logistics"], function () {
     .pipe(gulp.dest("./cod"))
 });
 
-gulp.task("cleanAfter", ["rev_cod"], function () {
+gulp.task("rev_presse", ["rev_cod"], function () {
+  return gulp.src("./presse/index.html")
+      .pipe(inject(gulp.src(["./js/ngTemplates-*.js"], {read: false, relative: true})))// add ngTemplates.js in index.html
+      .pipe(usemin({
+        css: [
+          minifyCss(),
+          rev()
+        ],
+        html: [
+          minifyHtml({empty: true})
+        ],
+        jsdefault: [
+          uglify(),
+          rev()
+        ],
+        jsscripts: [
+          uglify(),
+          rev()
+        ]
+      }))
+      .pipe(gulp.dest("./presse"))
+});
+
+gulp.task("cleanAfter", ["rev_presse"], function () {
   return del.sync([
     "custo/custo.css", "custo/main.css", "custo/loader.css",
     "js/default.js",
