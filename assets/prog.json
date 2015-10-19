@@ -1478,15 +1478,12 @@
         {
             "id": "s97",
             "confRoom": "Espace Tour Lu",
-            "title": "Déjeuner / Table Ronde “Programmer avec les enfants : pourquoi ? comment ?“",
+            "title": "Déjeuner",
             "type": "white",
-            "desc": "<strong>Repas offert pour tous les participants.</strong><br>Profitez-en pour faire un tour des différents stands et démos.<br><br><b>Table Ronde : “Programmer avec les enfants : pourquoi ? comment ?“</b> - Espace Bellem - 13h00 : <br>Beaucoup d'initiatives actuelles permettent aux enfants d'apprendre à programmer.<br><br>Pourquoi un tel intérêt ? Que cela peut-il apporter à nos chères têtes blondes ? Et comment s'y prendre ?<br><br>Cette table ronde présentera rapidement les différentes initiatives présentes et la liste des outils utilisables.",
+            "desc": "<strong>Repas offert pour tous les participants.</strong><br>Profitez-en pour faire un tour des différents stands et démos.",
             "all": true,
             "hour": "h06",
-            "speakers": [
-              "cbossard",
-              "jpalies"
-            ]
+            "speakers": []
         },
         {
             "id": "s98",
@@ -1504,6 +1501,19 @@
             "desc": "Un moment de networking convivial pour les plus motivés :)<br> L'utilisation de votre smartphone est fortement recommandée ;)",
             "all": true,
             "hour": "h12"
+        },
+        {
+            "id": "s100",
+            "confRoom": "Salle Bellem",
+            "title": "Table Ronde “Programmer avec les enfants : pourquoi ? comment ?“",
+            "type": "white",
+            "desc": "<b>Table Ronde : “Programmer avec les enfants : pourquoi ? comment ?“</b> - 13h00 : <br>Beaucoup d'initiatives actuelles permettent aux enfants d'apprendre à programmer.<br><br>Pourquoi un tel intérêt ? Que cela peut-il apporter à nos chères têtes blondes ? Et comment s'y prendre ?<br><br>Cette table ronde présentera rapidement les différentes initiatives présentes et la liste des outils utilisables.",
+            "all": true,
+            "hour": "h06",
+            "speakers": [
+              "cbossard",
+              "jpalies"
+            ]
         }
     ]
 }

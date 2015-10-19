@@ -35,7 +35,7 @@ devfestApp.factory('ProgrammeService', ['$http', '$q', 'FavoritesService', funct
                     return session.hour;
                 }).mapValues(function (sessionValues) {
                     return _(sessionValues).forEach(function (session) {
-                        session.classCol = sessionValues.length === 1 ? 'col-md-12' : 'col-md-3';
+                        session.classCol = sessionValues.length === 1 ? 'col-md-12' : sessionValues.length === 2 ? 'col-md-6' : 'col-md-3';
                     }).sortBy(function (session) {
                         switch (session.type) {
                             case 'mobile':
