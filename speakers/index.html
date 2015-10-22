@@ -108,20 +108,22 @@
                             </svg>
                             <div class="close-mask" data-dismiss="modal"></div>
                         </div>
-                        <h4 ng-if="speaker.talk">{{::speaker.talk.title}}</h4>
-                        <span class="theme-metadata" ng-if="speaker.talk">
-                            <span class="caption">Language: </span>{{::speaker.talk.lang}}
-                        </span>
-                        <span class="theme-metadata" ng-if="speaker.talk">
-                            <span class="caption">Complexity: </span>{{::speaker.talk.difficulty}}
-                        </span>
-                        <!--
-                        <div class="theme-video embed-responsive embed-responsive-16by9" ng-if="speaker.talk">
-                            <iframe class="embed-responsive-item" src="{{::speaker.talk.video}}"></iframe>
-                        </div> -->
-                        <p class="theme-description" ng-if="speaker.talk" ng-bind-html="::speaker.talk.desc">
-                        </p>
-                        <hr ng-if="speaker.talk">
+                        <div ng-if="speaker.sessions" ng-repeat="session in speaker.sessions">
+                            <h4 >{{::session.title}}</h4>
+                            <span class="theme-metadata" ng-if="session.lang" >
+                                <span class="caption">Langue: </span>{{::session.lang}}
+                            </span>
+                            <span class="theme-metadata" ng-if="session.difficulty">
+                                <span class="caption">Complexité: </span>{{::session.difficulty}}
+                            </span>
+                            <!--
+                            <div class="theme-video embed-responsive embed-responsive-16by9" ng-if="speaker.talk">
+                                <iframe class="embed-responsive-item" src="{{::speaker.talk.video}}"></iframe>
+                            </div> -->
+                            <p class="theme-description"  ng-bind-html="::session.desc">
+                            </p>
+                        </div>
+                        <hr ng-if="speaker.sessions">
                         <div class="people-details">
                             <div class="row">
                                 <div class="col-md-2 col-sm-2">

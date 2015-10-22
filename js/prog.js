@@ -19,6 +19,12 @@ devfestApp.factory('ProgrammeService', ['$http', '$q', 'FavoritesService', funct
                         })];
                     }).value();                    
 
+                    _(session.speakers).forEach(function(speaker){
+                        if (!speaker.sessions){
+                            speaker.sessions = [];
+                        }
+                        speaker.sessions.push(session);
+                    }).value();
                     return session;
                 }).value();
 
@@ -102,7 +108,7 @@ devfestApp.factory('ProgrammeService', ['$http', '$q', 'FavoritesService', funct
                 programme.speakers = _.chain(programme.speakers).forEach(function(speaker){
                     _.forEach(speaker.socials, function(social){
                         social.svg = "/img/sprites/sprites.svg#icon-" + social.class;
-                    });
+                    });                    
                 }).sortBy(function(speaker){
                     return speaker.firstname;
                 }).value();
