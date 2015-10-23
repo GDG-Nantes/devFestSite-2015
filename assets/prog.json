@@ -858,7 +858,7 @@
             "hourStart": "18",
             "minStart": "30",
             "hourEnd": "22",
-            "minEnd": "30"
+            "minEnd": "00"
         },
         "h13": {
             "id": "h13",
