@@ -1328,7 +1328,7 @@
          "id": "s30",
          "title": "Mon architecture microservices sur un cas d'usage urbanisé en 2 heures chrono avec Docker",
          "confRoom": "Hangar",
-         "desc": "Le but de cette conférence est de faire construire une (mini) architecture microservices sur un scénario d'utilisation simple qui sera décomposé en quelques appels de services autonomes selon les méthodes de découplage de responsabilités. Afin que les participants puissent se consacrer à la compréhension de l'architecture et à l'assemblage final, des squelettes de code seront fournis ainsi que des images Docker.",
+         "desc": "Le but de cette conférence est de faire construire une (mini) architecture microservices sur un scénario d'utilisation simple qui sera décomposé en quelques appels de services autonomes selon les méthodes de découplage de responsabilités. Afin que les participants puissent se consacrer à la compréhension de l'architecture et à l'assemblage final, des squelettes de code seront fournis ainsi que des images Docker.<br> Pour suivre cet atelier, il est préférable d'installer Docker & Docker Compose et récuperer le code source disponible à cette url <a href='https://github.com/EditionsENI/mortgage' target='_blank'>https://github.com/EditionsENI/mortgage</a> ",
          "type": "codelab-cloud",
          "difficulty": 101,
          "all": false,
