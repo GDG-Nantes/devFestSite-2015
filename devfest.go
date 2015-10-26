@@ -22,6 +22,7 @@ func init() {
 }
 
 func getStars(w http.ResponseWriter, r *http.Request) {
+    w.Header().Set("Access-Control-Allow-Origin", "*")
     //w.Header().Set("SUPER-HACK", "@GDGNANTES")
     //w.WriteHeader(http.StatusFound) 
     c := appengine.NewContext(r)
@@ -67,6 +68,7 @@ func getStars(w http.ResponseWriter, r *http.Request) {
 
 
 func putStars(w http.ResponseWriter, r *http.Request) {
+    w.Header().Set("Access-Control-Allow-Origin", "*")
     login,_ := url.QueryUnescape(r.FormValue("login"))
     favs,_ := url.QueryUnescape(r.FormValue("favs"))
     if len(login) == 0 || len(favs) == 0{
