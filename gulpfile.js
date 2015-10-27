@@ -35,7 +35,7 @@ gulp.task("clean", function () {
 gulp.task('go_app', shell.task(['goapp serve']));
 
 gulp.task("copy", ["clean", "ngTemplates", "less-prod"], function () {
-  return gulp.src(["index.html", "redirect.html", "app.yaml", "devfest.go", "robots.txt", "sitemap.xml", "team/**", "speakers/**", "schedule/**", "cod/**", "presse/**", "logistics/**", "js/**", "img/**", "css/**", "custo/**","assets/**"], { "base" : "." })
+  return gulp.src(["index.html", "redirect.html", "app.yaml", "devfest.go", "robots.txt", "sitemap.xml", "team/**", "speakers/**", "schedule/**", "cod/**", "presse/**", "credits/**", "logistics/**", "js/**", "img/**", "css/**", "custo/**","assets/**"], { "base" : "." })
     .pipe(gulp.dest("dist"));
 });
 
@@ -207,7 +207,30 @@ gulp.task("rev_presse", ["rev_cod"], function () {
       .pipe(gulp.dest("./presse"))
 });
 
-gulp.task("cleanAfter", ["rev_presse"], function () {
+gulp.task("rev_credits", ["rev_presse"], function () {
+  return gulp.src("./credits/index.html")
+      .pipe(inject(gulp.src(["./js/ngTemplates-*.js"], {read: false, relative: true})))// add ngTemplates.js in index.html
+      .pipe(usemin({
+        css: [
+          minifyCss(),
+          rev()
+        ],
+        html: [
+          minifyHtml({empty: true})
+        ],
+        jsdefault: [
+          uglify(),
+          rev()
+        ],
+        jsscripts: [
+          uglify(),
+          rev()
+        ]
+      }))
+      .pipe(gulp.dest("./credits"))
+});
+
+gulp.task("cleanAfter", ["rev_credits"], function () {
   return del.sync([
     "custo/custo.css", "custo/main.css", "custo/loader.css",
     "js/default.js",

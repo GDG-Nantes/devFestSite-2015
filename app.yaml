@@ -44,6 +44,12 @@ handlers:
   expiration: "0d 15m"
   secure: always
 
+- url: /credits
+  static_files: credits/index.html
+  upload: presse/index.html
+  expiration: "0d 15m"
+  secure: always
+
 - url: /team
   static_files: team/index.html
   upload: team/index.html
