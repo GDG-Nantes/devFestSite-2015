@@ -7,8 +7,13 @@
 		display: none !important;
 	}
 
+
 	#schedule{
 		padding-top: 0px !important;
+
+		.slot-content{
+			background:transparent !important;
+		}
 
 		.slot.favorite[data-slot-detail=mobile]{
 			background: lighten(@mobile-color,10%) !important;
@@ -78,8 +83,18 @@
 			width: 50% !important;
 		}
 		
-		.timeslot-label{
-			font-size: 0.9em;
+		.slot-content{
+			min-height: inherit;
+			padding-bottom: 2px;
+			padding-top: 10px;
+		}
+
+		.timeslot-label time{
+			font-size: 10px !important;			
+		}
+		.timeslot-label span{
+			font-size: 13px !important;			
+			
 		}
 
 		.slot-title, .slot-content p{
@@ -90,7 +105,7 @@
 			overflow: hidden;
 			text-overflow: ellipsis;
 			//white-space: nowrap;
-			height: 3.6em;
+			height: 3.4em;
 		}
 
 		.track-header-label, .timeslot-label {
