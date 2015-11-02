@@ -1,5 +1,5 @@
 application: devfestnantes2015
-version: v26
+version: v27
 runtime: go
 api_version: go1
 threadsafe: true
