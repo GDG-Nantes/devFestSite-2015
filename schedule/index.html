@@ -55,7 +55,7 @@
                 <!-- End Top Section -->
                 <!-- Begin Schedule Section -->
                 <section id="schedule" class="schedule" ng-class="{showagenda: showAgenda}">
-                    <a href="#codelabs " class="btn btn-primary waves-effect waves-button waves-light waves-float">Afficher les codelabs</a>
+                    <a ng-click="scrollTo('codelabs')" class="btn btn-primary waves-effect waves-button waves-light waves-float">Afficher les codelabs</a>
                     <a href="#" class="btn btn-primary waves-effect waves-button waves-light waves-float" ng-click="toggleAgenda()">{{btnToggleAgenda}}</a>
                     <div class="content-wrapper clearfix">
                         <div id="conferences" class="schedule-table col-lg-8 col-md-10 col-md-offset-1">
@@ -148,7 +148,7 @@
                             </div>                            
                         </div>
                     </div>
-                    <a href="#conferences " class="btn btn-primary waves-effect waves-button waves-light waves-float">Afficher les conférences</a>
+                    <a ng-click="scrollTo('conferences')" class="btn btn-primary waves-effect waves-button waves-light waves-float">Afficher les conférences</a>
                     <div class="content-wrapper clearfix">
                          <div id="formation" class="schedule-table col-lg-8 col-md-10 col-md-offset-1">
                             <h4 class="schedule-table-heading">Formation</h4>

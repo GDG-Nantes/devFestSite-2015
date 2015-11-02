@@ -3,14 +3,22 @@
 /**
  * Sessions controller
  */
-devfestApp.controller('AgendaCtrl', ['$scope', '$http', 'ProgrammeService', 'FavoritesService'
-    , function ($scope, $http, progService, favService) {
+devfestApp.controller('AgendaCtrl', ['$scope', '$http', '$location', '$anchorScroll', 'ProgrammeService', 'FavoritesService'
+    , function ($scope, $http, $location, $anchorScroll, progService, favService) {
 
     $scope.agenda = {};
     progService.getProgramme(function(agenda){
         $scope.agenda = agenda;
     });
     $scope.showAgenda = false;
+
+    $scope.scrollTo = function(id) {
+       var old = $location.hash();
+       $location.hash(id);
+       $anchorScroll();
+       //reset to old to keep any additional routing logic from kicking in
+       $location.hash(old);
+    };
 
     $scope.toggleAgenda = function(){
         $scope.showAgenda = !$scope.showAgenda;
