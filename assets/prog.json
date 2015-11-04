@@ -1353,7 +1353,7 @@
             "id": "s32",
             "title": "Hypermedia in the Shadow of the Death Star",
             "confRoom": "Salle Graslin",
-            "desc": "\"That's no moon. It's a space station...\" Il est trop tard pour faire demi-tour. Vous sentez le poigne de fer de l'Empire Galactique se refermer sur vous. La lutte est veine, mais il y a d'autres façons de remporter la victoire. Votre maîtrise des pouvoirs de l'HTTP sera indispensable à votre survie. Saurez-vous affronter l'impitoyable Vador ?<br>Que l'Hypermedia soit avec vous.<br>Je vous invite à m'accompagner pour une aventure ludique mêlant API web, science-fiction, hypermedia et culture du développeur. Au travers d'un jeu d'aventure textuel un peu fou, je vous ferais découvrir quelques techniques pour améliorer vos propres API web.",
+            "desc": "\"That's no moon. It's a space station...\" Il est trop tard pour faire demi-tour. Vous sentez la poigne de fer de l'Empire Galactique se refermer sur vous. La lutte est veine mais il y a d'autres façons de remporter la victoire. Votre maîtrise des pouvoirs de l'HTTP sera indispensable à votre survie. Saurez-vous affronter l'impitoyable Vador ?<br>Que l'Hypermedia soit avec vous.<br>Je vous invite à m'accompagner pour une aventure ludique mêlant API web, science-fiction, hypermedia et culture du développeur. Au travers d'un jeu d'aventure textuel un peu fou, je vous ferai découvrir quelques techniques pour améliorer vos propres API web.",
             "type": "mobile",
             "difficulty": 101,
             "all": false,
