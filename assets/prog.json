@@ -17,7 +17,7 @@
                 "tile_long": "Google Developer Expert"
             },
             "company": "Capitaine Train",
-            "about": "Cyril Mottier is the Android Lead at Capitaine Train and Android Google Developer Expert. Passionate about technology and design, Cyril is an avid lover of Android and a multi-skilled engineer. He is actively involved in the Android community and shares his passion writing blog posts, creating open source libraries and giving talks. His motto: “Do less, but do it insanely great”",
+            "about": "Cyril Mottier is the Android Lead at Capitaine Train and Android Google Developer Expert. Passionate about technology and design, Cyril is an avid lover of Android and a multi-skilled engineer. He is actively involved in the Android community and shares his passion writing blog posts, creating open source libraries and giving talks. His motto: “Do less, but do it insanely great�?",
             "socials": [
                 {"class": "google-plus", "link": "https://plus.google.com/+CyrilMottier/"},
                 {"class": "twitter", "link": "https://twitter.com/cyrilmottier"},
@@ -48,7 +48,7 @@
             "topspeaker": false,
             "firstname": "Thomas",
             "lastname": "Gx",
-            "image": "tguenoux_360x360.jpeg",
+            "image": "tguenoux_360x360.jpg",
             "category": {
                 "class": "discovery",
                 "title": "Keynote"
@@ -443,7 +443,7 @@
                 "title": "Cloud"
             },
             "company": "Restlet",
-            "about": "Manuel est Code Artist chez <a href='http://restlet.com/' target='_blank'>Restlet</a>. Il aime par dessus tout le beau code et tout ce qui à attrait aux déploiement continu. pratiques qu’il applique lors du développement de la plateforme d’hébergement d’API REST et d’API management “APISpark” de Restlet. Manuel est également JUG leader à Nantes (<a href='http://www.nantesjug.org/' target='_blank'>nantesjug.org</a>) et aime échanger avec la communauté sur les différentes solutions techniques.",
+            "about": "Manuel est Code Artist chez <a href='http://restlet.com/' target='_blank'>Restlet</a>. Il aime par dessus tout le beau code et tout ce qui à attrait aux déploiement continu. pratiques qu’il applique lors du développement de la plateforme d’hébergement d’API REST et d’API management “APISpark�? de Restlet. Manuel est également JUG leader à Nantes (<a href='http://www.nantesjug.org/' target='_blank'>nantesjug.org</a>) et aime échanger avec la communauté sur les différentes solutions techniques.",
             "socials": [
                 {"class": "twitter", "link": "https://twitter.com/mboillod"},
                 {"class": "linkedin", "link": "https://fr.linkedin.com/in/manuelboillod"}
@@ -968,7 +968,7 @@
             "id": "s8",
             "title": "Sleep easy knowing everything's OK with Google Cloud Operations",
             "confRoom": "Salle Graslin",
-            "desc": "You know know your applications and infrastructure and running right? Right? Gaining insight into the health and performance of your applications should be easy, and we will show you just how easy it can be!<br>70% of the time and resources are spent today on infrastructure and application maintenance. And again, I’m sure you’ve all seen these stats before, but the astounding thing is that they’ve remained this way for a long time. So the opportunity we see in building our solution is how do we make a fundamental shift in the ratio between “maintain” and “invest”.<br>I want to show you what we are doing, and hopefully help you understand how you can make a difference with us.<br>Agility: Pivot to a different direction as needed. Scale fast and smoothly.<br>Speed: Execution. Moving fast.<br>Efficiency: Use resources and time wisely.",
+            "desc": "You know know your applications and infrastructure and running right? Right? Gaining insight into the health and performance of your applications should be easy, and we will show you just how easy it can be!<br>70% of the time and resources are spent today on infrastructure and application maintenance. And again, I’m sure you’ve all seen these stats before, but the astounding thing is that they’ve remained this way for a long time. So the opportunity we see in building our solution is how do we make a fundamental shift in the ratio between “maintain�? and “invest�?.<br>I want to show you what we are doing, and hopefully help you understand how you can make a difference with us.<br>Agility: Pivot to a different direction as needed. Scale fast and smoothly.<br>Speed: Execution. Moving fast.<br>Efficiency: Use resources and time wisely.",
             "type": "cloud",
             "difficulty": 202,
             "all": false,
@@ -1032,7 +1032,7 @@
             "id": "s12",
             "title": "OMG!, Terminator sera codé en JavaScript!",
             "confRoom": "Salle Bellem",
-            "desc": "Tout le monde est persuadé que l’ancêtre de SkyNet, est le Turk (cf. The Sarah Connor Chronicles) … Eh bien non!, C’est B.O.B.! Un robot à roulette (le T-0). Et je vais vous expliquer comment tout à commencé: en devenant un “maker du dimanche”!.<br><br>La genèse de BOB (*):<br><br>*: Bot Operative Behaviour<br><br><ul><li> un thermomètre à leds avec un Arduino et Johnny-Five</li><li> SAM (j’aime bien donner des petits noms à mes jouets), qui va rendre le Nest obsolète, avec un Raspberry et une GrovePi qui va discuter avec le monde grâce à MQTT</li><li> BOB, le T-0, avec un Raspberry et une GoPiGo … Et bien sûr BOB et SAM discuteront entre eux</li></ul><br><br>Et tout ça propulsé par du JavaScript! <br>Il y aura donc de la démo live avec du hardware.<br>Je vous parlerais aussi de l’écosystème “hardware + javascript\"<br><br>Cette présentation a plusieurs objectifs:<br><br>- montrer que JavaScript peut servir à autre chose que du web<br>- montrer qu'il est facile de devenir un \"maker\" du dimanche même si l'on n'y connait pas grand chose<br>- faire une petite introduction à l'IOT<br><br>d'un point de vue démo, ce ne sera pas forcément du code mais de l'exécution de programmes avec impact sur des composants électronique (j'aurais donc une petite caméra, type webcam)",
+            "desc": "Tout le monde est persuadé que l’ancêtre de SkyNet, est le Turk (cf. The Sarah Connor Chronicles) … Eh bien non!, C’est B.O.B.! Un robot à roulette (le T-0). Et je vais vous expliquer comment tout à commencé: en devenant un “maker du dimanche�?!.<br><br>La genèse de BOB (*):<br><br>*: Bot Operative Behaviour<br><br><ul><li> un thermomètre à leds avec un Arduino et Johnny-Five</li><li> SAM (j’aime bien donner des petits noms à mes jouets), qui va rendre le Nest obsolète, avec un Raspberry et une GrovePi qui va discuter avec le monde grâce à MQTT</li><li> BOB, le T-0, avec un Raspberry et une GoPiGo … Et bien sûr BOB et SAM discuteront entre eux</li></ul><br><br>Et tout ça propulsé par du JavaScript! <br>Il y aura donc de la démo live avec du hardware.<br>Je vous parlerais aussi de l’écosystème “hardware + javascript\"<br><br>Cette présentation a plusieurs objectifs:<br><br>- montrer que JavaScript peut servir à autre chose que du web<br>- montrer qu'il est facile de devenir un \"maker\" du dimanche même si l'on n'y connait pas grand chose<br>- faire une petite introduction à l'IOT<br><br>d'un point de vue démo, ce ne sera pas forcément du code mais de l'exécution de programmes avec impact sur des composants électronique (j'aurais donc une petite caméra, type webcam)",
             "type": "mobile",
             "difficulty": 101,
             "all": false,
