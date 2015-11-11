@@ -306,19 +306,20 @@
             ]
         },
         {
-            "id": "dcavailles",
+            "id": "afouques",
             "topspeaker": false,
-            "firstname": "Damien",
-            "lastname": "Cavaillès",
-            "image": "dcavailles_360x360.jpg",
+            "firstname": "Antonin",
+            "lastname": "Fouques",
+            "image": "afouques.jpg",
             "category": {
                 "class": "discovery",
                 "title": "Discovery"
             },
-            "company": "Tripndrive",
-            "about": "Je suis passionné par la mobilité et ses nouveaux usages et en particulier l'interaction avec les objets connectés.\nJe suis également organisateur du Startup Weekend Lille \"Maker Edition\" et Facilitateur Startup Weekend.\n=D",
+            "company": "Genymobile",
+            "about": "Passionné dans le développement mobile au sens large, et par le système Android et l'ensemble de ses possibles utilisations. Très présent aux conférences sur Paris approchant de près ou de loin ce domaine.",
             "socials": [
-                {"class": "twitter", "link": "https://twitter.com/thedamfr"}
+                {"class": "twitter", "link": "https://twitter.com/CmoaToto"},
+                {"class": "google-plus", "link": "https://plus.google.com/+AntoninFouques"}
             ]
         },
         {
@@ -885,9 +886,9 @@
     "sessions": [
         {
             "id": "s3",
-            "title": "Android Auto : Rolling Droid gather no moss",
+            "title": "Genymotion for application testing and continuous integration",
             "confRoom": "Salle Bretagne",
-            "desc": "Android Auto est une nouvelle extension de la plateforme Android. A l'image d'Android Wear, il s'agit d'une interface pour proposer des notifications et des interactions rapides ou faibles à l'utilisateur. La particularité est que les traditionnellement flexibles guidelines de Google sont devenues des contraintes fermes. Nous vous proposons ici une analyse complète de ce nouvel horizon pour Android.",
+            "desc": "Session backup",
             "type": "discovery",
             "difficulty": 101,
             "all": false,
@@ -896,7 +897,7 @@
             "video": "",
             "slides": "",
             "speakers": [
-                "dcavailles"
+                "afouques"
             ]
         },
         {
