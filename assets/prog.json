@@ -17,7 +17,7 @@
                 "tile_long": "Google Developer Expert"
             },
             "company": "Captain Train",
-            "about": "Cyril Mottier is the Android Lead at Capitain Train and Android Google Developer Expert. Passionate about technology and design, Cyril is an avid lover of Android and a multi-skilled engineer. He is actively involved in the Android community and shares his passion writing blog posts, creating open source libraries and giving talks. His motto: “Do less, but do it insanely great”",
+            "about": "Cyril Mottier is the Android Lead at Captain Train and Android Google Developer Expert. Passionate about technology and design, Cyril is an avid lover of Android and a multi-skilled engineer. He is actively involved in the Android community and shares his passion writing blog posts, creating open source libraries and giving talks. His motto: “Do less, but do it insanely great”",
             "socials": [
                 {"class": "google-plus", "link": "https://plus.google.com/+CyrilMottier/"},
                 {"class": "twitter", "link": "https://twitter.com/cyrilmottier"},
@@ -886,15 +886,15 @@
     "sessions": [
         {
             "id": "s3",
-            "title": "Genymotion for application testing and continuous integration",
+            "title": "Application testing and Continuous Integration with Genymotion",
             "confRoom": "Salle Bretagne",
-            "desc": "Session backup",
+            "desc": "",
             "type": "discovery",
             "difficulty": 101,
             "all": false,
             "lang": "fr",
             "hour": "h11",
-            "video": "",
+            "video": "//www.youtube.com/embed/LQ3blXF1mOs?autoplay=1",
             "slides": "",
             "speakers": [
                 "afouques"
@@ -910,7 +910,6 @@
             "all": false,
             "lang": "fr",
             "hour": "h13",
-            "video": "",
             "slides": "",
             "speakers": [
                 "hgonzalez",
@@ -927,7 +926,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h03",
-            "video": "",
+            "video": "//www.youtube.com/embed/bdBNZwxZ49o?autoplay=1",
             "slides": "",
             "speakers": [
                 "xhallade"
@@ -943,7 +942,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h07",
-            "video": "",
+            "video": "//www.youtube.com/embed/aS-cSoBiA0Y?autoplay=1",
             "slides": "",
             "speakers": [
                 "gdorne"
@@ -959,7 +958,6 @@
             "all": false,
             "lang": "fr",
             "hour": "h14",
-            "video": "",
             "slides": "",
             "speakers": [
                 "amoussine-pouchkine"
@@ -975,7 +973,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h11",
-            "video": "",
+            "video": "//www.youtube.com/embed/7ok4l4Ndmb8?autoplay=1",
             "slides": "",
             "speakers": [
                 "blegras"
@@ -991,7 +989,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h10",
-            "video": "",
+            "video": "//www.youtube.com/embed/zbCD23X15g0?autoplay=1",
             "slides": "",
             "speakers": [
                 "rmenetrier"
@@ -1007,7 +1005,6 @@
             "all": false,
             "lang": "fr",
             "hour": "h15",
-            "video": "",
             "slides": "",
             "speakers": [
                 "acateland"
@@ -1023,7 +1020,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h10",
-            "video": "",
+            "video": "//www.youtube.com/embed/uuJo2ibsZf4?autoplay=1",
             "slides": "",
             "speakers": [
                 "tleriche"
@@ -1039,7 +1036,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h11",
-            "video": "",
+            "video": "//www.youtube.com/embed/zd3j6yPLmdY?autoplay=1",
             "slides": "",
             "speakers": [
                 "pcharriere"
@@ -1055,7 +1052,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h05",
-            "video": "",
+            "video": "//www.youtube.com/embed/yerB527Zxa0?autoplay=1",
             "slides": "",
             "speakers": [
                 "fcalzada"
@@ -1071,7 +1068,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h03",
-            "video": "",
+            "video": "//www.youtube.com/embed/21v-zVZNJ_k?autoplay=1",
             "slides": "",
             "speakers": [
                 "btalmard"
@@ -1087,7 +1084,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h08",
-            "video": "",
+            "video": "//www.youtube.com/embed/F_5kLnAFBD0?autoplay=1",
             "slides": "",
             "speakers": [
                 "dgageot"
@@ -1103,7 +1100,6 @@
             "all": false,
             "lang": "fr",
             "hour": "h14",
-            "video": "",
             "slides": "",
             "speakers": [
                 "wchegham"
@@ -1119,7 +1115,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h11",
-            "video": "",
+            "video": "//www.youtube.com/embed/B66C6WH3Bio?autoplay=1",
             "slides": "",
             "speakers": [
                 "rgoetter"
@@ -1135,7 +1131,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h05",
-            "video": "",
+            "video": "//www.youtube.com/embed/6cNZYa5LeGQ?autoplay=1",
             "slides": "",
             "speakers": [
                 "fbeaufort"
@@ -1151,7 +1147,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h05",
-            "video": "",
+            "video": "//www.youtube.com/embed/DpcGYULpBgw?autoplay=1",
             "slides": "",
             "speakers": [
                 "mancelin"
@@ -1167,7 +1163,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h03",
-            "video": "",
+            "video": "//www.youtube.com/embed/bT-o-c2G0KA?autoplay=1",
             "slides": "",
             "speakers": [
                 "cmottier"
@@ -1183,7 +1179,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h04",
-            "video": "",
+            "video": "//www.youtube.com/embed/eKw67QduVPM?autoplay=1",
             "slides": "",
             "speakers": [
                 "mgruaz"
@@ -1199,7 +1195,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h07",
-            "video": "",
+            "video": "//www.youtube.com/embed/KeZeMWCCrgI?autoplay=1",
             "slides": "",
             "speakers": [
                 "smoallic",
@@ -1216,7 +1212,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h03",
-            "video": "",
+            "video": "//www.youtube.com/embed/mDRhS4dZuCk?autoplay=1",
             "slides": "",
             "speakers": [
                 "tchatel"
@@ -1232,7 +1228,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h08",
-            "video": "",
+            "video": "//www.youtube.com/embed/7DvBjh50s0c?autoplay=1",
             "slides": "",
             "speakers": [
                 "mchartier"
@@ -1248,7 +1244,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h07",
-            "video": "",
+            "video": "//www.youtube.com/embed/_k60dxlMjZ4?autoplay=1",
             "slides": "",
             "speakers": [
                 "arichard",
@@ -1265,7 +1261,7 @@
             "all": false,
             "lang": "en",
             "hour": "h04",
-            "video": "",
+            "video": "//www.youtube.com/embed/FGmBeAvxRaM?autoplay=1",
             "slides": "",
             "speakers": [
                 "mbynens"
@@ -1281,7 +1277,7 @@
             "all": false,
             "lang": "en",
             "hour": "h07",
-            "video": "",
+            "video": "//www.youtube.com/embed/RGeRfYX-CGU?autoplay=1",
             "slides": "",
             "speakers": [
                 "sdutton"
@@ -1297,7 +1293,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h08",
-            "video": "",
+            "video": "//www.youtube.com/embed/7XZWqF2aHuI?autoplay=1",
             "slides": "",
             "speakers": [
                 "mlux"
@@ -1312,28 +1308,27 @@
             "all": false,
             "lang": "fr",
             "hour": "h10",
-            "video": "",
+            "video": "//www.youtube.com/embed/GcqufwOlXZk?autoplay=1",
             "slides": "",
             "speakers": [
                 "emargraff"
             ]
         },
-         {
-         "id": "s30",
-         "title": "Mon architecture microservices sur un cas d'usage urbanisé en 2 heures chrono avec Docker",
-         "confRoom": "Hangar",
-         "desc": "Le but de cette conférence est de faire construire une (mini) architecture microservices sur un scénario d'utilisation simple qui sera décomposé en quelques appels de services autonomes selon les méthodes de découplage de responsabilités. Afin que les participants puissent se consacrer à la compréhension de l'architecture et à l'assemblage final, des squelettes de code seront fournis ainsi que des images Docker.<br> Pour suivre cet atelier, il est préférable d'installer Docker & Docker Compose et récuperer le code source disponible à cette url <a href='https://github.com/EditionsENI/mortgage' target='_blank'>https://github.com/EditionsENI/mortgage</a> ",
-         "type": "codelab-cloud",
-         "difficulty": 101,
-         "all": false,
-         "lang": "fr",
-         "hour": "h13",
-         "video": "",
-         "slides": "",
-         "speakers": [
-         "jpgouigoux"
-         ]
-         },
+        {
+            "id": "s30",
+            "title": "Mon architecture microservices sur un cas d'usage urbanisé en 2 heures chrono avec Docker",
+            "confRoom": "Hangar",
+            "desc": "Le but de cette conférence est de faire construire une (mini) architecture microservices sur un scénario d'utilisation simple qui sera décomposé en quelques appels de services autonomes selon les méthodes de découplage de responsabilités. Afin que les participants puissent se consacrer à la compréhension de l'architecture et à l'assemblage final, des squelettes de code seront fournis ainsi que des images Docker.<br> Pour suivre cet atelier, il est préférable d'installer Docker & Docker Compose et récuperer le code source disponible à cette url <a href='https://github.com/EditionsENI/mortgage' target='_blank'>https://github.com/EditionsENI/mortgage</a> ",
+            "type": "codelab-cloud",
+             "difficulty": 101,
+             "all": false,
+             "lang": "fr",
+             "hour": "h13",
+             "slides": "",
+             "speakers": [
+                "jpgouigoux"
+             ]
+        },
         {
             "id": "s31",
             "title": "Redefining PaaS: Managed container based microservices on Google App Engine",
@@ -1344,7 +1339,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h04",
-            "video": "",
+            "video": "//www.youtube.com/embed/oIvMevKT0aU?autoplay=1",
             "slides": "",
             "speakers": [
                 "lchampenois"
@@ -1360,7 +1355,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h04",
-            "video": "",
+            "video": "//www.youtube.com/embed/_TcBu40PyJY?autoplay=1",
             "slides": "",
             "speakers": [
                 "hwood"
@@ -1376,7 +1371,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h05",
-            "video": "",
+            "video": "//www.youtube.com/embed/X59DRtNOoAs?autoplay=1",
             "slides": "",
             "speakers": [
                 "fxrousselot"
@@ -1392,7 +1387,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h08",
-            "video": "",
+            "video": "//www.youtube.com/embed/Y3d173up_7c?autoplay=1",
             "slides": "",
             "speakers": [
                 "xhallade"
@@ -1408,7 +1403,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h10",
-            "video": "",
+            "video": "//www.youtube.com/embed/-GXqYPSXKDE?autoplay=1",
             "slides": "",
             "speakers": [
                 "fcampoy"
@@ -1424,7 +1419,6 @@
             "all": false,
             "lang": "en",
             "hour": "h15",
-            "video": "",
             "slides": "",
             "speakers": [
                 "fkelly"
@@ -1440,7 +1434,6 @@
             "all": false,
             "lang": "fr",
             "hour": "h16",
-            "video": "",
             "slides": "",
             "speakers": [
                 "dgirard"
@@ -1462,7 +1455,7 @@
             "desc": "Conférence d'ouverture du DevFest",
             "type": "white",
             "all": true,
-            "video": "",
+            "video": "//www.youtube.com/embed/XEszXTAeIeA?autoplay=1",
             "hour": "h02",
             "speakers": [
                 "tguenoux",

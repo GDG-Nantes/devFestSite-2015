@@ -3,14 +3,32 @@
 /**
  * Sessions controller
  */
-devfestApp.controller('AgendaCtrl', ['$scope', '$http', '$location', '$anchorScroll', 'ProgrammeService', 'FavoritesService'
-    , function ($scope, $http, $location, $anchorScroll, progService, favService) {
+devfestApp.controller('AgendaCtrl', ['$scope', '$uibModal', '$http', '$location', '$anchorScroll', 'ProgrammeService', 'FavoritesService'
+    , function ($scope, $uibModal, $http, $location, $anchorScroll, progService, favService) {
 
     $scope.agenda = {};
     progService.getProgramme(function(agenda){
         $scope.agenda = agenda;
     });
     $scope.showAgenda = false;
+
+    $scope.openModal = function(sessionToDisplay) {
+        var modalInstance = $uibModal.open({
+          animation: true,
+          templateUrl: '/partials/modal-schedule.html',
+          controller: ['$scope', '$uibModalInstance', 'FavoritesService',
+            function($scope, $uibModalInstance, favService) {
+                $scope.session = sessionToDisplay;
+                $scope.cancel = function() {
+                    $uibModalInstance.dismiss('cancel');
+                };
+                $scope.toggleFav = function(session){
+                    favService.toggleFav(session);
+                }
+            }],
+          windowClass: 'text-left people-modal',
+        });
+    };
 
     $scope.scrollTo = function(id) {
        var old = $location.hash();

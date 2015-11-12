@@ -1,0 +1,38 @@
+<div class="modal-body">
+    <div class="close">
+        <svg class="icon icon-cross" viewBox="0 0 32 32">
+            <use xlink:href="#icon-cross"></use>
+        </svg>
+        <div class="close-mask" ng-click="cancel()"></div>
+    </div>
+    <h4 ng-bind="::session.title"></h4> 
+    <span class="theme-metadata"><span class="caption" ng-if="::session.lang">Langue: </span>{{::session.lang}}</span> 
+    <span class="theme-metadata" ng-if="::session.difficulty"><span class="caption">Complexité: </span>{{::session.difficulty}}</span>
+    <span class="theme-metadata" ng-if="::session.confRoom"><span class="caption">Salle: </span>{{::session.confRoom}}</span>
+    <span class="theme-metadata"><span class="btn btn-{{::session.type}} btn-default" ng-class="session.fav ? 'icon-star' :'icon-star-empty'" ng-click="toggleFav(session)">Favoris</span></span>
+    <div ng-if="::session.video" class="theme-video embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" ng-src="{{::session.video}}"></iframe>
+    </div>
+    <p class="theme-description" ng-bind-html="::session.desc"></p>
+    <hr ng-if="::session.speakers">
+    <div class="people-details" ng-if="::session.speakers">
+        <div class="row" ng-repeat="speaker in ::session.speakers">
+            <div class="col-md-2 col-sm-2">
+                <div class="flow-img img-circle people-img" style="background-image: url(/img/people/{{::speaker.image}})"></div>
+            </div>
+            <div class="col-md-10 col-sm-10 details">
+                <p class="name">{{::speaker.firstname+" "+speaker.lastname}} <span class="position">{{::speaker.company}}</span> </p>
+                <p class="about" ng-bind-html="::speaker.about"></p>
+                <ul class="social">
+                    <li ng-repeat="social in ::speaker.socials">
+                        <a href="{{::social.link}}" target="_blank">
+                            <svg class="icon icon-{{::social.class}}" viewBox="0 0 30 32">
+                               <use ng-href="{{::'#icon-'+social.class}}" xlink:href="">
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

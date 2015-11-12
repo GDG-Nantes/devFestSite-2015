@@ -1,6 +1,6 @@
 'use strict';
 
-devfestApp.factory('ProgrammeService', ['$http', '$q', 'FavoritesService', function($http, $q, favService){
+devfestApp.factory('ProgrammeService', ['$http', '$q', '$sce', 'FavoritesService', function($http, $q, $sce, favService){
 
     function getProgramme(callBack){
         $http({
@@ -11,6 +11,7 @@ devfestApp.factory('ProgrammeService', ['$http', '$q', 'FavoritesService', funct
                 
                 // On map les speakers
                 _(programme.sessions).map(function (session) {
+                    if(session.video) session.video = $sce.trustAsResourceUrl(session.video);
                     if (!session.speakers)
                         return session;
                     session.speakers = _(session.speakers).map(function (speaker) {

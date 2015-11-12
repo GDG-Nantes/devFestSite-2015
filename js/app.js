@@ -1,6 +1,6 @@
 'use strict';
 
-var devfestApp = angular.module('devfest2015', ['ngSanitize']);
+var devfestApp = angular.module('devfest2015', ['ngSanitize', 'ui.bootstrap']);
 
 devfestApp.directive('ngcDone', function ($timeout) {  
     return function (scope, element, attrs) {  
