@@ -894,7 +894,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h11",
-            "video": "//www.youtube.com/embed/LQ3blXF1mOs?autoplay=1",
+            "video": "//www.youtube.com/embed/LQ3blXF1mOs",
             "slides": "",
             "speakers": [
                 "afouques"
@@ -926,7 +926,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h03",
-            "video": "//www.youtube.com/embed/bdBNZwxZ49o?autoplay=1",
+            "video": "//www.youtube.com/embed/bdBNZwxZ49o",
             "slides": "",
             "speakers": [
                 "xhallade"
@@ -942,7 +942,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h07",
-            "video": "//www.youtube.com/embed/aS-cSoBiA0Y?autoplay=1",
+            "video": "//www.youtube.com/embed/aS-cSoBiA0Y",
             "slides": "",
             "speakers": [
                 "gdorne"
@@ -973,7 +973,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h11",
-            "video": "//www.youtube.com/embed/7ok4l4Ndmb8?autoplay=1",
+            "video": "//www.youtube.com/embed/7ok4l4Ndmb8",
             "slides": "",
             "speakers": [
                 "blegras"
@@ -989,7 +989,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h10",
-            "video": "//www.youtube.com/embed/zbCD23X15g0?autoplay=1",
+            "video": "//www.youtube.com/embed/zbCD23X15g0",
             "slides": "",
             "speakers": [
                 "rmenetrier"
@@ -1020,7 +1020,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h10",
-            "video": "//www.youtube.com/embed/uuJo2ibsZf4?autoplay=1",
+            "video": "//www.youtube.com/embed/uuJo2ibsZf4",
             "slides": "",
             "speakers": [
                 "tleriche"
@@ -1036,7 +1036,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h11",
-            "video": "//www.youtube.com/embed/zd3j6yPLmdY?autoplay=1",
+            "video": "//www.youtube.com/embed/zd3j6yPLmdY",
             "slides": "",
             "speakers": [
                 "pcharriere"
@@ -1052,7 +1052,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h05",
-            "video": "//www.youtube.com/embed/yerB527Zxa0?autoplay=1",
+            "video": "//www.youtube.com/embed/yerB527Zxa0",
             "slides": "",
             "speakers": [
                 "fcalzada"
@@ -1068,7 +1068,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h03",
-            "video": "//www.youtube.com/embed/21v-zVZNJ_k?autoplay=1",
+            "video": "//www.youtube.com/embed/21v-zVZNJ_k",
             "slides": "",
             "speakers": [
                 "btalmard"
@@ -1084,7 +1084,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h08",
-            "video": "//www.youtube.com/embed/F_5kLnAFBD0?autoplay=1",
+            "video": "//www.youtube.com/embed/F_5kLnAFBD0",
             "slides": "",
             "speakers": [
                 "dgageot"
@@ -1115,7 +1115,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h11",
-            "video": "//www.youtube.com/embed/B66C6WH3Bio?autoplay=1",
+            "video": "//www.youtube.com/embed/B66C6WH3Bio",
             "slides": "",
             "speakers": [
                 "rgoetter"
@@ -1131,7 +1131,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h05",
-            "video": "//www.youtube.com/embed/6cNZYa5LeGQ?autoplay=1",
+            "video": "//www.youtube.com/embed/6cNZYa5LeGQ",
             "slides": "",
             "speakers": [
                 "fbeaufort"
@@ -1147,7 +1147,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h05",
-            "video": "//www.youtube.com/embed/DpcGYULpBgw?autoplay=1",
+            "video": "//www.youtube.com/embed/DpcGYULpBgw",
             "slides": "",
             "speakers": [
                 "mancelin"
@@ -1163,7 +1163,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h03",
-            "video": "//www.youtube.com/embed/bT-o-c2G0KA?autoplay=1",
+            "video": "//www.youtube.com/embed/bT-o-c2G0KA",
             "slides": "",
             "speakers": [
                 "cmottier"
@@ -1179,7 +1179,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h04",
-            "video": "//www.youtube.com/embed/eKw67QduVPM?autoplay=1",
+            "video": "//www.youtube.com/embed/eKw67QduVPM",
             "slides": "",
             "speakers": [
                 "mgruaz"
@@ -1195,7 +1195,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h07",
-            "video": "//www.youtube.com/embed/KeZeMWCCrgI?autoplay=1",
+            "video": "//www.youtube.com/embed/KeZeMWCCrgI",
             "slides": "",
             "speakers": [
                 "smoallic",
@@ -1212,7 +1212,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h03",
-            "video": "//www.youtube.com/embed/mDRhS4dZuCk?autoplay=1",
+            "video": "//www.youtube.com/embed/mDRhS4dZuCk",
             "slides": "",
             "speakers": [
                 "tchatel"
@@ -1228,7 +1228,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h08",
-            "video": "//www.youtube.com/embed/7DvBjh50s0c?autoplay=1",
+            "video": "//www.youtube.com/embed/7DvBjh50s0c",
             "slides": "",
             "speakers": [
                 "mchartier"
@@ -1244,7 +1244,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h07",
-            "video": "//www.youtube.com/embed/_k60dxlMjZ4?autoplay=1",
+            "video": "//www.youtube.com/embed/_k60dxlMjZ4",
             "slides": "",
             "speakers": [
                 "arichard",
@@ -1261,7 +1261,7 @@
             "all": false,
             "lang": "en",
             "hour": "h04",
-            "video": "//www.youtube.com/embed/FGmBeAvxRaM?autoplay=1",
+            "video": "//www.youtube.com/embed/FGmBeAvxRaM",
             "slides": "",
             "speakers": [
                 "mbynens"
@@ -1277,7 +1277,7 @@
             "all": false,
             "lang": "en",
             "hour": "h07",
-            "video": "//www.youtube.com/embed/RGeRfYX-CGU?autoplay=1",
+            "video": "//www.youtube.com/embed/RGeRfYX-CGU",
             "slides": "",
             "speakers": [
                 "sdutton"
@@ -1293,7 +1293,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h08",
-            "video": "//www.youtube.com/embed/7XZWqF2aHuI?autoplay=1",
+            "video": "//www.youtube.com/embed/7XZWqF2aHuI",
             "slides": "",
             "speakers": [
                 "mlux"
@@ -1308,7 +1308,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h10",
-            "video": "//www.youtube.com/embed/GcqufwOlXZk?autoplay=1",
+            "video": "//www.youtube.com/embed/GcqufwOlXZk",
             "slides": "",
             "speakers": [
                 "emargraff"
@@ -1339,7 +1339,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h04",
-            "video": "//www.youtube.com/embed/oIvMevKT0aU?autoplay=1",
+            "video": "//www.youtube.com/embed/oIvMevKT0aU",
             "slides": "",
             "speakers": [
                 "lchampenois"
@@ -1355,7 +1355,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h04",
-            "video": "//www.youtube.com/embed/_TcBu40PyJY?autoplay=1",
+            "video": "//www.youtube.com/embed/_TcBu40PyJY",
             "slides": "",
             "speakers": [
                 "hwood"
@@ -1371,7 +1371,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h05",
-            "video": "//www.youtube.com/embed/X59DRtNOoAs?autoplay=1",
+            "video": "//www.youtube.com/embed/X59DRtNOoAs",
             "slides": "",
             "speakers": [
                 "fxrousselot"
@@ -1387,7 +1387,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h08",
-            "video": "//www.youtube.com/embed/Y3d173up_7c?autoplay=1",
+            "video": "//www.youtube.com/embed/Y3d173up_7c",
             "slides": "",
             "speakers": [
                 "xhallade"
@@ -1403,7 +1403,7 @@
             "all": false,
             "lang": "fr",
             "hour": "h10",
-            "video": "//www.youtube.com/embed/-GXqYPSXKDE?autoplay=1",
+            "video": "//www.youtube.com/embed/-GXqYPSXKDE",
             "slides": "",
             "speakers": [
                 "fcampoy"
@@ -1455,7 +1455,7 @@
             "desc": "Conférence d'ouverture du DevFest",
             "type": "white",
             "all": true,
-            "video": "//www.youtube.com/embed/XEszXTAeIeA?autoplay=1",
+            "video": "//www.youtube.com/embed/XEszXTAeIeA",
             "hour": "h02",
             "speakers": [
                 "tguenoux",

@@ -1,27 +1,32 @@
 'use strict';
 
-devfestApp.factory('ProgrammeService', ['$http', '$q', '$sce', 'FavoritesService', function($http, $q, $sce, favService){
+devfestApp.factory('ProgrammeService', ['$http', '$q', '$sce', 'FavoritesService', function ($http, $q, $sce, favService) {
 
-    function getProgramme(callBack){
+    function getProgramme(callBack) {
         $http({
-            url : '/assets/prog.json',
-            method : 'GET',
-            transformResponse : function(data){
+            url: '/assets/prog.json',
+            method: 'GET',
+            transformResponse: function (data) {
                 var programme = JSON.parse(data);
-                
+
                 // On map les speakers
                 _(programme.sessions).map(function (session) {
-                    if(session.video) session.video = $sce.trustAsResourceUrl(session.video);
+                    if (session.video) {
+                        session.videoWithoutAutoplay = session.video + "?autoplay=0";
+                        session.video = session.video + "?autoplay=1";
+                        session.video = $sce.trustAsResourceUrl(session.video);
+                        session.videoWithoutAutoplay = $sce.trustAsResourceUrl(session.videoWithoutAutoplay);
+                    }
                     if (!session.speakers)
                         return session;
                     session.speakers = _(session.speakers).map(function (speaker) {
                         return programme.speakers[_.findIndex(programme.speakers, function (speakerTmp) {
                             return speakerTmp.id === speaker;
                         })];
-                    }).value();                    
+                    }).value();
 
-                    _(session.speakers).forEach(function(speaker){
-                        if (!speaker.sessions){
+                    _(session.speakers).forEach(function (speaker) {
+                        if (!speaker.sessions) {
                             speaker.sessions = [];
                         }
                         speaker.sessions.push(session);
@@ -30,7 +35,7 @@ devfestApp.factory('ProgrammeService', ['$http', '$q', '$sce', 'FavoritesService
                 }).value();
 
                 // On prépare les données pour mieux les afficher
-                programme.sessionsTransform = _.chain(programme.sessions).filter(function(session){
+                programme.sessionsTransform = _.chain(programme.sessions).filter(function (session) {
                     return session.type === 'white'
                         || session.type === 'mobile'
                         || session.type === 'web'
@@ -61,7 +66,7 @@ devfestApp.factory('ProgrammeService', ['$http', '$q', '$sce', 'FavoritesService
                     return sessionValues[0].hour;
                 }).value();
 
-                programme.codelabTransform = _.chain(programme.sessions).filter(function(session){
+                programme.codelabTransform = _.chain(programme.sessions).filter(function (session) {
                     return session.type === 'codelab-web'
                         || session.type === 'codelab-cloud';
                 }).forEach(function (session) {
@@ -86,7 +91,7 @@ devfestApp.factory('ProgrammeService', ['$http', '$q', '$sce', 'FavoritesService
                 })
                     .value();
 
-                programme.formationTransform = _.chain(programme.sessions).filter(function(session){
+                programme.formationTransform = _.chain(programme.sessions).filter(function (session) {
                     return session.type === 'formation';
                 }).forEach(function (session) {
                     session.hourContent = programme.hours[session.hour]
@@ -106,30 +111,29 @@ devfestApp.factory('ProgrammeService', ['$http', '$q', '$sce', 'FavoritesService
                 })
                     .value()
 
-                programme.speakers = _.chain(programme.speakers).forEach(function(speaker){
-                    _.forEach(speaker.socials, function(social){
+                programme.speakers = _.chain(programme.speakers).forEach(function (speaker) {
+                    _.forEach(speaker.socials, function (social) {
                         social.svg = "/img/sprites/sprites.svg#icon-" + social.class;
-                    });                    
-                }).sortBy(function(speaker){
+                    });
+                }).sortBy(function (speaker) {
                     return speaker.firstname;
                 }).value();
 
 
-
                 return programme;
             }
-        }).then(function(data){
+        }).then(function (data) {
             var promiseFav = $q.defer();
             // Pour l'instant rien n'est fait car on a pas le service http de requete des favoris ! 
             var userLogged = localStorage['user']; // TODO checker avec hello pour l'instant false
-            if (userLogged){
+            if (userLogged) {
                 // On va aller récupérer ses favoris
                 $http({
-                    url : '/api/v1/stars/get',
-                    method : 'GET',
-                    params : {login : encodeURIComponent(userLogged)}
-                    
-                }).then(function (dataFav){
+                    url: '/api/v1/stars/get',
+                    method: 'GET',
+                    params: {login: encodeURIComponent(userLogged)}
+
+                }).then(function (dataFav) {
                     // Voir ce qu'on fait des données 
                     // TODO  A brancher pour de vrai
                     // On écrase les favoris par ceux venant du serveur
@@ -137,21 +141,21 @@ devfestApp.factory('ProgrammeService', ['$http', '$q', '$sce', 'FavoritesService
                     favService.applyFav(data.data.sessions, dataFav.data.favs);
                     promiseFav.resolve(data.data);
                 });
-            }else{
+            } else {
                 // S'il n'est pas loggué, alors on regarde dans le localstorage
-                if (localStorage['fav']){
+                if (localStorage['fav']) {
                     favService.applyFav(data.data.sessions, JSON.parse(localStorage['fav']));
                 }
                 promiseFav.resolve(data.data);
             }
             return promiseFav.promise;
-        }).then(function(data){
+        }).then(function (data) {
             callBack(data);
 
         });
     }
 
     return {
-        getProgramme : getProgramme
+        getProgramme: getProgramme
     }
 }]);

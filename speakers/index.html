@@ -116,11 +116,10 @@
                             <span class="theme-metadata" ng-if="session.difficulty">
                                 <span class="caption">Complexité: </span>{{::session.difficulty}}
                             </span>
-                            <!--
-                            <div class="theme-video embed-responsive embed-responsive-16by9" ng-if="speaker.talk">
-                                <iframe class="embed-responsive-item" src="{{::speaker.talk.video}}"></iframe>
-                            </div> -->
-                            <p class="theme-description"  ng-bind-html="::session.desc">
+                            <div class="theme-video embed-responsive embed-responsive-16by9" ng-if="session.video">
+                                <iframe class="embed-responsive-item" src="{{::session.videoWithoutAutoplay}}"></iframe>
+                            </div>
+                            <p class="theme-description" ng-bind-html="::session.desc">
                             </p>
                         </div>
                         <hr ng-if="speaker.sessions">
@@ -172,7 +171,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-sanitize.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>   
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
     <!-- build:jsdefault ../js/default.js -->
     <script src="../js/default.js"></script>
     <script src="../js/hello.min.js"></script>
