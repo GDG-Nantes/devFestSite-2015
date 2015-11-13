@@ -12,10 +12,8 @@ devfestApp.factory('ProgrammeService', ['$http', '$q', '$sce', 'FavoritesService
                 // On map les speakers
                 _(programme.sessions).map(function (session) {
                     if (session.video) {
-                        session.videoWithoutAutoplay = session.video + "?autoplay=0";
                         session.video = session.video + "?autoplay=1";
                         session.video = $sce.trustAsResourceUrl(session.video);
-                        session.videoWithoutAutoplay = $sce.trustAsResourceUrl(session.videoWithoutAutoplay);
                     }
                     if (!session.speakers)
                         return session;
