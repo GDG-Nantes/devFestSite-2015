@@ -14,7 +14,6 @@ devfestApp.controller('AgendaCtrl', ['$scope', '$uibModal', '$http', '$location'
 
     $scope.openModal = function(sessionToDisplay) {
         var modalInstance = $uibModal.open({
-          animation: true,
           templateUrl: '/partials/modal-schedule.html',
           controller: ['$scope', '$uibModalInstance', 'FavoritesService',
             function($scope, $uibModalInstance, favService) {
