@@ -1,0 +1,24 @@
+{"presse":[
+		{
+			"name":"Geeek.org",
+			"title": "DevFest Nantes 2015 : C'est le 6 novembre prochain !",
+			"link": "http://www.geeek.org/google-devfest-nantes-2015-065.html",
+			"logo": "geeek.png",
+			"date": "26-09-2015"
+		},
+		{
+			"name":"NantesTech",
+			"title": "Le Devfest est de retour pour sa 4ème édition !",
+			"link": "http://www.nantestech.com/le-devfest-est-de-retour-pour-sa-4eme-edition/",
+			"logo": "nantestech.png",
+			"date": "24-09-2015"
+		},
+		{
+			"name":"BeGeek",
+			"title": "Le DevFest revient pour sa 4e édition",
+			"link": "http://www.begeek.fr/le-devfest-revient-pour-sa-4e-edition-180986",
+			"logo": "begeek.png",
+			"date": "22-09-2015"
+		}
+		
+	]}
