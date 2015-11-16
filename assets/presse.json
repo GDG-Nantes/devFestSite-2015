@@ -188,6 +188,21 @@
       "link": "http://blog.netapsys.fr/devfest-nantes-2015/",
       "logo": "netapsys.png",
       "date": "2015-11-12"
+    },
+    {
+      "name": "Presse Ocean",
+      "title": "Le « DevFest » voit plus grand à la Cité des congrès",
+      "link": "http://www.presseocean.fr/actualite/nantes-le-devfest-voit-plus-grand-a-la-cite-des-congres-05-11-2015-174842",
+      "logo": "presseocean.png",
+      "date": "2015-11-06"
+    },
+    {
+      "name": "Geeek.org",
+      "title": "Replay des conférences pour les absents",
+      "link": "http://www.geeek.org/devfest-nantes-video-youtube-replay-078.html",
+      "logo": "geeek.png",
+      "date": "2015-11-14"
     }
+
   ]
 }
