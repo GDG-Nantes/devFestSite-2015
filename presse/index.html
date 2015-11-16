@@ -66,7 +66,7 @@
                <div class="content-wrapper">
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="row text-left appear-animation-trigger">
-                            <div ng-repeat="item in presse" class="effect-wrapper appear-animation col-md-4 col-sm-4 col-xs-6">
+                            <div ng-repeat="item in presse | orderBy:'-date'" class="effect-wrapper appear-animation col-md-4 col-sm-4 col-xs-6">
                                 <a href="{{::item.link}}" target="_blank">
                                 <div class="lily-effect lily-presse ribbon-activator">
                                     <div class="lily-head">
@@ -92,36 +92,6 @@
                             </div>
                         </div>
                         <!--<a href="http://cfp2015.gdgnantes.com" class="btn btn-primary waves-effect waves-button waves-light waves-float" target="_blank">Devenir un speaker</a>-->
-                    </div>
-                </div>
-            </section>
-
-
-            <section id="post-section" class="post-section">
-                <div class="content-wrapper text-justify">
-                    <div class="col-md-10 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
-                        <div class="col-lg-8 col-md-10 col-xs-12">
-                            <article class="row post">
-                                <div class="post-body">
-                                    <p>
-                                    <ul>
-                                        <li ng-repeat="item in presse | orderBy: '-date'">
-                                            <strong>{{::item.name}}</strong>
-                                            <a href="{{::item.link}}"
-                                               target="_blank">{{::item.title}}</a>
-                                        </li>
-                                    </ul>
-                                    </p>
-                                    <p><img class="img-responsive feature-image" src="/img/sections-background/cod.2.jpg" style="display:none"/></p>
-                                </div>
-                                <div id="page-navigation" class="page-navigation">
-                                    <div class="next col-xs-6">
-                                    </div>
-                                    <div class="previous col-xs-6 text-right">
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
                     </div>
                 </div>
             </section>
