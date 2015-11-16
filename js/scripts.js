@@ -54,18 +54,19 @@
                     });
                 });
             });
-            $('#menu-deconnexion').on('click', function(event){
-                localStorage.removeItem('user');
-                localStorage.removeItem('fav');
-                document.getElementById('menu-deconnexion').parentNode.style.display = 'none';      
-                document.getElementById('menu-connexion').parentNode.style.display = '';  
-            });
+            //TODO: remove hello.js
+            // $('#menu-deconnexion').on('click', function(event){
+            //     localStorage.removeItem('user');
+            //     localStorage.removeItem('fav');
+            //     document.getElementById('menu-deconnexion').parentNode.style.display = 'none';      
+            //     document.getElementById('menu-connexion').parentNode.style.display = '';  
+            // });
 
-            if (localStorage['user']){
-                document.getElementById('menu-connexion').parentNode.style.display = 'none';
-            }else{
-                document.getElementById('menu-deconnexion').parentNode.style.display = 'none';
-            }
+            // if (localStorage['user']){
+            //     document.getElementById('menu-connexion').parentNode.style.display = 'none';
+            // }else{
+            //     document.getElementById('menu-deconnexion').parentNode.style.display = 'none';
+            // }
 
             var creds = {
                 google : "312903486392-eu80fphua3j2t4jfahejoq6l9u6p2399.apps.googleusercontent.com",
