@@ -202,7 +202,20 @@
       "link": "http://www.geeek.org/devfest-nantes-video-youtube-replay-078.html",
       "logo": "geeek.png",
       "date": "2015-11-14"
+    },
+    {
+      "name": "k33g",
+      "title": "Replay des conférences pour les absents",
+      "link": "http://k33g.github.io/2015/11/16/PREZTOOLS.html",
+      "logo": "k33g.png",
+      "date": "2015-11-16"
+    },
+    {
+      "name": "channelnews",
+      "title": "Replay des conférences pour les absents",
+      "link": "http://www.channelnews.fr/sqli-sponsor-gold-du-devfest-nantes-2015-57226",
+      "logo": "",
+      "date": "2015-10-29"
     }
-
   ]
 }
