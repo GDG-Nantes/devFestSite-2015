@@ -216,6 +216,27 @@
       "link": "http://www.channelnews.fr/sqli-sponsor-gold-du-devfest-nantes-2015-57226",
       "logo": "",
       "date": "2015-10-29"
+    },
+    {
+      "name": "Open",
+      "title": "MA JOURNÉE AU DEVFEST NANTES 2015",
+      "link": "http://www.open-groupe.com/news/ma-journee-au-devfest-nantes",
+      "logo": "open.png",
+      "date": "2015-11-19"
+    },
+    {
+      "name": "Epitech",
+      "title": "LE DEVFEST 2015",
+      "link": "http://www.epitech.eu/blogs/Devfest-Nantes-2015-developpeurs-nouveaux-langages-innovation.html",
+      "logo": "epitech.png",
+      "date": "2015-11-18"
+    },
+    {
+      "name": "Zenika",
+      "title": "Retour sur Devfest Nantes 2015",
+      "link": "http://blog.zenika.com/2015/11/20/retour-sur-devfest-nantes-2015/",
+      "logo": "zenika.png",
+      "date": "2015-11-18"
     }
   ]
 }
