@@ -2,6 +2,8 @@ if [[ ! -f google-cloud-sdk/path.bash.inc ]]; then
   echo "Downloading google cloud sdk";
   wget https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.zip;
   unzip -qq google-cloud-sdk.zip;
-  google-cloud-sdk/install.sh --usage-reporting false --path-update false --rc-path=~/.bashrc --bash-completion false --override-components=app;
+  export CLOUDSDK_COMPONENT_MANAGER_FIXED_SDK_VERSION=0.9.86;
+  google-cloud-sdk/install.sh --usage-reporting false --path-update false --rc-path=~/.bashrc --bash-completion false;
+  google-cloud-sdk/bin/gcloud config set --scope=installation component_manager/fixed_sdk_version $CLOUDSDK_COMPONENT_MANAGER_FIXED_SDK_VERSION;
 fi;
-google-cloud-sdk/bin/gcloud components update preview app --quiet;
+google-cloud-sdk/bin/gcloud components update --quiet;
