@@ -23,18 +23,19 @@ func init() {
 
 }
 
-challenges := map[string]string{
-    "1": "1",
-    "aa": "bb",
+var challenges = map[string]string{
+	"1":  "1",
+	"aa": "bb",
 }
+
 func challengeHandler(w http.ResponseWriter, r *http.Request) {
 	challenge := strings.Split(r.RequestURI, "/.well-known/acme-challenge/")[1]
-    if responseToChallenge, ok := challenges[challenge]; !ok {
-        http.Error(w, err.Error(), http.StatusNotFound)
-        return
-    } else {
-        fmt.Fprintf(w, "%s", responseToChallenge)
-    }
+	if responseToChallenge, ok := challenges[challenge]; !ok {
+		http.Error(w, err.Error(), http.StatusNotFound)
+		return
+	} else {
+		fmt.Fprintf(w, "%s", responseToChallenge)
+	}
 }
 
 func getStars(w http.ResponseWriter, r *http.Request) {
