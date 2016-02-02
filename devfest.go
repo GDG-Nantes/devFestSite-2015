@@ -23,7 +23,7 @@ func init() {
 
 }
 
-var challenges map[string]string = make(map[string]string) {
+challenges := map[string]string{
     "1": "1",
     "aa": "bb",
 }
