@@ -19,18 +19,17 @@ type User struct {
 func init() {
 	http.HandleFunc("/api/v1/stars/get", getStars)
 	http.HandleFunc("/api/v1/stars/put", putStars)
-	http.HandleFunc("/.well-known/acme-challenge/", httpsHandler)
+	http.HandleFunc("/.well-known/acme-challenge/", challengeHandler)
 
 }
 
-challenges := make(map[string]string) {
+var challenges map[string]string = make(map[string]string) {
     "1": "1",
     "aa": "bb",
 }
-func httpsHandler(w http.ResponseWriter, r *http.Request) {
+func challengeHandler(w http.ResponseWriter, r *http.Request) {
 	challenge := strings.Split(r.RequestURI, "/.well-known/acme-challenge/")[1]
-	responseToChallenge, ok := challenges[challenge]
-    if(!ok) {
+    if responseToChallenge, ok := challenges[challenge]; !ok {
         http.Error(w, err.Error(), http.StatusNotFound)
         return
     } else {
