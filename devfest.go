@@ -24,7 +24,7 @@ func init() {
 }
 
 var challenges = map[string]string{
-	"1":  "1",
+	"10": "1",
 	"aa": "bb",
 }
 
