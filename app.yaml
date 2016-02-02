@@ -1,4 +1,4 @@
-application: devfestnantes2015
+#application: devfestnantes2015
 version: v32
 runtime: go
 api_version: go1
