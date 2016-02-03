@@ -24,8 +24,8 @@ func init() {
 }
 
 var challenges = map[string]string{
-	"10": "1",
-	"aa": "bb",
+	"p2klN0EWUDV9MlBnBtb1Y2LcP_L_mpms_EWTO3lGl2c": "p2klN0EWUDV9MlBnBtb1Y2LcP_L_mpms_EWTO3lGl2c.OP4FQxU38q3M4exDafQxKv95f4ALBOpfV7FaLbYnI04",
+	"hello": "world",
 }
 
 func challengeHandler(w http.ResponseWriter, r *http.Request) {
