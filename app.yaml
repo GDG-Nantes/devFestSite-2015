@@ -71,7 +71,7 @@ handlers:
     Access-Control-Allow-Origin: "*"
 
 # Service Go de favoris
-- url: (/api/.* | /.well-known/.*)
+- url: /(\.well-known|api)/.* 
   script: _go_app
 
 # access the static resources in the root director
