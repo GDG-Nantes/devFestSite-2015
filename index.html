@@ -553,15 +553,21 @@
           m.parentNode.insertBefore(a, m)
       }
       )(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-      ga('create', 'UA-35116426-1', 'https://devfest.gdgnantes.com');
+      ga('create', 'UA-35116426-1', 'gdgnantes.com');
       ga('send', 'pageview');
     </script>
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-35116426-1', 'auto');
+      ga('send', 'pageview');
+      </script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     <script>
       if ($(window).width() > 767) {
-          document.write('<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyDfdrK6JRHHpBkbrANb9ta2hXuj1OGO-oM"><\/script>')
+          document.write('<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDfdrK6JRHHpBkbrANb9ta2hXuj1OGO-oM"><\/script>')
       }
       $(document).ready(function() {
           $(function() {
