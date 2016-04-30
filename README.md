@@ -2,6 +2,21 @@
 
 Based on https://github.com/gdg-x/zeppelin
 
+# Let's encrypt on AppEngine
+
+```
+docker run -it -p 443:443 -p 80:80 \
+  -v "$(pwd)/ssl-keys:/etc/letsencrypt" \
+  quay.io/letsencrypt/letsencrypt:latest \
+  -a manual certonly
+```
+
+Go to `devfest.go` and change the challenge (L27)
+
+Upload the application with the new challenge.
+Complete the docker command line.
+Upload the file on AppEngine.
+
 # How to
 
 * use `npm install` to install node-static
