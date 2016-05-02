@@ -12,10 +12,13 @@ docker run -it -p 443:443 -p 80:80 \
 ```
 
 Go to `devfest.go` and change the challenge (L27)
-
+Enter an email for urgent notices, agree the terms and enter the domain to secure.
 Upload the application with the new challenge.
 Complete the docker command line.
-Upload the file on AppEngine.
+Go to `/ssl-keys/live/devfest2015.gdgnantes.com/` and upload the files on AppEngine:
+- fullchain.pem
+- rsa.pem doing the convertion `openssl rsa -in privkey.pem -out rsa.pem`
+
 
 # How to
 
