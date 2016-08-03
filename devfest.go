@@ -24,7 +24,7 @@ func init() {
 }
 
 var challenges = map[string]string{
-	"PvS2zfgRydQwYEJFda2h7HcdU1k2e02S0Mw6-NB_LBc": "PvS2zfgRydQwYEJFda2h7HcdU1k2e02S0Mw6-NB_LBc.9YJdoJWoiu0xDzLP9F7ljCyuaCPjWSgsGxp3DVDgdr0",
+	"xMqmJQFaopDwdUOascB6aNSx4gJuNTm2QOrgjpao10U": "xMqmJQFaopDwdUOascB6aNSx4gJuNTm2QOrgjpao10U.9YJdoJWoiu0xDzLP9F7ljCyuaCPjWSgsGxp3DVDgdr0",
 	"hello": "world",
 }
 
